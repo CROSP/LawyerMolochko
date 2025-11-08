@@ -1,0 +1,152 @@
+$star_icon_font: "pxli";
+$star_icon: "\e948";
+$star_icon_filled: "\e949";
+$star_icon_color: #FFB237;
+$star_icon_filled_color: $heading_color;
+$star_rating_w: 85px;
+$star_rating_h: 28px;
+ 
+.pxl-star-rated{
+	color: $star_icon_filled_color;
+}
+.woocommerce-product-rating{
+	display: flex;
+	flex-wrap: wrap;
+	line-height: normal;
+	margin: 0;
+	align-items:center;
+}
+p.stars{
+	margin: 0;
+	> span{
+		display: block;
+	}
+}
+
+.star-rating{
+	font-family: $star_icon_font;
+	color: $star_icon_color;
+	font-size: 15px;
+	letter-spacing: 3px;
+	white-space: nowrap;
+	position: relative;
+	display: inline-block;
+	width: $star_rating_w;
+	height: $star_rating_h;
+	line-height: $star_rating_h;
+	overflow: hidden;
+	&:before{
+		content: '\e9bf\e9bf\e9bf\e9bf\e9bf';
+		display: block;
+		overflow: hidden;
+	}
+	> span:before,
+	.pxl-star-rated:before{
+		content: '\e999\e999\e999\e999\e999';
+		display: block;
+		overflow: hidden;
+	}
+	>span:before,
+	.pxl-star-rated:before,
+	&[aria-label="Rated 0 out of 5"]:before{
+		color: $star_icon_filled_color;
+	}
+	.pxl-star-rated,
+	> span{
+		position: absolute;
+		top: 0;
+		left: 0;
+		overflow: hidden;
+		height: $star_rating_h;
+		[dir="rtl"] &{
+			left: auto;
+			right: 0;
+		}
+	}
+	+ .woocommerce-review-link{
+		font-size: 14px;
+		color: $body_color;
+		&:hover{
+			color: $primary_color;
+		}
+		[dir="rtl"] &{
+			margin-left: 0;
+			margin-right: 30px;
+		}
+	}
+
+}
+.comment-rating{
+	.star-rating{
+		font-size: 12px;
+		width: 92px;
+	}
+}
+.woocommerce-Reviews .comment-meta{
+	margin-bottom: -5px;
+}
+.pxl-rating-wrap{
+	@include d-flex();
+}
+.review-num{
+	font-size: 14px;
+	line-height: 26px;
+	letter-spacing: 0.08em;
+	color: $gray;
+	line-height: 32px;
+	padding-left: 3px;
+}
+
+p.stars {
+	a {
+		position: relative;
+		height: 1em;
+		width: 1em;
+		text-indent: -999em;
+		display: inline-block;
+		text-decoration: none;
+		color: #ffb237;
+		&::before {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 1em;
+			height: 1em;
+			line-height: 1;
+			font-family: $star_icon_font;
+			content: $star_icon;
+			text-indent: 0;
+		}
+		&:hover ~ a::before {
+			content: $star_icon;
+			font-weight: 300;
+		}
+	}
+
+	&:hover a::before {
+		content: $star_icon_filled;
+		font-weight: 900;
+	}
+
+	&.selected {
+
+		a.active {
+
+			&::before {
+				content: $star_icon_filled;
+				font-weight: 900;
+			}
+
+			~ a::before {
+				content: $star_icon;
+				font-weight: 300;
+			}
+		}
+
+		a:not(.active)::before {
+			content: $star_icon_filled;
+			font-weight: 900;
+		}
+	}
+}

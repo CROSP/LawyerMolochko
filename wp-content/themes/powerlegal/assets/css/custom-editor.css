@@ -1,0 +1,46 @@
+.elementor-control-type-repeater.elementor-repeater-has-minimum-rows .elementor-repeater-tool-remove{
+	display: table-cell !important;
+}
+
+.elementor-control-type-layoutcontrol .radio-image-item{
+	box-shadow: 0 3px 16px rgba(0,0,0,0.2);
+	-webkit-transition: all 0.3s ease;
+	-khtml-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	position: relative;
+	overflow: hidden;
+	border: 1px solid transparent;
+}
+.elementor-control-type-layoutcontrol .radio-image-item.selected{
+	border-color: #ad9779;
+	box-shadow: 0 3px 16px rgba(0,0,0,0.2);
+}
+.elementor-control-type-layoutcontrol .radio-image-item span{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 25px;
+	height: 25px;
+	background: rgba(10,10,10, 0.5);
+	display: inline-block !important;
+	text-align: right;
+	font-size: 14px;
+	font-weight: 500;
+	color: #fff;
+	padding-top: 4px;
+	padding-right: 7px;
+	border-bottom-left-radius: 20px;
+	-webkit-transition: all 0.3s ease;
+	-khtml-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.elementor-control-type-layoutcontrol .radio-image-item.selected span,
+.elementor-control-type-layoutcontrol .radio-image-item:hover span{
+	background: #ad9779;
+}

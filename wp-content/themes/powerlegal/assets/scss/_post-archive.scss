@@ -1,0 +1,132 @@
+.pxl-archive-post{
+	padding-bottom: 50px;
+	margin-bottom: 50px;
+	border-bottom: 1px solid $divider_color;
+	&:last-child{
+		margin-bottom: 0;
+		padding-bottom: 0;
+		border-color: transparent;
+	}
+	&.search-results-post{
+		margin-bottom: 50px;
+	}
+	 
+	.post-title{
+		font-size: 35px;
+		margin-top: 5px;
+	}
+	.post-readmore{
+		margin-top: 35px;
+	}
+	.format-wrap{
+		border: 1px solid #{'rgba(var(--primary-color-rgb), 0.5)'};
+		text-align: center;
+		padding: 44px 20px 38px;
+		.meta-inner{
+			justify-content: center;
+		}
+		.post-metas{
+			padding-top: 10px;
+		}
+	}
+	&.format-quote{
+		.post-content .post-metas{
+			display: none;
+		}
+		.quote-inner{
+			.quote-icon{
+				margin-bottom: 25px;
+				svg{
+					height: 24px;
+					width: auto;
+					fill: $primary_color;
+					transform: rotate(180deg);
+				}
+			}
+			.quote-text{
+				font-family: $heading_font_family;
+				font-size: 23px;
+				line-height: 33px;
+				letter-spacing: 0.02em;
+				color: $heading_color;
+				font-weight: bold;
+			}
+			.quote-cite{
+				font-size: 14px;
+				text-transform: uppercase;
+				color: $primary_color;
+				letter-spacing: 0.1em;
+				display: block;
+				margin-top: 12px;
+			}
+		}
+	}
+	&.format-link{
+		.post-content .post-metas{
+			display: none;
+		}
+		.link-inner{
+			.link-icon{
+				margin-bottom: 25px;
+				svg{
+					height: 32px;
+					width: auto;
+					fill: $primary_color;
+				}
+			}
+			.link-text{
+				font-family: $heading_font_family;
+				font-size: 23px;
+				line-height: 33px;
+				letter-spacing: 0.02em;
+				color: $heading_color;
+				font-weight: bold;
+			}
+		}
+	}
+	.post-metas{
+		letter-spacing: 0.05em;
+		color: $primary_color;
+		.meta-inner > span{
+			padding: 5px 10px 5px 0;
+			margin-right: 10px;
+			&:after{
+				top: auto;
+				bottom: 1px;
+				height: 15px;
+				transform: translateY(-55%) rotate(30deg);
+				background-color: $primary_color;
+			}
+		}
+	}
+}
+.post-featured{
+	position: relative;
+	margin-bottom: 32px;
+	.post-date{
+		min-width: 110px;
+		background-color: $secondary_color;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 1;
+		letter-spacing: 0.05em;
+		color: #fff;
+		position: absolute;
+		top: 0;
+		left: 0;
+		text-align: center;
+		padding: 23px 20px 21px;
+		.day-month{
+			border-bottom: 1px solid $primary_color;
+			padding-bottom: 15px;
+			margin-bottom: 17px;
+		}
+	}
+	.pxl-video-popup{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+ 

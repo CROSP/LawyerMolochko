@@ -1,0 +1,98 @@
+=== Version 1.2.6 - 29 Oct, 2025
+	- update save post meta without compare opt defaults
+
+=== Version 1.2.5 - 24 Sep, 2025
+	- update import elementor template library remote
+
+=== Version 1.2.4 - 09 Sep, 2025
+	- Update auto update theme
+	- update dowloand demo data for connect false
+	- update elementor import template library
+
+=== Version 1.2.3 - 16 Dec, 2024
+	- update register elementor widget from child theme
+
+=== Version 1.2.2 - 16 Dec, 2024
+	- fix undefined disable_google_fonts_link and font_display redux option
+	- set admin_bar menu title as blogname and add node "Visit Site"
+
+=== Version 1.2.1 - 05 Dec, 2024
+	- Add add_action redux/construct validate filesystem
+
+=== Version 1.2.0 - 30 November, 2024
+	- Add apply_filters pxl_enable_menu_icons for on/off menu icon selector
+
+=== Version 1.1.9 - 23 November, 2024
+	- Fixed _load_textdomain_just_in_time was called incorrectly
+
+=== Version 1.1.8 - 22 November, 2024
+	- Update scroll-behavior: inherit
+
+=== Version 1.1.7 - 18 November, 2024
+	- Update file inc/elementor/widgets/pxl-widget-base.php
+	- Add file elements/container.php
+
+=== Version 1.1.6 - 13 November, 2024
+	- Change pxl-template postype filter type to tab inc/elementor/theme-builder
+	- Add support Elementer template library for theme inc/elementor/template-library
+
+=== Version 1.1.5 - 01 November, 2024
+	- fix issue: Fatal error: Uncaught Error: Call to undefined method ElementorPro\Plugin::enqueue_styles()
+
+=== Version 1.1.4 - 23 October, 2024
+	- add pxl_post_share_link function
+	- update import-log.php, add form pxl-form-upload-demo for user upload demo data manualy
+	- update download-demo.php, add ajax_upload_demo_manual function for user upload demo data manualy
+
+=== Version 1.1.3 - 12 September, 2024
+	- Add: base.js apply for elementorFrontend.waypoint
+	- Add: elementorFrontend.waypoint js in file main.js, fixed elementor 3.24.0 update
+
+=== Version 1.1.2 - 21 July, 2024
+	- Remove: dynamic_enqueue_scripts_post function
+	- Add filter: pxl_support_e_control_icons, pxl_support_e_control_list
+	- Fix file_get_contents absoluted fetchJson path for icon font in (control icon, control list, megamenu icon, redux icon picker)
+
+=== Version 1.1.1 - 08 July, 2024
+	- FIXED: update wp_register_style swiper
+	- Remove: dynamic_enqueue_scripts_post function
+	- Add action: elementor/element/parse_css
+	- Fix redux control repeate
+
+=== Version 1.1.0 - 30 June, 2024
+	- Update Repeater with control_type is group && responsive
+
+=== Version 1.0.7 - 30 January, 2024
+	- FIXED: Remove e_dom_optimization in section from inc/elementor/elements/section.php extend "/plugins/elementor/includes/elements/section.php"
+	- FIXED: Elementor e_dom_optimization in column from inc/elementor/elements/column.php extend "/plugins/elementor/includes/elements/column.php"
+
+=== Version 1.0.6 - 01 January, 2024
+	- FIXED: experiments is_feature_active of e_font_icon_svg (hard set inactive)
+	- function add_meta_boxes: //class-post-metabox.php
+	- update scss new libs
+
+=== Version 1.0.5 - 9 September, 2023
+	- ADD TO: field_pxl_iconpicker.php : wp_enqueue_script( 'redux-field-select-js' ... replace $this->timestamp -> time()
+	- ADD: filter for pxl_megamenu_content_render
+	- ADD: redux field pxl_auto_generate
+	- ADD: redux field heading
+	- ADD: redux field pxl_repeater
+
+=== Version 1.0.4 - 30 January, 2023
+	- UPDATE: Font Awesome pro 6.0.0
+	- UPDATE: One page menu js
+
+=== Version 1.0.3 - 30 January, 2023
+	- UPDATE: Auto update plugin
+
+=== Version 1.0.2 - 16 January, 2023
+	- FIXED: Menu item page popup show at frontend
+	- FIXED: Get icon font (el control, mega menu, redux pxl_iconpicker)
+	- UPDATE: Download demo data stop when existing
+	- UPDATE: Replace custom menu url when import demo data
+
+=== Version 1.0.1 - 11 January, 2023
+	- FIXED: Notice PHP 8.0
+
+=== Version 1.0.0 - 11 September, 2022
+	- Initial release

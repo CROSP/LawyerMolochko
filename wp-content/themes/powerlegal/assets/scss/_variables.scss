@@ -1,0 +1,57 @@
+$pxli_font: "pxli";
+$flaticon: "flaticon";
+$white: #ffffff;
+$red: #ff0000;
+$gray: #707070;
+$dark: #333333; 
+$black: #000000;
+$star_color: #ffb717;
+
+$facebook_color:     #3b5ea1;
+$google_color:       #e24d43;
+$twitter_color:      #2bb3fa;
+$youtube_color:      #df2926;
+$rss_color:          #ffa500;
+$skype_color:        #0ebaee;
+$yahoo_color:        #690a7b;
+$dribbble_color:     #ff70b7;
+$flickr_color:       #ff0084;
+$linkedin_color:     #087ec0;
+$vimeo_color:        #27bcf1;
+$pinterest_color:    #ee2c34;
+$instagram_color:    #db944c;
+$behance_color:      #1879fd;
+$tumblr_color:       #426d9b;
+
+
+
+
+$grid_gutters: 30px;
+
+$error_color: #d62a28;
+$notice_color: #FFB237;
+$success_color: #27ae60;
+
+$container_width: 1200px;
+
+//* Grid min-width breakpoints
+$xs_min: 1px;
+$sm_min: 576px;
+$md_min: 768px;
+$lg_min: 992px;
+$xl_min: 1200px;
+$xxl_min: 1500px;
+
+//* Screen max-width breakpoints
+$xs_max: 575px;
+$sm_max: 767px;
+$md_max: 991px;
+$lg_max: 1199px;
+$xl_max: 1499px;
+$xxl_max: 1599px;
+
+$xs_screen: 480px;
+$desktop_screen: 1200px;
+
+//@include background-horizontal(#{'rgba(var(--primary-color-rgb),0.1)'}, #{'rgba(var(--secondary-color-rgb),0.1)'});
+

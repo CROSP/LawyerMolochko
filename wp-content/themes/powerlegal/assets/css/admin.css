@@ -1,0 +1,11 @@
+.redux-container{
+	overflow: visible!important;
+}
+.icons-selector .fip-icons-container{
+	font-size: 20px;
+}
+.icons-selector .selected-icon i{
+    font-size: 28px;
+    line-height: 30px;
+    display: inline-block;
+}

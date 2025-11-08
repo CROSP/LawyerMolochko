@@ -1,0 +1,300 @@
+.admin-bar .pxl-hidden-template{
+    top: 32px;
+    @media screen and (max-width: 782px) {
+        top: 46px;
+        height: calc(100% - 46px);
+    }
+}
+
+//* Panel Default
+.pxl-hidden-template{
+	display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    padding: 0;
+    background: #fff;
+    right: 0;
+    will-change: transform;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    opacity: 0;
+    max-height: 100vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+    .pxl-panel-header {
+        .panel-header-inner{
+            @include d-flex();
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    .pxl-panel-content{
+        position: relative;
+        padding: 10px 43px 50px 50px;
+        flex: 1;
+
+        @media (max-width: $xs_max){
+            padding: 5px 23px 30px 30px;
+        }
+    }
+    &::-webkit-scrollbar{
+        height: 0;
+        width: 7px;
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-track{
+        border-radius: 0;
+    }
+
+    &::-webkit-scrollbar-thumb{
+        border-radius: 0;
+        background-color: transparent;
+    }
+
+    &:hover::-webkit-scrollbar {
+        width: 7px;
+        height: auto;
+        background-color: rgba(255,255,255,0.1);
+        border-radius: 0
+    }
+    &:hover::-webkit-scrollbar-thumb{
+        background-color: rgba(48, 48, 48, 0.1);
+    }
+
+}
+.side-panel-open{
+    .pxl-page-overlay{
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+    }
+}
+.pxl-close{
+    background: #{'rgba(var(--heading-color-rgb),0.3)'};
+    border: 9px solid transparent;
+    color: $white;
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    @media (max-width: $sm_max){
+        width: 30px;
+        height: 30px;
+        border-width: 8px;
+    }
+    &:before,
+    &:after{
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        top: 50%;
+        left: 0;
+        margin-top: -1px;
+        background-color: $white;
+        transform-origin: 50% 50%;
+        opacity: 1;
+        @include transition(transform ease 0.25s);
+    }
+    &:before{
+        @include transform(rotate(45deg));
+    }
+    &:after{
+        @include transform(rotate(-45deg));
+    }
+    &:hover{
+        background-color: $primary_color;
+        &:before,
+        &:after{
+            @include transform(rotate(0deg));
+        }
+    }
+}
+
+.pxl-panel-content{
+    .menu-main-container-wrap{
+        padding: 0;
+        min-height: calc(100% - 50px);
+        @include d-flex();
+        flex-direction: column;
+    }
+}
+
+.pxl-hidden-template-wrap{
+    width: 100%;
+}
+
+//* Panel Position
+.pxl-hidden-template.pos-left{
+    width: 100%;
+    max-width: 460px;
+    z-index: 604;
+    right: auto;
+    left: 0;
+    @include transform(translate(-100%,0));
+}
+.pxl-hidden-template.pos-right{
+    width: 100%;
+    max-width: 460px;
+    z-index: 604;
+    right: 0;
+    left: auto;
+    @include transform(translate(100%,0));
+}
+.pxl-hidden-template.pos-top{
+    background-color: transparent;
+    width: 100%;
+    z-index: 604;
+    left: 0;
+    right: 0;
+    @include transform(translate(0,-100%));
+    .pxl-panel-header {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1;
+    }
+    .pxl-panel-content{
+        padding: 0;
+    }
+}
+.pxl-hidden-template.pos-center{
+    @include d-flex();
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    .pxl-hidden-template-wrap{
+        max-width: 570px;
+        background-color: #fff;
+        position: relative;
+        overflow: hidden;
+        @include box-shadow( 0 3px 21px rgba(#ffffff, 0.3));
+        @include transition(all .3s ease);
+        @include transform(scale(0.6));
+        &:hover{
+            @include box-shadow( 0 8px 30px rgba(#ffffff, 0.3));
+        }
+    }
+    .pxl-panel-header {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        z-index: 1;
+    }
+    .pxl-panel-content{
+        padding: 0;
+    }
+    &.open{
+        .pxl-hidden-template-wrap{
+            @include transform(scale(1));
+        }
+    }
+}
+.pxl-hidden-template.pos-full{
+    @include d-flex();
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    .pxl-panel-header {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1;
+    }
+    .pxl-panel-content{
+        padding: 0;
+    }
+}
+.pxl-hidden-template.open{
+    @include transform(translateX(0));
+    opacity: 1;
+    z-index: 9999;
+}
+
+//* Cart Sidebar
+.pxl-side-cart{
+    width: 100%;
+    max-width: 360px;
+    left: auto;
+    background-color: #fff;
+    @include transform(translateX(100%));
+    .pxl-hidden-template-wrap{
+        padding: 30px 35px 60px;
+        @media (max-width: $xs_max){
+            padding: 30px 20px 60px;
+        }
+    }
+    .pxl-close{
+        background-color: transparent;
+        margin-right: -9px;
+        margin-top: -15px;
+        &:before,
+        &:after{
+            background-color: $gray;
+        }
+        &:hover{
+            &:before,
+            &:after{
+                background-color: $primary_color;
+            }
+        }
+    }
+    .pxl-panel-header{
+        .panel-header-inner{
+            border-bottom: 1px solid $divider_color;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            .cart-title{
+                font-size: 30px;
+            }
+        }
+    }
+    .pxl-panel-content{
+        padding: 0 24px 24px 24px;
+        @media (max-width: 400px){
+            padding: 0 15px 24px 15px;
+        }
+    }
+    .widget_shopping_cart_content{
+        ul{
+            list-style: none outside;
+            padding: 0;
+            margin: 0;
+            li {
+                position: relative;
+                display: block;
+                clear: both;
+                overflow: hidden;
+                .remove{
+                    position: absolute;
+                    opacity: 0;
+                    top: 30px;
+                    right: 0;
+                    font-family: $heading_font_family;
+                    line-height: 1;
+                    padding: 0 0 5px;
+                    font-size: 25px;
+                    color: #fff;
+                    display: inline-flex;
+                    width: 18px;
+                    height: 18px;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: $primary_color;
+                    transition: all 300ms ease 0s;
+                }
+                &:hover{
+                    .remove{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}

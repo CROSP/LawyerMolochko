@@ -1,0 +1,722 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PXL Theme Core\n"
+"POT-Creation-Date: 2024-02-27 10:12+0700\n"
+"PO-Revision-Date: 2024-02-27 10:12+0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: pxltheme-core.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: inc/elementor/el-functions.php:180
+msgid "Font Awesome - Regular Pro"
+msgstr ""
+
+#: inc/elementor/el-functions.php:192
+msgid "Font Awesome - Solid Pro"
+msgstr ""
+
+#: inc/elementor/el-functions.php:204
+msgid "Font Awesome - Brands Pro"
+msgstr ""
+
+#: inc/elementor/el-functions.php:216
+msgid "Font Awesome - Light Pro"
+msgstr ""
+
+#: inc/elementor/el-functions.php:228
+msgid "Font Awesome - Duotone Pro"
+msgstr ""
+
+#: inc/elementor/el-functions.php:240
+msgid "Font Awesome - Thin Pro"
+msgstr ""
+
+#: inc/elementor/pxl-controls/class-control-icons.php:104
+#: inc/elementor/pxl-controls/class-control-icons.php:130
+#: inc/elementor/pxl-controls/class-control-list.php:83
+#: inc/elementor/pxl-controls/class-control-list.php:109
+#: inc/mega-menu/class-mega-menu-edit.php:131
+msgid "Icon"
+msgstr ""
+
+#: inc/elementor/pxl-controls/class-control-icons.php:105
+#: inc/elementor/pxl-controls/class-control-icons.php:136
+#: inc/elementor/pxl-controls/class-control-list.php:84
+#: inc/elementor/pxl-controls/class-control-list.php:115
+#: inc/mega-menu/class-mega-menu-edit.php:135
+#: inc/redux-fields/pxl_iconpicker/inc/field_pxl_iconpicker.php:28
+msgid "No Icons"
+msgstr ""
+
+#: inc/elementor/pxl-controls/class-control-icons.php:115
+#: inc/elementor/pxl-controls/class-control-icons.php:163
+msgid "Url"
+msgstr ""
+
+#: inc/elementor/pxl-controls/class-control-icons.php:179
+#: inc/elementor/pxl-controls/class-control-list.php:158
+msgid "Add Item"
+msgstr ""
+
+#: inc/elementor/pxl-controls/class-control-list.php:94
+#: inc/elementor/pxl-controls/class-control-list.php:142
+msgid "Content"
+msgstr ""
+
+#: inc/functions.php:210
+msgid "Back"
+msgstr ""
+
+#: inc/functions.php:211
+msgid "Next"
+msgstr ""
+
+#: inc/functions.php:566
+msgid "Share this post to"
+msgstr ""
+
+#: inc/functions.php:575
+msgid "Share"
+msgstr ""
+
+#: inc/functions.php:591
+msgid "Comment Metadata - Extend Comment"
+msgstr ""
+
+#: inc/functions.php:602
+msgid "Header"
+msgstr ""
+
+#: inc/functions.php:603
+msgid "Footer"
+msgstr ""
+
+#: inc/functions.php:604
+msgid "Mega Menu"
+msgstr ""
+
+#: inc/functions.php:609
+msgid "Select Type"
+msgstr ""
+
+#: inc/mega-menu/class-mega-menu-edit.php:97
+msgid "Select Mega Menu"
+msgstr ""
+
+#: inc/mega-menu/class-mega-menu-edit.php:100
+#: inc/mega-menu/class-mega-menu-edit.php:117
+msgid "None"
+msgstr ""
+
+#: inc/mega-menu/class-mega-menu-edit.php:114
+msgid "Select Page Popup"
+msgstr ""
+
+#: inc/mega-menu/class-mega-menu-edit.php:153
+msgid "One Page"
+msgstr ""
+
+#: inc/mega-menu/class-mega-menu-edit.php:157
+#: inc/post-type/cpt-register.php:80 inc/post-type/cpt-register.php:81
+msgid "No"
+msgstr ""
+
+#: inc/mega-menu/class-mega-menu-edit.php:158
+msgid "Yes"
+msgstr ""
+
+#: inc/mega-menu/class-mega-menu-edit.php:164
+msgid "One Page Offset"
+msgstr ""
+
+#: inc/meta-box/class-post-metabox.php:119
+#: inc/meta-box/class-taxonomy-meta.php:218
+msgid "Settings"
+msgstr ""
+
+#: inc/meta-box/class-post-metabox.php:235
+msgid "The field with id"
+msgstr ""
+
+#: inc/meta-box/class-post-metabox.php:235
+#: inc/meta-box/class-post-metabox.php:249
+msgid "for post type"
+msgstr ""
+
+#: inc/meta-box/class-post-metabox.php:235
+#: inc/meta-box/class-post-metabox.php:249
+msgid "is already registered."
+msgstr ""
+
+#: inc/meta-box/class-post-metabox.php:249
+msgid "Section"
+msgstr ""
+
+#: inc/meta-box/class-post-metabox.php:576
+#: inc/meta-box/class-taxonomy-meta.php:695
+msgid "error(s)"
+msgstr ""
+
+#: inc/meta-box/class-post-metabox.php:577
+#: inc/meta-box/class-post-metabox.php:589
+#: inc/meta-box/class-taxonomy-meta.php:696
+#: inc/meta-box/class-taxonomy-meta.php:708
+msgid "were found! Some data might not be saved."
+msgstr ""
+
+#: inc/meta-box/class-post-metabox.php:588
+#: inc/meta-box/class-taxonomy-meta.php:707
+msgid "warning(s)"
+msgstr ""
+
+#: inc/meta-box/class-post-metabox.php:593
+#: inc/meta-box/class-taxonomy-meta.php:712 pxltheme-core.php:383
+msgid "Dismiss this notice."
+msgstr ""
+
+#: inc/meta-box/class-taxonomy-meta.php:279
+#, php-format
+msgid "The field with id %1$s for taxonomy %2$s is already registered."
+msgstr ""
+
+#: inc/meta-box/class-taxonomy-meta.php:293
+#, php-format
+msgid "Section %1$s for taxonomy %2$s is already exist."
+msgstr ""
+
+#: inc/post-type/cpt-register.php:41
+msgid "Type"
+msgstr ""
+
+#: inc/post-type/cpt-register.php:73
+msgctxt "add new on admin panel"
+msgid "Add New"
+msgstr ""
+
+#: inc/post-type/cpt-register.php:74 inc/post-type/ctax-register.php:58
+msgid "Add New"
+msgstr ""
+
+#: inc/post-type/cpt-register.php:75 inc/post-type/ctax-register.php:56
+msgid "Edit"
+msgstr ""
+
+#: inc/post-type/cpt-register.php:76
+msgid "New"
+msgstr ""
+
+#: inc/post-type/cpt-register.php:77 inc/post-type/cpt-register.php:78
+msgid "View"
+msgstr ""
+
+#: inc/post-type/cpt-register.php:79 inc/post-type/ctax-register.php:61
+msgid "Search"
+msgstr ""
+
+#: inc/post-type/cpt-register.php:80
+msgid "Found"
+msgstr ""
+
+#: inc/post-type/cpt-register.php:81
+msgid "Found in Trash"
+msgstr ""
+
+#: inc/post-type/cpt-register.php:82 inc/post-type/ctax-register.php:62
+#: inc/post-type/ctax-register.php:63
+msgid "Parent"
+msgstr ""
+
+#: inc/post-type/cpt-register.php:83 inc/post-type/ctax-register.php:60
+msgid "All"
+msgstr ""
+
+#: inc/post-type/cpt-register.php:84
+msgid "Archives"
+msgstr ""
+
+#: inc/post-type/cpt-register.php:85
+msgid "Entry Attributes"
+msgstr ""
+
+#: inc/post-type/cpt-register.php:86
+msgid "Uploaded to this"
+msgstr ""
+
+#: inc/post-type/cpt-register.php:88
+msgid "Filter"
+msgstr ""
+
+#: inc/post-type/cpt-register.php:88 inc/post-type/cpt-register.php:90
+msgid "list"
+msgstr ""
+
+#: inc/post-type/cpt-register.php:89
+msgid "list navigation"
+msgstr ""
+
+#: inc/post-type/cpt-register.php:136 inc/post-type/cpt-register.php:137
+msgid "Templates"
+msgstr ""
+
+#: inc/post-type/cpt-register.php:174
+msgid "Featured"
+msgstr ""
+
+#: inc/post-type/ctax-register.php:57
+msgid "Update"
+msgstr ""
+
+#: inc/post-type/ctax-register.php:59
+msgid "New Type"
+msgstr ""
+
+#: inc/redux-fields/pxl_repeater/inc/field_pxl_repeater.php:168
+#: inc/redux-fields/pxl_repeater/inc/field_pxl_repeater.php:211
+msgid "Delete"
+msgstr ""
+
+#: inc/redux-fields/pxl_repeater/inc/field_pxl_repeater.php:233
+msgid "Add"
+msgstr ""
+
+#: pxltheme-core.php:231
+#, php-format
+msgid "Please activate the right theme to use \"%1$s\" plugin."
+msgstr ""
+
+#: pxltheme-core.php:238
+msgid "Activate theme"
+msgstr ""
+
+#: pxltheme-core.php:261 pxltheme-core.php:266
+msgid "Dashboard"
+msgstr ""
+
+#: pxltheme-core.php:278
+msgid "Theme Options"
+msgstr ""
+
+#: pxltheme-core.php:284 pxltheme-core.php:289
+msgid "Themes"
+msgstr ""
+
+#: pxltheme-core.php:294 pxltheme-core.php:299
+msgid "Widgets"
+msgstr ""
+
+#: pxltheme-core.php:304 pxltheme-core.php:309
+msgid "Menus"
+msgstr ""
+
+#: pxltheme-core.php:328
+#, php-format
+msgid "\"%1$s\" requires \"%2$s\" to be installed and activated."
+msgstr ""
+
+#: pxltheme-core.php:330 pxltheme-core.php:345
+msgid "Elementor Plugin"
+msgstr ""
+
+#: pxltheme-core.php:343 pxltheme-core.php:359
+#, php-format
+msgid "\"%1$s\" requires \"%2$s\" version %3$s or greater."
+msgstr ""
+
+#: pxltheme-core.php:361
+msgid "PHP"
+msgstr ""
+
+#: pxltheme-core.php:372
+msgid "Redux Framework"
+msgstr ""
+
+#: pxltheme-core.php:377
+#, php-format
+msgid "%1$s require %2$s installed and activated. Please active %3$s plugin"
+msgstr ""
+
+#: src/core-importer/content-src/parsers.php:44
+#: src/core-importer/content-src/parsers.php:77
+#: src/core-importer/content-src/parsers.php:85
+msgid "There was an error when reading this WXR file"
+msgstr ""
+
+#: src/core-importer/content-src/parsers.php:45
+msgid ""
+"Details are shown above. The importer will now try again with a different "
+"parser..."
+msgstr ""
+
+#: src/core-importer/content-src/parsers.php:89
+#: src/core-importer/content-src/parsers.php:94
+#: src/core-importer/content-src/parsers.php:323
+#: src/core-importer/content-src/parsers.php:545
+msgid ""
+"This does not appear to be a WXR file, missing/invalid WXR version number"
+msgstr ""
+
+#: src/core-importer/content-src/wordpress-importer.php:144
+#: src/core-importer/content-src/wordpress-importer.php:153
+#: src/core-importer/content-src/wordpress-importer.php:203
+#: src/core-importer/content-src/wordpress-importer.php:207
+#: src/core-importer/content-src/wordpress-importer.php:216
+msgid "Sorry, there has been an error."
+msgstr ""
+
+#: src/core-importer/content-src/wordpress-importer.php:145
+msgid "The file does not exist, please try again."
+msgstr ""
+
+#: src/core-importer/content-src/wordpress-importer.php:187
+msgid "All done."
+msgstr ""
+
+#: src/core-importer/content-src/wordpress-importer.php:187
+msgid "Have fun!"
+msgstr ""
+
+#: src/core-importer/content-src/wordpress-importer.php:188
+msgid "Remember to update the passwords and roles of imported users."
+msgstr ""
+
+#: src/core-importer/content-src/wordpress-importer.php:208
+#, php-format
+msgid ""
+"The export file could not be found at <code>%s</code>. It is likely that "
+"this was caused by a permissions problem."
+msgstr ""
+
+#: src/core-importer/content-src/wordpress-importer.php:224
+#, php-format
+msgid ""
+"This WXR file (version %s) may not be supported by this version of the "
+"importer. Please consider updating."
+msgstr ""
+
+#: src/core-importer/content-src/wordpress-importer.php:249
+#, php-format
+msgid ""
+"Failed to import author %s. Their posts will be attributed to the current "
+"user."
+msgstr ""
+
+#: src/core-importer/content-src/wordpress-importer.php:275
+msgid "Assign Authors"
+msgstr ""
+
+#: src/core-importer/content-src/wordpress-importer.php:276
+msgid ""
+"To make it simpler for you to edit and save the imported content, you may "
+"want to reassign the author of the imported item to an existing user of this "
+"site, such as your primary administrator account."
+msgstr ""
+
+#: src/core-importer/content-src/wordpress-importer.php:278
+#, php-format
+msgid ""
+"If a new user is created by WordPress, a new password will be randomly "
+"generated and the new user&#8217;s role will be set as %s. Manually changing "
+"the new user&#8217;s details will be necessary."
+msgstr ""
+
+#: src/core-importer/content-src/wordpress-importer.php:288
+msgid "Import Attachments"
+msgstr ""
+
+#: src/core-importer/content-src/wordpress-importer.php:291
+msgid "Download and import file attachments"
+msgstr ""
+
+#: src/core-importer/content-src/wordpress-importer.php:295
+msgid "Submit"
+msgstr ""
+
+#: src/core-importer/content-src/wordpress-importer.php:308
+msgid "Import author:"
+msgstr ""
+
+#: src/core-importer/content-src/wordpress-importer.php:320
+msgid "or create new user with login name:"
+msgstr ""
+
+#: src/core-importer/content-src/wordpress-importer.php:323
+msgid "as a new user:"
+msgstr ""
+
+#: src/core-importer/content-src/wordpress-importer.php:333
+msgid "assign posts to an existing user:"
+msgstr ""
+
+#: src/core-importer/content-src/wordpress-importer.php:335
+msgid "or assign posts to an existing user:"
+msgstr ""
+
+#: src/core-importer/content-src/wordpress-importer.php:343
+msgid "- Select -"
+msgstr ""
+
+#: src/core-importer/content-src/wordpress-importer.php:398
+#, php-format
+msgid ""
+"Failed to create new user for %s. Their posts will be attributed to the "
+"current user."
+msgstr ""
+
+#: src/core-importer/content-src/wordpress-importer.php:450
+#, php-format
+msgid "Failed to import category %s"
+msgstr ""
+
+#: src/core-importer/content-src/wordpress-importer.php:495
+#, php-format
+msgid "Failed to import post tag %s"
+msgstr ""
+
+#: src/core-importer/content-src/wordpress-importer.php:550
+#: src/core-importer/content-src/wordpress-importer.php:780
+#, php-format
+msgid "Failed to import %s %s"
+msgstr ""
+
+#: src/core-importer/content-src/wordpress-importer.php:643
+#, php-format
+msgid "Failed to import &#8220;%s&#8221;: Invalid post type %s"
+msgstr ""
+
+#: src/core-importer/content-src/wordpress-importer.php:683
+#, php-format
+msgid "%s &#8220;%s&#8221; already exists."
+msgstr ""
+
+#: src/core-importer/content-src/wordpress-importer.php:746
+#, php-format
+msgid "Failed to import %s &#8220;%s&#8221;"
+msgstr ""
+
+#: src/core-importer/content-src/wordpress-importer.php:921
+msgid "Menu item skipped due to missing menu slug"
+msgstr ""
+
+#: src/core-importer/content-src/wordpress-importer.php:928
+#, php-format
+msgid "Menu item skipped due to invalid menu slug: %s"
+msgstr ""
+
+#: src/core-importer/content-src/wordpress-importer.php:1013
+msgid "Fetching attachments is not enabled"
+msgstr ""
+
+#: src/core-importer/content-src/wordpress-importer.php:1037
+msgid "Invalid file type"
+msgstr ""
+
+#: src/core-importer/content-src/wordpress-importer.php:1078
+msgid "Could not create temporary file."
+msgstr ""
+
+#: src/core-importer/content-src/wordpress-importer.php:1097
+#, php-format
+msgid "Request failed due to an error: %1$s (%2$s)"
+msgstr ""
+
+#: src/core-importer/content-src/wordpress-importer.php:1113
+#, php-format
+msgid "Remote server returned the following unexpected result: %1$s (%2$s)"
+msgstr ""
+
+#: src/core-importer/content-src/wordpress-importer.php:1125
+msgid "Remote server did not respond"
+msgstr ""
+
+#: src/core-importer/content-src/wordpress-importer.php:1132
+msgid "Zero size file downloaded"
+msgstr ""
+
+#: src/core-importer/content-src/wordpress-importer.php:1137
+msgid "Downloaded file has incorrect size"
+msgstr ""
+
+#: src/core-importer/content-src/wordpress-importer.php:1143
+#, php-format
+msgid "Remote file is too large, limit is %s"
+msgstr ""
+
+#: src/core-importer/content-src/wordpress-importer.php:1175
+msgid "Sorry, this file type is not permitted for security reasons."
+msgstr ""
+
+#: src/core-importer/content-src/wordpress-importer.php:1190
+msgid "The uploaded file could not be moved"
+msgstr ""
+
+#: src/core-importer/content-src/wordpress-importer.php:1304
+msgid "Import WordPress"
+msgstr ""
+
+#: src/core-importer/content-src/wordpress-importer.php:1311
+#, php-format
+msgid ""
+"A new version of this importer is available. Please update to version %s to "
+"ensure compatibility with newer export files."
+msgstr ""
+
+#: src/core-importer/content-src/wordpress-importer.php:1326
+msgid ""
+"Howdy! Upload your WordPress eXtended RSS (WXR) file and we&#8217;ll import "
+"the posts, pages, comments, custom fields, categories, and tags into this "
+"site."
+msgstr ""
+
+#: src/core-importer/content-src/wordpress-importer.php:1327
+msgid "Choose a WXR (.xml) file to upload, then click Upload file and import."
+msgstr ""
+
+#: src/core-importer/import-log.php:32
+msgid "Downloading..."
+msgstr ""
+
+#: src/core-importer/import-log.php:37
+msgid "Error"
+msgstr ""
+
+#: src/core-importer/import-log.php:39
+msgid "Cancel"
+msgstr ""
+
+#: src/core-importer/importer-handles.php:113
+msgid "Error: Attachment file not found!"
+msgstr ""
+
+#: src/core-importer/importer-handles.php:121
+#: src/core-importer/importer-handles.php:177
+msgid ""
+"The XML file containing the dummy content is not available or could not be "
+"read .. You might want to try to set the file permission to chmod 755.<br/"
+">If this doesn't work please use the Wordpress importer and import the XML "
+"file (should be located in your download .zip: Sample Content folder) "
+"manually"
+msgstr ""
+
+#: src/core-importer/importer-handles.php:151
+msgid "Error on import media"
+msgstr ""
+
+#: src/core-importer/importer-handles.php:158
+msgid "Import media successfully!"
+msgstr ""
+
+#: src/core-importer/importer-handles.php:204
+msgid "Error on import content"
+msgstr ""
+
+#: src/core-importer/importer-handles.php:212
+msgid "Import Content successfully!"
+msgstr ""
+
+#: src/core-importer/importer-handles.php:286
+msgid ""
+"The theme options json file containing the dummy content is not available or "
+"could not be read .. You might want to try to set the file permission to "
+"chmod 755."
+msgstr ""
+
+#: src/core-importer/importer-handles.php:303
+msgid ""
+"Theme options import data could not be read. Please try a different file."
+msgstr ""
+
+#: src/core-importer/importer-handles.php:329
+msgid "Import theme options successfully!"
+msgstr ""
+
+#: src/core-importer/importer-handles.php:341
+msgid ""
+"The widgets file containing the dummy content is not available or could not "
+"be read .. You might want to try to set the file permission to chmod 755."
+msgstr ""
+
+#: src/core-importer/importer-handles.php:361
+msgid "Import widgets successfully!"
+msgstr ""
+
+#: src/core-importer/importer-handles.php:390
+msgid "Import slider data successfully"
+msgstr ""
+
+#: src/core-importer/importer-handles.php:395
+msgid ""
+"Failed to import slider data, Please make sure to install and activate "
+"slider revolution plugin first"
+msgstr ""
+
+#: src/core-importer/importer-handles.php:408
+msgid ""
+"The theme setting json file containing the dummy content is not available or "
+"could not be read .. You might want to try to set the file permission to "
+"chmod 755."
+msgstr ""
+
+#: src/core-importer/importer-handles.php:452
+msgid "Import settings successfully"
+msgstr ""
+
+#: src/core-importer/importer-handles.php:527
+#: src/core-importer/importer-handles.php:541
+msgid "Image Placeholder"
+msgstr ""
+
+#: src/core-importer/importer-handles.php:604
+msgid "Sidebar does not exist in theme (using Inactive)"
+msgstr ""
+
+#: src/core-importer/importer-handles.php:626
+msgid "Site does not support widget"
+msgstr ""
+
+#: src/core-importer/importer-handles.php:662
+msgid "Widget already exists"
+msgstr ""
+
+#: src/core-importer/importer-handles.php:729
+msgid "Imported"
+msgstr ""
+
+#: src/core-importer/importer-handles.php:732
+msgid "Imported to Inactive"
+msgstr ""
+
+#: src/core-importer/importer-handles.php:739
+msgid "No Title"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "PXL Theme Core"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://7iquid.com/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Add many widgets, shortcodes and custom post types for your theme."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "PXL Team"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://themeforest.net/user/7iquid/portfolio"
+msgstr ""

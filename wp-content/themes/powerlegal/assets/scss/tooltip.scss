@@ -1,0 +1,220 @@
+.pxl-ttip {
+    position: relative;
+    display: inline-block;
+    &:hover{
+        .tt-txt{
+            visibility: visible;
+            opacity: 1;
+            -webkit-transition-delay: .1s;
+            -moz-transition-delay: .1s;
+            transition-delay: .1s;
+        }
+    }
+}
+.tt-txt {
+    font-size: 0;
+    opacity: 0;
+    visibility: hidden;
+    &:before {
+        content: '';
+        position: absolute;
+        background: 0 0;
+        border: 6px solid transparent;
+        z-index: 1000001;
+        margin-bottom: 0;
+        left: calc(50% - 6px);
+        top: auto;
+        bottom: -12px;
+        transition: 0.3s;
+    }
+}
+.pxl-ttip .tt-txt {
+    position: absolute;
+    pointer-events: none;
+    display: inline-block;
+    background: #1b1b1b;
+    color: #fff;
+    padding: 8px 10px;
+    font-size: 12px;
+    line-height: 12px;
+    white-space: nowrap;
+    background: #1b1b1b;
+    z-index: 1000000;
+    pointer-events: none;
+    @include transform(translate3d(0,0,0));
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    transition: .3s;
+}
+ 
+
+.tt_top{
+    .tt-txt{
+        bottom: 100%;
+        left: 50%;
+        @include transform(translate(-50%,0));
+        &:before {
+            border-top-color: #1b1b1b;
+        }
+    }
+    &:hover{
+        .tt-txt{
+            @include transform(translate(-50%,-8px));
+        }
+    }
+}
+
+.tt-top-left,
+.tt-top-right{
+    .tt-txt{
+        bottom: 100%;
+        left: 50%;
+        &:before {
+            border-top-color: #1b1b1b;
+        }
+    }
+    &:hover{
+        .tt-txt{
+            @include transform(translate(0,-8px));
+        }
+         
+    }
+}
+.tt-top-left{
+    .tt-txt{
+        @include transform(translate(-100%,0));
+        margin-left: 12px;
+        &:before {
+            left: auto;
+            right: 6px;
+        }
+    }
+    &:hover{
+        .tt-txt{
+            @include transform(translate(-100%, -8px));
+        }
+    }
+}
+.tt-top-right{
+    .tt-txt{
+        @include transform(translate(0,0));
+        margin-left: -12px;
+        &:before {
+            left: 6px;
+            right: auto;
+        }
+    }
+    &:hover{
+        .tt-txt{
+            @include transform(translate(0,-8px));
+        }
+    }
+}
+
+.tt-left{
+    .tt-txt {
+        left: auto;
+        right: 100%;
+        bottom: 50%;
+        margin-bottom: -14px;
+        &:before {
+            border-left-color: #1b1b1b;
+            margin-right: -11px;
+            margin-bottom: -6px;
+            right: 0;
+            bottom: 50%;
+            left: auto;
+        }
+    }
+    &:hover{
+        .tt-txt{
+            @include transform(translate(-8px,0));
+        }
+    }
+}
+.tt-right{
+    .tt-txt {
+        left: 100%;
+        bottom: 50%;
+        margin-bottom: -14px;
+        &:before {
+            border-right-color: #1b1b1b;
+            margin-left: -11px;
+            margin-bottom: -6px;
+            left: 0;
+            bottom: 50%;
+        }
+    }
+    &:hover{
+        .tt-txt{
+            @include transform(translate(8px,0));
+        }
+    }
+}
+
+.tt-bottom{
+    .tt-txt{
+        top: 100%;
+        left: 50%;
+        @include transform(translate(-50%,0));
+        &:before {
+            border-bottom-color: #1b1b1b;
+            top: -12px;
+            bottom: auto;
+        }
+    }
+    &:hover{
+        .tt-txt{
+            @include transform(translate(-50%,8px));
+        }
+    }
+}
+.tt-bottom-left,
+.tt-bottom-right{
+    .tt-txt{
+        top: 100%;
+        left: 50%;
+        &:before {
+            border-bottom-color: #1b1b1b;
+            top: -12px;
+            bottom: auto;
+        }
+    }
+    &:hover{
+        .tt-txt{
+            @include transform(translate(0,8px));
+        }
+    }
+}
+.tt-bottom-left{
+    .tt-txt{
+        @include transform(translate(-100%,100%));
+        margin-left: 12px;
+        &:before {
+            left: auto;
+            right: 6px;
+        }
+    }
+    &:hover{
+        .tt-txt{
+            @include transform(translate(-100%, 8px));
+        }
+    }
+}
+.tt-bottom-right{
+    .tt-txt{
+        @include transform(translate(0,0));
+        margin-left: -12px;
+        &:before {
+            left: 6px;
+            right: auto;
+        }
+    }
+    &:hover{
+        .tt-txt{
+            @include transform(translate(0, 8px));
+        }
+    }
+}

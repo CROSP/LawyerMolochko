@@ -1,0 +1,11 @@
+$menu_item_space: 36px;
+$menu_arrows_down: '\e91d';
+$menu_arrows_up: '\e920';
+$menu_item_icon: "\e90d";
+$menu_item_icon_rtl: "\e90c";
+$submenu_radius: 0 0 0 0;
+$submenu_bg_img: url(../images/dropdown-shadow.png);
+
+@import 'main';
+@import 'mega';
+@import 'mobile';

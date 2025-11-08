@@ -1,0 +1,26 @@
+.col2-set{
+	display: flex;
+	flex-wrap: wrap;
+	margin: -15px;
+	.col-1,
+	.col-2{
+		flex: 0 0 100%;
+		max-width: 100%;
+		padding: 15px;
+		@media(min-width: 769px){
+			flex: 0 0 50%;
+			max-width: 50%;
+		}		
+	}
+}
+@import "message";
+@import "loop";
+@import "loop_grid";
+@import "sidebar";
+@import "star_rating";
+@import "single";
+@import "cart";
+@import "checkout";
+@import "order";
+@import "wishlist";
+@import "myaccount";

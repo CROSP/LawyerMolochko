@@ -1,0 +1,113 @@
+@media (min-width: $xl_min){
+    .header-height{
+        height: $header-height;
+    }
+}
+#pxl-header{
+    .header-container{
+        max-width: 1570px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 15px;
+    }
+}
+
+/* Header Layout */
+ .header-main-menu{
+    >.elementor-container{
+        background-color: #fff;
+        @include box-shadow(0px 10px 60px 0px #{'rgba(var(--primary-color-rgb),0.15)'});
+    }
+ }
+
+ .pxl-dropdown-mega .elementor-widget-image a:hover{
+    @include transform(translateY(-10px));
+    @include transition();
+ }
+ .pxl-dropdown-mega .pxl-category-box-wrap{
+    .pxl-cat-img{
+        overflow: hidden;
+        img{
+            @include transform(scale(1));
+            @include transition(all .6s ease);
+        }
+    }
+    &:hover .pxl-cat-img img{
+        @include transform(scale(1.1));
+    }
+ }
+
+ /* Header Logo */
+ .pxl-header-logo{
+     padding-top: 14px;
+     padding-bottom: 8px;
+     img{
+         max-height: 54px;
+         width: auto;
+     }
+     a{
+         display: block;
+         @media (max-width: $lg_max){
+             padding-top: 10px;
+             padding-bottom: 10px;
+         }
+     }
+ }
+
+ /* Header Transparent */
+ .header-transparent{
+     @media (min-width: $xl_min) {
+         position: absolute;
+         left: 0;
+         right: 0;
+     }
+     background: var(--transparent-bg);
+     z-index: 99;
+     .header-main-menu > .elementor-container{
+         background-color: transparent;
+         @include box-shadow(none);
+     }
+     // Menu
+     .pxl-primary-menu{
+         // level 1
+         > li {
+             > a,
+             > .main-menu-toggle:before{
+                 color: var(--transparent-regular);
+                 &:hover{
+                     color: var(--transparent-hover);
+                 }
+             }
+             &:before{
+                 background-color: var(--transparent-hover);
+             }
+
+             &:hover{
+                 > a,
+                 > .main-menu-toggle:before{
+                     color: var(--transparent-hover);
+                 }
+                 &:before{
+                     background-color: var(--primary-color);
+                 }
+             }
+
+             &.current-menu-item,
+             &.current-menu-ancestor {
+                 > a,
+                 .main-menu-toggle:before{
+                     color: var(--transparent-active);
+                 }
+                 &:before{
+                     background-color: var(--primary-color);
+                 }
+             }
+         }
+     }
+     .menu-color{
+         color: var(--transparent-regular);
+         &:hover{
+             color: var(--transparent-hover);
+         }
+     }
+ }

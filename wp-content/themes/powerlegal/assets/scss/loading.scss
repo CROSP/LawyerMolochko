@@ -1,0 +1,118 @@
+@keyframes lineheight {
+    0% {
+        height: 0%;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+@keyframes lineround {
+    0% {
+        -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        -o-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+
+    100% {
+        -webkit-transform: translateY(200%);
+        -ms-transform: translateY(200%);
+        -o-transform: translateY(200%);
+        transform: translateY(200%);
+    }
+}
+@keyframes preloadedzero {
+    0% {
+        width: 50%;
+    }
+
+    100% {
+        width: 0%;
+    }
+}
+
+#pxl-loadding {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 99999;
+    @include d-flex();
+    align-items: center;
+    justify-content: center;
+    &.default{
+        &:before, &:after{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 50%;
+            height: 100%;
+            z-index: -1;
+            background-color: $secondary_color;
+            -webkit-transition: all 0.3s ease 0s;
+            -o-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+        }
+        &:after{
+            left: auto;
+            right: 0;
+        }
+        .loader_line{
+            margin: auto;
+            width: 1px;
+            height: 250px;
+            position: relative;
+            overflow: hidden;
+            -webkit-transition: all 0.8s ease 0s;
+            -o-transition: all 0.8s ease 0s;
+            transition: all 0.8s ease 0s;
+            &:before{
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 50%;
+                width: 1px;
+                height: 0;
+                background-color: #fff;
+                @include transform(translateY(-50%));
+                @include animation(lineheight 1000ms ease-in-out 0s forwards);
+            }
+            &:after{
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 1px;
+                height: 100%;
+                background-color: $primary_color;
+                @include transform(translateY(-100%));
+                @include animation(lineround 1200ms linear 0s infinite);
+                animation-delay: 2000ms;
+            }
+        }
+    }
+    &.content-image{
+        background-color: #fff;
+    }
+}
+
+/*Hiding all*/
+.preloaded .loader_line:after {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.preloaded .loader_line {
+    opacity: 0;
+    visibility: hidden;
+    height: 100% !important;
+}
+
+.preloaded:before,
+.preloaded:after {
+    @include animation(preloadedzero 300ms ease-in-out 500ms forwards);
+}
+
