@@ -84,7 +84,11 @@ object {
 #primary:not(.content-has-sidebar){
     .wp-block-gallery{
         &.alignfull{
-            width: 100vw;
+            width: 100%;
+            max-width: 100%;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
             .blocks-gallery-grid{
                 position: relative;
                 left: calc(-12.5% - 128px);

@@ -1,7 +1,7 @@
 <?php
 /**
- * #ddev-generated: Automatically generated WordPress settings file.
- * ddev manages this file and may delete or overwrite the file unless this comment is removed.
+ * Modified WordPress settings file for DDEV.
+ * Custom domain configuration added.
  *
  * @package ddevapp
  */
@@ -19,8 +19,11 @@ if ( getenv( 'IS_DDEV_PROJECT' ) == 'true' ) {
 	/** MySQL hostname */
 	defined( 'DB_HOST' ) || define( 'DB_HOST', 'ddev-lawyermolochko-db' );
 
-	/** WP_HOME URL */
-	defined( 'WP_HOME' ) || define( 'WP_HOME', 'http://lawyermolochko.ddev.site:8080' );
+	/** WP_HOME URL - Dynamic based on HTTP_HOST */
+	$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') || $_SERVER['SERVER_PORT'] == 443 || $_SERVER['SERVER_PORT'] == 8443 ? "https" : "http";
+	$host = $_SERVER['HTTP_HOST'] ?? 'lawyermolochko.ddev.site:8443';
+	$port = in_array($_SERVER['SERVER_PORT'], [80, 443]) ? '' : ':' . $_SERVER['SERVER_PORT'];
+	defined( 'WP_HOME' ) || define( 'WP_HOME', $protocol . '://' . $host . $port );
 
 	/** WP_SITEURL location */
 	defined( 'WP_SITEURL' ) || define( 'WP_SITEURL', WP_HOME . '/' );

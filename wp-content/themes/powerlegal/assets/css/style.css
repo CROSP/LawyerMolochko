@@ -3564,9 +3564,10 @@ html {
   box-sizing: border-box;
   overflow-x: hidden; }
 
-@media (max-width: 991px) {
-  body {
-    overflow-x: hidden; } }
+body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%; }
 
 hr {
   box-sizing: content-box;
@@ -4455,6 +4456,11 @@ blockquote {
   right: 0;
   bottom: 0;
   left: 0; }
+
+.pxl-page {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%; }
 
 .pxl-page-overlay {
   position: fixed;
@@ -8357,7 +8363,11 @@ embed, iframe, object {
     margin-bottom: 20px; }
 
 #primary:not(.content-has-sidebar) .wp-block-gallery.alignfull {
-  width: 100vw; }
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); }
   #primary:not(.content-has-sidebar) .wp-block-gallery.alignfull .blocks-gallery-grid {
     position: relative;
     left: calc(-12.5% - 128px);
@@ -8828,6 +8838,11 @@ p.no-comments {
   .pxl-entry-content .fadeInRight.animated.animated-fast {
     -webkit-animation-duration: 0.75s;
     animation-duration: 0.75s; }
+
+.elementor-widget-icon-list .elementor-icon-list-items {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
 
 .elementor-widget-icon-list .elementor-icon-list-item .elementor-icon-list-icon {
   flex: none; }
@@ -16162,7 +16177,143 @@ form.login .button {
     font-weight: normal;
     font-variant: normal;
     text-transform: none;
+    line-height: 1;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    width: 100%; }
+    -moz-osx-font-smoothing: grayscale; }
+
+/* Header Contact Styles - Elementor Icon List Widget */
+#pxl-header .elementor-widget-icon-list,
+.pxl-header .elementor-widget-icon-list,
+header .elementor-widget-icon-list {
+  margin: 0;
+}
+
+#pxl-header .elementor-icon-list--layout-inline .elementor-icon-list-items,
+.pxl-header .elementor-icon-list--layout-inline .elementor-icon-list-items,
+header .elementor-icon-list--layout-inline .elementor-icon-list-items {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 20px !important;
+  align-items: center !important;
+}
+
+#pxl-header .elementor-icon-list-items,
+.pxl-header .elementor-icon-list-items,
+header .elementor-icon-list-items {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 20px !important;
+  align-items: center !important;
+}
+
+#pxl-header .elementor-icon-list-item,
+.pxl-header .elementor-icon-list-item,
+header .elementor-icon-list-item {
+  display: flex !important;
+  align-items: center !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+  width: auto !important;
+  vertical-align: middle !important;
+}
+
+#pxl-header .elementor-icon-list--layout-inline .elementor-icon-list-item,
+.pxl-header .elementor-icon-list--layout-inline .elementor-icon-list-item,
+header .elementor-icon-list--layout-inline .elementor-icon-list-item {
+  display: flex !important;
+  align-items: center !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+  width: auto !important;
+  vertical-align: middle !important;
+}
+
+#pxl-header .elementor-icon-list-item:last-child,
+.pxl-header .elementor-icon-list-item:last-child,
+header .elementor-icon-list-item:last-child {
+  border: none !important;
+}
+
+#pxl-header .elementor-icon-list-item a,
+.pxl-header .elementor-icon-list-item a,
+header .elementor-icon-list-item a {
+  display: flex !important;
+  align-items: center !important;
+  color: var(--heading-color, #10172c) !important;
+  text-decoration: none !important;
+  transition: color 0.3s ease !important;
+  width: auto !important;
+}
+
+#pxl-header .elementor-icon-list-item a:hover,
+.pxl-header .elementor-icon-list-item a:hover,
+header .elementor-icon-list-item a:hover {
+  color: var(--primary-color, #ad9779) !important;
+}
+
+#pxl-header .elementor-icon-list-icon,
+.pxl-header .elementor-icon-list-icon,
+header .elementor-icon-list-icon {
+  margin-right: 8px !important;
+  color: var(--primary-color, #ad9779) !important;
+  font-size: 16px !important;
+  width: auto !important;
+  min-width: 20px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+#pxl-header .elementor-icon-list-text,
+.pxl-header .elementor-icon-list-text,
+header .elementor-icon-list-text {
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  color: inherit !important;
+  line-height: 1.4 !important;
+  white-space: nowrap !important;
+}
+
+/* Specific element targeting with highest specificity */
+#pxl-header .elementor-element-bf9ce43.elementor-widget-icon-list .elementor-icon-list-items,
+#pxl-header .elementor-element-bf9ce43.elementor-widget-icon-list .elementor-icon-list-item,
+#pxl-header .elementor-element-bf9ce43.elementor-widget-icon-list .elementor-icon-list-icon,
+#pxl-header .elementor-element-bf9ce43.elementor-widget-icon-list .elementor-icon-list-text {
+  all: unset !important;
+}
+
+#pxl-header .elementor-element-bf9ce43.elementor-widget-icon-list .elementor-icon-list-items {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 20px !important;
+  align-items: center !important;
+}
+
+#pxl-header .elementor-element-bf9ce43.elementor-widget-icon-list .elementor-icon-list-item {
+  display: flex !important;
+  align-items: center !important;
+  padding: 0 !important;
+  border: none !important;
+}
+
+#pxl-header .elementor-element-bf9ce43.elementor-widget-icon-list .elementor-icon-list-item:last-child {
+  border: none !important;
+}
+
+#pxl-header .elementor-element-bf9ce43.elementor-widget-icon-list .elementor-icon-list-icon {
+  margin-right: 8px !important;
+  color: var(--primary-color, #ad9779) !important;
+  font-size: 16px !important;
+  min-width: 20px !important;
+}
+
+#pxl-header .elementor-element-bf9ce43.elementor-widget-icon-list .elementor-icon-list-text {
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  color: var(--heading-color, #10172c) !important;
+  white-space: nowrap !important;
+}
+
 /*# sourceMappingURL=style.css.map */

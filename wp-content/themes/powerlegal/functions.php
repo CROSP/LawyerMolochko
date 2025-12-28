@@ -27,4 +27,28 @@ powerlegal()->require_folder('template-parts/widgets');
 if (class_exists('Woocommerce')) {
     powerlegal()->require_folder('woocommerce');
 }
+
+/**
+ * Enable SVG uploads in Elementor
+ * This allows SVG files to be uploaded even if Elementor's "Unfiltered File Uploads" setting is disabled
+ */
+add_filter('elementor/files/allow_unfiltered_upload', function($enabled) {
+    // Check if the user can upload files and if SVG sanitizer is available
+    if (current_user_can('upload_files')) {
+        // Check if DOMDocument and SimpleXMLElement are available (required for SVG sanitization)
+        if (class_exists('DOMDocument') && class_exists('SimpleXMLElement')) {
+            // Allow SVG uploads for administrators or users with upload_files capability
+            // This bypasses Elementor's unfiltered uploads setting requirement
+            return true;
+        }
+    }
+    return $enabled;
+}, 10, 1);
+
+// Also enable the option directly as a backup
+add_action('admin_init', function() {
+    if (current_user_can('upload_files') && class_exists('DOMDocument') && class_exists('SimpleXMLElement')) {
+        update_option('elementor_unfiltered_files_upload', 1);
+    }
+});
  

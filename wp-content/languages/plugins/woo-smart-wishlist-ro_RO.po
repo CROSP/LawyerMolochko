@@ -1,0 +1,862 @@
+# Translation of Plugins - WPC Smart Wishlist for WooCommerce - Stable (latest release) in Romanian
+# This file is distributed under the same license as the Plugins - WPC Smart Wishlist for WooCommerce - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-09-29 10:27:28+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n == 1) ? 0 : ((n == 0 || n % 100 >= 2 && n % 100 <= 19) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.3\n"
+"Language: ro\n"
+"Project-Id-Version: Plugins - WPC Smart Wishlist for WooCommerce - Stable (latest release)\n"
+
+#: wpc-smart-wishlist.php:1514
+msgid "Yes, open wishlist page"
+msgstr "Da, deschide pagina Listă cu preferințe"
+
+#: wpc-smart-wishlist.php:1426
+msgid "Compare"
+msgstr "Compară"
+
+#: wpc-smart-wishlist.php:937
+msgid "Premium"
+msgstr "Premium"
+
+#: wpc-smart-wishlist.php:937
+msgid "WPC Smart Wishlist"
+msgstr "WPC Smart Wishlist"
+
+#: wpc-smart-wishlist.php:1548
+msgid "Haven't any menu yet. Please go to Appearance > Menus to create one."
+msgstr "Nu ai creat niciun meniu. Ca să creezi unul, mergi la Aspect > Meniuri."
+
+#: wpc-smart-wishlist.php:1695
+msgid "Suggested"
+msgstr "Sugerat"
+
+#: wpc-smart-wishlist.php:1414
+msgid "Related products"
+msgstr "Produse similare"
+
+#: wpc-smart-wishlist.php:1403
+msgid "Limit"
+msgstr "Limită"
+
+#: wpc-smart-wishlist.php:1401
+msgid "Suggested products"
+msgstr "Produse sugerate"
+
+#: wpc-smart-wishlist.php:1701 wpc-smart-wishlist.php:2340
+msgid "You may be interested in&hellip;"
+msgstr "S-ar putea să te intereseze..."
+
+#: wpc-smart-wishlist.php:1418
+msgid "Upsells products"
+msgstr "Produse upsell"
+
+#: wpc-smart-wishlist.php:1403
+msgid "Show suggested products below products list."
+msgstr "Arată produsele sugerate sub lista cu produse."
+
+#: wpc-smart-wishlist.php:1422
+msgid "Cross-sells products"
+msgstr "Produse cu vânzări încrucișate"
+
+#: wpc-smart-wishlist.php:1199
+msgid "Above title"
+msgstr "Deasupra titlului"
+
+#: wpc-smart-wishlist.php:1355
+msgid "Use notes"
+msgstr "Folosește notele"
+
+#: wpc-smart-wishlist.php:1370
+msgid "Show notes publicly"
+msgstr "Arată notele în mod public"
+
+#: wpc-smart-wishlist.php:1343
+msgid "Show price change"
+msgstr "Arată modificările la prețuri"
+
+#: wpc-smart-wishlist.php:1347
+msgid "Increase only"
+msgstr "Numai creșterile"
+
+#: wpc-smart-wishlist.php:1348
+msgid "Decrease only"
+msgstr "Numai scăderile"
+
+#: wpc-smart-wishlist.php:1349
+msgid "Both increase and decrease"
+msgstr "Ambele, creșterile și scăderile"
+
+#: wpc-smart-wishlist.php:1351
+msgid "Show price change since a product was added."
+msgstr "Arată modificările la prețuri de când au fost adăugate produsele."
+
+#: wpc-smart-wishlist.php:1651
+msgid "Price increase"
+msgstr "Creșteri de preț"
+
+#: wpc-smart-wishlist.php:1657 wpc-smart-wishlist.php:2228
+#: wpc-smart-wishlist.php:2251
+msgid "Increase {percentage} since added"
+msgstr "Creșteri {percentage} de la adăugare"
+
+#: wpc-smart-wishlist.php:1662
+msgid "Price decrease"
+msgstr "Scăderi de preț"
+
+#: wpc-smart-wishlist.php:1668 wpc-smart-wishlist.php:2240
+msgid "Decrease {percentage} since added"
+msgstr "Scăderi {percentage} de la adăugare"
+
+#: wpc-smart-wishlist.php:3051
+msgid "After product image"
+msgstr "După imagine produs"
+
+#: wpc-smart-wishlist.php:3050
+msgid "Before product image"
+msgstr "Înainte de imagine produs"
+
+#: wpc-smart-wishlist.php:3049
+msgid "After product"
+msgstr "După produs"
+
+#: wpc-smart-wishlist.php:3048
+msgid "Before product"
+msgstr "Înainte de produs"
+
+#: wpc-smart-wishlist.php:3045
+msgid "After container"
+msgstr "După container"
+
+#: wpc-smart-wishlist.php:3044
+msgid "Before container"
+msgstr "Înainte de container"
+
+#: wpc-smart-wishlist.php:3047
+msgid "After product list"
+msgstr "După lista cu produse"
+
+#: wpc-smart-wishlist.php:3046
+msgid "Before product list"
+msgstr "Înainte de lista cu produse"
+
+#: wpc-smart-wishlist.php:3053
+msgid "After product info"
+msgstr "După informațiile despre produs"
+
+#: wpc-smart-wishlist.php:3052
+msgid "Before product info"
+msgstr "Înainte de informațiile despre produs"
+
+#: wpc-smart-wishlist.php:3055
+msgid "After product buttons"
+msgstr "După butoanele pentru produs"
+
+#: wpc-smart-wishlist.php:3054
+msgid "Before product buttons"
+msgstr "Înainte de butoanele pentru produs"
+
+#. translators: product id
+#: wpc-smart-wishlist.php:2811 wpc-smart-wishlist.php:2818
+#: wpc-smart-wishlist.php:2848 wpc-smart-wishlist.php:2852
+msgid "Product ID: %s"
+msgstr "ID produs: %s"
+
+#. translators: product id
+#: wpc-smart-wishlist.php:2819 wpc-smart-wishlist.php:2853
+msgid "This product is not available!"
+msgstr "Acest produs nu este disponibil!"
+
+#. translators: wishlist key
+#: wpc-smart-wishlist.php:2829
+msgid "This wishlist have no product!"
+msgstr "Această listă cu preferințe nu are niciun produs!"
+
+#. translators: wishlist key
+#: wpc-smart-wishlist.php:2828
+msgid "Wishlist #%s"
+msgstr "Lista cu preferințe nr. %s"
+
+#: wpc-smart-wishlist.php:1134
+msgid "Loading icon"
+msgstr "Icon încărcare"
+
+#: wpc-smart-wishlist.php:1104
+msgid "Icon only"
+msgstr "Numai icon"
+
+#: wpc-smart-wishlist.php:1103
+msgid "Icon on the right"
+msgstr "Icon în dreapta"
+
+#: wpc-smart-wishlist.php:1102
+msgid "Icon on the left"
+msgstr "Icon în stânga"
+
+#: wpc-smart-wishlist.php:1097 wpc-smart-wishlist.php:1472
+msgid "Use icon"
+msgstr "Folosește iconul"
+
+#: wpc-smart-wishlist.php:1110
+msgid "Normal icon"
+msgstr "Icon normal"
+
+#: wpc-smart-wishlist.php:1122
+msgid "Added icon"
+msgstr "Am adăugat iconul"
+
+#: wpc-smart-wishlist.php:956
+msgid "Settings updated."
+msgstr "Am actualizat setările."
+
+#: wpc-smart-wishlist.php:1299
+msgid "Left"
+msgstr "Stânga"
+
+#: wpc-smart-wishlist.php:1298
+msgid "Right"
+msgstr "Dreapta"
+
+#: wpc-smart-wishlist.php:1297
+msgid "Center"
+msgstr "Centru"
+
+#: wpc-smart-wishlist.php:1294
+msgid "Position"
+msgstr "Poziție"
+
+#: wpc-smart-wishlist.php:1159
+msgid "Message position"
+msgstr "Poziție mesaj"
+
+#: wpc-smart-wishlist.php:468 wpc-smart-wishlist.php:1852
+msgid "All products have been removed from the Wishlist!"
+msgstr "Au fost înlăturate toate produsele din lista cu preferințe!"
+
+#: wpc-smart-wishlist.php:411 wpc-smart-wishlist.php:1830
+msgid "Product has been removed from the Wishlist."
+msgstr "Produsul a fost înlăturat din lista cu preferințe."
+
+#: wpc-smart-wishlist.php:354 wpc-smart-wishlist.php:1819
+msgid "{name} is already in the Wishlist."
+msgstr "{name} este deja în lista cu preferințe."
+
+#: wpc-smart-wishlist.php:352 wpc-smart-wishlist.php:1808
+msgid "{name} has been added to Wishlist."
+msgstr "{name} a fost adăugat la lista cu preferințe."
+
+#: wpc-smart-wishlist.php:1162
+msgid "right-top"
+msgstr "sus în dreapta"
+
+#: wpc-smart-wishlist.php:1167
+msgid "left-bottom"
+msgstr "jos în stânga"
+
+#: wpc-smart-wishlist.php:1166
+msgid "left-top"
+msgstr "sus în stânga"
+
+#: wpc-smart-wishlist.php:1165
+msgid "center-bottom"
+msgstr "jos pe centru"
+
+#: wpc-smart-wishlist.php:1164
+msgid "center-top"
+msgstr "sus pe centru"
+
+#: wpc-smart-wishlist.php:1163
+msgid "right-bottom"
+msgstr "jos în dreapta"
+
+#: wpc-smart-wishlist.php:1771 wpc-smart-wishlist.php:2564
+msgid "delete"
+msgstr "șterge"
+
+#: wpc-smart-wishlist.php:1765
+msgid "Delete"
+msgstr "Șterge"
+
+#: wpc-smart-wishlist.php:1066
+msgid "Enable/disable multiple wishlist."
+msgstr "Activează/dezactivează mai multe liste cu preferințe."
+
+#: wpc-smart-wishlist.php:1060
+msgid "Enable"
+msgstr "Activează"
+
+#: wpc-smart-wishlist.php:1051 wpc-smart-wishlist.php:1717
+msgid "Multiple Wishlist"
+msgstr "Mai multe liste cu preferințe"
+
+#: wpc-smart-wishlist.php:1743
+msgid "Set default"
+msgstr "Setează ca implicită"
+
+#: wpc-smart-wishlist.php:1732 wpc-smart-wishlist.php:1738
+#: wpc-smart-wishlist.php:2524
+msgid "Manage wishlists"
+msgstr "Administrează listele cu preferințe"
+
+#: wpc-smart-wishlist.php:1721
+msgid "Primary wishlist name"
+msgstr "Nume listă principală cu preferințe"
+
+#: wpc-smart-wishlist.php:1070
+msgid "Maximum wishlists per user"
+msgstr "Număr maxim de liste cu preferințe per utilizator"
+
+#: wpc-smart-wishlist.php:1754
+msgid "Default"
+msgstr "Implicită"
+
+#: wpc-smart-wishlist.php:1749 wpc-smart-wishlist.php:2558
+msgid "set default"
+msgstr "setează ca implicită"
+
+#: wpc-smart-wishlist.php:1793 wpc-smart-wishlist.php:2578
+msgid "Add New Wishlist"
+msgstr "Adaugă listă cu preferințe nouă"
+
+#: wpc-smart-wishlist.php:1787
+msgid "Add new wishlist"
+msgstr "Adaugă listă cu preferințe nouă"
+
+#: wpc-smart-wishlist.php:1782 wpc-smart-wishlist.php:2576
+msgid "New Wishlist"
+msgstr "Listă cu preferințe nouă"
+
+#: wpc-smart-wishlist.php:1776
+msgid "Wishlist name placeholder"
+msgstr "Substituent nume listă cu preferințe"
+
+#: wpc-smart-wishlist.php:1760 wpc-smart-wishlist.php:2556
+msgid "default"
+msgstr "implicită"
+
+#: wpc-smart-wishlist.php:1841 wpc-smart-wishlist.php:1874
+#: wpc-smart-wishlist.php:2055 wpc-smart-wishlist.php:2056
+msgid "This action cannot be undone. Are you sure?"
+msgstr "Această acțiune nu poate fi anulată. Sigur?"
+
+#: wpc-smart-wishlist.php:2116
+msgid "Community support"
+msgstr "Suport din partea comunității"
+
+#: wpc-smart-wishlist.php:1890
+msgid "Need to login"
+msgstr "Este necesară autentificarea"
+
+#: wpc-smart-wishlist.php:1879
+msgid "Product does not exist"
+msgstr "Produsul nu există"
+
+#: wpc-smart-wishlist.php:1798
+msgid "Message"
+msgstr "Mesaj"
+
+#: wpc-smart-wishlist.php:1706
+msgid "Menu item label"
+msgstr "Etichetă element de meniu"
+
+#: wpc-smart-wishlist.php:1624 wpc-smart-wishlist.php:2486
+msgid "remove all"
+msgstr "înlătură tot"
+
+#. translators: link
+#: wpc-smart-wishlist.php:1310
+msgid "Read more about %s"
+msgstr "Citește mai multe despre %s"
+
+#: wpc-smart-wishlist.php:1824
+msgid "Removed from wishlist"
+msgstr "Înlăturat din lista cu preferințe"
+
+#: wpc-smart-wishlist.php:1813
+msgid "Already in the wishlist"
+msgstr "Este deja în lista cu preferințe"
+
+#: wpc-smart-wishlist.php:1802
+msgid "Added to the wishlist"
+msgstr "Adăugat în lista cu preferințe"
+
+#: wpc-smart-wishlist.php:1304
+msgid "Use perfect-scrollbar"
+msgstr "Folosește bara de derulare perfectă"
+
+#: wpc-smart-wishlist.php:1380 wpc-smart-wishlist.php:1618
+msgid "Empty wishlist button"
+msgstr "Buton Șterge lista cu preferințe"
+
+#: wpc-smart-wishlist.php:1386
+msgid "Show empty wishlist button on the popup?"
+msgstr "Arăți butonul Șterge lista cu preferințe în popup?"
+
+#: wpc-smart-wishlist.php:1835
+msgid "Empty wishlist confirm"
+msgstr "Confirmare pentru Șterge lista cu preferințe"
+
+#: wpc-smart-wishlist.php:1846
+msgid "Empty wishlist notice"
+msgstr "Notificare pentru Șterge lista cu preferințe"
+
+#: wpc-smart-wishlist.php:1912
+msgid "Have an error"
+msgstr "Este o eroare"
+
+#: wpc-smart-wishlist.php:1901
+msgid "Copied wishlist link"
+msgstr "Am copiat legătura la lista cu preferințe"
+
+#: wpc-smart-wishlist.php:1857
+msgid "Empty wishlist"
+msgstr "Șterge lista cu preferințe"
+
+#: wpc-smart-wishlist.php:1646
+msgid "Save"
+msgstr "Salvează"
+
+#: wpc-smart-wishlist.php:1640
+msgid "Save note"
+msgstr "Salvează nota"
+
+#: wpc-smart-wishlist.php:967 wpc-smart-wishlist.php:1579
+msgid "Localization"
+msgstr "Localizare"
+
+#: wpc-smart-wishlist.php:1607
+msgid "Wishlist popup heading"
+msgstr "Antet popup listă cu preferințe"
+
+#: wpc-smart-wishlist.php:1596
+msgid "Button text (added)"
+msgstr "Text buton (adăugat)"
+
+#: wpc-smart-wishlist.php:573 wpc-smart-wishlist.php:1629
+#: wpc-smart-wishlist.php:1635
+msgid "Add note"
+msgstr "Adaugă o notă"
+
+#: wpc-smart-wishlist.php:1684 wpc-smart-wishlist.php:1690
+#: wpc-smart-wishlist.php:2508
+msgid "Continue shopping"
+msgstr "Continuă cumpărăturile"
+
+#: wpc-smart-wishlist.php:1522
+msgid "Menu"
+msgstr "Meniu"
+
+#: wpc-smart-wishlist.php:1314
+msgid "Color"
+msgstr "Culoare"
+
+#: wpc-smart-wishlist.php:1287
+msgid "Popup"
+msgstr "Popup"
+
+#: wpc-smart-wishlist.php:1277
+msgid "All categories"
+msgstr "Toate categoriile"
+
+#: wpc-smart-wishlist.php:1261
+msgid "Categories"
+msgstr "Categorii"
+
+#: wpc-smart-wishlist.php:1205 wpc-smart-wishlist.php:1235
+msgid "None (hide it)"
+msgstr "Niciuna (ascunde-o)"
+
+#: wpc-smart-wishlist.php:1202
+msgid "Under price"
+msgstr "Sub preț"
+
+#: wpc-smart-wishlist.php:1200 wpc-smart-wishlist.php:1228
+msgid "Under title"
+msgstr "Sub titlu"
+
+#: wpc-smart-wishlist.php:1183
+msgid "Extra class (optional)"
+msgstr "Clase suplimentare (opțional)"
+
+#: wpc-smart-wishlist.php:1151
+msgid "Show message"
+msgstr "Arată mesajul"
+
+#: wpc-smart-wishlist.php:1146 wpc-smart-wishlist.php:1555
+msgid "Action"
+msgstr "Acțiune"
+
+#: wpc-smart-wishlist.php:1088
+msgid "Type"
+msgstr "Tip"
+
+#: wpc-smart-wishlist.php:1081 wpc-smart-wishlist.php:1091
+msgid "Button"
+msgstr "Buton"
+
+#: wpc-smart-wishlist.php:1455
+msgid "Choose a page"
+msgstr "Alege o pagină"
+
+#: wpc-smart-wishlist.php:1443
+msgid "Page"
+msgstr "Pagină"
+
+#: wpc-smart-wishlist.php:1330
+msgid "Yes, open in the new tab"
+msgstr "Da, deschide într-o filă nouă"
+
+#: wpc-smart-wishlist.php:1329
+msgid "Yes, open in the same tab"
+msgstr "Da, deschide în aceeași filă"
+
+#: wpc-smart-wishlist.php:1025 wpc-smart-wishlist.php:1034
+#: wpc-smart-wishlist.php:1044 wpc-smart-wishlist.php:1064
+#: wpc-smart-wishlist.php:1105 wpc-smart-wishlist.php:1308
+#: wpc-smart-wishlist.php:1332 wpc-smart-wishlist.php:1346
+#: wpc-smart-wishlist.php:1359 wpc-smart-wishlist.php:1374
+#: wpc-smart-wishlist.php:1384 wpc-smart-wishlist.php:1466
+#: wpc-smart-wishlist.php:1476 wpc-smart-wishlist.php:1505
+#: wpc-smart-wishlist.php:1516
+msgid "No"
+msgstr "Nu"
+
+#: wpc-smart-wishlist.php:1024 wpc-smart-wishlist.php:1033
+#: wpc-smart-wishlist.php:1043 wpc-smart-wishlist.php:1063
+#: wpc-smart-wishlist.php:1307 wpc-smart-wishlist.php:1358
+#: wpc-smart-wishlist.php:1373 wpc-smart-wishlist.php:1383
+#: wpc-smart-wishlist.php:1465 wpc-smart-wishlist.php:1475
+#: wpc-smart-wishlist.php:1504
+msgid "Yes"
+msgstr "Da"
+
+#: wpc-smart-wishlist.php:972 wpc-smart-wishlist.php:2100
+msgid "Premium Version"
+msgstr "Versiune Premium"
+
+#: wpc-smart-wishlist.php:963 wpc-smart-wishlist.php:2099
+msgid "Settings"
+msgstr "Setări"
+
+#: wpc-smart-wishlist.php:948
+msgid "Discussion"
+msgstr "Discuții"
+
+#: wpc-smart-wishlist.php:945
+msgid "Changelog"
+msgstr "Istoric modificări"
+
+#: wpc-smart-wishlist.php:943
+msgid "Reviews"
+msgstr "Recenzii"
+
+#: wpc-smart-wishlist.php:900
+msgid "Copy"
+msgstr "Copiază"
+
+#: wpc-smart-wishlist.php:871 wpc-smart-wishlist.php:1495
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: wpc-smart-wishlist.php:870 wpc-smart-wishlist.php:1494
+msgid "Twitter"
+msgstr "Twitter"
+
+#: wpc-smart-wishlist.php:869 wpc-smart-wishlist.php:1493
+msgid "Facebook"
+msgstr "Facebook"
+
+#: wpc-smart-wishlist.php:976
+msgid "Essential Kit"
+msgstr "Kit esențial"
+
+#. Author URI of the plugin
+#: wpc-smart-wishlist.php
+msgid "https://wpclever.net"
+msgstr "https://wpclever.net"
+
+#. Author of the plugin
+#: wpc-smart-wishlist.php
+msgid "WPClever"
+msgstr "WPClever"
+
+#. Plugin URI of the plugin
+#: wpc-smart-wishlist.php
+msgid "https://wpclever.net/"
+msgstr "https://wpclever.net/"
+
+#. Plugin Name of the plugin
+#: wpc-smart-wishlist.php
+msgid "WPC Smart Wishlist for WooCommerce"
+msgstr "WPC Smart Wishlist for WooCommerce"
+
+#: wpc-smart-wishlist.php:422 wpc-smart-wishlist.php:1885
+msgid "The product does not exist on the Wishlist!"
+msgstr "Produsul nu există în lista cu preferințe!"
+
+#: wpc-smart-wishlist.php:335 wpc-smart-wishlist.php:419
+#: wpc-smart-wishlist.php:469 wpc-smart-wishlist.php:494
+#: wpc-smart-wishlist.php:1863 wpc-smart-wishlist.php:2327
+msgid "There are no products on the Wishlist!"
+msgstr "Nu există niciun produs în lista cu preferințe!"
+
+#: wpc-smart-wishlist.php:372 wpc-smart-wishlist.php:427
+#: wpc-smart-wishlist.php:1918
+msgid "Have an error, please try again!"
+msgstr "Este o eroare, te rog să încerci din nou!"
+
+#. translators: stars
+#: wpc-smart-wishlist.php:940
+msgid "Thank you for using our plugin! If you are satisfied, please reward it a full five-star %s rating."
+msgstr "Îți mulțumim că folosești modulul nostru. Dacă îți place, lasă-ne o recenzie de 5 stele la %s."
+
+#: wpc-smart-wishlist.php:898
+msgid "Wishlist link:"
+msgstr "Legătură la lista cu preferințe:"
+
+#: wpc-smart-wishlist.php:885
+msgid "Share on:"
+msgstr "Partajează pe:"
+
+#: wpc-smart-wishlist.php:872 wpc-smart-wishlist.php:1496
+msgid "Mail"
+msgstr "Corespondență"
+
+#: wpc-smart-wishlist.php:770 wpc-smart-wishlist.php:1591
+#: wpc-smart-wishlist.php:2059
+msgid "Add to wishlist"
+msgstr "Adaugă în lista cu preferințe"
+
+#: wpc-smart-wishlist.php:767 wpc-smart-wishlist.php:1602
+#: wpc-smart-wishlist.php:2060
+msgid "Browse wishlist"
+msgstr "Răsfoiește lista cu preferințe"
+
+#: wpc-smart-wishlist.php:493 wpc-smart-wishlist.php:523
+msgid "Please log in to use Wishlist!"
+msgstr "Te rog autentifică-te pentru a folosi lista cu preferințe!"
+
+#: wpc-smart-wishlist.php:1446
+msgid "Settings for wishlist page."
+msgstr "Setări pentru pagina listă cu preferințe."
+
+#: wpc-smart-wishlist.php:1331
+msgid "Yes, open quick view popup"
+msgstr "Da, deschide popup-ul de vizualizare rapidă"
+
+#: wpc-smart-wishlist.php:1326
+msgid "Link to individual product"
+msgstr "Legătură la produse individuale"
+
+#: wpc-smart-wishlist.php:1036
+msgid "Auto remove product from the wishlist after adding to the cart."
+msgstr "Înlătură automat produsul din lista cu preferințe după ce este adăugat în coș."
+
+#: wpc-smart-wishlist.php:1030
+msgid "Auto remove"
+msgstr "Înlătură automat"
+
+#: wpc-smart-wishlist.php:1017
+msgid "General"
+msgstr "Generale"
+
+#: wpc-smart-wishlist.php:1581
+msgid "Leave blank to use the default text and its equivalent translation in multiple languages."
+msgstr "Lasă gol ca să folosești textul implicit și traducerea lui echivalentă în mai multe limbi."
+
+#: wpc-smart-wishlist.php:1092
+msgid "Link"
+msgstr "Legătură"
+
+#: wpc-smart-wishlist.php:1084
+msgid "Settings for \"Add to wishlist\" button."
+msgstr "Setări pentru butonul „Adaugă în lista cu preferințe”."
+
+#: wpc-smart-wishlist.php:1507
+msgid "Enable copy wishlist link to share?"
+msgstr "Activezi copierea legăturii la lista cu preferințe pentru partajare?"
+
+#: wpc-smart-wishlist.php:1501
+msgid "Copy link"
+msgstr "Copiază legătura"
+
+#: wpc-smart-wishlist.php:1481
+msgid "Social links"
+msgstr "Legături la media socială"
+
+#: wpc-smart-wishlist.php:1468
+msgid "Enable share buttons on the wishlist page?"
+msgstr "Activezi butoane de partajare în pagina listă cu preferințe?"
+
+#: wpc-smart-wishlist.php:1462
+msgid "Share buttons"
+msgstr "Butoane de partajare"
+
+#. translators: shortcode
+#: wpc-smart-wishlist.php:1458
+msgid "Add shortcode %s to display the wishlist on a page."
+msgstr "Adaugă scurt-codul %s ca să afișezi lista cu preferințe pe o pagină."
+
+#: wpc-smart-wishlist.php:1153
+msgid "Add to wishlist solely"
+msgstr "Adaugă numai în lista cu preferințe"
+
+#: wpc-smart-wishlist.php:1223
+msgid "Position on single page"
+msgstr "Poziție pe pagini singulare"
+
+#: wpc-smart-wishlist.php:1204 wpc-smart-wishlist.php:1232
+msgid "Under add to cart button"
+msgstr "Sub butonul Adaugă în coș"
+
+#: wpc-smart-wishlist.php:1203 wpc-smart-wishlist.php:1231
+msgid "Above add to cart button"
+msgstr "Deasupra butonului Adaugă în coș"
+
+#: wpc-smart-wishlist.php:1201 wpc-smart-wishlist.php:1229
+msgid "Under rating"
+msgstr "Sub evaluare"
+
+#: wpc-smart-wishlist.php:1194
+msgid "Position on archive page"
+msgstr "Poziție în pagina arhive"
+
+#: wpc-smart-wishlist.php:1190
+msgid "Add extra class for action button/link, split by one space."
+msgstr "Adaugă clase suplimentare pentru legătura/butonul de acțiune, separă-le cu spațiu."
+
+#: wpc-smart-wishlist.php:1176 wpc-smart-wishlist.php:1558
+#: wpc-smart-wishlist.php:1673 wpc-smart-wishlist.php:1679
+#: wpc-smart-wishlist.php:2503
+msgid "Open wishlist page"
+msgstr "Deschide pagina listă cu preferințe"
+
+#: wpc-smart-wishlist.php:1152 wpc-smart-wishlist.php:1175
+#: wpc-smart-wishlist.php:1559
+msgid "Open wishlist popup"
+msgstr "Deschide popup-ul listă cu preferințe"
+
+#: wpc-smart-wishlist.php:1172
+msgid "Action (added)"
+msgstr "Acțiune (adăugată)"
+
+#: wpc-smart-wishlist.php:1155
+msgid "Action triggered by clicking on the wishlist button."
+msgstr "Acțiune declanșată când se dă clic pe butonul listă cu preferințe."
+
+#: wpc-smart-wishlist.php:1253
+msgid "Shortcode"
+msgstr "Scurt-cod"
+
+#: wpc-smart-wishlist.php:1234
+msgid "Under sharing"
+msgstr "Sub partajare"
+
+#: wpc-smart-wishlist.php:1233
+msgid "Under meta"
+msgstr "Sub metadate"
+
+#: wpc-smart-wishlist.php:1230
+msgid "Under excerpt"
+msgstr "Sub rezumat"
+
+#: wpc-smart-wishlist.php:1390
+msgid "Continue shopping link"
+msgstr "Legătură la Continuă cumpărăturile"
+
+#. translators: color
+#: wpc-smart-wishlist.php:1322
+msgid "Choose the color, default %s"
+msgstr "Alege culoarea, culoarea implicită este %s"
+
+#: wpc-smart-wishlist.php:1290
+msgid "Settings for the wishlist popup."
+msgstr "Setări pentru popup-ul listă cu preferințe."
+
+#: wpc-smart-wishlist.php:1282
+msgid "Only show the wishlist button for products in selected categories."
+msgstr "Arată numai butonul listă cu preferințe pentru produsele din categoriile selectate."
+
+#: wpc-smart-wishlist.php:1397
+msgid "By default, the wishlist popup will only be closed when customers click on the \"Continue Shopping\" button."
+msgstr "Implicit, popup-ul listă cu preferințe se va închide numai când cumpărătorii dau clic pe butonul „Continuă cumpărăturile”."
+
+#. translators: count
+#: wpc-smart-wishlist.php:2848
+msgid "%s wishlist"
+msgid_plural "%s wishlists"
+msgstr[0] "o listă cu preferințe"
+msgstr[1] "%s liste cu preferințe"
+msgstr[2] "%s de liste cu preferințe"
+
+#. translators: product id
+#: wpc-smart-wishlist.php:2811
+msgid "See in wishlist"
+msgstr "Vezi în lista cu preferințe"
+
+#: wpc-smart-wishlist.php:2798 wpc-smart-wishlist.php:2892
+msgid "Guest"
+msgstr "Vizitator"
+
+#. translators: count
+#: wpc-smart-wishlist.php:2796 wpc-smart-wishlist.php:2799
+#: wpc-smart-wishlist.php:2890 wpc-smart-wishlist.php:2893
+#: wpc-smart-wishlist.php:2923
+msgid "%s product"
+msgid_plural "%s products"
+msgstr[0] "%s produs"
+msgstr[1] "%s produse"
+msgstr[2] "%s de produse"
+
+#: wpc-smart-wishlist.php:809 wpc-smart-wishlist.php:852
+#: wpc-smart-wishlist.php:1613 wpc-smart-wishlist.php:1712
+#: wpc-smart-wishlist.php:1727 wpc-smart-wishlist.php:1981
+#: wpc-smart-wishlist.php:2058 wpc-smart-wishlist.php:2455
+#: wpc-smart-wishlist.php:2473 wpc-smart-wishlist.php:2544
+#: wpc-smart-wishlist.php:2755 wpc-smart-wishlist.php:3005
+#: wpc-smart-wishlist.php:3012 wpc-smart-wishlist.php:3103
+msgid "Wishlist"
+msgstr "Listă cu preferințe"
+
+#: wpc-smart-wishlist.php:1529
+msgid "Menu(s)"
+msgstr "Meniu (meniuri)"
+
+#: wpc-smart-wishlist.php:1525
+msgid "Settings for the wishlist menu item."
+msgstr "Setări pentru elementul meniu listă cu preferințe."
+
+#: wpc-smart-wishlist.php:1376
+msgid "Show notes on each product for all visitors. The wishlist owner always can view/add/edit their notes."
+msgstr "Arată vizitatorilor notele pentru fiecare produs. Deținătorul listei cu preferințe poate să vadă, să editeze și să adauge note proprii."
+
+#: wpc-smart-wishlist.php:334 wpc-smart-wishlist.php:401
+#: wpc-smart-wishlist.php:455 wpc-smart-wishlist.php:1896
+msgid "Please log in to use the Wishlist!"
+msgstr "Te rog să te autentifici pentru a folosi lista cu preferințe!"
+
+#. translators: shortcode
+#: wpc-smart-wishlist.php:1256
+msgid "You can add a button manually by using the shortcode %1$s, e.g. %2$s for the product whose ID is 99."
+msgstr "Poți să adaugi manual un buton folosind scurt-codul %1$s, de exemplu %2$s pentru produsul care are ID-ul 99."
+
+#: wpc-smart-wishlist.php:1450
+msgid "Wishlist page"
+msgstr "Pagină Listă cu preferințe"
+
+#: wpc-smart-wishlist.php:1511
+msgid "Add Wishlist link to My Account"
+msgstr "Adaugă legătura Listă cu preferințe în Contul meu"
+
+#: wpc-smart-wishlist.php:1585
+msgid "Button text"
+msgstr "Text pentru buton"
+
+#. Description of the plugin
+#: wpc-smart-wishlist.php
+msgid "WPC Smart Wishlist is a simple but powerful tool that can help your customer save products for buying later."
+msgstr "WPC Smart Wishlist este o unealtă simplă, dar puternică, care permite clienților să salveze produse pentru a le cumpăra mai târziu."

@@ -7,7 +7,8 @@ router_http_port: "8080"
 router_https_port: "8443"
 xdebug_enabled: false
 additional_hostnames: []
-additional_fqdns: []
+additional_fqdns:
+  - lawyer-molochko.com.ua
 database:
   type: mariadb
   version: "10.11"

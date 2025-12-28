@@ -156,14 +156,121 @@ add_action( 'elementor/editor/before_enqueue_scripts', function() {
 //* Favicon
 add_action('wp_head', 'powerlegal_site_favicon');
 function powerlegal_site_favicon(){
-    $favicon = powerlegal()->get_theme_opt( 'favicon' );
+    $favicon = powerlegal()->get_opt( 'favicon' );
     if(!empty($favicon['url']))
         echo '<link rel="icon" type="image/png" href="'.esc_url($favicon['url']).'"/>';
 }
 
-/**
- * Add a pingback url auto-discovery header for singularly identifiable articles.
- */
+//* Add inline CSS for header contact fix in footer to override Elementor styles
+add_action('wp_footer', 'powerlegal_header_contact_inline_css', 999);
+function powerlegal_header_contact_inline_css() {
+    ?>
+    <style id="powerlegal-header-contact-fix-inline">
+    /* Override Elementor icon list styles in header - Load last */
+    #pxl-header .elementor-widget-icon-list .elementor-icon-list-items {
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 20px !important;
+        align-items: center !important;
+    }
+    
+    #pxl-header .elementor-widget-icon-list .elementor-icon-list-item {
+        display: flex !important;
+        align-items: center !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        border: none !important;
+        width: auto !important;
+        vertical-align: middle !important;
+    }
+    
+    #pxl-header .elementor-widget-icon-list .elementor-icon-list-item:last-child {
+        border: none !important;
+    }
+    
+    #pxl-header .elementor-widget-icon-list .elementor-icon-list-icon {
+        margin-right: 8px !important;
+        color: var(--primary-color, #ad9779) !important;
+        font-size: 16px !important;
+        width: auto !important;
+        min-width: 20px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    
+    #pxl-header .elementor-widget-icon-list .elementor-icon-list-text {
+        font-size: 15px !important;
+        font-weight: 400 !important;
+        color: rgba(255, 255, 255, 0.9) !important;
+        line-height: 1.4 !important;
+        white-space: nowrap !important;
+    }
+    
+    #pxl-header .elementor-widget-icon-list .elementor-icon-list-item a {
+        display: flex !important;
+        align-items: center !important;
+        color: rgba(255, 255, 255, 0.9) !important;
+        text-decoration: none !important;
+        transition: color 0.3s ease !important;
+        width: auto !important;
+    }
+    
+    #pxl-header .elementor-widget-icon-list .elementor-icon-list-item a:hover {
+        color: #ffffff !important;
+    }
+    
+    /* Specific element targeting with highest possible specificity */
+    html body #pxl-header .elementor-element-bf9ce43.elementor-widget-icon-list .elementor-icon-list-items,
+    html body #pxl-header .elementor-element-bf9ce43.elementor-widget-icon-list .elementor-icon-list-item,
+    html body #pxl-header .elementor-element-bf9ce43.elementor-widget-icon-list .elementor-icon-list-icon,
+    html body #pxl-header .elementor-element-bf9ce43.elementor-widget-icon-list .elementor-icon-list-text {
+        all: unset !important;
+    }
+    
+    html body #pxl-header .elementor-element-bf9ce43.elementor-widget-icon-list .elementor-icon-list-items {
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 20px !important;
+        align-items: center !important;
+    }
+    
+    html body #pxl-header .elementor-element-bf9ce43.elementor-widget-icon-list .elementor-icon-list-item {
+        display: flex !important;
+        align-items: center !important;
+        padding: 0 !important;
+        border: none !important;
+    }
+    
+    html body #pxl-header .elementor-element-bf9ce43.elementor-widget-icon-list .elementor-icon-list-item:last-child {
+        border: none !important;
+    }
+    
+    html body #pxl-header .elementor-element-bf9ce43.elementor-widget-icon-list .elementor-icon-list-icon {
+        margin-right: 8px !important;
+        color: var(--primary-color, #ad9779) !important;
+        font-size: 16px !important;
+        min-width: 20px !important;
+    }
+    
+    html body #pxl-header .elementor-element-bf9ce43.elementor-widget-icon-list .elementor-icon-list-text {
+        font-size: 15px !important;
+        font-weight: 400 !important;
+        color: rgba(255, 255, 255, 0.9) !important;
+        white-space: nowrap !important;
+    }
+    
+    html body #pxl-header .elementor-element-bf9ce43.elementor-widget-icon-list .elementor-icon-list-item a {
+        color: rgba(255, 255, 255, 0.9) !important;
+    }
+    
+    html body #pxl-header .elementor-element-bf9ce43.elementor-widget-icon-list .elementor-icon-list-item a:hover {
+        color: #ffffff !important;
+    }
+    </style>
+    <?php
+}
+
 add_action( 'wp_head', 'powerlegal_pingback_header' );
 function powerlegal_pingback_header(){
     if ( is_singular() && pings_open() )
