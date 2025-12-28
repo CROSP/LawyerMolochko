@@ -9503,12 +9503,15 @@ p.no-comments {
       width: 60px;
       height: auto;
       fill: #fff; }
+  .pxl-fancy-box .box-title {
+    font-family: var(--body-font-family); }
   .pxl-fancy-box.layout-1 .box-title {
     font-size: 28px;
     line-height: 38px;
     margin-bottom: 14px;
     color: #fff;
-    position: relative; }
+    position: relative;
+    font-family: var(--body-font-family); }
   .pxl-fancy-box.layout-1 .box-description {
     color: #d9d9d9;
     transition: all 300ms ease 0s;
@@ -9555,7 +9558,8 @@ p.no-comments {
   letter-spacing: 0.08em;
   color: #fff;
   text-transform: uppercase;
-  position: relative; }
+  position: relative;
+  font-family: var(--body-font-family); }
 .pxl-fancy-box.layout-2 .box-description {
   color: #d9d9d9; }
 .pxl-fancy-box.layout-2 .box-inner {
@@ -9643,7 +9647,8 @@ p.no-comments {
   .pxl-fancy-box.layout-3 .box-title {
     font-size: 25px;
     margin-bottom: 10px;
-    position: relative; }
+    position: relative;
+    font-family: var(--body-font-family); }
     .pxl-fancy-box.layout-3 .box-inner:hover .box-icon span.icon-index:after {
       visibility: visible;
       animation: index-pulse-small 1000ms ease-out infinite; }
@@ -9673,7 +9678,8 @@ p.no-comments {
       margin: 0;
       font-size: 28px;
       color: #fff;
-      padding: 5px 30px; }
+      padding: 5px 30px;
+      font-family: var(--body-font-family); }
   .pxl-fancy-box.layout-4 .box-inner .box-center {
     color: #d9d9d9;
     padding: 30px 30px 28px; }
@@ -9733,7 +9739,8 @@ p.no-comments {
     line-height: 24px;
     margin-bottom: 19px;
     color: #fff;
-    position: relative; }
+    position: relative;
+    font-family: var(--body-font-family); }
   .pxl-fancy-box.layout-5 .box-description {
     color: #d9d9d9;
     transition: all 300ms ease 0s;

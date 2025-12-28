@@ -2,7 +2,7 @@
 // make some configs
 if(!function_exists('powerlegal_configs')){
     function powerlegal_configs($value){ 
-        $body_font    = '\'Nunito Sans\', sans-serif';
+        $body_font    = '\'Inter\', sans-serif';
         $heading_font = '\'Cormorant Infant\', sans-serif';
           
         $configs = [
@@ -41,7 +41,7 @@ if(!function_exists('powerlegal_configs')){
                 'bg'                => '#fff',
                 'font-family'       => powerlegal()->get_theme_opt('font_body',['font-family' => $body_font], 'font-family'),
                 'font-size'         => powerlegal()->get_theme_opt('font_body',['font-size' => '16px'], 'font-size'),
-                'font-weight'       => powerlegal()->get_theme_opt('font_body',['font-weight' => '400'], 'font-weight'),
+                'font-weight'       => powerlegal()->get_theme_opt('font_body',['font-weight' => '300'], 'font-weight'),
                 'line-height'       => powerlegal()->get_theme_opt('font_body',['line-height' => '1.625'], 'line-height'),
                 'letter-spacing'    => powerlegal()->get_theme_opt('font_body',['letter-spacing' => '0px'], 'letter-spacing'),
 
@@ -168,6 +168,15 @@ if(!function_exists('powerlegal_inline_styles')){
             printf('--logo-%1$s: %2$s;', $key, $value);
         }
         echo '}';
+        
+        // Apply global font to all elements using CSS variable (not hardcoded)
+        // This ensures all blocks inherit the body font without hardcoding
+        echo 'html, body { font-family: var(--body-font-family); }';
+        // Apply to all common block and widget containers
+        echo '.elementor-widget, .elementor-element, .wp-block, [class*="block"], [class*="elementor"], .widget, .entry-content, .post-content, p, span, div, a, li, td, th, input, textarea, select, button { font-family: var(--body-font-family); }';
+        // Headings should use heading font
+        echo 'h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-family: var(--heading-font-family); }';
+        
         return ob_get_clean();
 
     }

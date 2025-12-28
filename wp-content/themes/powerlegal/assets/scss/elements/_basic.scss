@@ -696,6 +696,9 @@
 
 //* Fancy Box
 .pxl-fancy-box{
+    .box-title{
+        font-family: $body_font_family;
+    }
     &.layout-1{
         text-align: center;
         .box-inner{
@@ -757,6 +760,7 @@
             margin-bottom: 14px;
             color: #fff;
             position: relative;
+            font-family: $body_font_family;
         }
         .box-description{
             color: #d9d9d9;
@@ -811,6 +815,7 @@
             color: #fff;
             text-transform: uppercase;
             position: relative;
+            font-family: $body_font_family;
         }
         .box-description{
             color: #d9d9d9;
@@ -907,6 +912,7 @@
             font-size: 25px;
             margin-bottom: 10px;
             position: relative;
+            font-family: $body_font_family;
         }
         .box-inner:hover{
             .box-icon span.icon-index:after{
@@ -946,6 +952,7 @@
                     font-size: 28px;
                     color: #fff;
                     padding: 5px 30px;
+                    font-family: $body_font_family;
                 }
             }
             .box-center{
@@ -1020,6 +1027,7 @@
             margin-bottom: 19px;
             color: #fff;
             position: relative;
+            font-family: $body_font_family;
         }
         .box-description{
             color: #d9d9d9;

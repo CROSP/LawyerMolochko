@@ -197,16 +197,31 @@ class Powerlegal_CSS_Generator {
             printf('$header_%1$s: %2$s;', str_replace('-', '_', $key), $value);
         }
         foreach ($menu as $key => $value) {
-            printf('$menu_%1$s: %2$s;', str_replace('-', '_', $key), $value);
+            // Use CSS variable for font_family instead of hardcoded value
+            if ($key === 'font_family') {
+                printf('$menu_%1$s: %2$s;', str_replace('-', '_', $key), 'var(--heading-font-family)');
+            } else {
+                printf('$menu_%1$s: %2$s;', str_replace('-', '_', $key), $value);
+            }
         }
         foreach ($submenu as $key => $value) {
             printf('$submenu_%1$s: %2$s;', str_replace('-', '_', $key), $value);
         }
         foreach ($mobile_menu as $key => $value) {
-            printf('$mobile_menu_%1$s: %2$s;', str_replace('-', '_', $key), $value);
+            // Use CSS variable for font_family instead of hardcoded value
+            if ($key === 'font_family') {
+                printf('$mobile_menu_%1$s: %2$s;', str_replace('-', '_', $key), 'var(--heading-font-family)');
+            } else {
+                printf('$mobile_menu_%1$s: %2$s;', str_replace('-', '_', $key), $value);
+            }
         }
         foreach ($mobile_submenu as $key => $value) {
-            printf('$mobile_submenu_%1$s: %2$s;', str_replace('-', '_', $key), $value);
+            // Use CSS variable for font_family instead of hardcoded value
+            if ($key === 'font_family') {
+                printf('$mobile_submenu_%1$s: %2$s;', str_replace('-', '_', $key), 'var(--body-font-family)');
+            } else {
+                printf('$mobile_submenu_%1$s: %2$s;', str_replace('-', '_', $key), $value);
+            }
         }
         foreach ($border as $key => $value) {
             printf('$border_%1$s: %2$s;', str_replace('-', '_', $key), $value);
@@ -216,7 +231,12 @@ class Powerlegal_CSS_Generator {
             printf('$divider_%1$s: %2$s;', str_replace('-', '_', $key), $value);
         }
         foreach ($button as $key => $value) {
-            printf('$button_%1$s: %2$s;', str_replace('-', '_', $key), $value);
+            // Use CSS variable for font_family instead of hardcoded value
+            if ($key === 'font_family') {
+                printf('$button_%1$s: %2$s;', str_replace('-', '_', $key), 'var(--body-font-family)');
+            } else {
+                printf('$button_%1$s: %2$s;', str_replace('-', '_', $key), $value);
+            }
         }
 		return ob_get_clean();
 	}
