@@ -119,3 +119,6 @@
 - Make sure DDEV is running: `ddev start`
 - Server uses STDIO transport for Claude Desktop communication
 
+
+
+

@@ -94,3 +94,6 @@ ddev exec wp plugin list | grep elementor
 - All paths in Claude Desktop config use container paths (`/var/www/html/...`)
 - The `cwd` in Claude Desktop config should be your host machine project root
 
+
+
+

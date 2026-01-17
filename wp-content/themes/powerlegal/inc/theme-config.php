@@ -2,8 +2,8 @@
 // make some configs
 if(!function_exists('powerlegal_configs')){
     function powerlegal_configs($value){ 
-        $body_font    = '\'Inter\', sans-serif';
-        $heading_font = '\'Cormorant Infant\', sans-serif';
+        $body_font    = '\'Poppins\', sans-serif';
+        $heading_font = '\'Poppins\', sans-serif';
           
         $configs = [
             'theme_colors' => [
@@ -41,14 +41,14 @@ if(!function_exists('powerlegal_configs')){
                 'bg'                => '#fff',
                 'font-family'       => powerlegal()->get_theme_opt('font_body',['font-family' => $body_font], 'font-family'),
                 'font-size'         => powerlegal()->get_theme_opt('font_body',['font-size' => '16px'], 'font-size'),
-                'font-weight'       => powerlegal()->get_theme_opt('font_body',['font-weight' => '300'], 'font-weight'),
+                'font-weight'       => powerlegal()->get_theme_opt('font_body',['font-weight' => '200'], 'font-weight'),
                 'line-height'       => powerlegal()->get_theme_opt('font_body',['line-height' => '1.625'], 'line-height'),
                 'letter-spacing'    => powerlegal()->get_theme_opt('font_body',['letter-spacing' => '0px'], 'letter-spacing'),
 
             ],
             'heading' => [
                 'font-family'       => powerlegal()->get_theme_opt('font_heading',['font-family' => $heading_font], 'font-family'),
-                'font-weight'       => powerlegal()->get_theme_opt('font_heading',['font-weight' => '700'], 'font-weight'),
+                'font-weight'       => powerlegal()->get_theme_opt('font_heading',['font-weight' => '300'], 'font-weight'),
                 'line-height'       => powerlegal()->get_theme_opt('font_heading',['line-height' => '1.18'], 'line-height'),
                 'letter-spacing'    => powerlegal()->get_theme_opt('font_heading',['letter-spacing' => '0.02em'], 'letter-spacing'),
                 'color-hover'      => 'var(--primary-color)',
@@ -80,7 +80,7 @@ if(!function_exists('powerlegal_configs')){
                 'hover'       => 'var(--primary-color)',
                 'active'      => 'var(--primary-color)',
                 'font_size'   => '16px',
-                'font_weight' => 700,
+                'font_weight' => 300,
                 'font_family' => $heading_font
             ] ,
             'dropdown' => [
@@ -90,7 +90,7 @@ if(!function_exists('powerlegal_configs')){
                 'hover'         => 'var(--primary-color)',
                 'active'        => 'var(--primary-color)',
                 'font_size'     => '16px',
-                'font_weight'   => '500',
+                'font_weight'   => '200',
                 'item_bg'       => 'transparent',
                 'item_bg_hover' => '#ffffff'
             ],
@@ -99,7 +99,7 @@ if(!function_exists('powerlegal_configs')){
                 'hover'   => 'var(--primary-color)',
                 'active'  => 'var(--primary-color)',
                 'font_size'   => '17px',
-                'font_weight' => 600,
+                'font_weight' => 300,
                 'font_family' => $heading_font,
                 'item_bg'       => 'transparent',
                 'item_bg_hover' => 'transparent',
@@ -119,7 +119,7 @@ if(!function_exists('powerlegal_configs')){
             'button' => [
                 'font-family'        => $body_font,
                 'font-size'          => '14px',
-                'font-weight'        => '700',
+                'font-weight'        => '300',
                 'line-height'        => '2.5',
                 'bg-color'           => 'var(--primary-color)',      
                 'color'              => '#ffffff',
@@ -169,13 +169,16 @@ if(!function_exists('powerlegal_inline_styles')){
         }
         echo '}';
         
-        // Apply global font to all elements using CSS variable (not hardcoded)
-        // This ensures all blocks inherit the body font without hardcoding
-        echo 'html, body { font-family: var(--body-font-family); }';
-        // Apply to all common block and widget containers
-        echo '.elementor-widget, .elementor-element, .wp-block, [class*="block"], [class*="elementor"], .widget, .entry-content, .post-content, p, span, div, a, li, td, th, input, textarea, select, button { font-family: var(--body-font-family); }';
-        // Headings should use heading font
-        echo 'h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-family: var(--heading-font-family); }';
+        // Apply Poppins globally to all text elements (excluding icon fonts)
+        echo 'html, body { font-family: "Poppins", sans-serif !important; font-weight: 200 !important; }';
+        // Apply to all common text elements and containers with thin weight
+        echo '.elementor-widget, .elementor-element, .elementor-widget-container, .elementor-text-editor, .wp-block, [class*="block"], [class*="elementor"], .widget, .entry-content, .post-content, p, span:not([class*="icon"]):not([class*="zmdi"]):not([class*="pxli"]):not([class*="flaticon"]), div:not([class*="icon"]):not([class*="zmdi"]):not([class*="pxli"]):not([class*="flaticon"]), a, li, td, th, input, textarea, select, label, .menu-item, .sub-menu, .pxl-primary-menu, .pxl-mobile-menu, .pxl-primary-menu a, .pxl-mobile-menu a { font-family: "Poppins", sans-serif !important; font-weight: 200 !important; }';
+        // Headings should also use Poppins with slightly heavier but still thin weight
+        echo 'h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .widget-title, .entry-title, .post-title, .elementor-heading-title { font-family: "Poppins", sans-serif !important; font-weight: 300 !important; }';
+        // Buttons and form elements with thin weight
+        echo '.btn, button, .button, input[type="submit"], input[type="button"], .added_to_cart, input, textarea, select { font-family: "Poppins", sans-serif !important; font-weight: 300 !important; }';
+        // Menu items with thin weight
+        echo '.pxl-primary-menu > li > a, .pxl-mobile-menu .menu-item > a { font-weight: 300 !important; }';
         
         return ob_get_clean();
 

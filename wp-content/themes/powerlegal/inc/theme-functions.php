@@ -244,14 +244,9 @@ function powerlegal_fonts_url() {
     $fonts_url = '';
     $fonts     = array();
     $subsets   = 'latin,latin-ext';
-    if ( 'off' !== _x( 'on', 'Inter font: on or off', 'powerlegal' ) ) {
-        $fonts[] = 'Inter:wght@100;200;300;400;500;600;700;800;900';
-    }
-    if ( 'off' !== _x( 'on', 'Nunito Sans font: on or off', 'powerlegal' ) ) {
-        $fonts[] = 'Nunito+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900';
-    }
-    if ( 'off' !== _x( 'on', 'Cormorant Infant font: on or off', 'powerlegal' ) ) {
-        $fonts[] = 'Cormorant+Infant:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900';
+    // Load Poppins with all weights including thin weights (100, 200, 300)
+    if ( 'off' !== _x( 'on', 'Poppins font: on or off', 'powerlegal' ) ) {
+        $fonts[] = 'Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900';
     }
     if ( $fonts ) {
         $fonts_url = add_query_arg( array(

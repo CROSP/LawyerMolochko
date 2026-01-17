@@ -118,3 +118,6 @@ ddev exec wp user application-password revoke 1 <uuid>
 
 **Status**: ✅ Ready to use! Just restart Cursor.
 
+
+
+

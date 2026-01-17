@@ -103,3 +103,6 @@ When using the password in config, WordPress formats it with spaces:
 - **Installation**: `npx -y elementor-mcp`
 - **Documentation**: See GitHub repository README
 
+
+
+

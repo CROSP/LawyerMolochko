@@ -26,3 +26,6 @@ fi
 # Run ddev exec with the MCP server
 exec ddev exec php /var/www/html/wp-content/plugins/elementor-mcp-main/mcp-server.php "$@"
 
+
+
+
