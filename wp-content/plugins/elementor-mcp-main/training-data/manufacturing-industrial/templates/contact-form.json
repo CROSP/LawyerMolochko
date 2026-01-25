@@ -1,0 +1,173 @@
+{
+    "version": "0.4",
+    "title": "Contact Form",
+    "type": "section",
+    "metadata": {
+        "template_type": "section-other",
+        "include_in_zip": "1",
+        "elementor_pro_required": null,
+        "wp_page_template": "elementor_canvas"
+    },
+    "content": [
+        {
+            "id": "76c3640f",
+            "settings": {
+                "flex_direction": "column",
+                "background_background": "classic",
+                "margin": {
+                    "unit": "px",
+                    "top": "0",
+                    "right": "0",
+                    "bottom": "0",
+                    "left": "0",
+                    "isLinked": false
+                },
+                "padding": {
+                    "unit": "px",
+                    "top": "0",
+                    "right": "0",
+                    "bottom": "0",
+                    "left": "0",
+                    "isLinked": false
+                },
+                "__globals__": {
+                    "background_color": ""
+                }
+            },
+            "elements": [
+                {
+                    "id": "66d599ab",
+                    "settings": {
+                        "mf_input_label_status": "",
+                        "mf_input_label": "Email",
+                        "mf_input_name": "mf-email",
+                        "mf_input_placeholder": "Your Email",
+                        "mf_input_validation_warning_message": "This field is required.",
+                        "mf_input_background_background": "classic",
+                        "mf_input_border_border": "none",
+                        "mf_input_border_radius": {
+                            "unit": "px",
+                            "size": 30,
+                            "sizes": []
+                        },
+                        "__globals__": {
+                            "mf_input_background_color": "globals\/colors?id=687d061",
+                            "mf_input_color": "globals\/colors?id=primary",
+                            "mf_input_color_hover": "globals\/colors?id=primary",
+                            "mf_input_color_focus": "globals\/colors?id=primary"
+                        }
+                    },
+                    "elements": [],
+                    "isInner": false,
+                    "widgetType": "mf-email",
+                    "elType": "widget"
+                },
+                {
+                    "id": "10428f51",
+                    "settings": {
+                        "mf_input_label_status": "",
+                        "mf_input_label": "Text",
+                        "mf_input_name": "mf-text",
+                        "mf_input_placeholder": "Your Phone",
+                        "mf_input_validation_warning_message": "This field is required.",
+                        "mf_input_background_background": "classic",
+                        "mf_input_border_border": "none",
+                        "mf_input_border_radius": {
+                            "unit": "px",
+                            "size": 30,
+                            "sizes": []
+                        },
+                        "__globals__": {
+                            "mf_input_background_color": "globals\/colors?id=687d061",
+                            "mf_input_color": "globals\/colors?id=primary",
+                            "mf_input_color_hover": "globals\/colors?id=primary",
+                            "mf_input_color_focus": "globals\/colors?id=primary"
+                        }
+                    },
+                    "elements": [],
+                    "isInner": false,
+                    "widgetType": "mf-text",
+                    "elType": "widget"
+                },
+                {
+                    "id": "5373fe8d",
+                    "settings": {
+                        "mf_input_label_status": "",
+                        "mf_input_label": "Text",
+                        "mf_input_name": "mf-text",
+                        "mf_input_placeholder": "Your Name",
+                        "mf_input_validation_warning_message": "This field is required.",
+                        "mf_input_background_background": "classic",
+                        "mf_input_border_border": "none",
+                        "mf_input_border_radius": {
+                            "unit": "px",
+                            "size": 30,
+                            "sizes": []
+                        },
+                        "__globals__": {
+                            "mf_input_background_color": "globals\/colors?id=687d061",
+                            "mf_input_color": "globals\/colors?id=primary",
+                            "mf_input_color_hover": "globals\/colors?id=primary",
+                            "mf_input_color_focus": "globals\/colors?id=primary"
+                        }
+                    },
+                    "elements": [],
+                    "isInner": false,
+                    "widgetType": "mf-text",
+                    "elType": "widget"
+                },
+                {
+                    "id": "733567fb",
+                    "settings": {
+                        "mf_input_label_status": "",
+                        "mf_input_label": "Textarea",
+                        "mf_input_name": "mf-textarea",
+                        "mf_input_placeholder": "Your Message",
+                        "mf_input_validation_warning_message": "This field is required.",
+                        "mf_input_background_background": "classic",
+                        "mf_input_border_border": "none",
+                        "mf_input_border_radius": {
+                            "unit": "px",
+                            "size": 30,
+                            "sizes": []
+                        },
+                        "__globals__": {
+                            "mf_input_background_color": "globals\/colors?id=687d061",
+                            "mf_input_color": "globals\/colors?id=primary",
+                            "mf_input_color_hover": "globals\/colors?id=primary",
+                            "mf_input_color_focus": "globals\/colors?id=primary"
+                        }
+                    },
+                    "elements": [],
+                    "isInner": false,
+                    "widgetType": "mf-textarea",
+                    "elType": "widget"
+                },
+                {
+                    "id": "2ea01ae8",
+                    "settings": {
+                        "mf_btn_text": "Send Message",
+                        "mf_btn_align": "justify",
+                        "mf_btn_align_tablet": "justify",
+                        "mf_btn_align_mobile": "justify",
+                        "mf_hidden_input": [],
+                        "mf_btn_border_radius": {
+                            "unit": "px",
+                            "top": "30",
+                            "right": "30",
+                            "bottom": "30",
+                            "left": "30",
+                            "isLinked": true
+                        }
+                    },
+                    "elements": [],
+                    "isInner": false,
+                    "widgetType": "mf-button",
+                    "elType": "widget"
+                }
+            ],
+            "isInner": false,
+            "elType": "container"
+        }
+    ]
+}

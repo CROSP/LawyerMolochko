@@ -26,26 +26,21 @@
  * - Windows: 'C:/xampp/htdocs' or 'C:/wamp64/www'
  * - Relative: dirname(__DIR__, 3) for standard plugin location
  */
-/**
- * WordPress Root Directory
- * 
- * For DDEV installations, the WordPress root inside the container is /var/www/html
- * Auto-detection will work for both DDEV (inside container) and local installations
- */
-if (!defined('ELEMENTOR_MCP_WP_ROOT')) {
-    // Check if running inside DDEV container
-    if (getenv('IS_DDEV_PROJECT') === 'true' || file_exists('/var/www/html/wp-load.php')) {
-        // DDEV container path
-        define('ELEMENTOR_MCP_WP_ROOT', '/var/www/html');
-    } else {
-        // Auto-detect: go up 3 levels from wp-content/plugins/elementor-mcp-main/
-        define('ELEMENTOR_MCP_WP_ROOT', dirname(__DIR__, 3));
-    }
-}
+// DDEV: /var/www/html | Local: adjust as needed
+define('ELEMENTOR_MCP_WP_ROOT', '/var/www/html');
 
-// Alternative: If auto-detection doesn't work, uncomment and set manually:
-// For DDEV (inside container): define('ELEMENTOR_MCP_WP_ROOT', '/var/www/html');
-// For local: define('ELEMENTOR_MCP_WP_ROOT', '/Users/oleksandr.molochko/Development/Temp/lawyermolochko');
+/**
+ * Auto-detect WordPress root (recommended for standard installations)
+ *
+ * For standard WordPress plugin installation (wp-content/plugins/elementor-mcp),
+ * you can leave this commented out and let auto-detection work.
+ *
+ * Uncomment and set if:
+ * - You have a non-standard WordPress installation
+ * - Auto-detection fails
+ * - You want to specify the exact path for performance
+ */
+// define('ELEMENTOR_MCP_WP_ROOT', dirname(__DIR__, 3));
 
 // ============================================================================
 // LOGGING CONFIGURATION

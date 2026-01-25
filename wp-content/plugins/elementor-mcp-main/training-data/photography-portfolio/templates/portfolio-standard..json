@@ -1,0 +1,1245 @@
+{
+    "version": "0.4",
+    "title": "Portfolio Standard.",
+    "type": "page",
+    "metadata": {
+        "template_type": "single-page",
+        "include_in_zip": "1",
+        "elementor_pro_required": null,
+        "wp_page_template": "elementor_header_footer"
+    },
+    "content": [
+        {
+            "id": "2c16c59b",
+            "settings": {
+                "flex_direction": "column",
+                "min_height": {
+                    "unit": "vh",
+                    "size": 50,
+                    "sizes": []
+                },
+                "min_height_tablet": {
+                    "unit": "vh",
+                    "size": "",
+                    "sizes": []
+                },
+                "min_height_mobile": {
+                    "unit": "vh",
+                    "size": "",
+                    "sizes": []
+                },
+                "flex_justify_content": "center",
+                "background_background": "classic",
+                "background_image": {
+                    "url": "http:\/\/kfkit.rometheme.pro\/codagraph\/wp-content\/uploads\/sites\/4\/2025\/06\/fashionable-asian-woman-in-red-leather-jacket-posi-DAN9YMH.jpg",
+                    "id": 864,
+                    "size": "",
+                    "alt": "",
+                    "source": "library"
+                },
+                "background_position": "center center",
+                "background_repeat": "no-repeat",
+                "background_size": "cover",
+                "background_overlay_background": "classic",
+                "background_overlay_opacity": {
+                    "unit": "px",
+                    "size": 0.9,
+                    "sizes": []
+                },
+                "__globals__": {
+                    "background_overlay_color": "globals\/colors?id=a061769"
+                },
+                "_title": "Banner"
+            },
+            "elements": [
+                {
+                    "id": "6cdf6b56",
+                    "settings": {
+                        "content_width": "full"
+                    },
+                    "elements": [
+                        {
+                            "id": "7b1c34bb",
+                            "settings": {
+                                "title": "Portfolio Standard.",
+                                "__globals__": {
+                                    "title_color": "",
+                                    "typography_typography": ""
+                                },
+                                "align": "center",
+                                "typography_font_family": "Poppins",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 48,
+                                    "sizes": []
+                                },
+                                "typography_font_size_mobile": {
+                                    "unit": "px",
+                                    "size": 24,
+                                    "sizes": []
+                                },
+                                "typography_font_weight": "600",
+                                "typography_line_height": {
+                                    "unit": "em",
+                                    "size": 1,
+                                    "sizes": []
+                                },
+                                "header_size": "h1",
+                                "__dynamic__": {
+                                    "title": "[elementor-tag id=\"5eff1df\" name=\"page-title\" settings=\"%7B%7D\"]"
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "heading",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "78b57b38",
+                            "settings": {
+                                "editor": "<p><a href=\"#\">Home<\/a> \/ Portfolio Standard<\/p>",
+                                "__globals__": {
+                                    "text_color": "globals\/colors?id=text",
+                                    "typography_typography": "globals\/typography?id=e941688"
+                                },
+                                "align": "center"
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "text-editor",
+                            "elType": "widget"
+                        }
+                    ],
+                    "isInner": true,
+                    "elType": "container"
+                }
+            ],
+            "isInner": false,
+            "elType": "container"
+        },
+        {
+            "id": "4bbc59a2",
+            "settings": {
+                "flex_direction": "column",
+                "padding": {
+                    "unit": "em",
+                    "top": "7",
+                    "right": "0",
+                    "bottom": "7",
+                    "left": "0",
+                    "isLinked": false
+                },
+                "padding_tablet": {
+                    "unit": "em",
+                    "top": "",
+                    "right": "",
+                    "bottom": "",
+                    "left": "",
+                    "isLinked": true
+                },
+                "padding_mobile": {
+                    "unit": "em",
+                    "top": "",
+                    "right": "",
+                    "bottom": "",
+                    "left": "",
+                    "isLinked": true
+                },
+                "_title": "Photo"
+            },
+            "elements": [
+                {
+                    "id": "4808de33",
+                    "settings": {
+                        "content_width": "full",
+                        "flex_direction": "row"
+                    },
+                    "elements": [
+                        {
+                            "id": "5a4f335b",
+                            "settings": {
+                                "content_width": "full"
+                            },
+                            "elements": [
+                                {
+                                    "id": "657d7669",
+                                    "settings": {
+                                        "content_width": "full"
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "53db7618",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "overflow": "hidden"
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "18be7487",
+                                                    "settings": {
+                                                        "image": {
+                                                            "url": "http:\/\/kfkit.rometheme.pro\/codagraph\/wp-content\/uploads\/sites\/4\/2021\/05\/Portfolio-10jpg.jpg",
+                                                            "id": 1039,
+                                                            "size": "",
+                                                            "alt": "",
+                                                            "source": "library"
+                                                        },
+                                                        "height_mobile": {
+                                                            "unit": "px",
+                                                            "size": 220,
+                                                            "sizes": []
+                                                        },
+                                                        "object-fit_mobile": "cover",
+                                                        "_animation": "fadeIn",
+                                                        "_animation_delay": 100,
+                                                        "link_to": "file",
+                                                        "link": {
+                                                            "url": "#",
+                                                            "is_external": "",
+                                                            "nofollow": "",
+                                                            "custom_attributes": ""
+                                                        },
+                                                        "open_lightbox": "yes",
+                                                        "hover_animation": "grow"
+                                                    },
+                                                    "elements": [],
+                                                    "isInner": false,
+                                                    "widgetType": "image",
+                                                    "elType": "widget"
+                                                }
+                                            ],
+                                            "isInner": true,
+                                            "elType": "container"
+                                        },
+                                        {
+                                            "id": "43414ef8",
+                                            "settings": {
+                                                "title": "Fashion Photography",
+                                                "header_size": "h4",
+                                                "__globals__": {
+                                                    "title_color": "globals\/colors?id=accent"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "widgetType": "heading",
+                                            "elType": "widget"
+                                        },
+                                        {
+                                            "id": "5f76c279",
+                                            "settings": {
+                                                "editor": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit ut elit tellus luctus nec ullamcor.<\/p>"
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "widgetType": "text-editor",
+                                            "elType": "widget"
+                                        }
+                                    ],
+                                    "isInner": true,
+                                    "elType": "container"
+                                },
+                                {
+                                    "id": "19ad4ad",
+                                    "settings": {
+                                        "content_width": "full"
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "1fcce537",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "overflow": "hidden"
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "74f2916a",
+                                                    "settings": {
+                                                        "image": {
+                                                            "url": "http:\/\/kfkit.rometheme.pro\/codagraph\/wp-content\/uploads\/sites\/4\/2021\/05\/Portfolio-5.jpg",
+                                                            "id": 1034,
+                                                            "size": "",
+                                                            "alt": "",
+                                                            "source": "library"
+                                                        },
+                                                        "height_mobile": {
+                                                            "unit": "px",
+                                                            "size": 220,
+                                                            "sizes": []
+                                                        },
+                                                        "object-fit_mobile": "cover",
+                                                        "_animation": "fadeIn",
+                                                        "_animation_delay": 400,
+                                                        "link_to": "file",
+                                                        "link": {
+                                                            "url": "#",
+                                                            "is_external": "",
+                                                            "nofollow": "",
+                                                            "custom_attributes": ""
+                                                        },
+                                                        "open_lightbox": "yes",
+                                                        "hover_animation": "grow"
+                                                    },
+                                                    "elements": [],
+                                                    "isInner": false,
+                                                    "widgetType": "image",
+                                                    "elType": "widget"
+                                                }
+                                            ],
+                                            "isInner": true,
+                                            "elType": "container"
+                                        },
+                                        {
+                                            "id": "7f5e124d",
+                                            "settings": {
+                                                "title": "Fashion Photography",
+                                                "header_size": "h4",
+                                                "__globals__": {
+                                                    "title_color": "globals\/colors?id=accent"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "widgetType": "heading",
+                                            "elType": "widget"
+                                        },
+                                        {
+                                            "id": "53f63c1e",
+                                            "settings": {
+                                                "editor": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit ut elit tellus luctus nec ullamcor.<\/p>"
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "widgetType": "text-editor",
+                                            "elType": "widget"
+                                        }
+                                    ],
+                                    "isInner": true,
+                                    "elType": "container"
+                                },
+                                {
+                                    "id": "5cf83988",
+                                    "settings": {
+                                        "content_width": "full"
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "4a9c6abf",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "overflow": "hidden"
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "1d7615cb",
+                                                    "settings": {
+                                                        "image": {
+                                                            "url": "http:\/\/kfkit.rometheme.pro\/codagraph\/wp-content\/uploads\/sites\/4\/2021\/05\/Portfolio-8.jpg",
+                                                            "id": 1037,
+                                                            "size": "",
+                                                            "alt": "",
+                                                            "source": "library"
+                                                        },
+                                                        "height_mobile": {
+                                                            "unit": "px",
+                                                            "size": 220,
+                                                            "sizes": []
+                                                        },
+                                                        "object-fit_mobile": "cover",
+                                                        "_animation": "fadeIn",
+                                                        "_animation_delay": 700,
+                                                        "link_to": "file",
+                                                        "link": {
+                                                            "url": "#",
+                                                            "is_external": "",
+                                                            "nofollow": "",
+                                                            "custom_attributes": ""
+                                                        },
+                                                        "open_lightbox": "yes",
+                                                        "hover_animation": "grow"
+                                                    },
+                                                    "elements": [],
+                                                    "isInner": false,
+                                                    "widgetType": "image",
+                                                    "elType": "widget"
+                                                }
+                                            ],
+                                            "isInner": true,
+                                            "elType": "container"
+                                        },
+                                        {
+                                            "id": "2b5a7d28",
+                                            "settings": {
+                                                "title": "Landscape Photography",
+                                                "header_size": "h4",
+                                                "__globals__": {
+                                                    "title_color": "globals\/colors?id=accent"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "widgetType": "heading",
+                                            "elType": "widget"
+                                        },
+                                        {
+                                            "id": "60615c84",
+                                            "settings": {
+                                                "editor": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit ut elit tellus luctus nec ullamcor.<\/p>"
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "widgetType": "text-editor",
+                                            "elType": "widget"
+                                        }
+                                    ],
+                                    "isInner": true,
+                                    "elType": "container"
+                                },
+                                {
+                                    "id": "33170f97",
+                                    "settings": {
+                                        "content_width": "full"
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "103755cd",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "overflow": "hidden"
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "16cb41aa",
+                                                    "settings": {
+                                                        "image": {
+                                                            "url": "http:\/\/kfkit.rometheme.pro\/codagraph\/wp-content\/uploads\/sites\/4\/2021\/05\/Portfolio-6.jpg",
+                                                            "id": 1035,
+                                                            "size": "",
+                                                            "alt": "",
+                                                            "source": "library"
+                                                        },
+                                                        "height_mobile": {
+                                                            "unit": "px",
+                                                            "size": 220,
+                                                            "sizes": []
+                                                        },
+                                                        "object-fit_mobile": "cover",
+                                                        "_animation": "fadeIn",
+                                                        "_animation_delay": 1000,
+                                                        "link_to": "file",
+                                                        "link": {
+                                                            "url": "#",
+                                                            "is_external": "",
+                                                            "nofollow": "",
+                                                            "custom_attributes": ""
+                                                        },
+                                                        "open_lightbox": "yes",
+                                                        "hover_animation": "grow"
+                                                    },
+                                                    "elements": [],
+                                                    "isInner": false,
+                                                    "widgetType": "image",
+                                                    "elType": "widget"
+                                                }
+                                            ],
+                                            "isInner": true,
+                                            "elType": "container"
+                                        },
+                                        {
+                                            "id": "4102069a",
+                                            "settings": {
+                                                "title": "Potrait Photography",
+                                                "header_size": "h4",
+                                                "__globals__": {
+                                                    "title_color": "globals\/colors?id=accent"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "widgetType": "heading",
+                                            "elType": "widget"
+                                        },
+                                        {
+                                            "id": "33d3f44a",
+                                            "settings": {
+                                                "editor": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit ut elit tellus luctus nec ullamcor.<\/p>"
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "widgetType": "text-editor",
+                                            "elType": "widget"
+                                        }
+                                    ],
+                                    "isInner": true,
+                                    "elType": "container"
+                                }
+                            ],
+                            "isInner": true,
+                            "elType": "container"
+                        },
+                        {
+                            "id": "28cb2537",
+                            "settings": {
+                                "content_width": "full"
+                            },
+                            "elements": [
+                                {
+                                    "id": "564c3295",
+                                    "settings": {
+                                        "content_width": "full"
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "da70dcf",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "overflow": "hidden"
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "2f61ae6e",
+                                                    "settings": {
+                                                        "image": {
+                                                            "url": "http:\/\/kfkit.rometheme.pro\/codagraph\/wp-content\/uploads\/sites\/4\/2021\/05\/Portfolio-1.jpg",
+                                                            "id": 1030,
+                                                            "size": "",
+                                                            "alt": "",
+                                                            "source": "library"
+                                                        },
+                                                        "height_mobile": {
+                                                            "unit": "px",
+                                                            "size": 220,
+                                                            "sizes": []
+                                                        },
+                                                        "object-fit_mobile": "cover",
+                                                        "_animation": "fadeIn",
+                                                        "_animation_delay": 200,
+                                                        "link_to": "file",
+                                                        "link": {
+                                                            "url": "#",
+                                                            "is_external": "",
+                                                            "nofollow": "",
+                                                            "custom_attributes": ""
+                                                        },
+                                                        "open_lightbox": "yes",
+                                                        "hover_animation": "grow"
+                                                    },
+                                                    "elements": [],
+                                                    "isInner": false,
+                                                    "widgetType": "image",
+                                                    "elType": "widget"
+                                                }
+                                            ],
+                                            "isInner": true,
+                                            "elType": "container"
+                                        },
+                                        {
+                                            "id": "6bef87be",
+                                            "settings": {
+                                                "title": "Fashion Photography",
+                                                "header_size": "h4",
+                                                "__globals__": {
+                                                    "title_color": "globals\/colors?id=accent"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "widgetType": "heading",
+                                            "elType": "widget"
+                                        },
+                                        {
+                                            "id": "69263cf7",
+                                            "settings": {
+                                                "editor": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit ut elit tellus luctus nec ullamcor.<\/p>"
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "widgetType": "text-editor",
+                                            "elType": "widget"
+                                        }
+                                    ],
+                                    "isInner": true,
+                                    "elType": "container"
+                                },
+                                {
+                                    "id": "652258ba",
+                                    "settings": {
+                                        "content_width": "full"
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "7c9110f9",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "overflow": "hidden"
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "6c3b8a5d",
+                                                    "settings": {
+                                                        "image": {
+                                                            "url": "http:\/\/kfkit.rometheme.pro\/codagraph\/wp-content\/uploads\/sites\/4\/2021\/05\/Portfolio-9.jpg",
+                                                            "id": 1038,
+                                                            "size": "",
+                                                            "alt": "",
+                                                            "source": "library"
+                                                        },
+                                                        "height_mobile": {
+                                                            "unit": "px",
+                                                            "size": 220,
+                                                            "sizes": []
+                                                        },
+                                                        "object-fit_mobile": "cover",
+                                                        "_animation": "fadeIn",
+                                                        "_animation_delay": 500,
+                                                        "image_size": "full",
+                                                        "link_to": "file",
+                                                        "link": {
+                                                            "url": "#",
+                                                            "is_external": "",
+                                                            "nofollow": "",
+                                                            "custom_attributes": ""
+                                                        },
+                                                        "open_lightbox": "yes",
+                                                        "hover_animation": "grow"
+                                                    },
+                                                    "elements": [],
+                                                    "isInner": false,
+                                                    "widgetType": "image",
+                                                    "elType": "widget"
+                                                }
+                                            ],
+                                            "isInner": true,
+                                            "elType": "container"
+                                        },
+                                        {
+                                            "id": "503366a",
+                                            "settings": {
+                                                "title": "Landscape Photography",
+                                                "header_size": "h4",
+                                                "__globals__": {
+                                                    "title_color": "globals\/colors?id=accent"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "widgetType": "heading",
+                                            "elType": "widget"
+                                        },
+                                        {
+                                            "id": "5f7fc0a5",
+                                            "settings": {
+                                                "editor": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit ut elit tellus luctus nec ullamcor.<\/p>"
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "widgetType": "text-editor",
+                                            "elType": "widget"
+                                        }
+                                    ],
+                                    "isInner": true,
+                                    "elType": "container"
+                                },
+                                {
+                                    "id": "8174576",
+                                    "settings": {
+                                        "content_width": "full"
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "73e722f9",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "overflow": "hidden"
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "d0214e3",
+                                                    "settings": {
+                                                        "image": {
+                                                            "url": "http:\/\/kfkit.rometheme.pro\/codagraph\/wp-content\/uploads\/sites\/4\/2021\/05\/Portfolio-3.jpg",
+                                                            "id": 1032,
+                                                            "size": "",
+                                                            "alt": "",
+                                                            "source": "library"
+                                                        },
+                                                        "height_mobile": {
+                                                            "unit": "px",
+                                                            "size": 220,
+                                                            "sizes": []
+                                                        },
+                                                        "object-fit_mobile": "cover",
+                                                        "_animation": "fadeIn",
+                                                        "_animation_delay": 800,
+                                                        "link_to": "file",
+                                                        "link": {
+                                                            "url": "#",
+                                                            "is_external": "",
+                                                            "nofollow": "",
+                                                            "custom_attributes": ""
+                                                        },
+                                                        "open_lightbox": "yes",
+                                                        "hover_animation": "grow"
+                                                    },
+                                                    "elements": [],
+                                                    "isInner": false,
+                                                    "widgetType": "image",
+                                                    "elType": "widget"
+                                                }
+                                            ],
+                                            "isInner": true,
+                                            "elType": "container"
+                                        },
+                                        {
+                                            "id": "69d657ac",
+                                            "settings": {
+                                                "title": "Landscape Photography",
+                                                "header_size": "h4",
+                                                "__globals__": {
+                                                    "title_color": "globals\/colors?id=accent"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "widgetType": "heading",
+                                            "elType": "widget"
+                                        },
+                                        {
+                                            "id": "55f5326b",
+                                            "settings": {
+                                                "editor": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit ut elit tellus luctus nec ullamcor.<\/p>"
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "widgetType": "text-editor",
+                                            "elType": "widget"
+                                        }
+                                    ],
+                                    "isInner": true,
+                                    "elType": "container"
+                                },
+                                {
+                                    "id": "243c3ebb",
+                                    "settings": {
+                                        "content_width": "full"
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "68a2191a",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "overflow": "hidden"
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "6751c149",
+                                                    "settings": {
+                                                        "image": {
+                                                            "url": "http:\/\/kfkit.rometheme.pro\/codagraph\/wp-content\/uploads\/sites\/4\/2021\/05\/Portfolio-7.jpg",
+                                                            "id": 1036,
+                                                            "size": "",
+                                                            "alt": "",
+                                                            "source": "library"
+                                                        },
+                                                        "height_mobile": {
+                                                            "unit": "px",
+                                                            "size": 220,
+                                                            "sizes": []
+                                                        },
+                                                        "object-fit_mobile": "cover",
+                                                        "_animation": "fadeIn",
+                                                        "_animation_delay": 1100,
+                                                        "link_to": "file",
+                                                        "link": {
+                                                            "url": "#",
+                                                            "is_external": "",
+                                                            "nofollow": "",
+                                                            "custom_attributes": ""
+                                                        },
+                                                        "open_lightbox": "yes",
+                                                        "hover_animation": "grow"
+                                                    },
+                                                    "elements": [],
+                                                    "isInner": false,
+                                                    "widgetType": "image",
+                                                    "elType": "widget"
+                                                }
+                                            ],
+                                            "isInner": true,
+                                            "elType": "container"
+                                        },
+                                        {
+                                            "id": "87262dc",
+                                            "settings": {
+                                                "title": "Potrait Photography",
+                                                "header_size": "h4",
+                                                "__globals__": {
+                                                    "title_color": "globals\/colors?id=accent"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "widgetType": "heading",
+                                            "elType": "widget"
+                                        },
+                                        {
+                                            "id": "1db177bb",
+                                            "settings": {
+                                                "editor": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit ut elit tellus luctus nec ullamcor.<\/p>"
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "widgetType": "text-editor",
+                                            "elType": "widget"
+                                        }
+                                    ],
+                                    "isInner": true,
+                                    "elType": "container"
+                                }
+                            ],
+                            "isInner": true,
+                            "elType": "container"
+                        },
+                        {
+                            "id": "4efd0833",
+                            "settings": {
+                                "content_width": "full"
+                            },
+                            "elements": [
+                                {
+                                    "id": "b5bc772",
+                                    "settings": {
+                                        "content_width": "full"
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "6d81683f",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "overflow": "hidden"
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "624a38b9",
+                                                    "settings": {
+                                                        "image": {
+                                                            "url": "http:\/\/kfkit.rometheme.pro\/codagraph\/wp-content\/uploads\/sites\/4\/2021\/05\/Portfolio-12.jpg",
+                                                            "id": 1041,
+                                                            "size": "",
+                                                            "alt": "",
+                                                            "source": "library"
+                                                        },
+                                                        "height_mobile": {
+                                                            "unit": "px",
+                                                            "size": 220,
+                                                            "sizes": []
+                                                        },
+                                                        "object-fit_mobile": "cover",
+                                                        "_animation": "fadeIn",
+                                                        "_animation_delay": 300,
+                                                        "link_to": "file",
+                                                        "link": {
+                                                            "url": "#",
+                                                            "is_external": "",
+                                                            "nofollow": "",
+                                                            "custom_attributes": ""
+                                                        },
+                                                        "open_lightbox": "yes",
+                                                        "hover_animation": "grow"
+                                                    },
+                                                    "elements": [],
+                                                    "isInner": false,
+                                                    "widgetType": "image",
+                                                    "elType": "widget"
+                                                }
+                                            ],
+                                            "isInner": true,
+                                            "elType": "container"
+                                        },
+                                        {
+                                            "id": "9ff1a89",
+                                            "settings": {
+                                                "title": "Fashion Photography",
+                                                "header_size": "h4",
+                                                "__globals__": {
+                                                    "title_color": "globals\/colors?id=accent"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "widgetType": "heading",
+                                            "elType": "widget"
+                                        },
+                                        {
+                                            "id": "206abcde",
+                                            "settings": {
+                                                "editor": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit ut elit tellus luctus nec ullamcor.<\/p>"
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "widgetType": "text-editor",
+                                            "elType": "widget"
+                                        }
+                                    ],
+                                    "isInner": true,
+                                    "elType": "container"
+                                },
+                                {
+                                    "id": "57005cf9",
+                                    "settings": {
+                                        "content_width": "full"
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "7b5f07a0",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "overflow": "hidden"
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "6e24f3e7",
+                                                    "settings": {
+                                                        "image": {
+                                                            "url": "http:\/\/kfkit.rometheme.pro\/codagraph\/wp-content\/uploads\/sites\/4\/2021\/05\/Portfolio-2.jpg",
+                                                            "id": 1031,
+                                                            "size": "",
+                                                            "alt": "",
+                                                            "source": "library"
+                                                        },
+                                                        "height_mobile": {
+                                                            "unit": "px",
+                                                            "size": 220,
+                                                            "sizes": []
+                                                        },
+                                                        "object-fit_mobile": "cover",
+                                                        "_animation": "fadeIn",
+                                                        "_animation_delay": 600,
+                                                        "link_to": "file",
+                                                        "link": {
+                                                            "url": "#",
+                                                            "is_external": "",
+                                                            "nofollow": "",
+                                                            "custom_attributes": ""
+                                                        },
+                                                        "open_lightbox": "yes",
+                                                        "hover_animation": "grow"
+                                                    },
+                                                    "elements": [],
+                                                    "isInner": false,
+                                                    "widgetType": "image",
+                                                    "elType": "widget"
+                                                }
+                                            ],
+                                            "isInner": true,
+                                            "elType": "container"
+                                        },
+                                        {
+                                            "id": "36855d07",
+                                            "settings": {
+                                                "title": "Landscape Photography",
+                                                "header_size": "h4",
+                                                "__globals__": {
+                                                    "title_color": "globals\/colors?id=accent"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "widgetType": "heading",
+                                            "elType": "widget"
+                                        },
+                                        {
+                                            "id": "7e6ed29c",
+                                            "settings": {
+                                                "editor": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit ut elit tellus luctus nec ullamcor.<\/p>"
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "widgetType": "text-editor",
+                                            "elType": "widget"
+                                        }
+                                    ],
+                                    "isInner": true,
+                                    "elType": "container"
+                                },
+                                {
+                                    "id": "7f6b68bc",
+                                    "settings": {
+                                        "content_width": "full"
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "65fd61d6",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "overflow": "hidden"
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "540d76e9",
+                                                    "settings": {
+                                                        "image": {
+                                                            "url": "http:\/\/kfkit.rometheme.pro\/codagraph\/wp-content\/uploads\/sites\/4\/2021\/05\/Portfolio-11.jpg",
+                                                            "id": 1040,
+                                                            "size": "",
+                                                            "alt": "",
+                                                            "source": "library"
+                                                        },
+                                                        "height_mobile": {
+                                                            "unit": "px",
+                                                            "size": 220,
+                                                            "sizes": []
+                                                        },
+                                                        "object-fit_mobile": "cover",
+                                                        "_animation": "fadeIn",
+                                                        "_animation_delay": 900,
+                                                        "link_to": "file",
+                                                        "link": {
+                                                            "url": "#",
+                                                            "is_external": "",
+                                                            "nofollow": "",
+                                                            "custom_attributes": ""
+                                                        },
+                                                        "open_lightbox": "yes",
+                                                        "hover_animation": "grow"
+                                                    },
+                                                    "elements": [],
+                                                    "isInner": false,
+                                                    "widgetType": "image",
+                                                    "elType": "widget"
+                                                }
+                                            ],
+                                            "isInner": true,
+                                            "elType": "container"
+                                        },
+                                        {
+                                            "id": "32292e69",
+                                            "settings": {
+                                                "title": "Potrait Photography",
+                                                "header_size": "h4",
+                                                "__globals__": {
+                                                    "title_color": "globals\/colors?id=accent"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "widgetType": "heading",
+                                            "elType": "widget"
+                                        },
+                                        {
+                                            "id": "45b46e8f",
+                                            "settings": {
+                                                "editor": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit ut elit tellus luctus nec ullamcor.<\/p>"
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "widgetType": "text-editor",
+                                            "elType": "widget"
+                                        }
+                                    ],
+                                    "isInner": true,
+                                    "elType": "container"
+                                },
+                                {
+                                    "id": "1f9a4755",
+                                    "settings": {
+                                        "content_width": "full"
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "7fe0c3a3",
+                                            "settings": {
+                                                "content_width": "full",
+                                                "overflow": "hidden"
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "2edc67d2",
+                                                    "settings": {
+                                                        "image": {
+                                                            "url": "http:\/\/kfkit.rometheme.pro\/codagraph\/wp-content\/uploads\/sites\/4\/2021\/05\/Portfolio-4.jpg",
+                                                            "id": 1033,
+                                                            "size": "",
+                                                            "alt": "",
+                                                            "source": "library"
+                                                        },
+                                                        "height_mobile": {
+                                                            "unit": "px",
+                                                            "size": 220,
+                                                            "sizes": []
+                                                        },
+                                                        "object-fit_mobile": "cover",
+                                                        "_animation": "fadeIn",
+                                                        "_animation_delay": 1200,
+                                                        "link_to": "file",
+                                                        "open_lightbox": "yes",
+                                                        "hover_animation": "grow"
+                                                    },
+                                                    "elements": [],
+                                                    "isInner": false,
+                                                    "widgetType": "image",
+                                                    "elType": "widget"
+                                                }
+                                            ],
+                                            "isInner": true,
+                                            "elType": "container"
+                                        },
+                                        {
+                                            "id": "45c00c98",
+                                            "settings": {
+                                                "title": "Potrait Photography",
+                                                "header_size": "h4",
+                                                "__globals__": {
+                                                    "title_color": "globals\/colors?id=accent"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "widgetType": "heading",
+                                            "elType": "widget"
+                                        },
+                                        {
+                                            "id": "291ab2cf",
+                                            "settings": {
+                                                "editor": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit ut elit tellus luctus nec ullamcor.<\/p>"
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "widgetType": "text-editor",
+                                            "elType": "widget"
+                                        }
+                                    ],
+                                    "isInner": true,
+                                    "elType": "container"
+                                }
+                            ],
+                            "isInner": true,
+                            "elType": "container"
+                        }
+                    ],
+                    "isInner": true,
+                    "elType": "container"
+                }
+            ],
+            "isInner": false,
+            "elType": "container"
+        },
+        {
+            "id": "371cb25f",
+            "settings": {
+                "flex_direction": "column",
+                "background_background": "classic",
+                "padding": {
+                    "unit": "em",
+                    "top": "7",
+                    "right": "0",
+                    "bottom": "7",
+                    "left": "0",
+                    "isLinked": false
+                },
+                "padding_tablet": {
+                    "unit": "em",
+                    "top": "",
+                    "right": "",
+                    "bottom": "",
+                    "left": "",
+                    "isLinked": true
+                },
+                "padding_mobile": {
+                    "unit": "em",
+                    "top": "",
+                    "right": "",
+                    "bottom": "",
+                    "left": "",
+                    "isLinked": true
+                },
+                "__globals__": {
+                    "background_color": "globals\/colors?id=primary"
+                },
+                "_title": "CTA"
+            },
+            "elements": [
+                {
+                    "id": "6873ecc6",
+                    "settings": {
+                        "content_width": "full",
+                        "animation": "fadeInLeft"
+                    },
+                    "elements": [
+                        {
+                            "id": "75b39e74",
+                            "settings": {
+                                "title": "Take your moment with Codagraph",
+                                "align": "center",
+                                "__globals__": {
+                                    "title_color": "",
+                                    "typography_typography": ""
+                                },
+                                "typography_font_family": "Poppins",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 36,
+                                    "sizes": []
+                                },
+                                "typography_font_size_tablet": {
+                                    "unit": "px",
+                                    "size": 28,
+                                    "sizes": []
+                                },
+                                "typography_font_size_mobile": {
+                                    "unit": "px",
+                                    "size": 21,
+                                    "sizes": []
+                                },
+                                "typography_font_weight": "600",
+                                "typography_line_height": {
+                                    "unit": "em",
+                                    "size": 1.3,
+                                    "sizes": []
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "heading",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "49b81c0b",
+                            "settings": {
+                                "editor": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>",
+                                "align": "center",
+                                "_element_width": "initial",
+                                "_element_width_tablet": "inherit",
+                                "_element_custom_width": {
+                                    "unit": "%",
+                                    "size": 56,
+                                    "sizes": []
+                                },
+                                "_flex_align_self": "center"
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "text-editor",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "765dc8d6",
+                            "settings": {
+                                "text": "GET STARTED",
+                                "align": "center"
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "button",
+                            "elType": "widget"
+                        }
+                    ],
+                    "isInner": true,
+                    "elType": "container"
+                }
+            ],
+            "isInner": false,
+            "elType": "container"
+        }
+    ]
+}

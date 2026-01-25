@@ -1,0 +1,1757 @@
+{
+    "manifest_version": "1.0.9",
+    "title": "Restaurant",
+    "page_builder": "elementor",
+    "kit_version": "2.9.7",
+    "templates": [
+        {
+            "name": "Global Kit Styles",
+            "screenshot": "screenshots\/default-kit.png",
+            "source": "templates\/global.json",
+            "preview_url": "http:\/\/template-kits.cmsmasters.net",
+            "type": "section",
+            "category": "page",
+            "metadata": {
+                "template_type": "global-styles",
+                "include_in_zip": "1",
+                "elementor_pro_required": null,
+                "additional_template_information": [
+                    "These are the global theme styles configured through the Elementor Theme Styles area."
+                ]
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Block with Image and Price List",
+            "screenshot": "screenshots\/block-with-image-and-price-list.png",
+            "source": "templates\/block-with-image-and-price-list.json",
+            "preview_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/template-kit\/block-with-image-and-price-list\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-pricing",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Contacts Block",
+            "screenshot": "screenshots\/contacts-block.png",
+            "source": "templates\/contacts-block.json",
+            "preview_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/template-kit\/contacts-block\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-contact",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Menu Popup",
+            "screenshot": "screenshots\/menu-popup.png",
+            "source": "templates\/menu-popup.json",
+            "preview_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/?elementor_library=header-pro-popup",
+            "type": "popup",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-popup",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "popup",
+                "elementor_pro_conditions": [
+                    "include\/general"
+                ],
+                "additional_template_information": [
+                    "This is a \"Popup\" template for Elementor Pro.",
+                    "This template will display on: Entire Site."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Footer PRO",
+            "screenshot": "screenshots\/footer-pro.png",
+            "source": "templates\/footer-pro.json",
+            "preview_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/?elementor_library=footer-pro",
+            "type": "footer",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-footer",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "footer",
+                "elementor_pro_conditions": [
+                    "include\/general"
+                ],
+                "additional_template_information": [
+                    "This is a \"Footer\" template for Elementor Pro.",
+                    "This template will display on: Entire Site."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Blog",
+            "screenshot": "screenshots\/blog.png",
+            "source": "templates\/blog.json",
+            "preview_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/?elementor_library=blog",
+            "type": "archive",
+            "category": "page",
+            "metadata": {
+                "template_type": "archive-blog",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "archive",
+                "elementor_pro_conditions": [
+                    "include\/archive"
+                ],
+                "additional_template_information": [
+                    "This is a \"Archive\" template for Elementor Pro.",
+                    "This template will display on: All Archives."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Single Post PRO",
+            "screenshot": "screenshots\/single-post-pro.png",
+            "source": "templates\/single-post-pro.json",
+            "preview_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/?elementor_library=single-post-pro",
+            "type": "single",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-post",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "single",
+                "elementor_pro_conditions": [
+                    "include\/singular\/post"
+                ],
+                "additional_template_information": [
+                    "This is a \"Single\" template for Elementor Pro.",
+                    "This template will display on: Posts."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "404 Page",
+            "screenshot": "screenshots\/404-page.png",
+            "source": "templates\/404-page.json",
+            "preview_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/?elementor_library=404-page",
+            "type": "single",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-404",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "single",
+                "elementor_pro_conditions": [
+                    "include\/singular\/not_found404"
+                ],
+                "additional_template_information": [
+                    "This is a \"Single\" template for Elementor Pro.",
+                    "This template will display on: 404 Page."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Home Pro",
+            "screenshot": "screenshots\/home-pro.png",
+            "source": "templates\/home-pro.json",
+            "preview_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/template-kit\/home-pro\/",
+            "type": "section",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-home",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Section with Image and Price List",
+            "screenshot": "screenshots\/section-with-image-and-price-list.png",
+            "source": "templates\/section-with-image-and-price-list.json",
+            "preview_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/template-kit\/section-with-image-and-price-list\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-pricing",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Section with Image and Contact Form",
+            "screenshot": "screenshots\/section-with-image-and-contact-form.png",
+            "source": "templates\/section-with-image-and-contact-form.json",
+            "preview_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/template-kit\/section-with-image-and-contact-form\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-contact",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Block with Heading, Text and Image",
+            "screenshot": "screenshots\/block-with-heading-text-and-image.png",
+            "source": "templates\/block-with-heading-text-and-image.json",
+            "preview_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/template-kit\/block-with-heading-text-and-image\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-features",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Section with Image",
+            "screenshot": "screenshots\/section-with-image.png",
+            "source": "templates\/section-with-image.json",
+            "preview_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/template-kit\/section-with-image\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-features",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Section with Two Columns",
+            "screenshot": "screenshots\/section-with-two-columns.png",
+            "source": "templates\/section-with-two-columns.json",
+            "preview_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/template-kit\/section-with-two-columns\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-features",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Heading Block",
+            "screenshot": "screenshots\/heading-block.png",
+            "source": "templates\/heading-block.json",
+            "preview_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/template-kit\/heading-block\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-features",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Section with Image, Heading and Inner Section",
+            "screenshot": "screenshots\/section-with-image-heading-and-inner-section.png",
+            "source": "templates\/section-with-image-heading-and-inner-section.json",
+            "preview_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/template-kit\/section-with-image-heading-and-inner-section\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-features",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Section with Heading",
+            "screenshot": "screenshots\/section-with-heading.png",
+            "source": "templates\/section-with-heading.json",
+            "preview_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/template-kit\/section-with-heading\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-features",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Block with Call to Action",
+            "screenshot": "screenshots\/block-with-call-to-action.png",
+            "source": "templates\/block-with-call-to-action.json",
+            "preview_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/template-kit\/block-with-call-to-action\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-cta",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Gallery Block",
+            "screenshot": "screenshots\/gallery-block.png",
+            "source": "templates\/gallery-block.json",
+            "preview_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/template-kit\/gallery-block\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-gallery",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Section with Heading and Price List",
+            "screenshot": "screenshots\/section-with-heading-and-price-list.png",
+            "source": "templates\/section-with-heading-and-price-list.json",
+            "preview_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/template-kit\/section-with-heading-and-prie-list\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-pricing",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Block with Image, Heading and Text",
+            "screenshot": "screenshots\/block-with-image-heading-and-text.png",
+            "source": "templates\/block-with-image-heading-and-text.json",
+            "preview_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/template-kit\/block-with-image-heading-and-text\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-features",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Section with Heading and Image",
+            "screenshot": "screenshots\/section-with-heading-and-image.png",
+            "source": "templates\/section-with-heading-and-image.json",
+            "preview_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/template-kit\/section-with-heading-and-image\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-features",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Home Basic",
+            "screenshot": "screenshots\/home-basic.png",
+            "source": "templates\/home-basic.json",
+            "preview_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/template-kit\/home-basic\/",
+            "type": "section",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-home",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Menu Page",
+            "screenshot": "screenshots\/menu-page.png",
+            "source": "templates\/menu-page.json",
+            "preview_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/template-kit\/menu\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Single Post Content",
+            "screenshot": "screenshots\/single-post-content.png",
+            "source": "templates\/single-post-content.json",
+            "preview_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/template-kit\/single-post\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-other",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Book a Table Page",
+            "screenshot": "screenshots\/book-a-table-page.png",
+            "source": "templates\/book-a-table-page.json",
+            "preview_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/template-kit\/book-a-table\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Footer Basic",
+            "screenshot": "screenshots\/footer-basic.png",
+            "source": "templates\/footer-basic.json",
+            "preview_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/template-kit\/footer-basic\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-footer",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Header Basic",
+            "screenshot": "screenshots\/header-basic.png",
+            "source": "templates\/header-basic.json",
+            "preview_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/template-kit\/header-basic\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-header",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Contacts Page",
+            "screenshot": "screenshots\/contacts-page.png",
+            "source": "templates\/contacts-page.json",
+            "preview_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/template-kit\/contacts\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "About Page",
+            "screenshot": "screenshots\/about-page.png",
+            "source": "templates\/about-page.json",
+            "preview_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/template-kit\/about\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Header PRO",
+            "screenshot": "screenshots\/header-pro.png",
+            "source": "templates\/header-pro.json",
+            "preview_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/?elementor_library=header-pro",
+            "type": "header",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-header",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "header",
+                "elementor_pro_conditions": [
+                    "include\/general"
+                ],
+                "additional_template_information": [
+                    "This is a \"Header\" template for Elementor Pro.",
+                    "This template will display on: Entire Site."
+                ]
+            },
+            "elementor_pro_required": true
+        }
+    ],
+    "required_plugins": [
+        {
+            "name": "Elementor Pro",
+            "version": "2.8.4",
+            "file": "elementor-pro\/elementor-pro.php",
+            "author": "Elementor.com"
+        },
+        {
+            "name": "Elementor",
+            "version": "2.9.7",
+            "file": "elementor\/elementor.php",
+            "author": "Elementor.com"
+        }
+    ],
+    "images": [
+        {
+            "filename": "menu-2.jpg",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/menu-2-600x894.jpg",
+            "templates": [
+                {
+                    "source": "templates\/block-with-image-and-price-list.json",
+                    "name": "Block with Image and Price List"
+                },
+                {
+                    "source": "templates\/menu-page.json",
+                    "name": "Menu Page"
+                }
+            ],
+            "filesize": 75542,
+            "dimensions": [
+                694,
+                1034
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/unsplash.com\/photos\/J7J0oTps4Lo"
+        },
+        {
+            "filename": "shape-4.png",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/shape-4.png",
+            "templates": [
+                {
+                    "source": "templates\/block-with-image-and-price-list.json",
+                    "name": "Block with Image and Price List"
+                },
+                {
+                    "source": "templates\/home-pro.json",
+                    "name": "Home Pro"
+                },
+                {
+                    "source": "templates\/block-with-image-heading-and-text.json",
+                    "name": "Block with Image, Heading and Text"
+                },
+                {
+                    "source": "templates\/home-basic.json",
+                    "name": "Home Basic"
+                },
+                {
+                    "source": "templates\/menu-page.json",
+                    "name": "Menu Page"
+                }
+            ],
+            "filesize": 579,
+            "dimensions": [
+                92,
+                84
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "shape-9.png",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/shape-9.png",
+            "templates": [
+                {
+                    "source": "templates\/contacts-block.json",
+                    "name": "Contacts Block"
+                },
+                {
+                    "source": "templates\/home-pro.json",
+                    "name": "Home Pro"
+                },
+                {
+                    "source": "templates\/home-basic.json",
+                    "name": "Home Basic"
+                },
+                {
+                    "source": "templates\/menu-page.json",
+                    "name": "Menu Page"
+                },
+                {
+                    "source": "templates\/contacts-page.json",
+                    "name": "Contacts Page"
+                },
+                {
+                    "source": "templates\/about-page.json",
+                    "name": "About Page"
+                }
+            ],
+            "filesize": 15085,
+            "dimensions": [
+                412,
+                312
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "home-7.jpg",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/home-7.jpg",
+            "templates": [
+                {
+                    "source": "templates\/contacts-block.json",
+                    "name": "Contacts Block"
+                },
+                {
+                    "source": "templates\/home-pro.json",
+                    "name": "Home Pro"
+                },
+                {
+                    "source": "templates\/home-basic.json",
+                    "name": "Home Basic"
+                },
+                {
+                    "source": "templates\/menu-page.json",
+                    "name": "Menu Page"
+                },
+                {
+                    "source": "templates\/contacts-page.json",
+                    "name": "Contacts Page"
+                },
+                {
+                    "source": "templates\/about-page.json",
+                    "name": "About Page"
+                }
+            ],
+            "filesize": 56705,
+            "dimensions": [
+                440,
+                660
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/unsplash.com\/photos\/grr45Jl_2Y4"
+        },
+        {
+            "filename": "shape-10.png",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/shape-10.png",
+            "templates": [
+                {
+                    "source": "templates\/contacts-block.json",
+                    "name": "Contacts Block"
+                },
+                {
+                    "source": "templates\/home-pro.json",
+                    "name": "Home Pro"
+                },
+                {
+                    "source": "templates\/section-with-image-and-price-list.json",
+                    "name": "Section with Image and Price List"
+                },
+                {
+                    "source": "templates\/section-with-image-and-contact-form.json",
+                    "name": "Section with Image and Contact Form"
+                },
+                {
+                    "source": "templates\/home-basic.json",
+                    "name": "Home Basic"
+                },
+                {
+                    "source": "templates\/menu-page.json",
+                    "name": "Menu Page"
+                },
+                {
+                    "source": "templates\/contacts-page.json",
+                    "name": "Contacts Page"
+                },
+                {
+                    "source": "templates\/about-page.json",
+                    "name": "About Page"
+                }
+            ],
+            "filesize": 610,
+            "dimensions": [
+                83,
+                85
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "home-1.jpg",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/home-1-600x579.jpg",
+            "templates": [
+                {
+                    "source": "templates\/menu-popup.json",
+                    "name": "Menu Popup"
+                },
+                {
+                    "source": "templates\/home-pro.json",
+                    "name": "Home Pro"
+                },
+                {
+                    "source": "templates\/section-with-heading-and-image.json",
+                    "name": "Section with Heading and Image"
+                },
+                {
+                    "source": "templates\/home-basic.json",
+                    "name": "Home Basic"
+                }
+            ],
+            "filesize": 196397,
+            "dimensions": [
+                1120,
+                1080
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/unsplash.com\/photos\/yLwU0zoc-m0"
+        },
+        {
+            "filename": "Arrow-2.svg",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/Arrow-2.svg",
+            "templates": [
+                {
+                    "source": "templates\/menu-popup.json",
+                    "name": "Menu Popup"
+                }
+            ],
+            "filesize": 467,
+            "dimensions": [
+                0,
+                0
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "author.jpg",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/author.jpg",
+            "templates": [
+                {
+                    "source": "templates\/blog.json",
+                    "name": "Blog"
+                },
+                {
+                    "source": "templates\/single-post-pro.json",
+                    "name": "Single Post PRO"
+                }
+            ],
+            "filesize": 14119,
+            "dimensions": [
+                158,
+                158
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/portrait-of-smiling-lady-with-dark-curly-hair-and--MF7X2LV"
+        },
+        {
+            "filename": "shape-8.png",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/shape-8.png",
+            "templates": [
+                {
+                    "source": "templates\/single-post-pro.json",
+                    "name": "Single Post PRO"
+                },
+                {
+                    "source": "templates\/home-pro.json",
+                    "name": "Home Pro"
+                },
+                {
+                    "source": "templates\/section-with-image-heading-and-inner-section.json",
+                    "name": "Section with Image, Heading and Inner Section"
+                },
+                {
+                    "source": "templates\/home-basic.json",
+                    "name": "Home Basic"
+                }
+            ],
+            "filesize": 54239,
+            "dimensions": [
+                587,
+                873
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "about-us-9.png",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/about-us-9.png",
+            "templates": [
+                {
+                    "source": "templates\/single-post-pro.json",
+                    "name": "Single Post PRO"
+                },
+                {
+                    "source": "templates\/home-pro.json",
+                    "name": "Home Pro"
+                },
+                {
+                    "source": "templates\/section-with-image.json",
+                    "name": "Section with Image"
+                },
+                {
+                    "source": "templates\/gallery-block.json",
+                    "name": "Gallery Block"
+                },
+                {
+                    "source": "templates\/home-basic.json",
+                    "name": "Home Basic"
+                },
+                {
+                    "source": "templates\/about-page.json",
+                    "name": "About Page"
+                }
+            ],
+            "filesize": 550,
+            "dimensions": [
+                84,
+                77
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "404-page-1.png",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/404-page-1-600x348.png",
+            "templates": [
+                {
+                    "source": "templates\/404-page.json",
+                    "name": "404 Page"
+                }
+            ],
+            "filesize": 267351,
+            "dimensions": [
+                708,
+                411
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "contacts-1.png",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/contacts-1.png",
+            "templates": [
+                {
+                    "source": "templates\/404-page.json",
+                    "name": "404 Page"
+                }
+            ],
+            "filesize": 10489,
+            "dimensions": [
+                550,
+                182
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "shape-1.png",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/shape-1.png",
+            "templates": [
+                {
+                    "source": "templates\/home-pro.json",
+                    "name": "Home Pro"
+                },
+                {
+                    "source": "templates\/section-with-heading-and-image.json",
+                    "name": "Section with Heading and Image"
+                },
+                {
+                    "source": "templates\/home-basic.json",
+                    "name": "Home Basic"
+                },
+                {
+                    "source": "templates\/book-a-table-page.json",
+                    "name": "Book a Table Page"
+                }
+            ],
+            "filesize": 661,
+            "dimensions": [
+                89,
+                93
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "shape-2.png",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/shape-2.png",
+            "templates": [
+                {
+                    "source": "templates\/home-pro.json",
+                    "name": "Home Pro"
+                },
+                {
+                    "source": "templates\/section-with-two-columns.json",
+                    "name": "Section with Two Columns"
+                },
+                {
+                    "source": "templates\/section-with-heading-and-image.json",
+                    "name": "Section with Heading and Image"
+                },
+                {
+                    "source": "templates\/home-basic.json",
+                    "name": "Home Basic"
+                },
+                {
+                    "source": "templates\/book-a-table-page.json",
+                    "name": "Book a Table Page"
+                },
+                {
+                    "source": "templates\/about-page.json",
+                    "name": "About Page"
+                }
+            ],
+            "filesize": 17036,
+            "dimensions": [
+                389,
+                385
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Arrow.svg",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/Arrow.svg",
+            "templates": [
+                {
+                    "source": "templates\/home-pro.json",
+                    "name": "Home Pro"
+                },
+                {
+                    "source": "templates\/section-with-image-and-contact-form.json",
+                    "name": "Section with Image and Contact Form"
+                },
+                {
+                    "source": "templates\/block-with-heading-text-and-image.json",
+                    "name": "Block with Heading, Text and Image"
+                },
+                {
+                    "source": "templates\/heading-block.json",
+                    "name": "Heading Block"
+                },
+                {
+                    "source": "templates\/section-with-image-heading-and-inner-section.json",
+                    "name": "Section with Image, Heading and Inner Section"
+                },
+                {
+                    "source": "templates\/block-with-image-heading-and-text.json",
+                    "name": "Block with Image, Heading and Text"
+                },
+                {
+                    "source": "templates\/section-with-heading-and-image.json",
+                    "name": "Section with Heading and Image"
+                },
+                {
+                    "source": "templates\/home-basic.json",
+                    "name": "Home Basic"
+                },
+                {
+                    "source": "templates\/menu-page.json",
+                    "name": "Menu Page"
+                },
+                {
+                    "source": "templates\/book-a-table-page.json",
+                    "name": "Book a Table Page"
+                },
+                {
+                    "source": "templates\/contacts-page.json",
+                    "name": "Contacts Page"
+                },
+                {
+                    "source": "templates\/about-page.json",
+                    "name": "About Page"
+                }
+            ],
+            "filesize": 467,
+            "dimensions": [
+                0,
+                0
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "shape-3.png",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/shape-3-600x537.png",
+            "templates": [
+                {
+                    "source": "templates\/home-pro.json",
+                    "name": "Home Pro"
+                },
+                {
+                    "source": "templates\/section-with-heading.json",
+                    "name": "Section with Heading"
+                },
+                {
+                    "source": "templates\/home-basic.json",
+                    "name": "Home Basic"
+                },
+                {
+                    "source": "templates\/single-post-content.json",
+                    "name": "Single Post Content"
+                }
+            ],
+            "filesize": 57981,
+            "dimensions": [
+                838,
+                750
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "rectangle.jpg",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/rectangle-600x783.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-pro.json",
+                    "name": "Home Pro"
+                },
+                {
+                    "source": "templates\/block-with-image-heading-and-text.json",
+                    "name": "Block with Image, Heading and Text"
+                },
+                {
+                    "source": "templates\/home-basic.json",
+                    "name": "Home Basic"
+                }
+            ],
+            "filesize": 8409,
+            "dimensions": [
+                725,
+                946
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "home-2-2.jpg",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/home-2-2-600x497.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-pro.json",
+                    "name": "Home Pro"
+                },
+                {
+                    "source": "templates\/block-with-image-heading-and-text.json",
+                    "name": "Block with Image, Heading and Text"
+                },
+                {
+                    "source": "templates\/home-basic.json",
+                    "name": "Home Basic"
+                }
+            ],
+            "filesize": 101319,
+            "dimensions": [
+                900,
+                746
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/chef-presenting-food-to-customers-in-the-restauran-PZKLXJM"
+        },
+        {
+            "filename": "gallery-1-2.jpg",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/gallery-1-2-600x250.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-pro.json",
+                    "name": "Home Pro"
+                },
+                {
+                    "source": "templates\/gallery-block.json",
+                    "name": "Gallery Block"
+                },
+                {
+                    "source": "templates\/home-basic.json",
+                    "name": "Home Basic"
+                }
+            ],
+            "filesize": 483913,
+            "dimensions": [
+                1920,
+                800
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/unsplash.com\/photos\/baxEyU9FL7g"
+        },
+        {
+            "filename": "gallery-2.jpg",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/gallery-2-600x250.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-pro.json",
+                    "name": "Home Pro"
+                },
+                {
+                    "source": "templates\/gallery-block.json",
+                    "name": "Gallery Block"
+                },
+                {
+                    "source": "templates\/home-basic.json",
+                    "name": "Home Basic"
+                }
+            ],
+            "filesize": 395432,
+            "dimensions": [
+                1920,
+                800
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/unsplash.com\/photos\/H77w4l3UWy4"
+        },
+        {
+            "filename": "gallery-3.jpg",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/gallery-3-600x250.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-pro.json",
+                    "name": "Home Pro"
+                },
+                {
+                    "source": "templates\/gallery-block.json",
+                    "name": "Gallery Block"
+                },
+                {
+                    "source": "templates\/home-basic.json",
+                    "name": "Home Basic"
+                }
+            ],
+            "filesize": 416592,
+            "dimensions": [
+                1920,
+                800
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/unsplash.com\/photos\/5JGENcbOl14"
+        },
+        {
+            "filename": "home-3.jpg",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/home-3.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-pro.json",
+                    "name": "Home Pro"
+                },
+                {
+                    "source": "templates\/block-with-call-to-action.json",
+                    "name": "Block with Call to Action"
+                },
+                {
+                    "source": "templates\/home-basic.json",
+                    "name": "Home Basic"
+                }
+            ],
+            "filesize": 99019,
+            "dimensions": [
+                574,
+                758
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/unsplash.com\/photos\/kmLYWnA9uiI"
+        },
+        {
+            "filename": "home-4.jpg",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/home-4.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-pro.json",
+                    "name": "Home Pro"
+                },
+                {
+                    "source": "templates\/block-with-call-to-action.json",
+                    "name": "Block with Call to Action"
+                },
+                {
+                    "source": "templates\/home-basic.json",
+                    "name": "Home Basic"
+                }
+            ],
+            "filesize": 66730,
+            "dimensions": [
+                574,
+                758
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/unsplash.com\/photos\/mR_lv_G7XCY"
+        },
+        {
+            "filename": "shape-6.png",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/shape-6.png",
+            "templates": [
+                {
+                    "source": "templates\/home-pro.json",
+                    "name": "Home Pro"
+                },
+                {
+                    "source": "templates\/block-with-call-to-action.json",
+                    "name": "Block with Call to Action"
+                },
+                {
+                    "source": "templates\/home-basic.json",
+                    "name": "Home Basic"
+                },
+                {
+                    "source": "templates\/menu-page.json",
+                    "name": "Menu Page"
+                },
+                {
+                    "source": "templates\/single-post-content.json",
+                    "name": "Single Post Content"
+                },
+                {
+                    "source": "templates\/contacts-page.json",
+                    "name": "Contacts Page"
+                }
+            ],
+            "filesize": 617,
+            "dimensions": [
+                119,
+                119
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "shape-7.png",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/shape-7.png",
+            "templates": [
+                {
+                    "source": "templates\/home-pro.json",
+                    "name": "Home Pro"
+                },
+                {
+                    "source": "templates\/home-basic.json",
+                    "name": "Home Basic"
+                },
+                {
+                    "source": "templates\/single-post-content.json",
+                    "name": "Single Post Content"
+                }
+            ],
+            "filesize": 16120,
+            "dimensions": [
+                416,
+                412
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "home-5.jpg",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/home-5-600x810.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-pro.json",
+                    "name": "Home Pro"
+                },
+                {
+                    "source": "templates\/section-with-image-heading-and-inner-section.json",
+                    "name": "Section with Image, Heading and Inner Section"
+                },
+                {
+                    "source": "templates\/home-basic.json",
+                    "name": "Home Basic"
+                }
+            ],
+            "filesize": 160121,
+            "dimensions": [
+                800,
+                1080
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/unsplash.com\/photos\/Djtc1T38-GY"
+        },
+        {
+            "filename": "home-6.jpg",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/home-6.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home-pro.json",
+                    "name": "Home Pro"
+                },
+                {
+                    "source": "templates\/section-with-image-heading-and-inner-section.json",
+                    "name": "Section with Image, Heading and Inner Section"
+                },
+                {
+                    "source": "templates\/home-basic.json",
+                    "name": "Home Basic"
+                }
+            ],
+            "filesize": 39880,
+            "dimensions": [
+                261,
+                261
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/unsplash.com\/photos\/c9d2oXaNv0c"
+        },
+        {
+            "filename": "menu-3.jpg",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/menu-3-600x830.jpg",
+            "templates": [
+                {
+                    "source": "templates\/section-with-image-and-price-list.json",
+                    "name": "Section with Image and Price List"
+                },
+                {
+                    "source": "templates\/menu-page.json",
+                    "name": "Menu Page"
+                }
+            ],
+            "filesize": 115860,
+            "dimensions": [
+                759,
+                1050
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/unsplash.com\/photos\/LES_MAwsC2M"
+        },
+        {
+            "filename": "contacts-2.jpg",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/contacts-2-600x810.jpg",
+            "templates": [
+                {
+                    "source": "templates\/section-with-image-and-contact-form.json",
+                    "name": "Section with Image and Contact Form"
+                },
+                {
+                    "source": "templates\/contacts-page.json",
+                    "name": "Contacts Page"
+                }
+            ],
+            "filesize": 149351,
+            "dimensions": [
+                800,
+                1080
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/unsplash.com\/photos\/etWlaoFnTl4"
+        },
+        {
+            "filename": "contacts-6.png",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/contacts-6-600x576.png",
+            "templates": [
+                {
+                    "source": "templates\/section-with-image-and-contact-form.json",
+                    "name": "Section with Image and Contact Form"
+                },
+                {
+                    "source": "templates\/contacts-page.json",
+                    "name": "Contacts Page"
+                }
+            ],
+            "filesize": 77116,
+            "dimensions": [
+                909,
+                873
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "about-us-11.png",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/about-us-11-600x719.png",
+            "templates": [
+                {
+                    "source": "templates\/block-with-heading-text-and-image.json",
+                    "name": "Block with Heading, Text and Image"
+                },
+                {
+                    "source": "templates\/about-page.json",
+                    "name": "About Page"
+                }
+            ],
+            "filesize": 4601,
+            "dimensions": [
+                745,
+                893
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "about-us-5-1.jpg",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/about-us-5-1-600x420.jpg",
+            "templates": [
+                {
+                    "source": "templates\/block-with-heading-text-and-image.json",
+                    "name": "Block with Heading, Text and Image"
+                },
+                {
+                    "source": "templates\/about-page.json",
+                    "name": "About Page"
+                }
+            ],
+            "filesize": 79760,
+            "dimensions": [
+                989,
+                693
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/ru\/lady-choosing-wine-in-restaurant-89BPTYF"
+        },
+        {
+            "filename": "about-us-6.jpg",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/about-us-6-600x272.jpg",
+            "templates": [
+                {
+                    "source": "templates\/block-with-heading-text-and-image.json",
+                    "name": "Block with Heading, Text and Image"
+                },
+                {
+                    "source": "templates\/about-page.json",
+                    "name": "About Page"
+                }
+            ],
+            "filesize": 216513,
+            "dimensions": [
+                947,
+                429
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/unsplash.com\/photos\/kuAXlOcQPJI"
+        },
+        {
+            "filename": "about-us-4.jpg",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/about-us-4-600x225.jpg",
+            "templates": [
+                {
+                    "source": "templates\/section-with-image.json",
+                    "name": "Section with Image"
+                },
+                {
+                    "source": "templates\/about-page.json",
+                    "name": "About Page"
+                }
+            ],
+            "filesize": 109913,
+            "dimensions": [
+                1920,
+                720
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/unsplash.com\/photos\/5xltWMpkN3E"
+        },
+        {
+            "filename": "about-us-2-1.jpg",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/about-us-2-1-600x405.jpg",
+            "templates": [
+                {
+                    "source": "templates\/section-with-two-columns.json",
+                    "name": "Section with Two Columns"
+                },
+                {
+                    "source": "templates\/about-page.json",
+                    "name": "About Page"
+                }
+            ],
+            "filesize": 244606,
+            "dimensions": [
+                820,
+                554
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/ru\/empty-cafe-3VQE8F5"
+        },
+        {
+            "filename": "about-us-7.png",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/about-us-7-600x692.png",
+            "templates": [
+                {
+                    "source": "templates\/section-with-two-columns.json",
+                    "name": "Section with Two Columns"
+                },
+                {
+                    "source": "templates\/about-page.json",
+                    "name": "About Page"
+                }
+            ],
+            "filesize": 37585,
+            "dimensions": [
+                650,
+                750
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "about-us-3-1.jpg",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/about-us-3-1-600x420.jpg",
+            "templates": [
+                {
+                    "source": "templates\/section-with-two-columns.json",
+                    "name": "Section with Two Columns"
+                },
+                {
+                    "source": "templates\/about-page.json",
+                    "name": "About Page"
+                }
+            ],
+            "filesize": 69044,
+            "dimensions": [
+                660,
+                462
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/ru\/chef-cooking-juicy-beef-steak-at-restaurant-kitche-G8S4B6A"
+        },
+        {
+            "filename": "about-us-1-1.jpg",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/about-us-1-1-600x418.jpg",
+            "templates": [
+                {
+                    "source": "templates\/heading-block.json",
+                    "name": "Heading Block"
+                },
+                {
+                    "source": "templates\/about-page.json",
+                    "name": "About Page"
+                }
+            ],
+            "filesize": 100832,
+            "dimensions": [
+                1120,
+                780
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/african-american-girl-with-dark-curly-hair-and-boy-9346FRJ"
+        },
+        {
+            "filename": "menu-3.png",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/menu-3.png",
+            "templates": [
+                {
+                    "source": "templates\/section-with-heading-and-price-list.json",
+                    "name": "Section with Heading and Price List"
+                },
+                {
+                    "source": "templates\/menu-page.json",
+                    "name": "Menu Page"
+                }
+            ],
+            "filesize": 14810,
+            "dimensions": [
+                254,
+                578
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "menu-2.png",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/menu-2.png",
+            "templates": [
+                {
+                    "source": "templates\/section-with-heading-and-price-list.json",
+                    "name": "Section with Heading and Price List"
+                },
+                {
+                    "source": "templates\/menu-page.json",
+                    "name": "Menu Page"
+                }
+            ],
+            "filesize": 5378,
+            "dimensions": [
+                138,
+                412
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "menu-1.jpg",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/menu-1-600x418.jpg",
+            "templates": [
+                {
+                    "source": "templates\/menu-page.json",
+                    "name": "Menu Page"
+                }
+            ],
+            "filesize": 159892,
+            "dimensions": [
+                1120,
+                780
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/unsplash.com\/photos\/WL9YgxtA814"
+        },
+        {
+            "filename": "contacts-5.png",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/contacts-5-600x713.png",
+            "templates": [
+                {
+                    "source": "templates\/menu-page.json",
+                    "name": "Menu Page"
+                },
+                {
+                    "source": "templates\/contacts-page.json",
+                    "name": "Contacts Page"
+                }
+            ],
+            "filesize": 36304,
+            "dimensions": [
+                631,
+                750
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "post-content-1-1.jpg",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/post-content-1-1-600x413.jpg",
+            "templates": [
+                {
+                    "source": "templates\/single-post-content.json",
+                    "name": "Single Post Content"
+                }
+            ],
+            "filesize": 62690,
+            "dimensions": [
+                900,
+                620
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/chef-cooking-in-cups-in-a-restaurant-kitchen-PJHE6ZA"
+        },
+        {
+            "filename": "post-content-2.jpg",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/post-content-2-600x812.jpg",
+            "templates": [
+                {
+                    "source": "templates\/single-post-content.json",
+                    "name": "Single Post Content"
+                }
+            ],
+            "filesize": 93392,
+            "dimensions": [
+                690,
+                934
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/unsplash.com\/photos\/c9d2oXaNv0c"
+        },
+        {
+            "filename": "book-1.jpg",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/book-1-600x579.jpg",
+            "templates": [
+                {
+                    "source": "templates\/book-a-table-page.json",
+                    "name": "Book a Table Page"
+                }
+            ],
+            "filesize": 196310,
+            "dimensions": [
+                1120,
+                1080
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/unsplash.com\/photos\/yLwU0zoc-m0"
+        },
+        {
+            "filename": "logo.png",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/logo.png",
+            "templates": [
+                {
+                    "source": "templates\/header-basic.json",
+                    "name": "Header Basic"
+                },
+                {
+                    "source": "templates\/header-pro.json",
+                    "name": "Header PRO"
+                }
+            ],
+            "filesize": 3401,
+            "dimensions": [
+                186,
+                27
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "contacts-1.jpg",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/contacts-1-600x418.jpg",
+            "templates": [
+                {
+                    "source": "templates\/contacts-page.json",
+                    "name": "Contacts Page"
+                }
+            ],
+            "filesize": 155503,
+            "dimensions": [
+                1120,
+                780
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/unsplash.com\/photos\/Djtc1T38-GY"
+        },
+        {
+            "filename": "menu.svg",
+            "thumbnail_url": "http:\/\/template-kits.cmsmasters.net\/restaurant\/wp-content\/uploads\/sites\/8\/2020\/03\/menu.svg",
+            "templates": [
+                {
+                    "source": "templates\/header-pro.json",
+                    "name": "Header PRO"
+                }
+            ],
+            "filesize": 324,
+            "dimensions": [
+                0,
+                0
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        }
+    ]
+}

@@ -105,7 +105,7 @@ class RegisterMcpTool {
 			}
 			$input_schema['properties'][ $arg_name ] = array(
 				'type'        => $type,
-				'description' => $this->get_description_with_fallback( $arg_schema['description'], $arg_name ),
+				'description' => $this->get_description_with_fallback( $arg_schema['description'] ?? null, $arg_name ),
 			);
 
 			// Handle array items if present.

@@ -1,0 +1,1063 @@
+{
+    "version": "0.4",
+    "title": "Single Post",
+    "type": "page",
+    "metadata": {
+        "template_type": "single-page",
+        "include_in_zip": "1",
+        "elementor_pro_required": null,
+        "wp_page_template": "default"
+    },
+    "content": [
+        {
+            "id": "4b860e5",
+            "settings": {
+                "content_width": "full",
+                "flex_gap": {
+                    "column": "40",
+                    "row": "40",
+                    "isLinked": true,
+                    "unit": "px",
+                    "size": 40
+                },
+                "padding": {
+                    "unit": "px",
+                    "top": "88",
+                    "right": "8",
+                    "bottom": "8",
+                    "left": "8",
+                    "isLinked": false
+                },
+                "padding_tablet": {
+                    "unit": "px",
+                    "top": "64",
+                    "right": "8",
+                    "bottom": "8",
+                    "left": "8",
+                    "isLinked": false
+                },
+                "padding_mobile": {
+                    "unit": "px",
+                    "top": "38",
+                    "right": "8",
+                    "bottom": "8",
+                    "left": "8",
+                    "isLinked": false
+                }
+            },
+            "elements": [
+                {
+                    "id": "31e30dc6",
+                    "settings": {
+                        "flex_align_items": "center",
+                        "flex_gap": {
+                            "column": "16",
+                            "row": "16",
+                            "isLinked": true,
+                            "unit": "px",
+                            "size": 16
+                        },
+                        "padding": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": true
+                        },
+                        "padding_mobile": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "16",
+                            "bottom": "0",
+                            "left": "16",
+                            "isLinked": false
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "7851b0aa",
+                            "settings": {
+                                "title": "Why Boutique Hotels Are Perfect for Millennial Travelers",
+                                "header_size": "h1",
+                                "align": "center",
+                                "_animation": "fadeIn"
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "heading",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "dc1babf",
+                            "settings": {
+                                "title": "Millennials value authentic stays, aesthetic design, and curated comfort. Boutique hotels check all the right boxes.",
+                                "header_size": "h6",
+                                "align": "center",
+                                "_element_custom_width": {
+                                    "unit": "%",
+                                    "size": 40,
+                                    "sizes": []
+                                },
+                                "_element_custom_width_tablet": {
+                                    "unit": "%",
+                                    "size": 80,
+                                    "sizes": []
+                                },
+                                "_element_custom_width_mobile": {
+                                    "unit": "%",
+                                    "size": 100,
+                                    "sizes": []
+                                },
+                                "_animation": "fadeIn"
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "heading",
+                            "elType": "widget"
+                        }
+                    ],
+                    "isInner": true,
+                    "elType": "container"
+                },
+                {
+                    "id": "5702f6cd",
+                    "settings": {
+                        "image": {
+                            "url": "https:\/\/fatma-studio.com\/hevn\/wp-content\/uploads\/sites\/13\/2025\/09\/rustic-wedding-set-vintage-dining-table-with-deco-2025-04-01-21-24-35-utc-e1756899818651.jpg",
+                            "id": 26,
+                            "size": "",
+                            "alt": "",
+                            "source": "library"
+                        },
+                        "width": {
+                            "unit": "%",
+                            "size": 100,
+                            "sizes": []
+                        },
+                        "height": {
+                            "unit": "px",
+                            "size": 768,
+                            "sizes": []
+                        },
+                        "height_tablet": {
+                            "unit": "px",
+                            "size": 560,
+                            "sizes": []
+                        },
+                        "height_mobile": {
+                            "unit": "px",
+                            "size": 320,
+                            "sizes": []
+                        },
+                        "object-fit": "cover",
+                        "_element_width": "inherit",
+                        "_animation": "fadeIn"
+                    },
+                    "elements": [],
+                    "isInner": false,
+                    "widgetType": "image",
+                    "elType": "widget"
+                }
+            ],
+            "isInner": false,
+            "elType": "container"
+        },
+        {
+            "id": "479e314f",
+            "settings": {
+                "flex_align_items": "center",
+                "flex_gap": {
+                    "column": "80",
+                    "row": "80",
+                    "isLinked": true,
+                    "unit": "px",
+                    "size": 80
+                },
+                "padding": {
+                    "unit": "px",
+                    "top": "104",
+                    "right": "0",
+                    "bottom": "104",
+                    "left": "0",
+                    "isLinked": false
+                },
+                "flex_gap_tablet": {
+                    "column": "64",
+                    "row": "64",
+                    "isLinked": true,
+                    "unit": "px",
+                    "size": 64
+                },
+                "flex_gap_mobile": {
+                    "column": "48",
+                    "row": "48",
+                    "isLinked": true,
+                    "unit": "px",
+                    "size": 48
+                },
+                "padding_tablet": {
+                    "unit": "px",
+                    "top": "64",
+                    "right": "48",
+                    "bottom": "64",
+                    "left": "48",
+                    "isLinked": false
+                },
+                "padding_mobile": {
+                    "unit": "px",
+                    "top": "48",
+                    "right": "24",
+                    "bottom": "48",
+                    "left": "24",
+                    "isLinked": false
+                }
+            },
+            "elements": [
+                {
+                    "id": "5356ea73",
+                    "settings": {
+                        "content_width": "full",
+                        "flex_align_items": "center",
+                        "padding": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": true
+                        },
+                        "flex_gap": {
+                            "column": "32",
+                            "row": "32",
+                            "isLinked": true,
+                            "unit": "px",
+                            "size": 32
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "51ae565b",
+                            "settings": {
+                                "title": "Introduction",
+                                "header_size": "h3",
+                                "align": "left",
+                                "_animation": "fadeIn",
+                                "_element_width": "initial",
+                                "_element_custom_width": {
+                                    "unit": "%",
+                                    "size": 64,
+                                    "sizes": []
+                                },
+                                "_element_custom_width_tablet": {
+                                    "unit": "%",
+                                    "size": 100,
+                                    "sizes": []
+                                },
+                                "_element_custom_width_mobile": {
+                                    "unit": "%",
+                                    "size": "",
+                                    "sizes": []
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "heading",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "70f9f5ce",
+                            "settings": {
+                                "editor": "Millennials are redefining the way people travel. Unlike previous generations, they seek experiences that are authentic, personalized, and meaningful \u2014 values that align perfectly with what boutique hotels have to offer. Here are four reasons why boutique hotels are the ultimate choice for millennial travelers.",
+                                "_element_width": "initial",
+                                "_element_custom_width": {
+                                    "unit": "%",
+                                    "size": 64,
+                                    "sizes": []
+                                },
+                                "_element_custom_width_tablet": {
+                                    "unit": "%",
+                                    "size": 100,
+                                    "sizes": []
+                                },
+                                "_element_custom_width_mobile": {
+                                    "unit": "%",
+                                    "size": "",
+                                    "sizes": []
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "text-editor",
+                            "elType": "widget"
+                        }
+                    ],
+                    "isInner": true,
+                    "elType": "container"
+                },
+                {
+                    "id": "3cbcb30f",
+                    "settings": {
+                        "content_width": "full",
+                        "flex_align_items": "center",
+                        "padding": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": true
+                        },
+                        "flex_gap": {
+                            "column": "32",
+                            "row": "32",
+                            "isLinked": true,
+                            "unit": "px",
+                            "size": 32
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "65b04e4f",
+                            "settings": {
+                                "title": "1. Authentic Experiences Over Generic Stays",
+                                "header_size": "h3",
+                                "align": "left",
+                                "_animation": "fadeIn",
+                                "_element_width": "initial",
+                                "_element_custom_width": {
+                                    "unit": "%",
+                                    "size": 64,
+                                    "sizes": []
+                                },
+                                "_element_custom_width_tablet": {
+                                    "unit": "%",
+                                    "size": 100,
+                                    "sizes": []
+                                },
+                                "_element_custom_width_mobile": {
+                                    "unit": "%",
+                                    "size": "",
+                                    "sizes": []
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "heading",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "49d6d2b6",
+                            "settings": {
+                                "editor": "Millennials value authenticity and want their trips to feel unique rather than standardized. Boutique hotels often reflect the character of their location, whether through locally inspired d\u00e9cor, cultural touches, or partnerships with nearby businesses. This creates a stay that feels immersive and personal, far from the cookie-cutter feel of large chain hotels. Guests are able to connect with the destination in a genuine way, which makes the experience more memorable and shareable.",
+                                "_element_width": "initial",
+                                "_element_custom_width": {
+                                    "unit": "%",
+                                    "size": 64,
+                                    "sizes": []
+                                },
+                                "_element_custom_width_tablet": {
+                                    "unit": "%",
+                                    "size": 100,
+                                    "sizes": []
+                                },
+                                "_element_custom_width_mobile": {
+                                    "unit": "%",
+                                    "size": "",
+                                    "sizes": []
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "text-editor",
+                            "elType": "widget"
+                        }
+                    ],
+                    "isInner": true,
+                    "elType": "container"
+                },
+                {
+                    "id": "67e7228",
+                    "settings": {
+                        "content_width": "full",
+                        "flex_direction": "row",
+                        "padding": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": true
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "6bf457aa",
+                            "settings": {
+                                "image": {
+                                    "url": "https:\/\/fatma-studio.com\/hevn\/wp-content\/uploads\/sites\/13\/2025\/09\/modern-living-room-interior-design-2024-10-17-12-00-05-utc-e1756899858497.jpg",
+                                    "id": 21,
+                                    "size": "",
+                                    "alt": "",
+                                    "source": "library"
+                                },
+                                "width": {
+                                    "unit": "%",
+                                    "size": 100,
+                                    "sizes": []
+                                },
+                                "height": {
+                                    "unit": "px",
+                                    "size": 480,
+                                    "sizes": []
+                                },
+                                "height_tablet": {
+                                    "unit": "px",
+                                    "size": 280,
+                                    "sizes": []
+                                },
+                                "height_mobile": {
+                                    "unit": "px",
+                                    "size": 320,
+                                    "sizes": []
+                                },
+                                "object-fit": "cover",
+                                "_element_width": "inherit"
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "image",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "1226d71",
+                            "settings": {
+                                "image": {
+                                    "url": "https:\/\/fatma-studio.com\/hevn\/wp-content\/uploads\/sites\/13\/2025\/09\/candles-and-massage-oil-on-a-pink-table-2025-03-18-16-39-34-utc-e1756899921305.jpg",
+                                    "id": 13,
+                                    "size": "",
+                                    "alt": "",
+                                    "source": "library"
+                                },
+                                "width": {
+                                    "unit": "%",
+                                    "size": 100,
+                                    "sizes": []
+                                },
+                                "height": {
+                                    "unit": "px",
+                                    "size": 480,
+                                    "sizes": []
+                                },
+                                "height_tablet": {
+                                    "unit": "px",
+                                    "size": 280,
+                                    "sizes": []
+                                },
+                                "height_mobile": {
+                                    "unit": "px",
+                                    "size": 320,
+                                    "sizes": []
+                                },
+                                "object-fit": "cover",
+                                "_element_width": "inherit"
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "image",
+                            "elType": "widget"
+                        }
+                    ],
+                    "isInner": true,
+                    "elType": "container"
+                },
+                {
+                    "id": "59ac1dca",
+                    "settings": {
+                        "content_width": "full",
+                        "flex_align_items": "center",
+                        "padding": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": true
+                        },
+                        "flex_gap": {
+                            "column": "32",
+                            "row": "32",
+                            "isLinked": true,
+                            "unit": "px",
+                            "size": 32
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "3e02c860",
+                            "settings": {
+                                "title": "2. Design-Forward Spaces That Inspire",
+                                "header_size": "h3",
+                                "align": "left",
+                                "_animation": "fadeIn",
+                                "_element_width": "initial",
+                                "_element_custom_width": {
+                                    "unit": "%",
+                                    "size": 64,
+                                    "sizes": []
+                                },
+                                "_element_custom_width_tablet": {
+                                    "unit": "%",
+                                    "size": 100,
+                                    "sizes": []
+                                },
+                                "_element_custom_width_mobile": {
+                                    "unit": "%",
+                                    "size": "",
+                                    "sizes": []
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "heading",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "19b8a01d",
+                            "settings": {
+                                "editor": "For millennials, aesthetics matter. Boutique hotels place a strong emphasis on design, often blending modern comfort with artistic details and thoughtful interiors. These spaces don\u2019t just serve as places to sleep; they become part of the travel experience itself. From Instagram-worthy lobbies to uniquely styled rooms, boutique hotels provide visually inspiring environments that resonate with a generation that loves to capture and share moments online.",
+                                "_element_width": "initial",
+                                "_element_custom_width": {
+                                    "unit": "%",
+                                    "size": 64,
+                                    "sizes": []
+                                },
+                                "_element_custom_width_tablet": {
+                                    "unit": "%",
+                                    "size": 100,
+                                    "sizes": []
+                                },
+                                "_element_custom_width_mobile": {
+                                    "unit": "%",
+                                    "size": "",
+                                    "sizes": []
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "text-editor",
+                            "elType": "widget"
+                        }
+                    ],
+                    "isInner": true,
+                    "elType": "container"
+                },
+                {
+                    "id": "5bfc232c",
+                    "settings": {
+                        "content_width": "full",
+                        "flex_align_items": "center",
+                        "padding": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": true
+                        },
+                        "flex_gap": {
+                            "column": "32",
+                            "row": "32",
+                            "isLinked": true,
+                            "unit": "px",
+                            "size": 32
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "4a53d92c",
+                            "settings": {
+                                "title": "3. Personalized Service That Builds Connection",
+                                "header_size": "h3",
+                                "align": "left",
+                                "_animation": "fadeIn",
+                                "_element_width": "initial",
+                                "_element_custom_width": {
+                                    "unit": "%",
+                                    "size": 64,
+                                    "sizes": []
+                                },
+                                "_element_custom_width_tablet": {
+                                    "unit": "%",
+                                    "size": 100,
+                                    "sizes": []
+                                },
+                                "_element_custom_width_mobile": {
+                                    "unit": "%",
+                                    "size": "",
+                                    "sizes": []
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "heading",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "2d67d4f",
+                            "settings": {
+                                "editor": "Millennials prefer to feel like more than just a booking number. Boutique hotels, with their smaller size and dedicated staff, can offer highly personalized service. From remembering a guest\u2019s favorite drink to recommending hidden local gems, these personal touches create emotional connections that millennials deeply value. This level of service enhances loyalty, making guests more likely to return and recommend the property to others.",
+                                "_element_width": "initial",
+                                "_element_custom_width": {
+                                    "unit": "%",
+                                    "size": 64,
+                                    "sizes": []
+                                },
+                                "_element_custom_width_tablet": {
+                                    "unit": "%",
+                                    "size": 100,
+                                    "sizes": []
+                                },
+                                "_element_custom_width_mobile": {
+                                    "unit": "%",
+                                    "size": "",
+                                    "sizes": []
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "text-editor",
+                            "elType": "widget"
+                        }
+                    ],
+                    "isInner": true,
+                    "elType": "container"
+                },
+                {
+                    "id": "b1675f2",
+                    "settings": {
+                        "content_width": "full",
+                        "flex_align_items": "center",
+                        "padding": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": true
+                        },
+                        "flex_gap": {
+                            "column": "32",
+                            "row": "32",
+                            "isLinked": true,
+                            "unit": "px",
+                            "size": 32
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "5cade628",
+                            "settings": {
+                                "title": "4. Sustainability and Community Engagement",
+                                "header_size": "h3",
+                                "align": "left",
+                                "_animation": "fadeIn",
+                                "_element_width": "initial",
+                                "_element_custom_width": {
+                                    "unit": "%",
+                                    "size": 64,
+                                    "sizes": []
+                                },
+                                "_element_custom_width_tablet": {
+                                    "unit": "%",
+                                    "size": 100,
+                                    "sizes": []
+                                },
+                                "_element_custom_width_mobile": {
+                                    "unit": "%",
+                                    "size": "",
+                                    "sizes": []
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "heading",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "1636e3d0",
+                            "settings": {
+                                "editor": "Social responsibility is a priority for millennial travelers. Many boutique hotels embrace eco-friendly practices, from sustainable architecture to locally sourced dining. They also support local communities by collaborating with artisans, farmers, and tour providers. This aligns perfectly with the millennial mindset of traveling responsibly and leaving a positive impact on the destinations they visit. Staying at a boutique hotel often means supporting a brand that cares about both the guest and the planet.",
+                                "_element_width": "initial",
+                                "_element_custom_width": {
+                                    "unit": "%",
+                                    "size": 64,
+                                    "sizes": []
+                                },
+                                "_element_custom_width_tablet": {
+                                    "unit": "%",
+                                    "size": 100,
+                                    "sizes": []
+                                },
+                                "_element_custom_width_mobile": {
+                                    "unit": "%",
+                                    "size": "",
+                                    "sizes": []
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "text-editor",
+                            "elType": "widget"
+                        }
+                    ],
+                    "isInner": true,
+                    "elType": "container"
+                },
+                {
+                    "id": "5959b14c",
+                    "settings": {
+                        "content_width": "full",
+                        "flex_align_items": "center",
+                        "padding": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": true
+                        },
+                        "flex_gap": {
+                            "column": "32",
+                            "row": "32",
+                            "isLinked": true,
+                            "unit": "px",
+                            "size": 32
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "323f9018",
+                            "settings": {
+                                "title": "Closing Paragraph",
+                                "header_size": "h3",
+                                "align": "left",
+                                "_animation": "fadeIn",
+                                "_element_width": "initial",
+                                "_element_custom_width": {
+                                    "unit": "%",
+                                    "size": 64,
+                                    "sizes": []
+                                },
+                                "_element_custom_width_tablet": {
+                                    "unit": "%",
+                                    "size": 100,
+                                    "sizes": []
+                                },
+                                "_element_custom_width_mobile": {
+                                    "unit": "%",
+                                    "size": "",
+                                    "sizes": []
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "heading",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "3a304c51",
+                            "settings": {
+                                "editor": "Millennials seek more than just accommodation; they want meaningful journeys filled with stories, inspiration, and connection. Boutique hotels deliver all of this by combining authenticity, design, personalization, and responsibility. It\u2019s no surprise that boutique hotels continue to rise as the top choice for millennial travelers worldwide.",
+                                "_element_width": "initial",
+                                "_element_custom_width": {
+                                    "unit": "%",
+                                    "size": 64,
+                                    "sizes": []
+                                },
+                                "_element_custom_width_tablet": {
+                                    "unit": "%",
+                                    "size": 100,
+                                    "sizes": []
+                                },
+                                "_element_custom_width_mobile": {
+                                    "unit": "%",
+                                    "size": "",
+                                    "sizes": []
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "text-editor",
+                            "elType": "widget"
+                        }
+                    ],
+                    "isInner": true,
+                    "elType": "container"
+                }
+            ],
+            "isInner": false,
+            "elType": "container"
+        },
+        {
+            "id": "69af0451",
+            "settings": {
+                "flex_align_items": "center",
+                "flex_gap": {
+                    "column": "80",
+                    "row": "80",
+                    "isLinked": true,
+                    "unit": "px",
+                    "size": 80
+                },
+                "padding": {
+                    "unit": "px",
+                    "top": "104",
+                    "right": "0",
+                    "bottom": "104",
+                    "left": "0",
+                    "isLinked": false
+                },
+                "flex_gap_tablet": {
+                    "column": "64",
+                    "row": "64",
+                    "isLinked": true,
+                    "unit": "px",
+                    "size": 64
+                },
+                "flex_gap_mobile": {
+                    "column": "48",
+                    "row": "48",
+                    "isLinked": true,
+                    "unit": "px",
+                    "size": 48
+                },
+                "padding_tablet": {
+                    "unit": "px",
+                    "top": "64",
+                    "right": "48",
+                    "bottom": "64",
+                    "left": "48",
+                    "isLinked": false
+                },
+                "padding_mobile": {
+                    "unit": "px",
+                    "top": "48",
+                    "right": "24",
+                    "bottom": "48",
+                    "left": "24",
+                    "isLinked": false
+                },
+                "background_background": "classic",
+                "__globals__": {
+                    "background_color": "globals\/colors?id=text"
+                }
+            },
+            "elements": [
+                {
+                    "id": "3e04196d",
+                    "settings": {
+                        "title": "Recent Post",
+                        "align": "center",
+                        "_animation": "fadeIn"
+                    },
+                    "elements": [],
+                    "isInner": false,
+                    "widgetType": "heading",
+                    "elType": "widget"
+                },
+                {
+                    "id": "106184e3",
+                    "settings": {
+                        "ekit_blog_posts_layout_style": "elementskit-post-image-card",
+                        "ekit_blog_posts_content_trim": 12,
+                        "ekit_blog_posts_read_more": "",
+                        "ekit_blog_posts_cats": [
+                            "5"
+                        ],
+                        "ekit_blog_posts_meta_select": [
+                            "category"
+                        ],
+                        "ekit_blog_posts_meta_category_icons": {
+                            "value": "",
+                            "library": ""
+                        },
+                        "ekit_blog_posts_btn_text": "Learn more ",
+                        "ekit_blog_posts_background_background": "classic",
+                        "ekit_blog_posts_shadow_box_shadow_type": "yes",
+                        "ekit_blog_posts_shadow_box_shadow": {
+                            "horizontal": 0,
+                            "vertical": 0,
+                            "blur": 0,
+                            "spread": 0,
+                            "color": "rgba(0,0,0,0.5)"
+                        },
+                        "ekit_blog_posts_radius": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": true
+                        },
+                        "ekit_blog_posts_padding": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": true
+                        },
+                        "ekit_blog_posts_margin": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "-16",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": false
+                        },
+                        "ekit_blog_posts_text_content_wraper_padding": {
+                            "unit": "px",
+                            "top": "16",
+                            "right": "16",
+                            "bottom": "16",
+                            "left": "16",
+                            "isLinked": true
+                        },
+                        "ekit_blog_posts_feature_img_radius": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": true
+                        },
+                        "ekit_blog_posts_feature_img_margin": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": true
+                        },
+                        "ekit_blog_posts_feature_img_padding": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": true
+                        },
+                        "ekit_blog_posts_meta_margin": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "24",
+                            "left": "0",
+                            "isLinked": false
+                        },
+                        "ekit_blog_posts_meta_item_margin": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": true
+                        },
+                        "ekit_blog_posts_meta_padding": {
+                            "unit": "px",
+                            "top": "4",
+                            "right": "12",
+                            "bottom": "4",
+                            "left": "12",
+                            "isLinked": false
+                        },
+                        "ekit_blog_posts_meta_icon_padding": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": true
+                        },
+                        "ekit_blog_posts_meta_border_normal_border": "solid",
+                        "ekit_blog_posts_meta_border_normal_width": {
+                            "unit": "px",
+                            "top": "1",
+                            "right": "1",
+                            "bottom": "1",
+                            "left": "1",
+                            "isLinked": true
+                        },
+                        "ekit_blog_posts_title_margin": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "16",
+                            "left": "0",
+                            "isLinked": false
+                        },
+                        "ekit_blog_posts_content_margin": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": true
+                        },
+                        "_animation": "fadeIn",
+                        "__globals__": {
+                            "ekit_blog_posts_meta_typography_typography": "globals\/typography?id=5549308",
+                            "ekit_blog_posts_meta_color_normal": "globals\/colors?id=bb55343",
+                            "ekit_blog_posts_meta_border_normal_color": "globals\/colors?id=2b3b2a6",
+                            "ekit_blog_posts_title_typography_typography": "globals\/typography?id=accent",
+                            "ekit_blog_posts_title_color": "globals\/colors?id=a650e6a",
+                            "ekit_blog_posts_content_color": "globals\/colors?id=bb55343",
+                            "ekit_blog_posts_content_typography_typography": "globals\/typography?id=0728992",
+                            "ekit_blog_posts_background_color": "globals\/colors?id=11e3899"
+                        }
+                    },
+                    "elements": [],
+                    "isInner": false,
+                    "widgetType": "elementskit-blog-posts",
+                    "elType": "widget"
+                },
+                {
+                    "id": "5e3fac3a",
+                    "settings": {
+                        "text": "Browse All Journal Entries",
+                        "align_mobile": "justify",
+                        "background_color": "#02010100",
+                        "border_border": "solid",
+                        "border_width": {
+                            "unit": "px",
+                            "top": "1",
+                            "right": "1",
+                            "bottom": "1",
+                            "left": "1",
+                            "isLinked": true
+                        },
+                        "_flex_align_self_mobile": "stretch",
+                        "_animation": "fadeIn",
+                        "__globals__": {
+                            "button_text_color": "globals\/colors?id=primary",
+                            "border_color": "globals\/colors?id=2b3b2a6",
+                            "button_background_hover_color": "globals\/colors?id=3cab8f2",
+                            "hover_color": "globals\/colors?id=60a0f80",
+                            "button_hover_border_color": "globals\/colors?id=3cab8f2"
+                        }
+                    },
+                    "elements": [],
+                    "isInner": false,
+                    "widgetType": "button",
+                    "elType": "widget"
+                }
+            ],
+            "isInner": false,
+            "elType": "container"
+        }
+    ],
+    "page_settings": {
+        "hide_title": "yes"
+    }
+}

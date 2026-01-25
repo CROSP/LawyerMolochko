@@ -47,6 +47,51 @@
 	}
 }
 
+/* Footer: icon + phone in one container (same border, consistent block) */
+.elementor-element-91d1baa .elementor-widget-wrap {
+	display: flex !important;
+	flex-direction: row !important;
+	align-items: center !important;
+	flex-wrap: nowrap !important;
+	gap: 12px !important;
+	border: 1px solid $primary_color !important;
+	padding: 10px 14px !important;
+	width: fit-content !important;
+}
+/* Remove the phone’s own border/padding – the wrap is the single container */
+.elementor-element-91d1baa .elementor-element-25a382b,
+.elementor-element-91d1baa .elementor-element-25a382b .elementor-widget-container,
+.elementor-element-91d1baa .elementor-element-25a382b .pxl-heading-wrap {
+	border: none !important;
+	padding: 0 !important;
+}
+.elementor-element-91d1baa .elementor-element-25a382b .heading-title {
+	margin: 0 !important;
+}
+
+/* Footer: logo column capped; Quick Links, Practice Areas, Newsletter divide remaining space equally (like col-3). */
+@media (min-width: 992px) {
+	.elementor-element-199e074 .elementor-element-152c680 {
+		flex: 0 0 auto !important;
+		width: auto !important;
+		max-width: 340px !important;
+	}
+	.elementor-element-199e074 .elementor-element-742b223,
+	.elementor-element-199e074 .elementor-element-1d857df,
+	.elementor-element-199e074 .elementor-element-cc529ed {
+		flex: 1 1 0% !important;
+		width: auto !important;
+	}
+}
+
+/* Footer: logo img – scale with column */
+.elementor-element-c74d292.footer-logo img,
+.pxl-footer .footer-logo img {
+	width: 100% !important;
+	max-width: 100% !important;
+	height: auto !important;
+}
+
 .pxl-footer-fixed {
 	#pxl-footer.footer-type-el {
 		width: 100%;

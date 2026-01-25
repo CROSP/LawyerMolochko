@@ -1,0 +1,2819 @@
+{
+    "manifest_version": "1.0.23",
+    "title": "TechyEve - Event & Conference Elementor Template Kit",
+    "page_builder": "elementor",
+    "kit_version": "1.0.2",
+    "templates": [
+        {
+            "name": "Global Kit Styles",
+            "screenshot": "screenshots\/global-kit-styles.jpg",
+            "source": "templates\/global.json",
+            "preview_url": "https:\/\/templatekits.wpmarvels.com",
+            "type": "section",
+            "category": "page",
+            "metadata": {
+                "template_type": "global-styles",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "additional_template_information": [
+                    "These are the global theme styles configured through the Elementor Theme Styles area."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Techy Eve - Ticket v2",
+            "screenshot": "screenshots\/techy-eve-ticket-v2.png",
+            "source": "templates\/techy-eve-ticket-v2.json",
+            "preview_url": "https:\/\/templatekits.wpmarvels.com\/techyeve\/?elementor_library=techy-eve-ticket-v2",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "page",
+                "additional_template_information": [
+                    "This is a \"Page\" template for Elementor Pro."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Techy Eve - Home v1",
+            "screenshot": "screenshots\/techy-eve-home-v1.jpg",
+            "source": "templates\/techy-eve-home-v1.json",
+            "preview_url": "https:\/\/templatekits.wpmarvels.com\/techyeve\/?elementor_library=techy-eve-home-v1",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "page",
+                "additional_template_information": [
+                    "This is a \"Page\" template for Elementor Pro."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Techy Eve Home v2",
+            "screenshot": "screenshots\/techy-eve-home-v2.jpg",
+            "source": "templates\/techy-eve-home-v2.json",
+            "preview_url": "https:\/\/templatekits.wpmarvels.com\/techyeve\/?elementor_library=techy-eve-home-v2",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "page",
+                "additional_template_information": [
+                    "This is a \"Page\" template for Elementor Pro."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Techy Eve - About v1",
+            "screenshot": "screenshots\/techy-eve-about-v1.jpg",
+            "source": "templates\/techy-eve-about-v1.json",
+            "preview_url": "https:\/\/templatekits.wpmarvels.com\/techyeve\/?elementor_library=techy-eve-about-v1",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "page",
+                "additional_template_information": [
+                    "This is a \"Page\" template for Elementor Pro."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Techy Eve - About V2",
+            "screenshot": "screenshots\/techy-eve-about-v2.jpg",
+            "source": "templates\/techy-eve-about-v2.json",
+            "preview_url": "https:\/\/templatekits.wpmarvels.com\/techyeve\/?elementor_library=techy-eve-about-v2",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "page",
+                "additional_template_information": [
+                    "This is a \"Page\" template for Elementor Pro."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Techy Eve - Ticket v1",
+            "screenshot": "screenshots\/techy-eve-ticket-v1.png",
+            "source": "templates\/techy-eve-ticket-v1.json",
+            "preview_url": "https:\/\/templatekits.wpmarvels.com\/techyeve\/?elementor_library=techy-eve-ticket-v1",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "page",
+                "additional_template_information": [
+                    "This is a \"Page\" template for Elementor Pro."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Techy Eve - Sponsors v1",
+            "screenshot": "screenshots\/techy-eve-sponsors-v1.png",
+            "source": "templates\/techy-eve-sponsors-v1.json",
+            "preview_url": "https:\/\/templatekits.wpmarvels.com\/techyeve\/?elementor_library=techy-eve-sponsors-v1",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "page",
+                "additional_template_information": [
+                    "This is a \"Page\" template for Elementor Pro."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Techy Eve - Sponsors v2",
+            "screenshot": "screenshots\/techy-eve-sponsors-v2.png",
+            "source": "templates\/techy-eve-sponsors-v2.json",
+            "preview_url": "https:\/\/templatekits.wpmarvels.com\/techyeve\/?elementor_library=techy-eve-sponsors-v2",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "page",
+                "additional_template_information": [
+                    "This is a \"Page\" template for Elementor Pro."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Techy Eve - Speakers",
+            "screenshot": "screenshots\/techy-eve-speakers.png",
+            "source": "templates\/techy-eve-speakers.json",
+            "preview_url": "https:\/\/templatekits.wpmarvels.com\/techyeve\/?elementor_library=techy-eve-speakers",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "page",
+                "additional_template_information": [
+                    "This is a \"Page\" template for Elementor Pro."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Techy Eve - Schedule",
+            "screenshot": "screenshots\/techy-eve-schedule.png",
+            "source": "templates\/techy-eve-schedule.json",
+            "preview_url": "https:\/\/templatekits.wpmarvels.com\/techyeve\/?elementor_library=techy-eve-schedule",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "page",
+                "additional_template_information": [
+                    "This is a \"Page\" template for Elementor Pro."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Techy Eve - Gallery",
+            "screenshot": "screenshots\/techy-eve-gallery.png",
+            "source": "templates\/techy-eve-gallery.json",
+            "preview_url": "https:\/\/templatekits.wpmarvels.com\/techyeve\/?elementor_library=techy-eve-gallery",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "page",
+                "additional_template_information": [
+                    "This is a \"Page\" template for Elementor Pro."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Techy Eve - FAQ",
+            "screenshot": "screenshots\/techy-eve-faq.png",
+            "source": "templates\/techy-eve-faq.json",
+            "preview_url": "https:\/\/templatekits.wpmarvels.com\/techyeve\/?elementor_library=techy-eve-faq",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "page",
+                "additional_template_information": [
+                    "This is a \"Page\" template for Elementor Pro."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Techy Eve - Contact v1",
+            "screenshot": "screenshots\/techy-eve-contact-v1.png",
+            "source": "templates\/techy-eve-contact-v1.json",
+            "preview_url": "https:\/\/templatekits.wpmarvels.com\/techyeve\/?elementor_library=techy-eve-contact-v1",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "page",
+                "additional_template_information": [
+                    "This is a \"Page\" template for Elementor Pro."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Techy Eve Contact v2",
+            "screenshot": "screenshots\/techy-eve-contact-v2.jpg",
+            "source": "templates\/techy-eve-contact-v2.json",
+            "preview_url": "https:\/\/templatekits.wpmarvels.com\/techyeve\/?elementor_library=techy-eve-contact-v2",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "page",
+                "additional_template_information": [
+                    "This is a \"Page\" template for Elementor Pro."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Techy Eve - Blog Single",
+            "screenshot": "screenshots\/techy-eve-blog-single.png",
+            "source": "templates\/techy-eve-blog-single.json",
+            "preview_url": "https:\/\/templatekits.wpmarvels.com\/techyeve\/?elementor_library=techy-eve-blog-single",
+            "type": "single-post",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-post",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "single-post",
+                "elementor_pro_conditions": [
+                    "include\/singular"
+                ],
+                "additional_template_information": [
+                    "This is a \"Single Post\" template for Elementor Pro.",
+                    "This template will display on: All singular."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Techy Eve - Blog",
+            "screenshot": "screenshots\/techy-eve-blog.png",
+            "source": "templates\/techy-eve-blog.json",
+            "preview_url": "https:\/\/templatekits.wpmarvels.com\/techyeve\/?elementor_library=techy-eve-blog",
+            "type": "archive",
+            "category": "page",
+            "metadata": {
+                "template_type": "archive-blog",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "archive",
+                "elementor_pro_conditions": [
+                    "include\/archive\/post_archive"
+                ],
+                "additional_template_information": [
+                    "This is a \"Archive\" template for Elementor Pro.",
+                    "This template will display on: Posts archive."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Techy Eve - 404 Page",
+            "screenshot": "screenshots\/techy-eve-404-page.png",
+            "source": "templates\/techy-eve-404-page.json",
+            "preview_url": "https:\/\/templatekits.wpmarvels.com\/techyeve\/?elementor_library=techy-eve-404-page",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "page",
+                "additional_template_information": [
+                    "This is a \"Page\" template for Elementor Pro."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Techy Eve - 404 v2",
+            "screenshot": "screenshots\/techy-eve-404-v2.jpg",
+            "source": "templates\/techy-eve-404-v2.json",
+            "preview_url": "https:\/\/templatekits.wpmarvels.com\/techyeve\/?elementor_library=techy-eve-404-v2",
+            "type": "error-404",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-404",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "error-404",
+                "elementor_pro_conditions": [
+                    "include\/singular\/not_found404"
+                ],
+                "additional_template_information": [
+                    "This is a \"Error 404\" template for Elementor Pro.",
+                    "This template will display on: 404 Page."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Techy Eve - Footer",
+            "screenshot": "screenshots\/techy-eve-footer.png",
+            "source": "templates\/techy-eve-footer.json",
+            "preview_url": "https:\/\/templatekits.wpmarvels.com\/techyeve\/?elementor_library=elementor-footer-41",
+            "type": "footer",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-footer",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "footer",
+                "elementor_pro_conditions": [
+                    "include\/general"
+                ],
+                "additional_template_information": [
+                    "This is a \"Footer\" template for Elementor Pro.",
+                    "This template will display on: Entire site."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Techy Eve - Header",
+            "screenshot": "screenshots\/techy-eve-header.png",
+            "source": "templates\/techy-eve-header.json",
+            "preview_url": "https:\/\/templatekits.wpmarvels.com\/techyeve\/?elementor_library=elementor-header-622",
+            "type": "header",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-header",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "header",
+                "elementor_pro_conditions": [
+                    "include\/general"
+                ],
+                "additional_template_information": [
+                    "This is a \"Header\" template for Elementor Pro.",
+                    "This template will display on: Entire site."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Techy Eve - Sponsor Popup",
+            "screenshot": "screenshots\/techy-eve-sponsor-popup.png",
+            "source": "templates\/techy-eve-sponsor-popup.json",
+            "preview_url": "https:\/\/templatekits.wpmarvels.com\/techyeve\/?elementor_library=techy-eve-sponsor-popup",
+            "type": "popup",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-popup",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "popup",
+                "additional_template_information": [
+                    "This is a \"Popup\" template for Elementor Pro."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Techy Eve - Footer v2",
+            "screenshot": "screenshots\/techy-eve-footer-v2.png",
+            "source": "templates\/techy-eve-footer-v2.json",
+            "preview_url": "https:\/\/templatekits.wpmarvels.com\/techyeve\/?elementor_library=techy-eve-footer-v2",
+            "type": "footer",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-footer",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "footer",
+                "elementor_pro_conditions": [
+                    "include\/singular\/page\/1215",
+                    "include\/singular\/page\/1849",
+                    "include\/singular\/page\/1806",
+                    "include\/singular\/page\/1769",
+                    "include\/singular\/page\/1790",
+                    "include\/singular\/page\/1738",
+                    "include\/singular\/page\/2195"
+                ],
+                "additional_template_information": [
+                    "This is a \"Footer\" template for Elementor Pro.",
+                    "This template will display on: Page #2195."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Techy Eve - Header v2",
+            "screenshot": "screenshots\/techy-eve-header-v2.png",
+            "source": "templates\/techy-eve-header-v2.json",
+            "preview_url": "https:\/\/templatekits.wpmarvels.com\/techyeve\/?elementor_library=techy-eve-header-v2",
+            "type": "header",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-header",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "header",
+                "elementor_pro_conditions": [
+                    "include\/singular\/page\/1849",
+                    "include\/singular\/page\/1738",
+                    "include\/singular\/page\/1769",
+                    "include\/singular\/page\/1790",
+                    "include\/singular\/page\/1806",
+                    "include\/singular\/page\/2195"
+                ],
+                "additional_template_information": [
+                    "This is a \"Header\" template for Elementor Pro.",
+                    "This template will display on: Page #2195."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Techy Eve - v2 Home Header",
+            "screenshot": "screenshots\/techy-eve-v2-home-header.jpg",
+            "source": "templates\/techy-eve-v2-home-header.json",
+            "preview_url": "https:\/\/templatekits.wpmarvels.com\/techyeve\/?elementor_library=techy-eve-v2-home-header",
+            "type": "header",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-header",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "header",
+                "elementor_pro_conditions": [
+                    "include\/singular\/page\/1215"
+                ],
+                "additional_template_information": [
+                    "This is a \"Header\" template for Elementor Pro.",
+                    "This template will display on: Page #1215."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Techy Eve - Off Canvas Menu",
+            "screenshot": "screenshots\/techy-eve-off-canvas-menu.jpg",
+            "source": "templates\/techy-eve-off-canvas-menu.json",
+            "preview_url": "https:\/\/templatekits.wpmarvels.com\/techyeve\/?elementor_library=techy-eve-off-canvas-menu",
+            "type": "popup",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-popup",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "popup",
+                "additional_template_information": [
+                    "This is a \"Popup\" template for Elementor Pro."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Techy Eve - Header Home",
+            "screenshot": "screenshots\/techy-eve-header-home.jpg",
+            "source": "templates\/techy-eve-header-home.json",
+            "preview_url": "https:\/\/templatekits.wpmarvels.com\/techyeve\/?elementor_library=elementor-header-16",
+            "type": "header",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-header",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "header",
+                "elementor_pro_conditions": [
+                    "include\/singular\/front_page"
+                ],
+                "additional_template_information": [
+                    "This is a \"Header\" template for Elementor Pro.",
+                    "This template will display on: Front page."
+                ]
+            },
+            "elementor_pro_required": true
+        }
+    ],
+    "required_plugins": [
+        {
+            "name": "Elementor",
+            "version": "3.32.4",
+            "file": "elementor\/elementor.php",
+            "author": "Elementor.com"
+        },
+        {
+            "name": "Elementor Pro",
+            "version": "3.32.2",
+            "file": "elementor-pro\/elementor-pro.php",
+            "author": "Elementor.com"
+        }
+    ],
+    "images": [
+        {
+            "filename": "cinematic-image-of-a-conference-meeting-2022-09-07-00-11-40-utc-1-1.jpg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/02\/cinematic-image-of-a-conference-meeting-2022-09-07-00-11-40-utc-1-1-800x404.jpg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v1.json",
+                    "name": "Techy Eve - Home v1"
+                }
+            ],
+            "filesize": 232871,
+            "dimensions": [
+                1920,
+                969
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/cinematic-image-of-a-conference-meeting-MXPVZ2Z"
+        },
+        {
+            "filename": "dots.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/02\/dots.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v1.json",
+                    "name": "Techy Eve - Home v1"
+                },
+                {
+                    "source": "templates\/techy-eve-home-v2.json",
+                    "name": "Techy Eve Home v2"
+                }
+            ],
+            "filesize": 6507,
+            "dimensions": [
+                230,
+                190
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "shot-of-a-group-of-businesspeople-attending-a-conf-2022-09-14-01-28-39-utc-1-1.jpg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/02\/shot-of-a-group-of-businesspeople-attending-a-conf-2022-09-14-01-28-39-utc-1-1-800x651.jpg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v1.json",
+                    "name": "Techy Eve - Home v1"
+                }
+            ],
+            "filesize": 116375,
+            "dimensions": [
+                947,
+                771
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/shot-of-a-group-of-businesspeople-attending-a-conf-ZD8RA8T"
+        },
+        {
+            "filename": "networking.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/02\/networking.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v1.json",
+                    "name": "Techy Eve - Home v1"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v1.json",
+                    "name": "Techy Eve - About v1"
+                }
+            ],
+            "filesize": 2847,
+            "dimensions": [
+                96,
+                96
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "mentor-program.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/02\/mentor-program.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v1.json",
+                    "name": "Techy Eve - Home v1"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v1.json",
+                    "name": "Techy Eve - About v1"
+                }
+            ],
+            "filesize": 2702,
+            "dimensions": [
+                96,
+                104
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "meetup.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/02\/meetup.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v1.json",
+                    "name": "Techy Eve - Home v1"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v1.json",
+                    "name": "Techy Eve - About v1"
+                }
+            ],
+            "filesize": 2298,
+            "dimensions": [
+                96,
+                96
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "potrait-of-happy-asian-woman-sitting-on-sofa-at-ho-2022-12-16-09-12-21-utc.jpeg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2024\/10\/potrait-of-happy-asian-woman-sitting-on-sofa-at-ho-2022-12-16-09-12-21-utc.jpeg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v1.json",
+                    "name": "Techy Eve - Home v1"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v1.json",
+                    "name": "Techy Eve - About v1"
+                },
+                {
+                    "source": "templates\/techy-eve-speakers.json",
+                    "name": "Techy Eve - Speakers"
+                }
+            ],
+            "filesize": 59448,
+            "dimensions": [
+                424,
+                465
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/potrait-of-happy-asian-woman-sitting-on-sofa-at-ho-7ZH6YPD"
+        },
+        {
+            "filename": "potrait-of-man-at-home-2022-03-04-01-45-12-utc.jpeg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2024\/10\/potrait-of-man-at-home-2022-03-04-01-45-12-utc.jpeg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v1.json",
+                    "name": "Techy Eve - Home v1"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v1.json",
+                    "name": "Techy Eve - About v1"
+                },
+                {
+                    "source": "templates\/techy-eve-speakers.json",
+                    "name": "Techy Eve - Speakers"
+                }
+            ],
+            "filesize": 29981,
+            "dimensions": [
+                424,
+                465
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/potrait-of-man-at-home-79BM8V6"
+        },
+        {
+            "filename": "have-big-dreams-you-will-grow-into-them-potrait-2023-01-04-19-22-14-utc.jpg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2024\/10\/have-big-dreams-you-will-grow-into-them-potrait-2023-01-04-19-22-14-utc.jpg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v1.json",
+                    "name": "Techy Eve - Home v1"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v1.json",
+                    "name": "Techy Eve - About v1"
+                },
+                {
+                    "source": "templates\/techy-eve-speakers.json",
+                    "name": "Techy Eve - Speakers"
+                }
+            ],
+            "filesize": 65000,
+            "dimensions": [
+                424,
+                465
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/have-big-dreams-you-will-grow-into-them-potrait-of-7XR8HRC"
+        },
+        {
+            "filename": "businessman-with-digital-tablet-2021-08-26-19-52-47-utc-1.jpeg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2024\/10\/businessman-with-digital-tablet-2021-08-26-19-52-47-utc-1.jpeg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v1.json",
+                    "name": "Techy Eve - Home v1"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v1.json",
+                    "name": "Techy Eve - About v1"
+                },
+                {
+                    "source": "templates\/techy-eve-speakers.json",
+                    "name": "Techy Eve - Speakers"
+                }
+            ],
+            "filesize": 45639,
+            "dimensions": [
+                424,
+                465
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/businessman-with-digital-tablet-2N2KRU9"
+        },
+        {
+            "filename": "cropped-portrait-of-a-young-businesswoman-working-2022-12-16-15-15-25-utc.jpeg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2024\/10\/cropped-portrait-of-a-young-businesswoman-working-2022-12-16-15-15-25-utc.jpeg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v1.json",
+                    "name": "Techy Eve - Home v1"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v1.json",
+                    "name": "Techy Eve - About v1"
+                },
+                {
+                    "source": "templates\/techy-eve-speakers.json",
+                    "name": "Techy Eve - Speakers"
+                }
+            ],
+            "filesize": 55769,
+            "dimensions": [
+                424,
+                465
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/cropped-portrait-of-a-young-businesswoman-working--2Q54HVA"
+        },
+        {
+            "filename": "sponsor-shape1png.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/02\/sponsor-shape1png.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v1.json",
+                    "name": "Techy Eve - Home v1"
+                }
+            ],
+            "filesize": 4068,
+            "dimensions": [
+                182,
+                228
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "sposor-shape2.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/02\/sposor-shape2.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v1.json",
+                    "name": "Techy Eve - Home v1"
+                }
+            ],
+            "filesize": 9376,
+            "dimensions": [
+                410,
+                526
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "arrow.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/02\/arrow.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v1.json",
+                    "name": "Techy Eve - Home v1"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v1.json",
+                    "name": "Techy Eve - About v1"
+                },
+                {
+                    "source": "templates\/techy-eve-sponsors-v1.json",
+                    "name": "Techy Eve - Sponsors v1"
+                }
+            ],
+            "filesize": 6257,
+            "dimensions": [
+                172,
+                168
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "square.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/02\/square.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v1.json",
+                    "name": "Techy Eve - Home v1"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v1.json",
+                    "name": "Techy Eve - About v1"
+                },
+                {
+                    "source": "templates\/techy-eve-sponsors-v1.json",
+                    "name": "Techy Eve - Sponsors v1"
+                }
+            ],
+            "filesize": 4883,
+            "dimensions": [
+                166,
+                162
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "tech.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/02\/tech.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v1.json",
+                    "name": "Techy Eve - Home v1"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v1.json",
+                    "name": "Techy Eve - About v1"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v2.json",
+                    "name": "Techy Eve - About V2"
+                },
+                {
+                    "source": "templates\/techy-eve-sponsors-v1.json",
+                    "name": "Techy Eve - Sponsors v1"
+                }
+            ],
+            "filesize": 4851,
+            "dimensions": [
+                260,
+                110
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "coonnect.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/02\/coonnect.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v1.json",
+                    "name": "Techy Eve - Home v1"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v1.json",
+                    "name": "Techy Eve - About v1"
+                },
+                {
+                    "source": "templates\/techy-eve-sponsors-v1.json",
+                    "name": "Techy Eve - Sponsors v1"
+                }
+            ],
+            "filesize": 6490,
+            "dimensions": [
+                358,
+                116
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "am-company.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/02\/am-company.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v1.json",
+                    "name": "Techy Eve - Home v1"
+                },
+                {
+                    "source": "templates\/techy-eve-sponsors-v1.json",
+                    "name": "Techy Eve - Sponsors v1"
+                }
+            ],
+            "filesize": 5299,
+            "dimensions": [
+                142,
+                146
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "renewable.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/02\/renewable.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v1.json",
+                    "name": "Techy Eve - Home v1"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v1.json",
+                    "name": "Techy Eve - About v1"
+                },
+                {
+                    "source": "templates\/techy-eve-sponsors-v1.json",
+                    "name": "Techy Eve - Sponsors v1"
+                }
+            ],
+            "filesize": 11879,
+            "dimensions": [
+                134,
+                148
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "fastchat.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/02\/fastchat.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v1.json",
+                    "name": "Techy Eve - Home v1"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v1.json",
+                    "name": "Techy Eve - About v1"
+                },
+                {
+                    "source": "templates\/techy-eve-sponsors-v1.json",
+                    "name": "Techy Eve - Sponsors v1"
+                }
+            ],
+            "filesize": 8799,
+            "dimensions": [
+                200,
+                124
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "gaming.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/02\/gaming.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v1.json",
+                    "name": "Techy Eve - Home v1"
+                },
+                {
+                    "source": "templates\/techy-eve-sponsors-v1.json",
+                    "name": "Techy Eve - Sponsors v1"
+                }
+            ],
+            "filesize": 11215,
+            "dimensions": [
+                296,
+                120
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "businessman-coach-in-the-auditorium-2021-08-29-16-27-06-utc-1.jpg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/02\/businessman-coach-in-the-auditorium-2021-08-29-16-27-06-utc-1-800x607.jpg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v1.json",
+                    "name": "Techy Eve - Home v1"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v1.json",
+                    "name": "Techy Eve - About v1"
+                },
+                {
+                    "source": "templates\/techy-eve-gallery.json",
+                    "name": "Techy Eve - Gallery"
+                }
+            ],
+            "filesize": 169492,
+            "dimensions": [
+                1296,
+                984
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/businessman-coach-in-the-auditorium-MQYGZ8B"
+        },
+        {
+            "filename": "group-of-friendly-three-multiethnic-business-peopl-2021-08-31-08-26-59-utc-1.jpg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/02\/group-of-friendly-three-multiethnic-business-peopl-2021-08-31-08-26-59-utc-1-800x600.jpg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v1.json",
+                    "name": "Techy Eve - Home v1"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v1.json",
+                    "name": "Techy Eve - About v1"
+                },
+                {
+                    "source": "templates\/techy-eve-gallery.json",
+                    "name": "Techy Eve - Gallery"
+                }
+            ],
+            "filesize": 167414,
+            "dimensions": [
+                1312,
+                984
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/group-of-friendly-three-multiethnic-business-peopl-6TQGKZL"
+        },
+        {
+            "filename": "businessman-coach-in-the-auditorium-2021-08-29-16-27-11-utc-1.jpg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/02\/businessman-coach-in-the-auditorium-2021-08-29-16-27-11-utc-1-800x600.jpg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v1.json",
+                    "name": "Techy Eve - Home v1"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v1.json",
+                    "name": "Techy Eve - About v1"
+                },
+                {
+                    "source": "templates\/techy-eve-gallery.json",
+                    "name": "Techy Eve - Gallery"
+                }
+            ],
+            "filesize": 233115,
+            "dimensions": [
+                1312,
+                984
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/businessman-coach-in-the-auditorium-6HYA5PJ"
+        },
+        {
+            "filename": "mentoring-in-office-two-young-multiracial-colleag-2022-02-04-19-15-33-utc-1-1.jpg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/02\/mentoring-in-office-two-young-multiracial-colleag-2022-02-04-19-15-33-utc-1-1-800x600.jpg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v1.json",
+                    "name": "Techy Eve - Home v1"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v1.json",
+                    "name": "Techy Eve - About v1"
+                },
+                {
+                    "source": "templates\/techy-eve-gallery.json",
+                    "name": "Techy Eve - Gallery"
+                }
+            ],
+            "filesize": 203017,
+            "dimensions": [
+                1312,
+                984
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/mentoring-in-office-two-young-multiracial-colleagu-YDWL8ZC"
+        },
+        {
+            "filename": "rear-view-of-audience-in-the-conference-hall-or-se-2022-12-16-03-32-42-utc-1-1.jpg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/02\/rear-view-of-audience-in-the-conference-hall-or-se-2022-12-16-03-32-42-utc-1-1-800x600.jpg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v1.json",
+                    "name": "Techy Eve - Home v1"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v1.json",
+                    "name": "Techy Eve - About v1"
+                },
+                {
+                    "source": "templates\/techy-eve-gallery.json",
+                    "name": "Techy Eve - Gallery"
+                }
+            ],
+            "filesize": 130596,
+            "dimensions": [
+                1320,
+                990
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/rear-view-of-audience-in-the-conference-hall-or-se-ANYMJC2"
+        },
+        {
+            "filename": "shot-of-a-group-of-businesspeople-attending-a-conf-2022-09-14-01-28-39-utc-2-1.jpg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/02\/shot-of-a-group-of-businesspeople-attending-a-conf-2022-09-14-01-28-39-utc-2-1-800x600.jpg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v1.json",
+                    "name": "Techy Eve - Home v1"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v1.json",
+                    "name": "Techy Eve - About v1"
+                },
+                {
+                    "source": "templates\/techy-eve-gallery.json",
+                    "name": "Techy Eve - Gallery"
+                }
+            ],
+            "filesize": 180586,
+            "dimensions": [
+                1320,
+                990
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/shot-of-a-group-of-businesspeople-attending-a-conf-ZD8RA8T"
+        },
+        {
+            "filename": "students-raising-hand-in-auditorium-2021-09-24-04-08-49-utc-4-1.jpg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/02\/students-raising-hand-in-auditorium-2021-09-24-04-08-49-utc-4-1-800x600.jpg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v1.json",
+                    "name": "Techy Eve - Home v1"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v1.json",
+                    "name": "Techy Eve - About v1"
+                },
+                {
+                    "source": "templates\/techy-eve-gallery.json",
+                    "name": "Techy Eve - Gallery"
+                }
+            ],
+            "filesize": 140109,
+            "dimensions": [
+                1320,
+                990
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/students-raising-hand-in-auditorium-64W5QGK"
+        },
+        {
+            "filename": "team-shape.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/02\/team-shape-800x498.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v1.json",
+                    "name": "Techy Eve - Home v1"
+                }
+            ],
+            "filesize": 56147,
+            "dimensions": [
+                1920,
+                1195
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "persion1.jpg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/persion1-800x451.jpg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v1.json",
+                    "name": "Techy Eve - Home v1"
+                }
+            ],
+            "filesize": 43939,
+            "dimensions": [
+                848,
+                478
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/potrait-of-happy-asian-woman-sitting-on-sofa-at-ho-7ZH6YPD"
+        },
+        {
+            "filename": "persion2.jpg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/persion2-800x451.jpg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v1.json",
+                    "name": "Techy Eve - Home v1"
+                }
+            ],
+            "filesize": 55654,
+            "dimensions": [
+                848,
+                478
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/potrait-of-man-at-home-79BM8V6"
+        },
+        {
+            "filename": "persion3.jpg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/persion3-800x451.jpg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v1.json",
+                    "name": "Techy Eve - Home v1"
+                }
+            ],
+            "filesize": 69531,
+            "dimensions": [
+                848,
+                478
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/have-big-dreams-you-will-grow-into-them-potrait-of-7XR8HRC"
+        },
+        {
+            "filename": "persion5.jpg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/persion5-800x451.jpg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v1.json",
+                    "name": "Techy Eve - Home v1"
+                }
+            ],
+            "filesize": 52295,
+            "dimensions": [
+                848,
+                478
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/businessman-with-digital-tablet-2N2KRU9"
+        },
+        {
+            "filename": "persion4.jpg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/persion4-800x451.jpg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v1.json",
+                    "name": "Techy Eve - Home v1"
+                }
+            ],
+            "filesize": 38643,
+            "dimensions": [
+                848,
+                478
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/cropped-portrait-of-a-young-businesswoman-working--2Q54HVA"
+        },
+        {
+            "filename": "arrows-shape.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/02\/arrows-shape.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v1.json",
+                    "name": "Techy Eve - Home v1"
+                }
+            ],
+            "filesize": 4528,
+            "dimensions": [
+                136,
+                455
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "Standard.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/02\/Standard.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v1.json",
+                    "name": "Techy Eve - Home v1"
+                },
+                {
+                    "source": "templates\/techy-eve-ticket-v1.json",
+                    "name": "Techy Eve - Ticket v1"
+                }
+            ],
+            "filesize": 2302,
+            "dimensions": [
+                200,
+                200
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "premium.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/02\/premium.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v1.json",
+                    "name": "Techy Eve - Home v1"
+                },
+                {
+                    "source": "templates\/techy-eve-ticket-v1.json",
+                    "name": "Techy Eve - Ticket v1"
+                }
+            ],
+            "filesize": 2698,
+            "dimensions": [
+                200,
+                200
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "VIP.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/02\/VIP.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v1.json",
+                    "name": "Techy Eve - Home v1"
+                },
+                {
+                    "source": "templates\/techy-eve-ticket-v1.json",
+                    "name": "Techy Eve - Ticket v1"
+                }
+            ],
+            "filesize": 2667,
+            "dimensions": [
+                200,
+                200
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "testimonial3.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/testimonial3.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v1.json",
+                    "name": "Techy Eve - Home v1"
+                },
+                {
+                    "source": "templates\/techy-eve-home-v2.json",
+                    "name": "Techy Eve Home v2"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v1.json",
+                    "name": "Techy Eve - About v1"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v2.json",
+                    "name": "Techy Eve - About V2"
+                },
+                {
+                    "source": "templates\/techy-eve-schedule.json",
+                    "name": "Techy Eve - Schedule"
+                }
+            ],
+            "filesize": 22093,
+            "dimensions": [
+                112,
+                112
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/cropped-portrait-of-a-young-businesswoman-working--2Q54HVA"
+        },
+        {
+            "filename": "testimonial2.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/testimonial2.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v1.json",
+                    "name": "Techy Eve - Home v1"
+                },
+                {
+                    "source": "templates\/techy-eve-home-v2.json",
+                    "name": "Techy Eve Home v2"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v1.json",
+                    "name": "Techy Eve - About v1"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v2.json",
+                    "name": "Techy Eve - About V2"
+                },
+                {
+                    "source": "templates\/techy-eve-schedule.json",
+                    "name": "Techy Eve - Schedule"
+                }
+            ],
+            "filesize": 22069,
+            "dimensions": [
+                112,
+                112
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/potrait-of-man-at-home-79BM8V6"
+        },
+        {
+            "filename": "testimonial1.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/testimonial1.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v1.json",
+                    "name": "Techy Eve - Home v1"
+                },
+                {
+                    "source": "templates\/techy-eve-home-v2.json",
+                    "name": "Techy Eve Home v2"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v1.json",
+                    "name": "Techy Eve - About v1"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v2.json",
+                    "name": "Techy Eve - About V2"
+                },
+                {
+                    "source": "templates\/techy-eve-schedule.json",
+                    "name": "Techy Eve - Schedule"
+                }
+            ],
+            "filesize": 25302,
+            "dimensions": [
+                112,
+                112
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/have-big-dreams-you-will-grow-into-them-potrait-of-7XR8HRC"
+        },
+        {
+            "filename": "home-main-banner-.jpg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/home-main-banner--800x450.jpg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v2.json",
+                    "name": "Techy Eve Home v2"
+                }
+            ],
+            "filesize": 174363,
+            "dimensions": [
+                2288,
+                1286
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/side-view-of-caucasian-businessman-standing-and-gi-AZ97B2U"
+        },
+        {
+            "filename": "double-quote-top-1.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/double-quote-top-1.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v2.json",
+                    "name": "Techy Eve Home v2"
+                }
+            ],
+            "filesize": 5239,
+            "dimensions": [
+                460,
+                524
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "double-quote-top-right-1.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/double-quote-top-right-1.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v2.json",
+                    "name": "Techy Eve Home v2"
+                }
+            ],
+            "filesize": 4973,
+            "dimensions": [
+                436,
+                524
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "double-quote-top.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/double-quote-top.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v2.json",
+                    "name": "Techy Eve Home v2"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v2.json",
+                    "name": "Techy Eve - About V2"
+                }
+            ],
+            "filesize": 1769,
+            "dimensions": [
+                160,
+                160
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "double-quote-top-right.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/double-quote-top-right.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v2.json",
+                    "name": "Techy Eve Home v2"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v2.json",
+                    "name": "Techy Eve - About V2"
+                }
+            ],
+            "filesize": 1729,
+            "dimensions": [
+                160,
+                160
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "networking.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/networking.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v2.json",
+                    "name": "Techy Eve Home v2"
+                }
+            ],
+            "filesize": 9804,
+            "dimensions": [
+                192,
+                192
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "mentor-program.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/mentor-program.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v2.json",
+                    "name": "Techy Eve Home v2"
+                }
+            ],
+            "filesize": 4478,
+            "dimensions": [
+                192,
+                192
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "meetup.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/meetup.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v2.json",
+                    "name": "Techy Eve Home v2"
+                }
+            ],
+            "filesize": 6745,
+            "dimensions": [
+                192,
+                192
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "Keynote-background.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/Keynote-background-800x627.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v2.json",
+                    "name": "Techy Eve Home v2"
+                }
+            ],
+            "filesize": 159313,
+            "dimensions": [
+                3840,
+                3008
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "v1-team1.jpg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/v1-team1-800x800.jpg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v2.json",
+                    "name": "Techy Eve Home v2"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v2.json",
+                    "name": "Techy Eve - About V2"
+                }
+            ],
+            "filesize": 79323,
+            "dimensions": [
+                890,
+                890
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/potrait-of-happy-asian-woman-sitting-on-sofa-at-ho-7ZH6YPD"
+        },
+        {
+            "filename": "v1-team2.jpg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/v1-team2-800x798.jpg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v2.json",
+                    "name": "Techy Eve Home v2"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v2.json",
+                    "name": "Techy Eve - About V2"
+                }
+            ],
+            "filesize": 117521,
+            "dimensions": [
+                892,
+                890
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/potrait-of-man-at-home-79BM8V6"
+        },
+        {
+            "filename": "v1-team3.jpg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/v1-team3-800x800.jpg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v2.json",
+                    "name": "Techy Eve Home v2"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v2.json",
+                    "name": "Techy Eve - About V2"
+                }
+            ],
+            "filesize": 99860,
+            "dimensions": [
+                890,
+                890
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/have-big-dreams-you-will-grow-into-them-potrait-of-7XR8HRC"
+        },
+        {
+            "filename": "v1-team4.jpg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/v1-team4-800x800.jpg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v2.json",
+                    "name": "Techy Eve Home v2"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v2.json",
+                    "name": "Techy Eve - About V2"
+                }
+            ],
+            "filesize": 64830,
+            "dimensions": [
+                890,
+                890
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/businessman-with-digital-tablet-2N2KRU9"
+        },
+        {
+            "filename": "v1-team5.jpg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/v1-team5-800x798.jpg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v2.json",
+                    "name": "Techy Eve Home v2"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v2.json",
+                    "name": "Techy Eve - About V2"
+                }
+            ],
+            "filesize": 73176,
+            "dimensions": [
+                892,
+                890
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/cropped-portrait-of-a-young-businesswoman-working--2Q54HVA"
+        },
+        {
+            "filename": "top-right.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/top-right-800x425.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v2.json",
+                    "name": "Techy Eve Home v2"
+                }
+            ],
+            "filesize": 19785,
+            "dimensions": [
+                862,
+                458
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "bottom-left.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/bottom-left-800x579.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v2.json",
+                    "name": "Techy Eve Home v2"
+                },
+                {
+                    "source": "templates\/techy-eve-sponsors-v2.json",
+                    "name": "Techy Eve - Sponsors v2"
+                }
+            ],
+            "filesize": 26447,
+            "dimensions": [
+                810,
+                586
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "arrow-logo.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/arrow-logo.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v2.json",
+                    "name": "Techy Eve Home v2"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v2.json",
+                    "name": "Techy Eve - About V2"
+                },
+                {
+                    "source": "templates\/techy-eve-sponsors-v2.json",
+                    "name": "Techy Eve - Sponsors v2"
+                }
+            ],
+            "filesize": 6296,
+            "dimensions": [
+                172,
+                168
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "square.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/square.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v2.json",
+                    "name": "Techy Eve Home v2"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v2.json",
+                    "name": "Techy Eve - About V2"
+                },
+                {
+                    "source": "templates\/techy-eve-sponsors-v2.json",
+                    "name": "Techy Eve - Sponsors v2"
+                }
+            ],
+            "filesize": 7358,
+            "dimensions": [
+                246,
+                240
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "tecj.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/tecj.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v2.json",
+                    "name": "Techy Eve Home v2"
+                },
+                {
+                    "source": "templates\/techy-eve-sponsors-v2.json",
+                    "name": "Techy Eve - Sponsors v2"
+                }
+            ],
+            "filesize": 4954,
+            "dimensions": [
+                260,
+                110
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "coonnect.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/coonnect.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v2.json",
+                    "name": "Techy Eve Home v2"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v2.json",
+                    "name": "Techy Eve - About V2"
+                },
+                {
+                    "source": "templates\/techy-eve-sponsors-v2.json",
+                    "name": "Techy Eve - Sponsors v2"
+                }
+            ],
+            "filesize": 6595,
+            "dimensions": [
+                357,
+                116
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "Frame.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/Frame.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v2.json",
+                    "name": "Techy Eve Home v2"
+                },
+                {
+                    "source": "templates\/techy-eve-sponsors-v2.json",
+                    "name": "Techy Eve - Sponsors v2"
+                }
+            ],
+            "filesize": 6936,
+            "dimensions": [
+                183,
+                188
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "image-8.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/image-8.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v2.json",
+                    "name": "Techy Eve Home v2"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v2.json",
+                    "name": "Techy Eve - About V2"
+                },
+                {
+                    "source": "templates\/techy-eve-sponsors-v2.json",
+                    "name": "Techy Eve - Sponsors v2"
+                }
+            ],
+            "filesize": 16697,
+            "dimensions": [
+                174,
+                194
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "image-7.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/image-7.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v2.json",
+                    "name": "Techy Eve Home v2"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v2.json",
+                    "name": "Techy Eve - About V2"
+                },
+                {
+                    "source": "templates\/techy-eve-sponsors-v2.json",
+                    "name": "Techy Eve - Sponsors v2"
+                }
+            ],
+            "filesize": 9149,
+            "dimensions": [
+                208,
+                130
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "image-6.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/image-6.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v2.json",
+                    "name": "Techy Eve Home v2"
+                },
+                {
+                    "source": "templates\/techy-eve-sponsors-v2.json",
+                    "name": "Techy Eve - Sponsors v2"
+                }
+            ],
+            "filesize": 11097,
+            "dimensions": [
+                296,
+                120
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "gallery1.jpg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/gallery1-800x421.jpg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v2.json",
+                    "name": "Techy Eve Home v2"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v2.json",
+                    "name": "Techy Eve - About V2"
+                }
+            ],
+            "filesize": 158804,
+            "dimensions": [
+                1950,
+                1026
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/businessman-coach-in-the-auditorium-MQYGZ8B"
+        },
+        {
+            "filename": "gallery2.jpg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/gallery2-800x434.jpg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v2.json",
+                    "name": "Techy Eve Home v2"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v2.json",
+                    "name": "Techy Eve - About V2"
+                }
+            ],
+            "filesize": 122754,
+            "dimensions": [
+                1890,
+                1026
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/students-raising-hand-in-auditorium-64W5QGK"
+        },
+        {
+            "filename": "gallery3.jpg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/gallery3-800x543.jpg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v2.json",
+                    "name": "Techy Eve Home v2"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v2.json",
+                    "name": "Techy Eve - About V2"
+                }
+            ],
+            "filesize": 104927,
+            "dimensions": [
+                1686,
+                1144
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/rear-view-of-audience-in-the-conference-hall-or-se-ANYMJC2"
+        },
+        {
+            "filename": "gallery4.jpg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/gallery4-800x1072.jpg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v2.json",
+                    "name": "Techy Eve Home v2"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v2.json",
+                    "name": "Techy Eve - About V2"
+                }
+            ],
+            "filesize": 110153,
+            "dimensions": [
+                854,
+                1144
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/businessman-coach-in-the-auditorium-6HYA5PJ"
+        },
+        {
+            "filename": "gallery5.jpg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/gallery5-800x704.jpg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v2.json",
+                    "name": "Techy Eve Home v2"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v2.json",
+                    "name": "Techy Eve - About V2"
+                }
+            ],
+            "filesize": 141936,
+            "dimensions": [
+                1300,
+                1144
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/mentoring-in-office-two-young-multiracial-colleagu-YDWL8ZC"
+        },
+        {
+            "filename": "dot-vertical.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/dot-vertical.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v2.json",
+                    "name": "Techy Eve Home v2"
+                }
+            ],
+            "filesize": 8653,
+            "dimensions": [
+                294,
+                358
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "rear-view-of-audience-in-the-conference-hall-or-se-2022-12-16-03-32-42-utc-1-2-1.jpeg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/02\/rear-view-of-audience-in-the-conference-hall-or-se-2022-12-16-03-32-42-utc-1-2-1-800x225.jpeg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v2.json",
+                    "name": "Techy Eve Home v2"
+                },
+                {
+                    "source": "templates\/techy-eve-footer.json",
+                    "name": "Techy Eve - Footer"
+                },
+                {
+                    "source": "templates\/techy-eve-footer-v2.json",
+                    "name": "Techy Eve - Footer v2"
+                }
+            ],
+            "filesize": 105091,
+            "dimensions": [
+                1600,
+                450
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/rear-view-of-audience-in-the-conference-hall-or-se-ANYMJC2"
+        },
+        {
+            "filename": "schedule.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/schedule.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v2.json",
+                    "name": "Techy Eve Home v2"
+                }
+            ],
+            "filesize": 35964,
+            "dimensions": [
+                510,
+                770
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "testimonial4.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/testimonial4.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v2.json",
+                    "name": "Techy Eve Home v2"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v2.json",
+                    "name": "Techy Eve - About V2"
+                },
+                {
+                    "source": "templates\/techy-eve-schedule.json",
+                    "name": "Techy Eve - Schedule"
+                }
+            ],
+            "filesize": 21977,
+            "dimensions": [
+                112,
+                112
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/businessman-with-digital-tablet-2N2KRU9"
+        },
+        {
+            "filename": "top-left-cross.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/top-left-cross.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v2.json",
+                    "name": "Techy Eve Home v2"
+                }
+            ],
+            "filesize": 910,
+            "dimensions": [
+                80,
+                80
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "wave.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/wave.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v2.json",
+                    "name": "Techy Eve Home v2"
+                }
+            ],
+            "filesize": 8998,
+            "dimensions": [
+                434,
+                118
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "bottom-left-cross.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/bottom-left-cross.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v2.json",
+                    "name": "Techy Eve Home v2"
+                }
+            ],
+            "filesize": 914,
+            "dimensions": [
+                80,
+                80
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "bottom-right-cross.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/bottom-right-cross.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v2.json",
+                    "name": "Techy Eve Home v2"
+                }
+            ],
+            "filesize": 1035,
+            "dimensions": [
+                94,
+                94
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "triangle.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/triangle.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v2.json",
+                    "name": "Techy Eve Home v2"
+                }
+            ],
+            "filesize": 2524,
+            "dimensions": [
+                660,
+                113
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "testimonial-shape.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/testimonial-shape.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-home-v2.json",
+                    "name": "Techy Eve Home v2"
+                },
+                {
+                    "source": "templates\/techy-eve-about-v2.json",
+                    "name": "Techy Eve - About V2"
+                }
+            ],
+            "filesize": 46473,
+            "dimensions": [
+                702,
+                999
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "businessman-coach-in-the-auditorium-2021-08-29-16-27-11-utc-streched.jpg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/02\/businessman-coach-in-the-auditorium-2021-08-29-16-27-11-utc-streched-800x1206.jpg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-about-v1.json",
+                    "name": "Techy Eve - About v1"
+                }
+            ],
+            "filesize": 232211,
+            "dimensions": [
+                1072,
+                1616
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/businessman-coach-in-the-auditorium-6HYA5PJ"
+        },
+        {
+            "filename": "students-raising-hand-in-auditorium-2021-09-24-04-08-49-utc-new.jpg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/02\/students-raising-hand-in-auditorium-2021-09-24-04-08-49-utc-new-800x600.jpg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-about-v1.json",
+                    "name": "Techy Eve - About v1"
+                }
+            ],
+            "filesize": 136421,
+            "dimensions": [
+                1296,
+                972
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/students-raising-hand-in-auditorium-64W5QGK"
+        },
+        {
+            "filename": "vision-and-mission.jpeg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2024\/10\/vision-and-mission-800x626.jpeg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-about-v1.json",
+                    "name": "Techy Eve - About v1"
+                }
+            ],
+            "filesize": 127574,
+            "dimensions": [
+                1600,
+                1252
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/meeting-seminar-conference-audience-training-conce-AB3MM9B"
+        },
+        {
+            "filename": "target.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/02\/target.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-about-v1.json",
+                    "name": "Techy Eve - About v1"
+                }
+            ],
+            "filesize": 1614,
+            "dimensions": [
+                80,
+                80
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "eye.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/02\/eye.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-about-v1.json",
+                    "name": "Techy Eve - About v1"
+                }
+            ],
+            "filesize": 553,
+            "dimensions": [
+                40,
+                40
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "about-v2-banner.jpg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/about-v2-banner-800x333.jpg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-about-v2.json",
+                    "name": "Techy Eve - About V2"
+                }
+            ],
+            "filesize": 151152,
+            "dimensions": [
+                2190,
+                912
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/meeting-seminar-conference-audience-training-conce-AB3MM9B"
+        },
+        {
+            "filename": "grain-min-compressed.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2024\/10\/grain-min-compressed-800x334.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-about-v2.json",
+                    "name": "Techy Eve - About V2"
+                }
+            ],
+            "filesize": 213518,
+            "dimensions": [
+                1600,
+                668
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "Group-43.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/Group-43.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-about-v2.json",
+                    "name": "Techy Eve - About V2"
+                }
+            ],
+            "filesize": 3595,
+            "dimensions": [
+                243,
+                240
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "gallery3-1.jpg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/gallery3-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-about-v2.json",
+                    "name": "Techy Eve - About V2"
+                }
+            ],
+            "filesize": 67970,
+            "dimensions": [
+                728,
+                970
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/businessman-coach-in-the-auditorium-MQYGZ8B"
+        },
+        {
+            "filename": "gallery2-1.jpg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/gallery2-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-about-v2.json",
+                    "name": "Techy Eve - About V2"
+                }
+            ],
+            "filesize": 45953,
+            "dimensions": [
+                728,
+                970
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/rear-view-of-audience-in-the-conference-hall-or-se-ANYMJC2"
+        },
+        {
+            "filename": "gallery1-1.jpg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/gallery1-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-about-v2.json",
+                    "name": "Techy Eve - About V2"
+                }
+            ],
+            "filesize": 80418,
+            "dimensions": [
+                728,
+                970
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/mentoring-in-office-two-young-multiracial-colleagu-YDWL8ZC"
+        },
+        {
+            "filename": "gallery4-1.jpg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/gallery4-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-about-v2.json",
+                    "name": "Techy Eve - About V2"
+                }
+            ],
+            "filesize": 84516,
+            "dimensions": [
+                728,
+                970
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/businessman-coach-in-the-auditorium-6HYA5PJ"
+        },
+        {
+            "filename": "gallery5-1.jpg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/gallery5-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-about-v2.json",
+                    "name": "Techy Eve - About V2"
+                }
+            ],
+            "filesize": 80418,
+            "dimensions": [
+                728,
+                970
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/mentoring-in-office-two-young-multiracial-colleagu-YDWL8ZC"
+        },
+        {
+            "filename": "member.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/member.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-about-v2.json",
+                    "name": "Techy Eve - About V2"
+                }
+            ],
+            "filesize": 3458,
+            "dimensions": [
+                120,
+                121
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "topics.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/topics.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-about-v2.json",
+                    "name": "Techy Eve - About V2"
+                }
+            ],
+            "filesize": 2590,
+            "dimensions": [
+                121,
+                120
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "days.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/days.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-about-v2.json",
+                    "name": "Techy Eve - About V2"
+                }
+            ],
+            "filesize": 839,
+            "dimensions": [
+                108,
+                120
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "speaker.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/speaker.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-about-v2.json",
+                    "name": "Techy Eve - About V2"
+                }
+            ],
+            "filesize": 2070,
+            "dimensions": [
+                90,
+                120
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "Vector.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/Vector.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-about-v2.json",
+                    "name": "Techy Eve - About V2"
+                }
+            ],
+            "filesize": 815,
+            "dimensions": [
+                71,
+                71
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "target.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/target.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-about-v2.json",
+                    "name": "Techy Eve - About V2"
+                }
+            ],
+            "filesize": 11605,
+            "dimensions": [
+                464,
+                464
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "eye.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/eye.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-about-v2.json",
+                    "name": "Techy Eve - About V2"
+                }
+            ],
+            "filesize": 9861,
+            "dimensions": [
+                464,
+                464
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "red-seats-rows-in-empty-cinema-hall-movie-theatre-2022-07-12-14-27-37-utc-1.jpg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/02\/red-seats-rows-in-empty-cinema-hall-movie-theatre-2022-07-12-14-27-37-utc-1-800x208.jpg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-ticket-v1.json",
+                    "name": "Techy Eve - Ticket v1"
+                }
+            ],
+            "filesize": 190390,
+            "dimensions": [
+                3840,
+                1000
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/red-seats-rows-in-empty-cinema-hall-movie-theatre--X4UM2CB"
+        },
+        {
+            "filename": "handshake-of-partners-2021-09-24-03-37-42-utc-1.jpg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/02\/handshake-of-partners-2021-09-24-03-37-42-utc-1-800x208.jpg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-sponsors-v1.json",
+                    "name": "Techy Eve - Sponsors v1"
+                }
+            ],
+            "filesize": 229366,
+            "dimensions": [
+                3840,
+                1000
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/handshake-of-partners-CHZ5WBL"
+        },
+        {
+            "filename": "side-view-of-caucasian-businessman-standing-and-gi-2021-08-28-16-43-48-utc-2.jpg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/02\/side-view-of-caucasian-businessman-standing-and-gi-2021-08-28-16-43-48-utc-2-800x208.jpg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-speakers.json",
+                    "name": "Techy Eve - Speakers"
+                }
+            ],
+            "filesize": 233218,
+            "dimensions": [
+                3840,
+                997
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/side-view-of-caucasian-businessman-standing-and-gi-AZ97B2U"
+        },
+        {
+            "filename": "vintage-journal-and-hourglass-as-a-concept-of-jour-2022-04-06-22-09-18-utc-1.jpg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2024\/10\/vintage-journal-and-hourglass-as-a-concept-of-jour-2022-04-06-22-09-18-utc-1-800x209.jpg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-gallery.json",
+                    "name": "Techy Eve - Gallery"
+                }
+            ],
+            "filesize": 92193,
+            "dimensions": [
+                1600,
+                417
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/vintage-journal-and-hourglass-as-a-concept-of-jour-UUW7479"
+        },
+        {
+            "filename": "answering-a-question-2022-12-15-22-57-28-utc-1.jpeg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2024\/10\/answering-a-question-2022-12-15-22-57-28-utc-1-800x209.jpeg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-faq.json",
+                    "name": "Techy Eve - FAQ"
+                }
+            ],
+            "filesize": 84761,
+            "dimensions": [
+                1600,
+                417
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/answering-a-question-43RUEWY"
+        },
+        {
+            "filename": "hands-of-contemporary-businesswoman-with-smartphon-2021-09-24-03-19-13-utc-1.jpg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/02\/hands-of-contemporary-businesswoman-with-smartphon-2021-09-24-03-19-13-utc-1-800x208.jpg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-contact-v1.json",
+                    "name": "Techy Eve - Contact v1"
+                }
+            ],
+            "filesize": 165872,
+            "dimensions": [
+                3840,
+                1000
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/hands-of-contemporary-businesswoman-with-smartphon-NKFDQYY"
+        },
+        {
+            "filename": "blog-banner.jpeg",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/02\/blog-banner-800x209.jpeg",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-blog.json",
+                    "name": "Techy Eve - Blog"
+                }
+            ],
+            "filesize": 126581,
+            "dimensions": [
+                1600,
+                417
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/new-blog-post-J7DX6XW"
+        },
+        {
+            "filename": "Error-V1.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/Error-V1-800x532.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-404-page.json",
+                    "name": "Techy Eve - 404 Page"
+                },
+                {
+                    "source": "templates\/techy-eve-404-v2.json",
+                    "name": "Techy Eve - 404 v2"
+                }
+            ],
+            "filesize": 45427,
+            "dimensions": [
+                1222,
+                812
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "TechyEve-footer.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/02\/TechyEve-footer.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-footer.json",
+                    "name": "Techy Eve - Footer"
+                }
+            ],
+            "filesize": 6557,
+            "dimensions": [
+                470,
+                96
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "TechyEve-logo.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/02\/TechyEve-logo.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-header.json",
+                    "name": "Techy Eve - Header"
+                },
+                {
+                    "source": "templates\/techy-eve-footer-v2.json",
+                    "name": "Techy Eve - Footer v2"
+                },
+                {
+                    "source": "templates\/techy-eve-off-canvas-menu.json",
+                    "name": "Techy Eve - Off Canvas Menu"
+                },
+                {
+                    "source": "templates\/techy-eve-header-home.json",
+                    "name": "Techy Eve - Header Home"
+                }
+            ],
+            "filesize": 4855,
+            "dimensions": [
+                392,
+                80
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "TechyEve-logo.png",
+            "thumbnail_url": "http:\/\/templatekits.wpmarvels.com\/techyeve\/wp-content\/uploads\/sites\/19\/2023\/03\/TechyEve-logo.png",
+            "templates": [
+                {
+                    "source": "templates\/techy-eve-header-v2.json",
+                    "name": "Techy Eve - Header v2"
+                },
+                {
+                    "source": "templates\/techy-eve-v2-home-header.json",
+                    "name": "Techy Eve - v2 Home Header"
+                }
+            ],
+            "filesize": 4159,
+            "dimensions": [
+                394,
+                80
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        }
+    ]
+}

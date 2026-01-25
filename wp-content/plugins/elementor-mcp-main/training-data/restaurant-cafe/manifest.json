@@ -1,0 +1,1521 @@
+{
+    "manifest_version": "1.0.21",
+    "title": "YumDining",
+    "page_builder": "elementor",
+    "kit_version": "1.0.0",
+    "templates": [
+        {
+            "name": "Global Kit Styles",
+            "screenshot": "screenshots\/global-kit-styles.jpg",
+            "source": "templates\/global.json",
+            "preview_url": "https:\/\/template-kit2.evonicmedia.com\/layout71",
+            "type": "section",
+            "category": "page",
+            "metadata": {
+                "template_type": "global-styles",
+                "include_in_zip": "1",
+                "elementor_pro_required": null,
+                "additional_template_information": [
+                    "These are the global theme styles configured through the Elementor Theme Styles area."
+                ]
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Header",
+            "screenshot": "screenshots\/header.jpg",
+            "source": "templates\/header.json",
+            "preview_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/index.php\/template-kit\/header\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Footer",
+            "screenshot": "screenshots\/footer.jpg",
+            "source": "templates\/footer.json",
+            "preview_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/index.php\/template-kit\/footer\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Booking Form",
+            "screenshot": "screenshots\/booking-form.jpg",
+            "source": "templates\/booking-form.json",
+            "preview_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/index.php\/template-kit\/booking-form\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-cta",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Contact Form",
+            "screenshot": "screenshots\/contact-form.jpg",
+            "source": "templates\/contact-form.json",
+            "preview_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/index.php\/template-kit\/contact-form\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-cta",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Newsletter Form",
+            "screenshot": "screenshots\/newsletter-form.jpg",
+            "source": "templates\/newsletter-form.json",
+            "preview_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/index.php\/template-kit\/newsletter-form\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-cta",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Home",
+            "screenshot": "screenshots\/home.jpg",
+            "source": "templates\/home.json",
+            "preview_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/index.php\/template-kit\/home\/",
+            "type": "section",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-home",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "About us",
+            "screenshot": "screenshots\/about-us.jpg",
+            "source": "templates\/about-us.json",
+            "preview_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/index.php\/template-kit\/about-us\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Menu",
+            "screenshot": "screenshots\/menu.jpg",
+            "source": "templates\/menu.json",
+            "preview_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/index.php\/template-kit\/menu\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Contact us",
+            "screenshot": "screenshots\/contact-us.jpg",
+            "source": "templates\/contact-us.json",
+            "preview_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/index.php\/template-kit\/contact-us\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Reservation",
+            "screenshot": "screenshots\/reservation.jpg",
+            "source": "templates\/reservation.json",
+            "preview_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/index.php\/template-kit\/reservation\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Gallery",
+            "screenshot": "screenshots\/gallery.jpg",
+            "source": "templates\/gallery.json",
+            "preview_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/index.php\/template-kit\/gallery\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Testimonial",
+            "screenshot": "screenshots\/testimonial.jpg",
+            "source": "templates\/testimonial.json",
+            "preview_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/index.php\/template-kit\/testimonial\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Faq",
+            "screenshot": "screenshots\/faq.jpg",
+            "source": "templates\/faq.json",
+            "preview_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/index.php\/template-kit\/faq\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Team",
+            "screenshot": "screenshots\/team.jpg",
+            "source": "templates\/team.json",
+            "preview_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/index.php\/template-kit\/team\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Blog",
+            "screenshot": "screenshots\/blog.jpg",
+            "source": "templates\/blog.json",
+            "preview_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/index.php\/template-kit\/blog\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Single Post",
+            "screenshot": "screenshots\/single-post.jpg",
+            "source": "templates\/single-post.json",
+            "preview_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/index.php\/template-kit\/single-post\/",
+            "type": "section",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-post",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Coming Soon",
+            "screenshot": "screenshots\/coming-soon.jpg",
+            "source": "templates\/coming-soon.json",
+            "preview_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/index.php\/template-kit\/coming-soon\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "404",
+            "screenshot": "screenshots\/404.jpg",
+            "source": "templates\/404.json",
+            "preview_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/index.php\/template-kit\/404\/",
+            "type": "section",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-404",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        }
+    ],
+    "required_plugins": [
+        {
+            "name": "Elementor",
+            "version": "3.20.3",
+            "file": "elementor\/elementor.php",
+            "author": "Elementor.com"
+        },
+        {
+            "name": "Jeg Elementor Kit",
+            "version": "2.6.3",
+            "file": "jeg-elementor-kit\/jeg-elementor-kit.php",
+            "author": "Jegtheme"
+        },
+        {
+            "name": "MetForm",
+            "version": "3.8.5",
+            "file": "metform\/metform.php",
+            "author": "Wpmet"
+        }
+    ],
+    "images": [
+        {
+            "filename": "LOGO.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/LOGO.jpg",
+            "templates": [
+                {
+                    "source": "templates\/header.json",
+                    "name": "Header"
+                },
+                {
+                    "source": "templates\/footer.json",
+                    "name": "Footer"
+                }
+            ],
+            "filesize": 8027,
+            "dimensions": [
+                90,
+                68
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "assorted-canapes-2023-11-27-05-35-22-utc-1-1-2.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/assorted-canapes-2023-11-27-05-35-22-utc-1-1-2.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 88154,
+            "dimensions": [
+                1920,
+                596
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/assorted-canapes-P83NEYU"
+        },
+        {
+            "filename": "Mask-group-89-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/Mask-group-89-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 65841,
+            "dimensions": [
+                370,
+                732
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/red-benches-on-the-streets-in-the-village-of-agulo-9FZN9NA"
+        },
+        {
+            "filename": "Group-38-2.png",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/Group-38-2.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 1072,
+            "dimensions": [
+                82,
+                65
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Group-39-1.png",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/Group-39-1.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 1160,
+            "dimensions": [
+                46,
+                82
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "chef-1-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/chef-1-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 21320,
+            "dimensions": [
+                258,
+                461
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/cheerful-chocolatier-holding-cooking-thermometer-n-PULU3FH"
+        },
+        {
+            "filename": "Mask-group-8-1.png",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/Mask-group-8-1.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/menu.json",
+                    "name": "Menu"
+                }
+            ],
+            "filesize": 46271,
+            "dimensions": [
+                280,
+                420
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/salad-with-salmon-spinach-and-mozzarella-on-old-wo-N5ALKJM"
+        },
+        {
+            "filename": "menu-1-1-1.png",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/menu-1-1-1.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/menu.json",
+                    "name": "Menu"
+                }
+            ],
+            "filesize": 53264,
+            "dimensions": [
+                280,
+                420
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/zucchini-rolls-with-cheese-bell-peppers-and-arugul-PNA49NG"
+        },
+        {
+            "filename": "summer-mood-2023-11-27-04-52-42-utc-1-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/summer-mood-2023-11-27-04-52-42-utc-1-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/menu.json",
+                    "name": "Menu"
+                }
+            ],
+            "filesize": 19118,
+            "dimensions": [
+                280,
+                420
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/summer-mood-R8VJPAR"
+        },
+        {
+            "filename": "menu-2-1-1-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/menu-2-1-1-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/menu.json",
+                    "name": "Menu"
+                }
+            ],
+            "filesize": 22647,
+            "dimensions": [
+                280,
+                420
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/zesty-sophisticated-cocktails-with-garnishing-on-b-BTPEANC"
+        },
+        {
+            "filename": "Mask-group-90-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/Mask-group-90-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/menu.json",
+                    "name": "Menu"
+                }
+            ],
+            "filesize": 18027,
+            "dimensions": [
+                280,
+                420
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/dessert-table-varied-B3PJM95"
+        },
+        {
+            "filename": "dessert.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/dessert.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/menu.json",
+                    "name": "Menu"
+                }
+            ],
+            "filesize": 52106,
+            "dimensions": [
+                347,
+                520
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/sweet-dessert-in-glass-PGSLVUX"
+        },
+        {
+            "filename": "catering-banquet-table-2023-11-27-04-59-00-utc-1-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/catering-banquet-table-2023-11-27-04-59-00-utc-1-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/menu.json",
+                    "name": "Menu"
+                }
+            ],
+            "filesize": 17890,
+            "dimensions": [
+                280,
+                420
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/catering-banquet-table-S8SJSGT"
+        },
+        {
+            "filename": "menu-2-1-2-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/menu-2-1-2-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/menu.json",
+                    "name": "Menu"
+                }
+            ],
+            "filesize": 25348,
+            "dimensions": [
+                280,
+                420
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/savoury-snacks-PYUHNMZ"
+        },
+        {
+            "filename": "Mask-group-92-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/Mask-group-92-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 28389,
+            "dimensions": [
+                280,
+                513
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/delicious-barbecue-with-lemonade-8BTALKF"
+        },
+        {
+            "filename": "Mask-group-93-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/Mask-group-93-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 31379,
+            "dimensions": [
+                280,
+                419
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/grilled-vegetables-and-sausages-on-wooden-board-9FUMSZ8"
+        },
+        {
+            "filename": "Mask-group-94-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/Mask-group-94-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About us"
+                }
+            ],
+            "filesize": 25977,
+            "dimensions": [
+                473,
+                562
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/chef-finishing-steak-meat-plate-PZ3QXHT"
+        },
+        {
+            "filename": "Mask-group-96-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/Mask-group-96-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About us"
+                }
+            ],
+            "filesize": 24616,
+            "dimensions": [
+                321,
+                534
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/peppers-and-fish-PY8NW2T"
+        },
+        {
+            "filename": "Mask-group-95-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/Mask-group-95-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About us"
+                }
+            ],
+            "filesize": 18154,
+            "dimensions": [
+                321,
+                696
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/man-39-s-hand-peeling-a-pear-Q6X58E9"
+        },
+        {
+            "filename": "gallery-2-2-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/gallery-2-2-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About us"
+                },
+                {
+                    "source": "templates\/gallery.json",
+                    "name": "Gallery"
+                }
+            ],
+            "filesize": 35140,
+            "dimensions": [
+                370,
+                632
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/beautiful-delicious-cake-with-bright-red-berries-o-7BYS4LH"
+        },
+        {
+            "filename": "gallery-3-1-1-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/gallery-3-1-1-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About us"
+                },
+                {
+                    "source": "templates\/gallery.json",
+                    "name": "Gallery"
+                }
+            ],
+            "filesize": 24630,
+            "dimensions": [
+                370,
+                360
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/steak-and-eggs-breakfast-with-toast-and-homestyle--FDESXD8"
+        },
+        {
+            "filename": "gallery-5-1-3-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/gallery-5-1-3-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About us"
+                },
+                {
+                    "source": "templates\/gallery.json",
+                    "name": "Gallery"
+                }
+            ],
+            "filesize": 23525,
+            "dimensions": [
+                370,
+                380
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/kenyan-food-african-delicious-cuisines-meals-NADXSVG"
+        },
+        {
+            "filename": "Mask-group-97-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/Mask-group-97-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About us"
+                },
+                {
+                    "source": "templates\/gallery.json",
+                    "name": "Gallery"
+                }
+            ],
+            "filesize": 28354,
+            "dimensions": [
+                370,
+                367
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/set-of-snacks-nachos-chicken-wings-fried-ribs-bean-RPWTLD9"
+        },
+        {
+            "filename": "gallery-6-1-7-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/gallery-6-1-7-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About us"
+                },
+                {
+                    "source": "templates\/gallery.json",
+                    "name": "Gallery"
+                }
+            ],
+            "filesize": 17379,
+            "dimensions": [
+                370,
+                212
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/close-up-of-grilled-salmon-fillet-with-green-arugu-SAXJLMG"
+        },
+        {
+            "filename": "gallery-3-1-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/gallery-3-1-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About us"
+                },
+                {
+                    "source": "templates\/gallery.json",
+                    "name": "Gallery"
+                }
+            ],
+            "filesize": 23964,
+            "dimensions": [
+                370,
+                380
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/food-and-beverage-H8ZLYPM"
+        },
+        {
+            "filename": "Mask-group-98-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/Mask-group-98-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About us"
+                },
+                {
+                    "source": "templates\/gallery.json",
+                    "name": "Gallery"
+                }
+            ],
+            "filesize": 47047,
+            "dimensions": [
+                370,
+                612
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/south-italian-pasta-orecchiette-with-tomato-sauce--FGF8W92"
+        },
+        {
+            "filename": "kenyan-food-african-delicious-cuisines-meals-2024-02-12-17-50-57-utc-1-2.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/kenyan-food-african-delicious-cuisines-meals-2024-02-12-17-50-57-utc-1-2.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About us"
+                }
+            ],
+            "filesize": 142953,
+            "dimensions": [
+                1920,
+                650
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/kenyan-food-african-delicious-cuisines-meals-EPDLF6W"
+        },
+        {
+            "filename": "Mask-group-99-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/Mask-group-99-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About us"
+                },
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 23472,
+            "dimensions": [
+                444,
+                565
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/confident-senior-asian-chef-man-in-white-dress-sta-48PMXD3"
+        },
+        {
+            "filename": "Mask-group-100-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/Mask-group-100-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/reservation.json",
+                    "name": "Reservation"
+                }
+            ],
+            "filesize": 33184,
+            "dimensions": [
+                500,
+                625
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/pensive-woman-eating-salad-2E5GXD8"
+        },
+        {
+            "filename": "Mask-group-2024-03-19T122210.437-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/Mask-group-2024-03-19T122210.437-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About us"
+                },
+                {
+                    "source": "templates\/reservation.json",
+                    "name": "Reservation"
+                }
+            ],
+            "filesize": 40324,
+            "dimensions": [
+                659,
+                534
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/vertical-shot-of-three-people-holding-glasses-of-a-BFS9U2S"
+        },
+        {
+            "filename": "header-1-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/header-1-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About us"
+                },
+                {
+                    "source": "templates\/menu.json",
+                    "name": "Menu"
+                },
+                {
+                    "source": "templates\/reservation.json",
+                    "name": "Reservation"
+                },
+                {
+                    "source": "templates\/gallery.json",
+                    "name": "Gallery"
+                },
+                {
+                    "source": "templates\/testimonial.json",
+                    "name": "Testimonial"
+                },
+                {
+                    "source": "templates\/faq.json",
+                    "name": "Faq"
+                },
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                },
+                {
+                    "source": "templates\/blog.json",
+                    "name": "Blog"
+                }
+            ],
+            "filesize": 61699,
+            "dimensions": [
+                1920,
+                360
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/crispy-canape-RE6JK8U"
+        },
+        {
+            "filename": "appetizer-1-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/appetizer-1-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/menu.json",
+                    "name": "Menu"
+                }
+            ],
+            "filesize": 29085,
+            "dimensions": [
+                414,
+                572
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/crispy-canape-RE6JK8U"
+        },
+        {
+            "filename": "main-course-1-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/main-course-1-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/menu.json",
+                    "name": "Menu"
+                }
+            ],
+            "filesize": 46156,
+            "dimensions": [
+                414,
+                572
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/south-italian-pasta-orecchiette-with-tomato-sauce--FGF8W92"
+        },
+        {
+            "filename": "Mask-group-2024-03-21T153452.327-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/Mask-group-2024-03-21T153452.327-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/menu.json",
+                    "name": "Menu"
+                }
+            ],
+            "filesize": 52081,
+            "dimensions": [
+                414,
+                572
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/red-velvet-cake-on-a-pink-background-tea-drinking--XL2AWZK"
+        },
+        {
+            "filename": "drink-1-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/drink-1-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/menu.json",
+                    "name": "Menu"
+                }
+            ],
+            "filesize": 37721,
+            "dimensions": [
+                414,
+                572
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/pina-colada-coctail-on-bar-counter-L3MJFG5"
+        },
+        {
+            "filename": "contact-1-4-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/contact-1-4-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/contact-us.json",
+                    "name": "Contact us"
+                }
+            ],
+            "filesize": 43950,
+            "dimensions": [
+                515,
+                675
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/close-up-group-of-young-people-sitting-at-the-tabl-9UNP9WQ"
+        },
+        {
+            "filename": "gallery-2-3-1-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/gallery-2-3-1-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/gallery.json",
+                    "name": "Gallery"
+                }
+            ],
+            "filesize": 66735,
+            "dimensions": [
+                770,
+                380
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/grilled-vegetables-P3SFGDK"
+        },
+        {
+            "filename": "gallery-4-3-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/gallery-4-3-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/gallery.json",
+                    "name": "Gallery"
+                }
+            ],
+            "filesize": 30157,
+            "dimensions": [
+                370,
+                360
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/green-fettuccine-spinach-pasta-with-seafood-in-cre-W5MGUAL"
+        },
+        {
+            "filename": "gallery-3-2-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/gallery-3-2-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/gallery.json",
+                    "name": "Gallery"
+                }
+            ],
+            "filesize": 18558,
+            "dimensions": [
+                370,
+                360
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/vegetarian-cream-cheese-soup-with-cauliflower-in-w-SEFMFKX"
+        },
+        {
+            "filename": "gallery-1-1-2.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/gallery-1-1-2.jpg",
+            "templates": [
+                {
+                    "source": "templates\/gallery.json",
+                    "name": "Gallery"
+                }
+            ],
+            "filesize": 37811,
+            "dimensions": [
+                370,
+                528
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/omelet-with-sausage-and-vegetables-in-white-plate-EWQPK4G"
+        },
+        {
+            "filename": "Mask-group-2024-03-22T113935.857-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/Mask-group-2024-03-22T113935.857-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/testimonial.json",
+                    "name": "Testimonial"
+                }
+            ],
+            "filesize": 4280,
+            "dimensions": [
+                130,
+                130
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/fashion-redhead-women-with-suitcase-at-autumn-fiel-MRXET2G"
+        },
+        {
+            "filename": "Mask-group-2024-03-22T114935.202-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/Mask-group-2024-03-22T114935.202-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/testimonial.json",
+                    "name": "Testimonial"
+                }
+            ],
+            "filesize": 4802,
+            "dimensions": [
+                130,
+                130
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/incredible-men-7ZUHTQG"
+        },
+        {
+            "filename": "Mask-group-2024-03-22T115009.652-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/Mask-group-2024-03-22T115009.652-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/testimonial.json",
+                    "name": "Testimonial"
+                }
+            ],
+            "filesize": 5187,
+            "dimensions": [
+                130,
+                130
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/portrait-of-young-woman-wearing-checked-scarf-and--93MV94P"
+        },
+        {
+            "filename": "Mask-group-2024-03-22T115304.490-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/Mask-group-2024-03-22T115304.490-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/testimonial.json",
+                    "name": "Testimonial"
+                }
+            ],
+            "filesize": 4396,
+            "dimensions": [
+                130,
+                130
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/young-male-hipster-on-housing-estate-NP9ZBNV"
+        },
+        {
+            "filename": "Mask-group-2024-03-22T115356.619-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/Mask-group-2024-03-22T115356.619-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/testimonial.json",
+                    "name": "Testimonial"
+                }
+            ],
+            "filesize": 4371,
+            "dimensions": [
+                130,
+                130
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/women-QLDBEB4"
+        },
+        {
+            "filename": "Mask-group-2024-03-22T115427.394-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/Mask-group-2024-03-22T115427.394-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/testimonial.json",
+                    "name": "Testimonial"
+                }
+            ],
+            "filesize": 4941,
+            "dimensions": [
+                130,
+                130
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/young-caucasian-businessman-looking-camera-serious-XAKU377"
+        },
+        {
+            "filename": "faq-2-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/faq-2-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/faq.json",
+                    "name": "Faq"
+                }
+            ],
+            "filesize": 53862,
+            "dimensions": [
+                470,
+                640
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/tacos-with-shrimps-452BMUU"
+        },
+        {
+            "filename": "team-pg-1-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/team-pg-1-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 236764,
+            "dimensions": [
+                1920,
+                650
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/top-view-of-delicious-gourmet-dishes-with-differen-VVFGXAX"
+        },
+        {
+            "filename": "Comma-1.png",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/Comma-1.png",
+            "templates": [
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 632,
+            "dimensions": [
+                67,
+                52
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Michael-Gordon.png",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/Michael-Gordon.png",
+            "templates": [
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 4432,
+            "dimensions": [
+                322,
+                66
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "Mask-group-2024-03-25T120741.222-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/Mask-group-2024-03-25T120741.222-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 20332,
+            "dimensions": [
+                370,
+                430
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/female-chef-standing-with-arms-crossed-in-kitchen--GU598K6"
+        },
+        {
+            "filename": "chef-3-1-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/chef-3-1-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 15959,
+            "dimensions": [
+                370,
+                430
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/smiling-happy-baker-keeping-pizza-looking-at-camer-9E8JHBT"
+        },
+        {
+            "filename": "Mask-group-2024-03-25T121740.633-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/Mask-group-2024-03-25T121740.633-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 22361,
+            "dimensions": [
+                370,
+                430
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/cheerful-chocolatier-holding-cooking-thermometer-n-PULU3FH"
+        },
+        {
+            "filename": "kenyan-food-african-delicious-cuisines-meals-2024-02-12-17-50-57-utc-1-3-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/kenyan-food-african-delicious-cuisines-meals-2024-02-12-17-50-57-utc-1-3-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 87404,
+            "dimensions": [
+                1170,
+                650
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/kenyan-food-african-delicious-cuisines-meals-EPDLF6W"
+        },
+        {
+            "filename": "Comma.png",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/Comma.png",
+            "templates": [
+                {
+                    "source": "templates\/blog.json",
+                    "name": "Blog"
+                }
+            ],
+            "filesize": 1150,
+            "dimensions": [
+                217,
+                165
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "single-post-1-1-2-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/single-post-1-1-2-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/single-post.json",
+                    "name": "Single Post"
+                }
+            ],
+            "filesize": 124453,
+            "dimensions": [
+                1920,
+                596
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/eating-sushi-with-chopsticks-at-sushi-restaurant-P4CM3EF"
+        },
+        {
+            "filename": "Mask-group-2024-03-22T160044.570-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/Mask-group-2024-03-22T160044.570-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/single-post.json",
+                    "name": "Single Post"
+                }
+            ],
+            "filesize": 58020,
+            "dimensions": [
+                809,
+                549
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/delicious-fresh-salad-with-prawns-grapefruit-avoca-PLTCXWY"
+        },
+        {
+            "filename": "single-post-3-1-1.png",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/single-post-3-1-1.png",
+            "templates": [
+                {
+                    "source": "templates\/single-post.json",
+                    "name": "Single Post"
+                }
+            ],
+            "filesize": 55937,
+            "dimensions": [
+                296,
+                296
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/delicious-breakfast-with-fresh-croissants-and-cup--ZUT8A7T"
+        },
+        {
+            "filename": "404-2-2-1.jpg",
+            "thumbnail_url": "https:\/\/template-kit2.evonicmedia.com\/layout71\/wp-content\/uploads\/2024\/03\/404-2-2-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/coming-soon.json",
+                    "name": "Coming Soon"
+                },
+                {
+                    "source": "templates\/404.json",
+                    "name": "404"
+                }
+            ],
+            "filesize": 204253,
+            "dimensions": [
+                1920,
+                1080
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/delicious-fresh-salad-with-prawns-grapefruit-avoca-PLTCXWY"
+        }
+    ]
+}

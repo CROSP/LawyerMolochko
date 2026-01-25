@@ -1,0 +1,993 @@
+{
+    "manifest_version": "1.0.23",
+    "title": "Hevn - Boutique Hotel Elementor Template Kit",
+    "page_builder": "elementor",
+    "kit_version": "1.0.0",
+    "templates": [
+        {
+            "name": "Global Kit Styles",
+            "screenshot": "screenshots\/global-kit-styles.jpg",
+            "source": "templates\/global.json",
+            "preview_url": "https:\/\/fatma-studio.com",
+            "type": "section",
+            "category": "page",
+            "metadata": {
+                "template_type": "global-styles",
+                "include_in_zip": "1",
+                "elementor_pro_required": null,
+                "additional_template_information": [
+                    "These are the global theme styles configured through the Elementor Theme Styles area."
+                ]
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Metform Contact",
+            "screenshot": "screenshots\/metform-contact.jpg",
+            "source": "templates\/metform-contact.json",
+            "preview_url": "https:\/\/fatma-studio.com\/hevn\/template-kit\/metform-contact\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Metform Newsletter",
+            "screenshot": "screenshots\/metform-newsletter.jpg",
+            "source": "templates\/metform-newsletter.json",
+            "preview_url": "https:\/\/fatma-studio.com\/hevn\/template-kit\/metform-newsletter\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Metform Booking",
+            "screenshot": "screenshots\/metform-booking.jpg",
+            "source": "templates\/metform-booking.json",
+            "preview_url": "https:\/\/fatma-studio.com\/hevn\/template-kit\/metform-booking\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Footer",
+            "screenshot": "screenshots\/footer.jpg",
+            "source": "templates\/footer.json",
+            "preview_url": "https:\/\/fatma-studio.com\/hevn\/template-kit\/footer\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Header",
+            "screenshot": "screenshots\/header.jpg",
+            "source": "templates\/header.json",
+            "preview_url": "https:\/\/fatma-studio.com\/hevn\/template-kit\/header\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Testimonials",
+            "screenshot": "screenshots\/testimonials.jpg",
+            "source": "templates\/testimonials.json",
+            "preview_url": "https:\/\/fatma-studio.com\/hevn\/template-kit\/testimonials\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Contact",
+            "screenshot": "screenshots\/contact.jpg",
+            "source": "templates\/contact.json",
+            "preview_url": "https:\/\/fatma-studio.com\/hevn\/template-kit\/contact\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Blog",
+            "screenshot": "screenshots\/blog.jpg",
+            "source": "templates\/blog.json",
+            "preview_url": "https:\/\/fatma-studio.com\/hevn\/template-kit\/blog\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Suite Detail",
+            "screenshot": "screenshots\/suite-detail.jpg",
+            "source": "templates\/suite-detail.json",
+            "preview_url": "https:\/\/fatma-studio.com\/hevn\/template-kit\/suite-detail\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Suites",
+            "screenshot": "screenshots\/suites.jpg",
+            "source": "templates\/suites.json",
+            "preview_url": "https:\/\/fatma-studio.com\/hevn\/template-kit\/suites\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "About",
+            "screenshot": "screenshots\/about.jpg",
+            "source": "templates\/about.json",
+            "preview_url": "https:\/\/fatma-studio.com\/hevn\/template-kit\/about\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Home",
+            "screenshot": "screenshots\/home.jpg",
+            "source": "templates\/home.json",
+            "preview_url": "https:\/\/fatma-studio.com\/hevn\/template-kit\/home\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "404",
+            "screenshot": "screenshots\/404.jpg",
+            "source": "templates\/404.json",
+            "preview_url": "https:\/\/fatma-studio.com\/hevn\/template-kit\/404\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Single Post",
+            "screenshot": "screenshots\/single-post.jpg",
+            "source": "templates\/single-post.json",
+            "preview_url": "https:\/\/fatma-studio.com\/hevn\/template-kit\/single-post\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Gallery",
+            "screenshot": "screenshots\/gallery.jpg",
+            "source": "templates\/gallery.json",
+            "preview_url": "https:\/\/fatma-studio.com\/hevn\/template-kit\/gallery\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Booking",
+            "screenshot": "screenshots\/booking.jpg",
+            "source": "templates\/booking.json",
+            "preview_url": "https:\/\/fatma-studio.com\/hevn\/template-kit\/booking\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        }
+    ],
+    "required_plugins": [
+        {
+            "name": "Elementor",
+            "version": "3.31.3",
+            "file": "elementor\/elementor.php",
+            "author": "Elementor.com"
+        },
+        {
+            "name": "ElementsKit Lite",
+            "version": "3.6.1",
+            "file": "elementskit-lite\/elementskit-lite.php",
+            "author": "Wpmet"
+        },
+        {
+            "name": "Jeg Elementor Kit",
+            "version": "2.6.14",
+            "file": "jeg-elementor-kit\/jeg-elementor-kit.php",
+            "author": "Jegtheme"
+        },
+        {
+            "name": "MetForm",
+            "version": "4.0.5",
+            "file": "metform\/metform.php",
+            "author": "Wpmet"
+        },
+        {
+            "name": "Sticky Header Effects for Elementor",
+            "version": "2.1.1",
+            "file": "sticky-header-effects-for-elementor\/sticky-header-effects-for-elementor.php",
+            "author": "POSIMYTH"
+        }
+    ],
+    "images": [
+        {
+            "filename": "white-logo.png",
+            "thumbnail_url": "https:\/\/fatma-studio.com\/hevn\/wp-content\/uploads\/sites\/13\/2025\/09\/white-logo-800x209.png",
+            "templates": [
+                {
+                    "source": "templates\/footer.json",
+                    "name": "Footer"
+                }
+            ],
+            "filesize": 68396,
+            "dimensions": [
+                1840,
+                480
+            ],
+            "image_source": "self_created",
+            "image_urls": "#"
+        },
+        {
+            "filename": "hevn-logo.png",
+            "thumbnail_url": "https:\/\/fatma-studio.com\/hevn\/wp-content\/uploads\/sites\/13\/2025\/09\/hevn-logo-800x222.png",
+            "templates": [
+                {
+                    "source": "templates\/header.json",
+                    "name": "Header"
+                }
+            ],
+            "filesize": 26523,
+            "dimensions": [
+                1728,
+                480
+            ],
+            "image_source": "self_created",
+            "image_urls": "#"
+        },
+        {
+            "filename": "interior-of-modern-living-room-with-sofa-3d-render-2024-10-14-14-38-11-utc-e1756899886955.jpg",
+            "thumbnail_url": "https:\/\/fatma-studio.com\/hevn\/wp-content\/uploads\/sites\/13\/2025\/09\/interior-of-modern-living-room-with-sofa-3d-render-2024-10-14-14-38-11-utc-800x451.jpg",
+            "templates": [
+                {
+                    "source": "templates\/testimonials.json",
+                    "name": "Testimonials"
+                },
+                {
+                    "source": "templates\/suites.json",
+                    "name": "Suites"
+                },
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                },
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/gallery.json",
+                    "name": "Gallery"
+                }
+            ],
+            "filesize": 85931,
+            "dimensions": [
+                880,
+                496
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/interior-of-modern-living-room-with-sofa-3d-render-7LTX23H"
+        },
+        {
+            "filename": "facade-of-luxury-stone-building-covered-with-vine-2024-11-18-13-22-35-utc-e1756993173228.jpg",
+            "thumbnail_url": "https:\/\/fatma-studio.com\/hevn\/wp-content\/uploads\/sites\/13\/2025\/09\/facade-of-luxury-stone-building-covered-with-vine-2024-11-18-13-22-35-utc-800x534.jpg",
+            "templates": [
+                {
+                    "source": "templates\/blog.json",
+                    "name": "Blog"
+                },
+                {
+                    "source": "templates\/gallery.json",
+                    "name": "Gallery"
+                }
+            ],
+            "filesize": 134362,
+            "dimensions": [
+                880,
+                588
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/facade-of-luxury-stone-building-covered-with-vine--2T38V8G"
+        },
+        {
+            "filename": "illuminated-neat-bedroom-2025-04-03-17-00-21-utc-e1756993164712.jpg",
+            "thumbnail_url": "https:\/\/fatma-studio.com\/hevn\/wp-content\/uploads\/sites\/13\/2025\/09\/illuminated-neat-bedroom-2025-04-03-17-00-21-utc-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/suite-detail.json",
+                    "name": "Suite Detail"
+                },
+                {
+                    "source": "templates\/suites.json",
+                    "name": "Suites"
+                }
+            ],
+            "filesize": 86393,
+            "dimensions": [
+                880,
+                587
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/illuminated-neat-bedroom-8PMXRQV"
+        },
+        {
+            "filename": "empty-bar-lounge-area-in-modern-business-premises-2024-10-20-03-24-45-utc-e1756993179462.jpg",
+            "thumbnail_url": "https:\/\/fatma-studio.com\/hevn\/wp-content\/uploads\/sites\/13\/2025\/09\/empty-bar-lounge-area-in-modern-business-premises-2024-10-20-03-24-45-utc-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/suite-detail.json",
+                    "name": "Suite Detail"
+                },
+                {
+                    "source": "templates\/suites.json",
+                    "name": "Suites"
+                }
+            ],
+            "filesize": 75731,
+            "dimensions": [
+                880,
+                587
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/empty-bar-lounge-area-in-modern-business-premises--PLTZ8RV"
+        },
+        {
+            "filename": "part-of-luxurious-restaurant-with-wooden-tables-an-2025-03-14-16-28-23-utc-e1756993148157.jpg",
+            "thumbnail_url": "https:\/\/fatma-studio.com\/hevn\/wp-content\/uploads\/sites\/13\/2025\/09\/part-of-luxurious-restaurant-with-wooden-tables-an-2025-03-14-16-28-23-utc-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/suite-detail.json",
+                    "name": "Suite Detail"
+                },
+                {
+                    "source": "templates\/gallery.json",
+                    "name": "Gallery"
+                }
+            ],
+            "filesize": 88218,
+            "dimensions": [
+                880,
+                587
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/part-of-luxurious-restaurant-with-wooden-tables-an-KFQEA6X"
+        },
+        {
+            "filename": "waiter-tray-with-napkins-and-essential-table-suppl-2025-03-26-19-35-05-utc-e1756993142337.jpg",
+            "thumbnail_url": "https:\/\/fatma-studio.com\/hevn\/wp-content\/uploads\/sites\/13\/2025\/09\/waiter-tray-with-napkins-and-essential-table-suppl-2025-03-26-19-35-05-utc-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/suite-detail.json",
+                    "name": "Suite Detail"
+                }
+            ],
+            "filesize": 39431,
+            "dimensions": [
+                880,
+                587
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/waiter-tray-with-napkins-and-essential-table-suppl-DF4NZW6"
+        },
+        {
+            "filename": "hotel-room-2024-09-17-18-09-46-utc-e1756993169677.jpg",
+            "thumbnail_url": "https:\/\/fatma-studio.com\/hevn\/wp-content\/uploads\/sites\/13\/2025\/09\/hotel-room-2024-09-17-18-09-46-utc-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/suite-detail.json",
+                    "name": "Suite Detail"
+                },
+                {
+                    "source": "templates\/suites.json",
+                    "name": "Suites"
+                },
+                {
+                    "source": "templates\/gallery.json",
+                    "name": "Gallery"
+                }
+            ],
+            "filesize": 49213,
+            "dimensions": [
+                880,
+                587
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/hotel-room-VMF28RA"
+        },
+        {
+            "filename": "italian-vintage-style-2024-12-05-12-14-15-utc-e1756993153226.jpg",
+            "thumbnail_url": "https:\/\/fatma-studio.com\/hevn\/wp-content\/uploads\/sites\/13\/2025\/09\/italian-vintage-style-2024-12-05-12-14-15-utc-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/suite-detail.json",
+                    "name": "Suite Detail"
+                },
+                {
+                    "source": "templates\/gallery.json",
+                    "name": "Gallery"
+                }
+            ],
+            "filesize": 102895,
+            "dimensions": [
+                880,
+                587
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/italian-vintage-style-RZ9NT5G"
+        },
+        {
+            "filename": "cafe-exterior-at-night-2024-09-15-17-26-55-utc-e1756993185503.jpg",
+            "thumbnail_url": "https:\/\/fatma-studio.com\/hevn\/wp-content\/uploads\/sites\/13\/2025\/09\/cafe-exterior-at-night-2024-09-15-17-26-55-utc-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/suites.json",
+                    "name": "Suites"
+                }
+            ],
+            "filesize": 82432,
+            "dimensions": [
+                880,
+                587
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/cafe-exterior-at-night-Y8ZGXRU"
+        },
+        {
+            "filename": "interior-of-modern-bedroom-suite-in-luxury-hotel-2024-10-18-10-01-55-utc-e1756993158132.jpeg",
+            "thumbnail_url": "https:\/\/fatma-studio.com\/hevn\/wp-content\/uploads\/sites\/13\/2025\/09\/interior-of-modern-bedroom-suite-in-luxury-hotel-2024-10-18-10-01-55-utc-800x533.jpeg",
+            "templates": [
+                {
+                    "source": "templates\/suites.json",
+                    "name": "Suites"
+                },
+                {
+                    "source": "templates\/gallery.json",
+                    "name": "Gallery"
+                }
+            ],
+            "filesize": 59056,
+            "dimensions": [
+                880,
+                587
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/interior-of-modern-bedroom-suite-in-luxury-hotel-DDK9ZSB"
+        },
+        {
+            "filename": "making-the-bed-in-morning-light-2025-03-18-04-07-58-utc-e1756899867241.jpg",
+            "thumbnail_url": "https:\/\/fatma-studio.com\/hevn\/wp-content\/uploads\/sites\/13\/2025\/09\/making-the-bed-in-morning-light-2025-03-18-04-07-58-utc-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/suites.json",
+                    "name": "Suites"
+                },
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                },
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 68849,
+            "dimensions": [
+                880,
+                587
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/making-the-bed-in-morning-light-CTSCHFE"
+        },
+        {
+            "filename": "morning-coffee-in-bed-on-bali-2024-12-05-02-44-12-utc-e1756899850939.jpg",
+            "thumbnail_url": "https:\/\/fatma-studio.com\/hevn\/wp-content\/uploads\/sites\/13\/2025\/09\/morning-coffee-in-bed-on-bali-2024-12-05-02-44-12-utc-800x1067.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                },
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 128210,
+            "dimensions": [
+                660,
+                880
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/morning-coffee-in-bed-on-bali-7AKNE8U"
+        },
+        {
+            "filename": "group-of-adult-friends-have-a-rest-and-conversatio-2025-03-18-21-04-28-utc-e1756899908669.jpg",
+            "thumbnail_url": "https:\/\/fatma-studio.com\/hevn\/wp-content\/uploads\/sites\/13\/2025\/09\/group-of-adult-friends-have-a-rest-and-conversatio-2025-03-18-21-04-28-utc-800x534.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 77034,
+            "dimensions": [
+                880,
+                588
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/group-of-adult-friends-have-a-rest-and-conversatio-8YTF4J8"
+        },
+        {
+            "filename": "candles-and-massage-oil-on-a-pink-table-2025-03-18-16-39-34-utc-e1756899921305.jpg",
+            "thumbnail_url": "https:\/\/fatma-studio.com\/hevn\/wp-content\/uploads\/sites\/13\/2025\/09\/candles-and-massage-oil-on-a-pink-table-2025-03-18-16-39-34-utc-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                },
+                {
+                    "source": "templates\/single-post.json",
+                    "name": "Single Post"
+                }
+            ],
+            "filesize": 40105,
+            "dimensions": [
+                880,
+                587
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/candles-and-massage-oil-on-a-pink-table-DJQV57E"
+        },
+        {
+            "filename": "white-cup-with-spoon-placed-on-plate-near-a-window-2025-03-08-14-16-39-utc-e1756899795700.jpg",
+            "thumbnail_url": "https:\/\/fatma-studio.com\/hevn\/wp-content\/uploads\/sites\/13\/2025\/09\/white-cup-with-spoon-placed-on-plate-near-a-window-2025-03-08-14-16-39-utc-800x600.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 127007,
+            "dimensions": [
+                880,
+                660
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/white-cup-with-spoon-placed-on-plate-near-a-window-X7G2MR5"
+        },
+        {
+            "filename": "modern-living-room-interior-design-2024-10-17-12-00-05-utc-e1756899858497.jpg",
+            "thumbnail_url": "https:\/\/fatma-studio.com\/hevn\/wp-content\/uploads\/sites\/13\/2025\/09\/modern-living-room-interior-design-2024-10-17-12-00-05-utc-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                },
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/single-post.json",
+                    "name": "Single Post"
+                }
+            ],
+            "filesize": 92958,
+            "dimensions": [
+                880,
+                587
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/modern-living-room-interior-design-JHZMZF9"
+        },
+        {
+            "filename": "house-door-is-open-to-nature-2025-02-10-08-55-52-utc-e1756899901241.jpg",
+            "thumbnail_url": "https:\/\/fatma-studio.com\/hevn\/wp-content\/uploads\/sites\/13\/2025\/09\/house-door-is-open-to-nature-2025-02-10-08-55-52-utc-800x1120.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 76517,
+            "dimensions": [
+                629,
+                880
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/house-door-is-open-to-nature-SLWLWBM"
+        },
+        {
+            "filename": "luxury-modern-empty-room-interior-design-decoratio-2024-10-22-08-41-43-utc-e1756899874190.jpg",
+            "thumbnail_url": "https:\/\/fatma-studio.com\/hevn\/wp-content\/uploads\/sites\/13\/2025\/09\/luxury-modern-empty-room-interior-design-decoratio-2024-10-22-08-41-43-utc-800x1205.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 68266,
+            "dimensions": [
+                584,
+                880
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/luxury-modern-empty-room-interior-design-decoratio-LVDTKK8"
+        },
+        {
+            "filename": "stacked-zen-stones-sand-background-art-of-balance-2025-02-10-02-34-12-utc-e1756899810638.jpg",
+            "thumbnail_url": "https:\/\/fatma-studio.com\/hevn\/wp-content\/uploads\/sites\/13\/2025\/09\/stacked-zen-stones-sand-background-art-of-balance-2025-02-10-02-34-12-utc-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/booking.json",
+                    "name": "Booking"
+                }
+            ],
+            "filesize": 74378,
+            "dimensions": [
+                880,
+                587
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/stacked-zen-stones-sand-background-art-of-balance--M48KLT7"
+        },
+        {
+            "filename": "young-woman-practicing-yoga-in-a-beautiful-garden-2025-01-09-05-04-43-utc-e1756899777751.jpg",
+            "thumbnail_url": "https:\/\/fatma-studio.com\/hevn\/wp-content\/uploads\/sites\/13\/2025\/09\/young-woman-practicing-yoga-in-a-beautiful-garden-2025-01-09-05-04-43-utc-800x534.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/booking.json",
+                    "name": "Booking"
+                }
+            ],
+            "filesize": 92643,
+            "dimensions": [
+                880,
+                588
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/young-woman-practicing-yoga-in-a-beautiful-garden-9UECEFY"
+        },
+        {
+            "filename": "chinese-tea-2025-03-16-12-37-29-utc-e1756899914780.jpg",
+            "thumbnail_url": "https:\/\/fatma-studio.com\/hevn\/wp-content\/uploads\/sites\/13\/2025\/09\/chinese-tea-2025-03-16-12-37-29-utc-800x534.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/booking.json",
+                    "name": "Booking"
+                }
+            ],
+            "filesize": 106055,
+            "dimensions": [
+                880,
+                588
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/chinese-tea-P24RLFV"
+        },
+        {
+            "filename": "young-woman-performing-tea-ceremony-2024-10-17-18-26-54-utc-e1756899787626.jpg",
+            "thumbnail_url": "https:\/\/fatma-studio.com\/hevn\/wp-content\/uploads\/sites\/13\/2025\/09\/young-woman-performing-tea-ceremony-2024-10-17-18-26-54-utc-800x1200.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/booking.json",
+                    "name": "Booking"
+                }
+            ],
+            "filesize": 68222,
+            "dimensions": [
+                533,
+                800
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/young-woman-performing-tea-ceremony-5LJSJHK"
+        },
+        {
+            "filename": "a-place-for-relaxation-massage-spa-rest-2025-04-29-00-37-04-utc-e1756899934776.jpg",
+            "thumbnail_url": "https:\/\/fatma-studio.com\/hevn\/wp-content\/uploads\/sites\/13\/2025\/09\/a-place-for-relaxation-massage-spa-rest-2025-04-29-00-37-04-utc-800x1200.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/booking.json",
+                    "name": "Booking"
+                }
+            ],
+            "filesize": 70863,
+            "dimensions": [
+                587,
+                880
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/a-place-for-relaxation-massage-spa-rest-4SXS4LG"
+        },
+        {
+            "filename": "professional-masseuse-enjoying-working-at-spa-2025-03-03-14-24-16-utc-e1756899831245.jpg",
+            "thumbnail_url": "https:\/\/fatma-studio.com\/hevn\/wp-content\/uploads\/sites\/13\/2025\/09\/professional-masseuse-enjoying-working-at-spa-2025-03-03-14-24-16-utc-800x1200.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/booking.json",
+                    "name": "Booking"
+                }
+            ],
+            "filesize": 115045,
+            "dimensions": [
+                880,
+                1320
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/professional-masseuse-enjoying-working-at-spa-AY9PEC3"
+        },
+        {
+            "filename": "rustic-wedding-set-vintage-dining-table-with-deco-2025-04-01-21-24-35-utc-e1756899818651.jpg",
+            "thumbnail_url": "https:\/\/fatma-studio.com\/hevn\/wp-content\/uploads\/sites\/13\/2025\/09\/rustic-wedding-set-vintage-dining-table-with-deco-2025-04-01-21-24-35-utc-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/single-post.json",
+                    "name": "Single Post"
+                },
+                {
+                    "source": "templates\/booking.json",
+                    "name": "Booking"
+                }
+            ],
+            "filesize": 109364,
+            "dimensions": [
+                880,
+                587
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/rustic-wedding-set-vintage-dining-table-with-decor-VTVLKRQ"
+        },
+        {
+            "filename": "stylish-rustic-restaurant-wooden-tent-with-wooden-2024-12-12-07-00-58-utc-e1756899802199.jpg",
+            "thumbnail_url": "https:\/\/fatma-studio.com\/hevn\/wp-content\/uploads\/sites\/13\/2025\/09\/stylish-rustic-restaurant-wooden-tent-with-wooden-2024-12-12-07-00-58-utc-800x1200.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/booking.json",
+                    "name": "Booking"
+                }
+            ],
+            "filesize": 142944,
+            "dimensions": [
+                587,
+                880
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/stylish-rustic-restaurant-wooden-tent-with-wooden--BQBU37P"
+        },
+        {
+            "filename": "open-wooden-door-and-beautiful-green-plants-in-bal-2024-11-18-16-09-19-utc-e1756899838956.jpg",
+            "thumbnail_url": "https:\/\/fatma-studio.com\/hevn\/wp-content\/uploads\/sites\/13\/2025\/09\/open-wooden-door-and-beautiful-green-plants-in-bal-2024-11-18-16-09-19-utc-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/gallery.json",
+                    "name": "Gallery"
+                }
+            ],
+            "filesize": 108984,
+            "dimensions": [
+                880,
+                587
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/open-wooden-door-and-beautiful-green-plants-in-bal-YD9BKSX"
+        },
+        {
+            "filename": "arch-way-in-street-of-bruges-2024-10-18-07-20-42-utc-e1756899927141.jpg",
+            "thumbnail_url": "https:\/\/fatma-studio.com\/hevn\/wp-content\/uploads\/sites\/13\/2025\/09\/arch-way-in-street-of-bruges-2024-10-18-07-20-42-utc-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/gallery.json",
+                    "name": "Gallery"
+                }
+            ],
+            "filesize": 180251,
+            "dimensions": [
+                880,
+                587
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/arch-way-in-street-of-bruges-SY8S72S"
+        },
+        {
+            "filename": "a-beautiful-home-interior-with-a-round-window-2024-12-05-17-56-10-utc-e1756899946843.jpg",
+            "thumbnail_url": "https:\/\/fatma-studio.com\/hevn\/wp-content\/uploads\/sites\/13\/2025\/09\/a-beautiful-home-interior-with-a-round-window-2024-12-05-17-56-10-utc-800x1256.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/gallery.json",
+                    "name": "Gallery"
+                }
+            ],
+            "filesize": 89606,
+            "dimensions": [
+                561,
+                880
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/a-beautiful-home-interior-with-a-round-window-G2WJG92"
+        },
+        {
+            "filename": "relaxing-space-2024-12-06-00-14-31-utc-e1756899824244.jpg",
+            "thumbnail_url": "https:\/\/fatma-studio.com\/hevn\/wp-content\/uploads\/sites\/13\/2025\/09\/relaxing-space-2024-12-06-00-14-31-utc-800x1200.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/gallery.json",
+                    "name": "Gallery"
+                }
+            ],
+            "filesize": 102429,
+            "dimensions": [
+                880,
+                1320
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/relaxing-space-NVFPKAE"
+        },
+        {
+            "filename": "a-family-enjoying-a-sunset-while-relaxing-around-a-2025-03-11-18-35-40-utc-e1756899940746.jpg",
+            "thumbnail_url": "https:\/\/fatma-studio.com\/hevn\/wp-content\/uploads\/sites\/13\/2025\/09\/a-family-enjoying-a-sunset-while-relaxing-around-a-2025-03-11-18-35-40-utc-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/gallery.json",
+                    "name": "Gallery"
+                }
+            ],
+            "filesize": 63111,
+            "dimensions": [
+                880,
+                587
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/a-family-enjoying-a-sunset-while-relaxing-around-a-H2NW4LP"
+        },
+        {
+            "filename": "interior-of-a-new-empty-hotel-restaurant-2025-02-25-13-03-51-utc-e1756899893740.jpg",
+            "thumbnail_url": "https:\/\/fatma-studio.com\/hevn\/wp-content\/uploads\/sites\/13\/2025\/09\/interior-of-a-new-empty-hotel-restaurant-2025-02-25-13-03-51-utc-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/gallery.json",
+                    "name": "Gallery"
+                }
+            ],
+            "filesize": 89044,
+            "dimensions": [
+                880,
+                587
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/interior-of-a-new-empty-hotel-restaurant-FMTFY3Z"
+        }
+    ]
+}

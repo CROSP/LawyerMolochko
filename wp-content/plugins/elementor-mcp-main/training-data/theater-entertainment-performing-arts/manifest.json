@@ -1,0 +1,1363 @@
+{
+    "manifest_version": "1.0.21",
+    "title": "Artore",
+    "page_builder": "elementor",
+    "kit_version": "1.0.0",
+    "templates": [
+        {
+            "name": "Global Kit Styles",
+            "screenshot": "screenshots\/global-kit-styles.jpg",
+            "source": "templates\/global.json",
+            "preview_url": "https:\/\/templatekit.tokomoo.com",
+            "type": "section",
+            "category": "page",
+            "metadata": {
+                "template_type": "global-styles",
+                "include_in_zip": "1",
+                "elementor_pro_required": null,
+                "additional_template_information": [
+                    "These are the global theme styles configured through the Elementor Theme Styles area."
+                ]
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Homepage",
+            "screenshot": "screenshots\/homepage.jpg",
+            "source": "templates\/homepage.json",
+            "preview_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/template-kit\/homepage\/",
+            "type": "section",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-home",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Shows",
+            "screenshot": "screenshots\/shows.jpg",
+            "source": "templates\/shows.json",
+            "preview_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/template-kit\/shows\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Tickets",
+            "screenshot": "screenshots\/tickets.jpg",
+            "source": "templates\/tickets.json",
+            "preview_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/template-kit\/tickets\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "About",
+            "screenshot": "screenshots\/about.jpg",
+            "source": "templates\/about.json",
+            "preview_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/template-kit\/about\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Studio",
+            "screenshot": "screenshots\/studio.jpg",
+            "source": "templates\/studio.json",
+            "preview_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/template-kit\/studio\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Our Team",
+            "screenshot": "screenshots\/our-team.jpg",
+            "source": "templates\/our-team.json",
+            "preview_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/template-kit\/our-team\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Partners",
+            "screenshot": "screenshots\/partners.jpg",
+            "source": "templates\/partners.json",
+            "preview_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/template-kit\/partners\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "FAQ",
+            "screenshot": "screenshots\/faq.jpg",
+            "source": "templates\/faq.json",
+            "preview_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/template-kit\/faq\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Jobs",
+            "screenshot": "screenshots\/jobs.jpg",
+            "source": "templates\/jobs.json",
+            "preview_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/template-kit\/jobs\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Contact",
+            "screenshot": "screenshots\/contact.jpg",
+            "source": "templates\/contact.json",
+            "preview_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/template-kit\/contact\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1"
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Theme Builder \u2013 Header (Elementor Pro)",
+            "screenshot": "screenshots\/theme-builder-header-elementor-pro-.jpg",
+            "source": "templates\/theme-builder-header-elementor-pro-.json",
+            "preview_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/?elementor_library=theme-builder-header-elementor-pro",
+            "type": "header",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-header",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "header",
+                "elementor_pro_conditions": [
+                    "include\/general"
+                ],
+                "additional_template_information": [
+                    "This is a \"Header\" template for Elementor Pro.",
+                    "This template will display on: Entire Site."
+                ]
+            },
+            "elementor_pro_required": true
+        },
+        {
+            "name": "Theme Builder \u2013 Footer (Elementor Pro)",
+            "screenshot": "screenshots\/theme-builder-footer-elementor-pro-.jpg",
+            "source": "templates\/theme-builder-footer-elementor-pro-.json",
+            "preview_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/?elementor_library=theme-builder-footer-elementor-pro",
+            "type": "footer",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-footer",
+                "include_in_zip": "1",
+                "elementor_pro_required": "1",
+                "elementor_library_type": "footer",
+                "elementor_pro_conditions": [
+                    "include\/general"
+                ],
+                "additional_template_information": [
+                    "This is a \"Footer\" template for Elementor Pro.",
+                    "This template will display on: Entire Site."
+                ]
+            },
+            "elementor_pro_required": true
+        }
+    ],
+    "required_plugins": [
+        {
+            "name": "Elementor",
+            "version": "3.5.6",
+            "file": "elementor\/elementor.php",
+            "author": "Elementor.com"
+        },
+        {
+            "name": "Elementor Pro",
+            "version": "3.6.3",
+            "file": "elementor-pro\/elementor-pro.php",
+            "author": "Elementor.com"
+        }
+    ],
+    "images": [
+        {
+            "filename": "Grain_Texture.png",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/Grain_Texture.png",
+            "templates": [
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                }
+            ],
+            "filesize": 70974,
+            "dimensions": [
+                240,
+                240
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "bg-mask-2.png",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/bg-mask-2.png",
+            "templates": [
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                },
+                {
+                    "source": "templates\/shows.json",
+                    "name": "Shows"
+                },
+                {
+                    "source": "templates\/tickets.json",
+                    "name": "Tickets"
+                },
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                },
+                {
+                    "source": "templates\/studio.json",
+                    "name": "Studio"
+                },
+                {
+                    "source": "templates\/our-team.json",
+                    "name": "Our Team"
+                },
+                {
+                    "source": "templates\/jobs.json",
+                    "name": "Jobs"
+                },
+                {
+                    "source": "templates\/theme-builder-header-elementor-pro-.json",
+                    "name": "Theme Builder \u2013 Header (Elementor Pro)"
+                },
+                {
+                    "source": "templates\/theme-builder-footer-elementor-pro-.json",
+                    "name": "Theme Builder \u2013 Footer (Elementor Pro)"
+                }
+            ],
+            "filesize": 768,
+            "dimensions": [
+                100,
+                100
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "image-home-3.jpg",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/image-home-3-800x469.jpg",
+            "templates": [
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                }
+            ],
+            "filesize": 99148,
+            "dimensions": [
+                1024,
+                600
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/group-of-actors-in-dark-colored-clothes-on-rehears-ZC2NKK2"
+        },
+        {
+            "filename": "image-home-4.jpg",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/image-home-4.jpg",
+            "templates": [
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                }
+            ],
+            "filesize": 96939,
+            "dimensions": [
+                683,
+                400
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/group-of-actors-in-dark-colored-clothes-on-rehears-K4VJLAA"
+        },
+        {
+            "filename": "play-1.png",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/play-1.png",
+            "templates": [
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                }
+            ],
+            "filesize": 916,
+            "dimensions": [
+                84,
+                84
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": ""
+        },
+        {
+            "filename": "image-home-5.jpg",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/image-home-5-800x469.jpg",
+            "templates": [
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                }
+            ],
+            "filesize": 198554,
+            "dimensions": [
+                1024,
+                600
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/practice-in-progress-group-of-actors-in-dark-color-F28688F"
+        },
+        {
+            "filename": "show-2.jpg",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/show-2.jpg",
+            "templates": [
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                },
+                {
+                    "source": "templates\/shows.json",
+                    "name": "Shows"
+                },
+                {
+                    "source": "templates\/faq.json",
+                    "name": "FAQ"
+                }
+            ],
+            "filesize": 50386,
+            "dimensions": [
+                600,
+                700
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/shocked-mime-holding-two-masks-isolated-on-black-HUMQJRZ"
+        },
+        {
+            "filename": "show-3.jpg",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/show-3.jpg",
+            "templates": [
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                },
+                {
+                    "source": "templates\/shows.json",
+                    "name": "Shows"
+                }
+            ],
+            "filesize": 89201,
+            "dimensions": [
+                600,
+                700
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/roman-guardian-poses-with-sword-near-his-face-in-d-SGHYJEY"
+        },
+        {
+            "filename": "image-home-1.jpg",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/image-home-1-800x469.jpg",
+            "templates": [
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                },
+                {
+                    "source": "templates\/shows.json",
+                    "name": "Shows"
+                }
+            ],
+            "filesize": 138118,
+            "dimensions": [
+                1024,
+                600
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/spectacular-portrait-of-a-tricky-woman-wearing-top-25GU865"
+        },
+        {
+            "filename": "bg-home-1.jpg",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/bg-home-1-800x430.jpg",
+            "templates": [
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                },
+                {
+                    "source": "templates\/tickets.json",
+                    "name": "Tickets"
+                }
+            ],
+            "filesize": 145672,
+            "dimensions": [
+                1600,
+                860
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/female-violonist-with-violin-performance-on-stage-VQMKDBA"
+        },
+        {
+            "filename": "show-7.jpg",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/show-7.jpg",
+            "templates": [
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                },
+                {
+                    "source": "templates\/shows.json",
+                    "name": "Shows"
+                }
+            ],
+            "filesize": 40402,
+            "dimensions": [
+                600,
+                400
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/elegant-string-quartet-performing-at-wedding-recep-BUK7LHY"
+        },
+        {
+            "filename": "show-5.jpg",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/show-5.jpg",
+            "templates": [
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                },
+                {
+                    "source": "templates\/shows.json",
+                    "name": "Shows"
+                }
+            ],
+            "filesize": 63038,
+            "dimensions": [
+                600,
+                400
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/three-beautiful-cabaret-dancers-in-red-hats-isolat-ASMVT6W"
+        },
+        {
+            "filename": "show-6.jpg",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/show-6.jpg",
+            "templates": [
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                },
+                {
+                    "source": "templates\/shows.json",
+                    "name": "Shows"
+                }
+            ],
+            "filesize": 94544,
+            "dimensions": [
+                600,
+                400
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/the-fire-is-in-his-hands-professional-magician-sho-A8EJMKN"
+        },
+        {
+            "filename": "show-4.jpg",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/show-4.jpg",
+            "templates": [
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                },
+                {
+                    "source": "templates\/shows.json",
+                    "name": "Shows"
+                }
+            ],
+            "filesize": 40755,
+            "dimensions": [
+                600,
+                400
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/portrait-of-a-beautiful-warrior-woman-holding-a-sw-RQY8PRM"
+        },
+        {
+            "filename": "testimonial-image-1.jpg",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/testimonial-image-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                }
+            ],
+            "filesize": 43959,
+            "dimensions": [
+                200,
+                200
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/portrait-of-glad-young-afro-american-woman-laughs--XPZF67S"
+        },
+        {
+            "filename": "testimonial-5.jpg",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/testimonial-5.jpg",
+            "templates": [
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                },
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                },
+                {
+                    "source": "templates\/studio.json",
+                    "name": "Studio"
+                },
+                {
+                    "source": "templates\/contact.json",
+                    "name": "Contact"
+                }
+            ],
+            "filesize": 19824,
+            "dimensions": [
+                150,
+                150
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/face-of-young-persian-businessman-in-suit-LLNH96K"
+        },
+        {
+            "filename": "testimonial-2.jpg",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/testimonial-2.jpg",
+            "templates": [
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                }
+            ],
+            "filesize": 19569,
+            "dimensions": [
+                150,
+                150
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/beautiful-cheerful-millennial-girl-stands-with-hap-M5UTWAQ"
+        },
+        {
+            "filename": "logo-1.png",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/logo-1.png",
+            "templates": [
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                },
+                {
+                    "source": "templates\/shows.json",
+                    "name": "Shows"
+                },
+                {
+                    "source": "templates\/faq.json",
+                    "name": "FAQ"
+                }
+            ],
+            "filesize": 1468,
+            "dimensions": [
+                168,
+                41
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/logoipsum.com\/"
+        },
+        {
+            "filename": "logo-6.png",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/logo-6.png",
+            "templates": [
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                },
+                {
+                    "source": "templates\/shows.json",
+                    "name": "Shows"
+                },
+                {
+                    "source": "templates\/faq.json",
+                    "name": "FAQ"
+                }
+            ],
+            "filesize": 2425,
+            "dimensions": [
+                155,
+                29
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/logoipsum.com\/"
+        },
+        {
+            "filename": "logo-4.png",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/logo-4.png",
+            "templates": [
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                },
+                {
+                    "source": "templates\/shows.json",
+                    "name": "Shows"
+                },
+                {
+                    "source": "templates\/faq.json",
+                    "name": "FAQ"
+                }
+            ],
+            "filesize": 2148,
+            "dimensions": [
+                153,
+                38
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/logoipsum.com\/"
+        },
+        {
+            "filename": "logo-2.png",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/logo-2.png",
+            "templates": [
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                },
+                {
+                    "source": "templates\/shows.json",
+                    "name": "Shows"
+                },
+                {
+                    "source": "templates\/faq.json",
+                    "name": "FAQ"
+                }
+            ],
+            "filesize": 1269,
+            "dimensions": [
+                170,
+                41
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/logoipsum.com\/"
+        },
+        {
+            "filename": "logo-5.png",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/logo-5.png",
+            "templates": [
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                },
+                {
+                    "source": "templates\/shows.json",
+                    "name": "Shows"
+                },
+                {
+                    "source": "templates\/faq.json",
+                    "name": "FAQ"
+                }
+            ],
+            "filesize": 999,
+            "dimensions": [
+                154,
+                27
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/logoipsum.com\/"
+        },
+        {
+            "filename": "logo-3.png",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/logo-3.png",
+            "templates": [
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                },
+                {
+                    "source": "templates\/shows.json",
+                    "name": "Shows"
+                },
+                {
+                    "source": "templates\/faq.json",
+                    "name": "FAQ"
+                }
+            ],
+            "filesize": 1392,
+            "dimensions": [
+                170,
+                41
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/logoipsum.com\/"
+        },
+        {
+            "filename": "logo-7.png",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/logo-7.png",
+            "templates": [
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                },
+                {
+                    "source": "templates\/shows.json",
+                    "name": "Shows"
+                },
+                {
+                    "source": "templates\/faq.json",
+                    "name": "FAQ"
+                }
+            ],
+            "filesize": 2653,
+            "dimensions": [
+                160,
+                32
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/logoipsum.com\/"
+        },
+        {
+            "filename": "image-about-2.jpg",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/image-about-2-800x898.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 104721,
+            "dimensions": [
+                1024,
+                1150
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/practice-in-progress-group-of-actors-in-dark-color-VXB5WKY"
+        },
+        {
+            "filename": "image-about-1.jpg",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/image-about-1-800x898.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 103914,
+            "dimensions": [
+                1024,
+                1150
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/working-together-group-of-actors-in-dark-colored-c-DYKUR5Z"
+        },
+        {
+            "filename": "dance-icon-2.png",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/dance-icon-2.png",
+            "templates": [
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 910,
+            "dimensions": [
+                100,
+                100
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/cinema-theater-and-cartoons-TJH3GUM"
+        },
+        {
+            "filename": "comedy-icon.png",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/comedy-icon.png",
+            "templates": [
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 1029,
+            "dimensions": [
+                100,
+                100
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/cinema-theater-and-cartoons-TJH3GUM"
+        },
+        {
+            "filename": "magic-icon.png",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/magic-icon.png",
+            "templates": [
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 1025,
+            "dimensions": [
+                100,
+                100
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/cinema-theater-and-cartoons-TJH3GUM"
+        },
+        {
+            "filename": "music-icon.png",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/music-icon.png",
+            "templates": [
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 1122,
+            "dimensions": [
+                100,
+                100
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/cinema-theater-and-cartoons-TJH3GUM"
+        },
+        {
+            "filename": "theater-icon.png",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/theater-icon.png",
+            "templates": [
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 989,
+            "dimensions": [
+                100,
+                100
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/cinema-theater-and-cartoons-TJH3GUM"
+        },
+        {
+            "filename": "horse-icon.png",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/horse-icon.png",
+            "templates": [
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 929,
+            "dimensions": [
+                100,
+                100
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/cinema-theater-and-cartoons-TJH3GUM"
+        },
+        {
+            "filename": "team-1.jpg",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/team-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                },
+                {
+                    "source": "templates\/our-team.json",
+                    "name": "Our Team"
+                }
+            ],
+            "filesize": 29954,
+            "dimensions": [
+                600,
+                680
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/young-businessman-smiling-confidently-while-standi-GY2JQFE"
+        },
+        {
+            "filename": "team-5.jpg",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/team-5.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                },
+                {
+                    "source": "templates\/our-team.json",
+                    "name": "Our Team"
+                }
+            ],
+            "filesize": 138584,
+            "dimensions": [
+                600,
+                680
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/redhead-female-supervisor-dressed-in-an-elegant-su-XE57NY8"
+        },
+        {
+            "filename": "team-6.jpg",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/team-6.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                },
+                {
+                    "source": "templates\/our-team.json",
+                    "name": "Our Team"
+                }
+            ],
+            "filesize": 38002,
+            "dimensions": [
+                600,
+                680
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/confident-businesswoman-standing-with-arms-cross-a-LDHABFW"
+        },
+        {
+            "filename": "image-studio-1.jpg",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/image-studio-1-800x430.jpg",
+            "templates": [
+                {
+                    "source": "templates\/studio.json",
+                    "name": "Studio"
+                }
+            ],
+            "filesize": 124508,
+            "dimensions": [
+                1600,
+                860
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/city-reflection-in-vltava-river-embankment-with-na-E2USLLK"
+        },
+        {
+            "filename": "image-studio-2.jpg",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/image-studio-2.jpg",
+            "templates": [
+                {
+                    "source": "templates\/studio.json",
+                    "name": "Studio"
+                }
+            ],
+            "filesize": 74215,
+            "dimensions": [
+                600,
+                400
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/national-academic-bolshoi-opera-and-ballet-theatre-PX82A72"
+        },
+        {
+            "filename": "gallery-1-v2.jpg",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/gallery-1-v2-800x484.jpg",
+            "templates": [
+                {
+                    "source": "templates\/studio.json",
+                    "name": "Studio"
+                }
+            ],
+            "filesize": 218153,
+            "dimensions": [
+                1024,
+                620
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/hall-in-the-theater-PTE9A8J"
+        },
+        {
+            "filename": "gallery-2.jpg",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/gallery-2-800x898.jpg",
+            "templates": [
+                {
+                    "source": "templates\/studio.json",
+                    "name": "Studio"
+                }
+            ],
+            "filesize": 120790,
+            "dimensions": [
+                1024,
+                1150
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/at-the-theater-KNWXWWE"
+        },
+        {
+            "filename": "gallery-3.jpg",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/gallery-3-800x500.jpg",
+            "templates": [
+                {
+                    "source": "templates\/studio.json",
+                    "name": "Studio"
+                }
+            ],
+            "filesize": 82799,
+            "dimensions": [
+                1024,
+                640
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/restaurant-interiors-PW9NVE5"
+        },
+        {
+            "filename": "gallery-4.jpg",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/gallery-4-800x500.jpg",
+            "templates": [
+                {
+                    "source": "templates\/studio.json",
+                    "name": "Studio"
+                }
+            ],
+            "filesize": 97896,
+            "dimensions": [
+                1024,
+                640
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/empty-theatre-auditorium-stage-with-a-red-curtain--FW8GASF"
+        },
+        {
+            "filename": "gallery-5.jpg",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/gallery-5-800x1016.jpg",
+            "templates": [
+                {
+                    "source": "templates\/studio.json",
+                    "name": "Studio"
+                }
+            ],
+            "filesize": 144938,
+            "dimensions": [
+                1024,
+                1300
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/antique-ceiling-chandelier-with-lamps-in-red-light-B6WY8LZ"
+        },
+        {
+            "filename": "gallery-6.jpg",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/gallery-6-800x781.jpg",
+            "templates": [
+                {
+                    "source": "templates\/studio.json",
+                    "name": "Studio"
+                }
+            ],
+            "filesize": 70947,
+            "dimensions": [
+                1024,
+                1000
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/texture-of-red-sexy-chairs-in-movie-theatre-number-VPHHC2R"
+        },
+        {
+            "filename": "team-3.jpg",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/team-3.jpg",
+            "templates": [
+                {
+                    "source": "templates\/our-team.json",
+                    "name": "Our Team"
+                }
+            ],
+            "filesize": 39508,
+            "dimensions": [
+                600,
+                680
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/bearded-male-dressed-in-a-suit-34XGRVW"
+        },
+        {
+            "filename": "team-4.jpg",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/team-4.jpg",
+            "templates": [
+                {
+                    "source": "templates\/our-team.json",
+                    "name": "Our Team"
+                }
+            ],
+            "filesize": 52221,
+            "dimensions": [
+                600,
+                680
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/portrait-of-a-man-in-shirt-FXRLXUX"
+        },
+        {
+            "filename": "team-2.jpg",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/team-2.jpg",
+            "templates": [
+                {
+                    "source": "templates\/our-team.json",
+                    "name": "Our Team"
+                }
+            ],
+            "filesize": 100186,
+            "dimensions": [
+                600,
+                680
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/a-woman-dressed-in-a-long-neck-brown-jacket-LWY5483"
+        },
+        {
+            "filename": "bg-team-1.jpg",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/bg-team-1-800x430.jpg",
+            "templates": [
+                {
+                    "source": "templates\/our-team.json",
+                    "name": "Our Team"
+                }
+            ],
+            "filesize": 83183,
+            "dimensions": [
+                1600,
+                860
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/people-2BJC3RP"
+        },
+        {
+            "filename": "logo-sponsor-1.png",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/logo-sponsor-1.png",
+            "templates": [
+                {
+                    "source": "templates\/partners.json",
+                    "name": "Partners"
+                }
+            ],
+            "filesize": 8322,
+            "dimensions": [
+                350,
+                100
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/logoipsum.com\/"
+        },
+        {
+            "filename": "logo-sponsor-6.png",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/logo-sponsor-6.png",
+            "templates": [
+                {
+                    "source": "templates\/partners.json",
+                    "name": "Partners"
+                }
+            ],
+            "filesize": 2744,
+            "dimensions": [
+                350,
+                100
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/logoipsum.com\/"
+        },
+        {
+            "filename": "logo-sponsor-2.png",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/logo-sponsor-2.png",
+            "templates": [
+                {
+                    "source": "templates\/partners.json",
+                    "name": "Partners"
+                }
+            ],
+            "filesize": 6818,
+            "dimensions": [
+                350,
+                100
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/logoipsum.com\/"
+        },
+        {
+            "filename": "logo-sponsor-4.png",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/logo-sponsor-4.png",
+            "templates": [
+                {
+                    "source": "templates\/partners.json",
+                    "name": "Partners"
+                }
+            ],
+            "filesize": 5336,
+            "dimensions": [
+                350,
+                100
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/logoipsum.com\/"
+        },
+        {
+            "filename": "logo-sponsor-3.png",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/logo-sponsor-3.png",
+            "templates": [
+                {
+                    "source": "templates\/partners.json",
+                    "name": "Partners"
+                }
+            ],
+            "filesize": 2305,
+            "dimensions": [
+                350,
+                100
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/logoipsum.com\/"
+        },
+        {
+            "filename": "logo-sponsor-5.png",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/logo-sponsor-5.png",
+            "templates": [
+                {
+                    "source": "templates\/partners.json",
+                    "name": "Partners"
+                }
+            ],
+            "filesize": 2058,
+            "dimensions": [
+                350,
+                100
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/logoipsum.com\/"
+        },
+        {
+            "filename": "image-jobs-2.jpg",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/image-jobs-2-800x430.jpg",
+            "templates": [
+                {
+                    "source": "templates\/jobs.json",
+                    "name": "Jobs"
+                }
+            ],
+            "filesize": 227574,
+            "dimensions": [
+                1600,
+                860
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/working-together-group-of-actors-in-dark-colored-c-6RJ5G8F"
+        },
+        {
+            "filename": "image-jobs-1.jpg",
+            "thumbnail_url": "https:\/\/templatekit.tokomoo.com\/theaterkit\/wp-content\/uploads\/sites\/85\/2022\/03\/image-jobs-1.jpg",
+            "templates": [
+                {
+                    "source": "templates\/jobs.json",
+                    "name": "Jobs"
+                }
+            ],
+            "filesize": 76323,
+            "dimensions": [
+                600,
+                680
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/standing-against-red-curtains-group-of-actors-in-d-WG3FHMM"
+        }
+    ]
+}

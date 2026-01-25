@@ -35,7 +35,7 @@ Successfully integrated **@aguaitech/Elementor-MCP** and removed the old PHP-bas
       "env": {
         "WP_URL": "https://lawyermolochko.ddev.site:8443",
         "WP_APP_USER": "admin",
-        "WP_APP_PASSWORD": "rJtC9nPsIC54LE0buyUjryzj"
+        "WP_APP_PASSWORD": "VQyDBhUyvbZYgGgo7KBQH69i"
       }
     }
   }
@@ -45,8 +45,8 @@ Successfully integrated **@aguaitech/Elementor-MCP** and removed the old PHP-bas
 ### Credentials
 - **WordPress URL**: `https://lawyermolochko.ddev.site:8443`
 - **Username**: `admin`
-- **Application Password**: `rJtC9nPsIC54LE0buyUjryzj`
-  - Created: `wp user application-password create 1 'Elementor MCP'`
+- **Application Password**: `VQyDBhUyvbZYgGgo7KBQH69i`
+  - Created: `wp user application-password create 1 'Elementor MCP Fixed'`
   - Status: Active
 
 ## Next Steps

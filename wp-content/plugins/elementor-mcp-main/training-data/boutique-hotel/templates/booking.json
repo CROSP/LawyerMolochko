@@ -1,0 +1,1353 @@
+{
+    "version": "0.4",
+    "title": "Booking",
+    "type": "page",
+    "metadata": {
+        "template_type": "single-page",
+        "include_in_zip": "1",
+        "elementor_pro_required": null,
+        "wp_page_template": "default"
+    },
+    "content": [
+        {
+            "id": "3cb7ea8b",
+            "settings": {
+                "content_width": "full",
+                "flex_gap": {
+                    "column": "40",
+                    "row": "40",
+                    "isLinked": true,
+                    "unit": "px",
+                    "size": 40
+                },
+                "padding": {
+                    "unit": "px",
+                    "top": "88",
+                    "right": "8",
+                    "bottom": "80",
+                    "left": "8",
+                    "isLinked": false
+                },
+                "padding_tablet": {
+                    "unit": "px",
+                    "top": "64",
+                    "right": "8",
+                    "bottom": "64",
+                    "left": "8",
+                    "isLinked": false
+                },
+                "padding_mobile": {
+                    "unit": "px",
+                    "top": "38",
+                    "right": "8",
+                    "bottom": "8",
+                    "left": "8",
+                    "isLinked": false
+                },
+                "flex_align_items": "center"
+            },
+            "elements": [
+                {
+                    "id": "388766a6",
+                    "settings": {
+                        "flex_align_items": "center",
+                        "flex_gap": {
+                            "column": "16",
+                            "row": "16",
+                            "isLinked": true,
+                            "unit": "px",
+                            "size": 16
+                        },
+                        "padding": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": true
+                        },
+                        "padding_mobile": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "16",
+                            "bottom": "0",
+                            "left": "16",
+                            "isLinked": false
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "626e48c8",
+                            "settings": {
+                                "title": "Reserve Your Stay at Hevn",
+                                "header_size": "h1",
+                                "align": "center",
+                                "_animation": "fadeIn"
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "heading",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "7f6d4400",
+                            "settings": {
+                                "title": "Book directly with us for the best rates, exclusive offers, and a personalized boutique hotel experience.",
+                                "header_size": "h6",
+                                "align": "center",
+                                "_element_width": "initial",
+                                "_element_custom_width": {
+                                    "unit": "%",
+                                    "size": 40,
+                                    "sizes": []
+                                },
+                                "_element_custom_width_tablet": {
+                                    "unit": "%",
+                                    "size": 80,
+                                    "sizes": []
+                                },
+                                "_element_custom_width_mobile": {
+                                    "unit": "%",
+                                    "size": 100,
+                                    "sizes": []
+                                },
+                                "_animation": "fadeIn"
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "heading",
+                            "elType": "widget"
+                        }
+                    ],
+                    "isInner": true,
+                    "elType": "container"
+                },
+                {
+                    "id": "93151d8",
+                    "settings": {
+                        "mf_form_id": "193***1756988465317",
+                        "_element_width": "initial",
+                        "_element_custom_width": {
+                            "unit": "%",
+                            "size": 64,
+                            "sizes": []
+                        },
+                        "_element_custom_width_tablet": {
+                            "unit": "%",
+                            "size": 88,
+                            "sizes": []
+                        },
+                        "_element_custom_width_mobile": {
+                            "unit": "%",
+                            "size": 92,
+                            "sizes": []
+                        }
+                    },
+                    "elements": [],
+                    "isInner": false,
+                    "widgetType": "metform",
+                    "elType": "widget"
+                }
+            ],
+            "isInner": false,
+            "elType": "container"
+        },
+        {
+            "id": "b9b342c",
+            "settings": {
+                "flex_align_items": "center",
+                "flex_gap": {
+                    "column": "80",
+                    "row": "80",
+                    "isLinked": true,
+                    "unit": "px",
+                    "size": 80
+                },
+                "padding": {
+                    "unit": "px",
+                    "top": "104",
+                    "right": "40",
+                    "bottom": "104",
+                    "left": "40",
+                    "isLinked": false
+                },
+                "content_width": "full",
+                "flex_gap_tablet": {
+                    "column": "64",
+                    "row": "64",
+                    "isLinked": true,
+                    "unit": "px",
+                    "size": 64
+                },
+                "flex_gap_mobile": {
+                    "column": "48",
+                    "row": "48",
+                    "isLinked": true,
+                    "unit": "px",
+                    "size": 48
+                },
+                "padding_tablet": {
+                    "unit": "px",
+                    "top": "64",
+                    "right": "48",
+                    "bottom": "64",
+                    "left": "48",
+                    "isLinked": false
+                },
+                "padding_mobile": {
+                    "unit": "px",
+                    "top": "48",
+                    "right": "24",
+                    "bottom": "48",
+                    "left": "24",
+                    "isLinked": false
+                },
+                "background_background": "classic",
+                "__globals__": {
+                    "background_color": "globals\/colors?id=text"
+                }
+            },
+            "elements": [
+                {
+                    "id": "5d85a44",
+                    "settings": {
+                        "content_width": "full",
+                        "flex_gap": {
+                            "column": "16",
+                            "row": "16",
+                            "isLinked": true,
+                            "unit": "px",
+                            "size": 16
+                        },
+                        "padding": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": true
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "54be7b24",
+                            "settings": {
+                                "title": "Curated Moments at Hevn",
+                                "align": "center",
+                                "_animation": "fadeIn"
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "heading",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "64038bb9",
+                            "settings": {
+                                "title": "Beyond the Room",
+                                "header_size": "h6",
+                                "align": "center",
+                                "_animation": "fadeIn"
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "heading",
+                            "elType": "widget"
+                        }
+                    ],
+                    "isInner": true,
+                    "elType": "container"
+                },
+                {
+                    "id": "799d068",
+                    "settings": {
+                        "content_width": "full",
+                        "flex_gap": {
+                            "column": "0",
+                            "row": "0",
+                            "isLinked": true,
+                            "unit": "px",
+                            "size": 0
+                        },
+                        "padding": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": true
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "6f414811",
+                            "settings": {
+                                "content_width": "full",
+                                "flex_direction": "row",
+                                "flex_gap": {
+                                    "column": "80",
+                                    "row": "80",
+                                    "isLinked": true,
+                                    "unit": "px",
+                                    "size": 80
+                                },
+                                "flex_gap_tablet": {
+                                    "column": "64",
+                                    "row": "64",
+                                    "isLinked": true,
+                                    "unit": "px",
+                                    "size": 64
+                                },
+                                "flex_gap_mobile": {
+                                    "column": "48",
+                                    "row": "48",
+                                    "isLinked": true,
+                                    "unit": "px",
+                                    "size": 48
+                                },
+                                "border_border": "solid",
+                                "border_width": {
+                                    "unit": "px",
+                                    "top": "1",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "padding": {
+                                    "unit": "px",
+                                    "top": "16",
+                                    "right": "0",
+                                    "bottom": "16",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "animation": "fadeIn",
+                                "__globals__": {
+                                    "border_color": "globals\/colors?id=99953a1"
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "721e80ec",
+                                    "settings": {
+                                        "content_width": "full",
+                                        "flex_justify_content": "center",
+                                        "flex_align_items": "center",
+                                        "flex_gap": {
+                                            "column": "80",
+                                            "row": "80",
+                                            "isLinked": true,
+                                            "unit": "px",
+                                            "size": 80
+                                        },
+                                        "flex_gap_tablet": {
+                                            "column": "64",
+                                            "row": "64",
+                                            "isLinked": true,
+                                            "unit": "px",
+                                            "size": 64
+                                        },
+                                        "flex_gap_mobile": {
+                                            "column": "48",
+                                            "row": "48",
+                                            "isLinked": true,
+                                            "unit": "px",
+                                            "size": 48
+                                        },
+                                        "padding": {
+                                            "unit": "px",
+                                            "top": "0",
+                                            "right": "0",
+                                            "bottom": "0",
+                                            "left": "0",
+                                            "isLinked": true
+                                        }
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "460abe58",
+                                            "settings": {
+                                                "selected_icon": {
+                                                    "value": "",
+                                                    "library": ""
+                                                },
+                                                "title_text": "Private Garden Meditation",
+                                                "description_text": "Reclaim inner peace amidst gentle breezes and the soft rustle of leaves. Our hidden garden invites slow, intentional moments, away from the world.",
+                                                "title_size": "h4",
+                                                "text_align": "left",
+                                                "title_bottom_space": {
+                                                    "unit": "px",
+                                                    "size": 8,
+                                                    "sizes": []
+                                                },
+                                                "_element_width": "inherit"
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "widgetType": "icon-box",
+                                            "elType": "widget"
+                                        },
+                                        {
+                                            "id": "183ca3f1",
+                                            "settings": {
+                                                "image": {
+                                                    "url": "https:\/\/fatma-studio.com\/hevn\/wp-content\/uploads\/sites\/13\/2025\/09\/stacked-zen-stones-sand-background-art-of-balance-2025-02-10-02-34-12-utc-e1756899810638.jpg",
+                                                    "id": 27,
+                                                    "size": "",
+                                                    "alt": "",
+                                                    "source": "library"
+                                                },
+                                                "width": {
+                                                    "unit": "px",
+                                                    "size": 240,
+                                                    "sizes": []
+                                                },
+                                                "width_tablet": {
+                                                    "unit": "px",
+                                                    "size": 160,
+                                                    "sizes": []
+                                                },
+                                                "width_mobile": {
+                                                    "unit": "px",
+                                                    "size": "",
+                                                    "sizes": []
+                                                },
+                                                "height": {
+                                                    "unit": "px",
+                                                    "size": 240,
+                                                    "sizes": []
+                                                },
+                                                "height_tablet": {
+                                                    "unit": "px",
+                                                    "size": 160,
+                                                    "sizes": []
+                                                },
+                                                "object-fit": "cover"
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "widgetType": "image",
+                                            "elType": "widget"
+                                        },
+                                        {
+                                            "id": "2f709110",
+                                            "settings": {
+                                                "editor": "Designed exclusively for our guests, the Hevn Garden offers a secluded space for silent meditation or guided breathwork upon request. Surrounded by native flora and subtle incense notes, it's a haven of calm just steps from your suite.",
+                                                "_element_width": "inherit",
+                                                "_background_color_stop_tablet": {
+                                                    "unit": "%"
+                                                },
+                                                "_background_color_stop_mobile": {
+                                                    "unit": "%"
+                                                },
+                                                "_background_color_b_stop_tablet": {
+                                                    "unit": "%"
+                                                },
+                                                "_background_color_b_stop_mobile": {
+                                                    "unit": "%"
+                                                },
+                                                "_background_gradient_angle_tablet": {
+                                                    "unit": "deg"
+                                                },
+                                                "_background_gradient_angle_mobile": {
+                                                    "unit": "deg"
+                                                },
+                                                "_background_hover_color_stop_tablet": {
+                                                    "unit": "%"
+                                                },
+                                                "_background_hover_color_stop_mobile": {
+                                                    "unit": "%"
+                                                },
+                                                "_background_hover_color_b_stop_tablet": {
+                                                    "unit": "%"
+                                                },
+                                                "_background_hover_color_b_stop_mobile": {
+                                                    "unit": "%"
+                                                },
+                                                "_background_hover_gradient_angle_tablet": {
+                                                    "unit": "deg"
+                                                },
+                                                "_background_hover_gradient_angle_mobile": {
+                                                    "unit": "deg"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "widgetType": "text-editor",
+                                            "elType": "widget"
+                                        }
+                                    ],
+                                    "isInner": true,
+                                    "elType": "container"
+                                },
+                                {
+                                    "id": "677bb8ef",
+                                    "settings": {
+                                        "image": {
+                                            "url": "https:\/\/fatma-studio.com\/hevn\/wp-content\/uploads\/sites\/13\/2025\/09\/young-woman-practicing-yoga-in-a-beautiful-garden-2025-01-09-05-04-43-utc-e1756899777751.jpg",
+                                            "id": 31,
+                                            "size": "",
+                                            "alt": "",
+                                            "source": "library"
+                                        },
+                                        "width": {
+                                            "unit": "%",
+                                            "size": 100,
+                                            "sizes": []
+                                        },
+                                        "height": {
+                                            "unit": "px",
+                                            "size": 804,
+                                            "sizes": []
+                                        },
+                                        "height_tablet": {
+                                            "unit": "px",
+                                            "size": 604,
+                                            "sizes": []
+                                        },
+                                        "height_mobile": {
+                                            "unit": "px",
+                                            "size": 480,
+                                            "sizes": []
+                                        },
+                                        "object-fit": "cover",
+                                        "_element_width": "inherit"
+                                    },
+                                    "elements": [],
+                                    "isInner": false,
+                                    "widgetType": "image",
+                                    "elType": "widget"
+                                }
+                            ],
+                            "isInner": true,
+                            "elType": "container"
+                        },
+                        {
+                            "id": "15bcc8f1",
+                            "settings": {
+                                "content_width": "full",
+                                "flex_direction": "row",
+                                "flex_gap": {
+                                    "column": "80",
+                                    "row": "80",
+                                    "isLinked": true,
+                                    "unit": "px",
+                                    "size": 80
+                                },
+                                "flex_gap_tablet": {
+                                    "column": "64",
+                                    "row": "64",
+                                    "isLinked": true,
+                                    "unit": "px",
+                                    "size": 64
+                                },
+                                "flex_gap_mobile": {
+                                    "column": "48",
+                                    "row": "48",
+                                    "isLinked": true,
+                                    "unit": "px",
+                                    "size": 48
+                                },
+                                "border_border": "solid",
+                                "border_width": {
+                                    "unit": "px",
+                                    "top": "1",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "padding": {
+                                    "unit": "px",
+                                    "top": "16",
+                                    "right": "0",
+                                    "bottom": "16",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "animation": "fadeIn",
+                                "__globals__": {
+                                    "border_color": "globals\/colors?id=99953a1"
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "10ee1936",
+                                    "settings": {
+                                        "content_width": "full",
+                                        "flex_justify_content": "center",
+                                        "flex_align_items": "center",
+                                        "flex_gap": {
+                                            "column": "80",
+                                            "row": "80",
+                                            "isLinked": true,
+                                            "unit": "px",
+                                            "size": 80
+                                        },
+                                        "flex_gap_tablet": {
+                                            "column": "64",
+                                            "row": "64",
+                                            "isLinked": true,
+                                            "unit": "px",
+                                            "size": 64
+                                        },
+                                        "flex_gap_mobile": {
+                                            "column": "48",
+                                            "row": "48",
+                                            "isLinked": true,
+                                            "unit": "px",
+                                            "size": 48
+                                        },
+                                        "padding": {
+                                            "unit": "px",
+                                            "top": "0",
+                                            "right": "0",
+                                            "bottom": "0",
+                                            "left": "0",
+                                            "isLinked": true
+                                        }
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "247da6d0",
+                                            "settings": {
+                                                "selected_icon": {
+                                                    "value": "",
+                                                    "library": ""
+                                                },
+                                                "title_text": "Hevn Tea Ritual",
+                                                "description_text": "An afternoon of serenity steeped in tradition. Sip rare botanical blends in the comfort of your private terrace or our intimate tea lounge.",
+                                                "title_size": "h4",
+                                                "text_align": "left",
+                                                "title_bottom_space": {
+                                                    "unit": "px",
+                                                    "size": 8,
+                                                    "sizes": []
+                                                },
+                                                "_element_width": "inherit"
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "widgetType": "icon-box",
+                                            "elType": "widget"
+                                        },
+                                        {
+                                            "id": "8a54b18",
+                                            "settings": {
+                                                "image": {
+                                                    "url": "https:\/\/fatma-studio.com\/hevn\/wp-content\/uploads\/sites\/13\/2025\/09\/chinese-tea-2025-03-16-12-37-29-utc-e1756899914780.jpg",
+                                                    "id": 14,
+                                                    "size": "",
+                                                    "alt": "",
+                                                    "source": "library"
+                                                },
+                                                "width": {
+                                                    "unit": "px",
+                                                    "size": 240,
+                                                    "sizes": []
+                                                },
+                                                "width_tablet": {
+                                                    "unit": "px",
+                                                    "size": 160,
+                                                    "sizes": []
+                                                },
+                                                "width_mobile": {
+                                                    "unit": "px",
+                                                    "size": "",
+                                                    "sizes": []
+                                                },
+                                                "height": {
+                                                    "unit": "px",
+                                                    "size": 240,
+                                                    "sizes": []
+                                                },
+                                                "height_tablet": {
+                                                    "unit": "px",
+                                                    "size": 160,
+                                                    "sizes": []
+                                                },
+                                                "object-fit": "cover"
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "widgetType": "image",
+                                            "elType": "widget"
+                                        },
+                                        {
+                                            "id": "34fe8ad7",
+                                            "settings": {
+                                                "editor": "Our tea ritual is curated daily, inspired by global traditions and local botanicals. Served with handcrafted ceramics and paired bites, it\u2019s a slow ceremony designed to anchor your senses. Available on request, delivered in-suite or served by the fireplace.",
+                                                "_element_width": "inherit",
+                                                "_background_color_stop_tablet": {
+                                                    "unit": "%"
+                                                },
+                                                "_background_color_stop_mobile": {
+                                                    "unit": "%"
+                                                },
+                                                "_background_color_b_stop_tablet": {
+                                                    "unit": "%"
+                                                },
+                                                "_background_color_b_stop_mobile": {
+                                                    "unit": "%"
+                                                },
+                                                "_background_gradient_angle_tablet": {
+                                                    "unit": "deg"
+                                                },
+                                                "_background_gradient_angle_mobile": {
+                                                    "unit": "deg"
+                                                },
+                                                "_background_hover_color_stop_tablet": {
+                                                    "unit": "%"
+                                                },
+                                                "_background_hover_color_stop_mobile": {
+                                                    "unit": "%"
+                                                },
+                                                "_background_hover_color_b_stop_tablet": {
+                                                    "unit": "%"
+                                                },
+                                                "_background_hover_color_b_stop_mobile": {
+                                                    "unit": "%"
+                                                },
+                                                "_background_hover_gradient_angle_tablet": {
+                                                    "unit": "deg"
+                                                },
+                                                "_background_hover_gradient_angle_mobile": {
+                                                    "unit": "deg"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "widgetType": "text-editor",
+                                            "elType": "widget"
+                                        }
+                                    ],
+                                    "isInner": true,
+                                    "elType": "container"
+                                },
+                                {
+                                    "id": "5d510db7",
+                                    "settings": {
+                                        "image": {
+                                            "url": "https:\/\/fatma-studio.com\/hevn\/wp-content\/uploads\/sites\/13\/2025\/09\/young-woman-performing-tea-ceremony-2024-10-17-18-26-54-utc-e1756899787626.jpg",
+                                            "id": 30,
+                                            "size": "",
+                                            "alt": "",
+                                            "source": "library"
+                                        },
+                                        "width": {
+                                            "unit": "%",
+                                            "size": 100,
+                                            "sizes": []
+                                        },
+                                        "height": {
+                                            "unit": "px",
+                                            "size": 804,
+                                            "sizes": []
+                                        },
+                                        "height_tablet": {
+                                            "unit": "px",
+                                            "size": 604,
+                                            "sizes": []
+                                        },
+                                        "height_mobile": {
+                                            "unit": "px",
+                                            "size": 480,
+                                            "sizes": []
+                                        },
+                                        "object-fit": "cover",
+                                        "_element_width": "inherit"
+                                    },
+                                    "elements": [],
+                                    "isInner": false,
+                                    "widgetType": "image",
+                                    "elType": "widget"
+                                }
+                            ],
+                            "isInner": true,
+                            "elType": "container"
+                        },
+                        {
+                            "id": "565bd43e",
+                            "settings": {
+                                "content_width": "full",
+                                "flex_direction": "row",
+                                "flex_gap": {
+                                    "column": "80",
+                                    "row": "80",
+                                    "isLinked": true,
+                                    "unit": "px",
+                                    "size": 80
+                                },
+                                "flex_gap_tablet": {
+                                    "column": "64",
+                                    "row": "64",
+                                    "isLinked": true,
+                                    "unit": "px",
+                                    "size": 64
+                                },
+                                "flex_gap_mobile": {
+                                    "column": "48",
+                                    "row": "48",
+                                    "isLinked": true,
+                                    "unit": "px",
+                                    "size": 48
+                                },
+                                "border_border": "solid",
+                                "border_width": {
+                                    "unit": "px",
+                                    "top": "1",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "padding": {
+                                    "unit": "px",
+                                    "top": "16",
+                                    "right": "0",
+                                    "bottom": "16",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "animation": "fadeIn",
+                                "__globals__": {
+                                    "border_color": "globals\/colors?id=99953a1"
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "54dd1099",
+                                    "settings": {
+                                        "content_width": "full",
+                                        "flex_justify_content": "center",
+                                        "flex_align_items": "center",
+                                        "flex_gap": {
+                                            "column": "80",
+                                            "row": "80",
+                                            "isLinked": true,
+                                            "unit": "px",
+                                            "size": 80
+                                        },
+                                        "flex_gap_tablet": {
+                                            "column": "64",
+                                            "row": "64",
+                                            "isLinked": true,
+                                            "unit": "px",
+                                            "size": 64
+                                        },
+                                        "flex_gap_mobile": {
+                                            "column": "48",
+                                            "row": "48",
+                                            "isLinked": true,
+                                            "unit": "px",
+                                            "size": 48
+                                        },
+                                        "padding": {
+                                            "unit": "px",
+                                            "top": "0",
+                                            "right": "0",
+                                            "bottom": "0",
+                                            "left": "0",
+                                            "isLinked": true
+                                        }
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "23652775",
+                                            "settings": {
+                                                "selected_icon": {
+                                                    "value": "",
+                                                    "library": ""
+                                                },
+                                                "title_text": "In-Room Spa Experience",
+                                                "description_text": "Restore balance with a bespoke treatment performed in the privacy of your suite, using organic oils and sensory therapy.",
+                                                "title_size": "h4",
+                                                "text_align": "left",
+                                                "title_bottom_space": {
+                                                    "unit": "px",
+                                                    "size": 8,
+                                                    "sizes": []
+                                                },
+                                                "_element_width": "inherit"
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "widgetType": "icon-box",
+                                            "elType": "widget"
+                                        },
+                                        {
+                                            "id": "21fc2045",
+                                            "settings": {
+                                                "image": {
+                                                    "url": "https:\/\/fatma-studio.com\/hevn\/wp-content\/uploads\/sites\/13\/2025\/09\/a-place-for-relaxation-massage-spa-rest-2025-04-29-00-37-04-utc-e1756899934776.jpg",
+                                                    "id": 11,
+                                                    "size": "",
+                                                    "alt": "",
+                                                    "source": "library"
+                                                },
+                                                "width": {
+                                                    "unit": "px",
+                                                    "size": 240,
+                                                    "sizes": []
+                                                },
+                                                "width_tablet": {
+                                                    "unit": "px",
+                                                    "size": 160,
+                                                    "sizes": []
+                                                },
+                                                "width_mobile": {
+                                                    "unit": "px",
+                                                    "size": "",
+                                                    "sizes": []
+                                                },
+                                                "height": {
+                                                    "unit": "px",
+                                                    "size": 240,
+                                                    "sizes": []
+                                                },
+                                                "height_tablet": {
+                                                    "unit": "px",
+                                                    "size": 160,
+                                                    "sizes": []
+                                                },
+                                                "object-fit": "cover"
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "widgetType": "image",
+                                            "elType": "widget"
+                                        },
+                                        {
+                                            "id": "3cb34488",
+                                            "settings": {
+                                                "editor": "Let tranquility come to you. Our therapists deliver curated treatments tailored to your needs\u2014aromatherapy, facial care, or tension release massage\u2014using all-natural products exclusive to Hevn. Appointments available 24\/7 upon request.",
+                                                "_element_width": "inherit",
+                                                "_background_color_stop_tablet": {
+                                                    "unit": "%"
+                                                },
+                                                "_background_color_stop_mobile": {
+                                                    "unit": "%"
+                                                },
+                                                "_background_color_b_stop_tablet": {
+                                                    "unit": "%"
+                                                },
+                                                "_background_color_b_stop_mobile": {
+                                                    "unit": "%"
+                                                },
+                                                "_background_gradient_angle_tablet": {
+                                                    "unit": "deg"
+                                                },
+                                                "_background_gradient_angle_mobile": {
+                                                    "unit": "deg"
+                                                },
+                                                "_background_hover_color_stop_tablet": {
+                                                    "unit": "%"
+                                                },
+                                                "_background_hover_color_stop_mobile": {
+                                                    "unit": "%"
+                                                },
+                                                "_background_hover_color_b_stop_tablet": {
+                                                    "unit": "%"
+                                                },
+                                                "_background_hover_color_b_stop_mobile": {
+                                                    "unit": "%"
+                                                },
+                                                "_background_hover_gradient_angle_tablet": {
+                                                    "unit": "deg"
+                                                },
+                                                "_background_hover_gradient_angle_mobile": {
+                                                    "unit": "deg"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "widgetType": "text-editor",
+                                            "elType": "widget"
+                                        }
+                                    ],
+                                    "isInner": true,
+                                    "elType": "container"
+                                },
+                                {
+                                    "id": "78dd0378",
+                                    "settings": {
+                                        "image": {
+                                            "url": "https:\/\/fatma-studio.com\/hevn\/wp-content\/uploads\/sites\/13\/2025\/09\/professional-masseuse-enjoying-working-at-spa-2025-03-03-14-24-16-utc-e1756899831245.jpg",
+                                            "id": 24,
+                                            "size": "",
+                                            "alt": "",
+                                            "source": "library"
+                                        },
+                                        "width": {
+                                            "unit": "%",
+                                            "size": 100,
+                                            "sizes": []
+                                        },
+                                        "height": {
+                                            "unit": "px",
+                                            "size": 804,
+                                            "sizes": []
+                                        },
+                                        "height_tablet": {
+                                            "unit": "px",
+                                            "size": 604,
+                                            "sizes": []
+                                        },
+                                        "height_mobile": {
+                                            "unit": "px",
+                                            "size": 480,
+                                            "sizes": []
+                                        },
+                                        "object-fit": "cover",
+                                        "_element_width": "inherit"
+                                    },
+                                    "elements": [],
+                                    "isInner": false,
+                                    "widgetType": "image",
+                                    "elType": "widget"
+                                }
+                            ],
+                            "isInner": true,
+                            "elType": "container"
+                        },
+                        {
+                            "id": "7b166e1",
+                            "settings": {
+                                "content_width": "full",
+                                "flex_direction": "row",
+                                "flex_gap": {
+                                    "column": "80",
+                                    "row": "80",
+                                    "isLinked": true,
+                                    "unit": "px",
+                                    "size": 80
+                                },
+                                "flex_gap_tablet": {
+                                    "column": "64",
+                                    "row": "64",
+                                    "isLinked": true,
+                                    "unit": "px",
+                                    "size": 64
+                                },
+                                "flex_gap_mobile": {
+                                    "column": "48",
+                                    "row": "48",
+                                    "isLinked": true,
+                                    "unit": "px",
+                                    "size": 48
+                                },
+                                "border_border": "solid",
+                                "border_width": {
+                                    "unit": "px",
+                                    "top": "1",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "padding": {
+                                    "unit": "px",
+                                    "top": "16",
+                                    "right": "0",
+                                    "bottom": "16",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "animation": "fadeIn",
+                                "__globals__": {
+                                    "border_color": "globals\/colors?id=99953a1"
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "ac25874",
+                                    "settings": {
+                                        "content_width": "full",
+                                        "flex_justify_content": "center",
+                                        "flex_align_items": "center",
+                                        "flex_gap": {
+                                            "column": "80",
+                                            "row": "80",
+                                            "isLinked": true,
+                                            "unit": "px",
+                                            "size": 80
+                                        },
+                                        "flex_gap_tablet": {
+                                            "column": "64",
+                                            "row": "64",
+                                            "isLinked": true,
+                                            "unit": "px",
+                                            "size": 64
+                                        },
+                                        "flex_gap_mobile": {
+                                            "column": "48",
+                                            "row": "48",
+                                            "isLinked": true,
+                                            "unit": "px",
+                                            "size": 48
+                                        },
+                                        "padding": {
+                                            "unit": "px",
+                                            "top": "0",
+                                            "right": "0",
+                                            "bottom": "0",
+                                            "left": "0",
+                                            "isLinked": true
+                                        }
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "2afc31ee",
+                                            "settings": {
+                                                "selected_icon": {
+                                                    "value": "",
+                                                    "library": ""
+                                                },
+                                                "title_text": "Forest Dining Table",
+                                                "description_text": "Dine beneath a canopy of trees in an exclusive setting crafted for two. Candlelight, fresh air, and a bespoke menu await.",
+                                                "title_size": "h4",
+                                                "text_align": "left",
+                                                "title_bottom_space": {
+                                                    "unit": "px",
+                                                    "size": 8,
+                                                    "sizes": []
+                                                },
+                                                "_element_width": "inherit"
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "widgetType": "icon-box",
+                                            "elType": "widget"
+                                        },
+                                        {
+                                            "id": "7ea09fa7",
+                                            "settings": {
+                                                "image": {
+                                                    "url": "https:\/\/fatma-studio.com\/hevn\/wp-content\/uploads\/sites\/13\/2025\/09\/rustic-wedding-set-vintage-dining-table-with-deco-2025-04-01-21-24-35-utc-e1756899818651.jpg",
+                                                    "id": 26,
+                                                    "size": "",
+                                                    "alt": "",
+                                                    "source": "library"
+                                                },
+                                                "width": {
+                                                    "unit": "px",
+                                                    "size": 240,
+                                                    "sizes": []
+                                                },
+                                                "width_tablet": {
+                                                    "unit": "px",
+                                                    "size": 160,
+                                                    "sizes": []
+                                                },
+                                                "width_mobile": {
+                                                    "unit": "px",
+                                                    "size": "",
+                                                    "sizes": []
+                                                },
+                                                "height": {
+                                                    "unit": "px",
+                                                    "size": 240,
+                                                    "sizes": []
+                                                },
+                                                "height_tablet": {
+                                                    "unit": "px",
+                                                    "size": 160,
+                                                    "sizes": []
+                                                },
+                                                "object-fit": "cover"
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "widgetType": "image",
+                                            "elType": "widget"
+                                        },
+                                        {
+                                            "id": "3aa22ffc",
+                                            "settings": {
+                                                "editor": "This signature dining experience is available only once per evening. Guests are guided through the woods to a hidden table where locally sourced tasting menus are served under lanterns. A celebration of nature, flavor, and intimacy.",
+                                                "_element_width": "inherit",
+                                                "_background_color_stop_tablet": {
+                                                    "unit": "%"
+                                                },
+                                                "_background_color_stop_mobile": {
+                                                    "unit": "%"
+                                                },
+                                                "_background_color_b_stop_tablet": {
+                                                    "unit": "%"
+                                                },
+                                                "_background_color_b_stop_mobile": {
+                                                    "unit": "%"
+                                                },
+                                                "_background_gradient_angle_tablet": {
+                                                    "unit": "deg"
+                                                },
+                                                "_background_gradient_angle_mobile": {
+                                                    "unit": "deg"
+                                                },
+                                                "_background_hover_color_stop_tablet": {
+                                                    "unit": "%"
+                                                },
+                                                "_background_hover_color_stop_mobile": {
+                                                    "unit": "%"
+                                                },
+                                                "_background_hover_color_b_stop_tablet": {
+                                                    "unit": "%"
+                                                },
+                                                "_background_hover_color_b_stop_mobile": {
+                                                    "unit": "%"
+                                                },
+                                                "_background_hover_gradient_angle_tablet": {
+                                                    "unit": "deg"
+                                                },
+                                                "_background_hover_gradient_angle_mobile": {
+                                                    "unit": "deg"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "widgetType": "text-editor",
+                                            "elType": "widget"
+                                        }
+                                    ],
+                                    "isInner": true,
+                                    "elType": "container"
+                                },
+                                {
+                                    "id": "59315cd8",
+                                    "settings": {
+                                        "image": {
+                                            "url": "https:\/\/fatma-studio.com\/hevn\/wp-content\/uploads\/sites\/13\/2025\/09\/stylish-rustic-restaurant-wooden-tent-with-wooden-2024-12-12-07-00-58-utc-e1756899802199.jpg",
+                                            "id": 28,
+                                            "size": "",
+                                            "alt": "",
+                                            "source": "library"
+                                        },
+                                        "width": {
+                                            "unit": "%",
+                                            "size": 100,
+                                            "sizes": []
+                                        },
+                                        "height": {
+                                            "unit": "px",
+                                            "size": 804,
+                                            "sizes": []
+                                        },
+                                        "height_tablet": {
+                                            "unit": "px",
+                                            "size": 604,
+                                            "sizes": []
+                                        },
+                                        "height_mobile": {
+                                            "unit": "px",
+                                            "size": 480,
+                                            "sizes": []
+                                        },
+                                        "object-fit": "cover",
+                                        "_element_width": "inherit"
+                                    },
+                                    "elements": [],
+                                    "isInner": false,
+                                    "widgetType": "image",
+                                    "elType": "widget"
+                                }
+                            ],
+                            "isInner": true,
+                            "elType": "container"
+                        }
+                    ],
+                    "isInner": true,
+                    "elType": "container"
+                },
+                {
+                    "id": "dabc25e",
+                    "settings": {
+                        "content_width": "full",
+                        "flex_gap": {
+                            "column": "16",
+                            "row": "16",
+                            "isLinked": true,
+                            "unit": "px",
+                            "size": 16
+                        },
+                        "padding": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": true
+                        },
+                        "flex_align_items": "center"
+                    },
+                    "elements": [
+                        {
+                            "id": "54c1411c",
+                            "settings": {
+                                "editor": "Hevn offers more than just a stay \u2014 we craft experiences rooted in nature, design, and intimacy. From slow mornings in our private garden to custom in-room wellness rituals, each detail is tailored to restore your senses and spirit.",
+                                "align": "center",
+                                "_element_width": "initial",
+                                "_element_custom_width": {
+                                    "unit": "%",
+                                    "size": 56,
+                                    "sizes": []
+                                },
+                                "_element_custom_width_tablet": {
+                                    "unit": "%",
+                                    "size": 100,
+                                    "sizes": []
+                                },
+                                "_element_custom_width_mobile": {
+                                    "unit": "%",
+                                    "size": "",
+                                    "sizes": []
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "text-editor",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "67f5db2",
+                            "settings": {
+                                "text": "Discover More Experiences",
+                                "align_mobile": "justify",
+                                "background_color": "#02010100",
+                                "border_border": "solid",
+                                "border_width": {
+                                    "unit": "px",
+                                    "top": "1",
+                                    "right": "1",
+                                    "bottom": "1",
+                                    "left": "1",
+                                    "isLinked": true
+                                },
+                                "_flex_align_self_mobile": "stretch",
+                                "_animation": "fadeIn",
+                                "__globals__": {
+                                    "button_text_color": "globals\/colors?id=primary",
+                                    "border_color": "globals\/colors?id=2b3b2a6",
+                                    "button_background_hover_color": "globals\/colors?id=3cab8f2",
+                                    "hover_color": "globals\/colors?id=60a0f80",
+                                    "button_hover_border_color": "globals\/colors?id=3cab8f2"
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "button",
+                            "elType": "widget"
+                        }
+                    ],
+                    "isInner": true,
+                    "elType": "container"
+                }
+            ],
+            "isInner": false,
+            "elType": "container"
+        }
+    ],
+    "page_settings": {
+        "hide_title": "yes"
+    }
+}
