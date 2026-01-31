@@ -219,18 +219,16 @@ class Pxltheme_Core_Icons_Control extends \Elementor\Base_Data_Control {
                 $value['fetchJson'] = str_replace($theme_url,get_template_directory(),$value['fetchJson']);
              
             $fetchJson = $value['fetchJson'] ;
-            $file_content = '';   
-            /*$opts = array(
-                'ssl'=>array(
-                    'verify_peer'=>false,
-                    'verify_peer_name'=>false,
-                )
-            );
-            $context = stream_context_create($opts);*/
-            if(!empty($fetchJson) ){
-                $file_content = json_decode( $wp_filesystem->get_contents( $fetchJson ), true); 
-                //$file_content = json_decode( file_get_contents($fetchJson, false, $context), true);
-                //$file_content = json_decode( @file_get_contents($fetchJson, false, $context), true);
+            $file_content = '';
+            if ( ! empty( $fetchJson ) ) {
+                $raw = false;
+                if ( isset( $wp_filesystem ) && is_object( $wp_filesystem ) && method_exists( $wp_filesystem, 'get_contents' ) ) {
+                    $raw = $wp_filesystem->get_contents( $fetchJson );
+                }
+                if ( false === $raw || ! is_string( $raw ) ) {
+                    $raw = @file_get_contents( $fetchJson );
+                }
+                $file_content = ( is_string( $raw ) && '' !== $raw ) ? json_decode( $raw, true ) : null;
             }
              
             if(empty($file_content)) continue;

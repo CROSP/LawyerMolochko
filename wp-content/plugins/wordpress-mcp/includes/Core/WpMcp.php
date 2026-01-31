@@ -6,6 +6,7 @@ namespace Automattic\WordpressMcp\Core;
 use Automattic\WordpressMcp\Tools\McpCustomPostTypesTools;
 use Automattic\WordpressMcp\Tools\McpPostsTools;
 use Automattic\WordpressMcp\Resources\McpGeneralSiteInfo;
+use Automattic\WordpressMcp\Tools\McpAcfTools;
 use Automattic\WordpressMcp\Tools\McpRestApiCrud;
 use Automattic\WordpressMcp\Tools\McpSiteInfo;
 use Automattic\WordpressMcp\Tools\McpUsersTools;
@@ -191,6 +192,7 @@ class WpMcp {
 		new McpMediaTools();
 		new McpCustomPostTypesTools();
 		new McpRestApiCrud();
+		new McpAcfTools();
 	}
 
 	/**

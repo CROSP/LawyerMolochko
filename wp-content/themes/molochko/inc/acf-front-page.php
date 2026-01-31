@@ -1,0 +1,245 @@
+<?php
+/**
+ * ACF field group: Front Page (Hero, Fancy boxes). No Elementor.
+ *
+ * @package Molochko
+ */
+
+if ( ! function_exists( 'acf_add_local_field_group' ) ) {
+	return;
+}
+
+acf_add_local_field_group( array(
+	'key'                   => 'group_molochko_front_page',
+	'title'                 => __( 'Front Page (Molochko)', 'molochko' ),
+	'fields'                => array(
+		array(
+			'key'           => 'field_molochko_hero_shortcode',
+			'label'         => __( 'Hero Slider Shortcode', 'molochko' ),
+			'name'          => 'hero_slider_shortcode',
+			'type'          => 'text',
+			'instructions'  => __( 'e.g. [rev_slider alias="slider-1"] or any shortcode for the hero block.', 'molochko' ),
+			'default_value' => '[rev_slider alias="slider-1"]',
+			'placeholder'   => '[rev_slider alias="slider-1"]',
+		),
+		array(
+			'key'        => 'field_molochko_fancy_boxes',
+			'label'      => __( 'Fancy Boxes (3 cards)', 'molochko' ),
+			'name'       => 'fancy_boxes',
+			'type'       => 'repeater',
+			'layout'     => 'block',
+			'min'        => 0,
+			'max'        => 6,
+			'button_label' => __( 'Add Box', 'molochko' ),
+			'sub_fields' => array(
+				array(
+					'key'           => 'field_fb_icon',
+					'label'         => __( 'Icon (CSS classes)', 'molochko' ),
+					'name'          => 'icon',
+					'type'          => 'text',
+					'instructions'  => __( 'e.g. flaticon flaticon-calling or flaticon flaticon-award. Ignored if Icon Image is set.', 'molochko' ),
+					'default_value' => 'flaticon flaticon-calling',
+				),
+				array(
+					'key'           => 'field_fb_icon_image',
+					'label'         => __( 'Icon (Image/SVG)', 'molochko' ),
+					'name'          => 'icon_image',
+					'type'          => 'image',
+					'return_format' => 'array',
+					'preview_size'  => 'thumbnail',
+					'instructions'  => __( 'Optional. If set, used instead of Icon CSS classes (e.g. for custom SVG).', 'molochko' ),
+				),
+				array(
+					'key'   => 'field_fb_title',
+					'label' => __( 'Title', 'molochko' ),
+					'name'  => 'title',
+					'type'  => 'text',
+				),
+				array(
+					'key'   => 'field_fb_description',
+					'label' => __( 'Description', 'molochko' ),
+					'name'  => 'description',
+					'type'  => 'textarea',
+					'rows'  => 3,
+				),
+				array(
+					'key'   => 'field_fb_button_text',
+					'label' => __( 'Button Text', 'molochko' ),
+					'name'  => 'button_text',
+					'type'  => 'text',
+				),
+				array(
+					'key'   => 'field_fb_link',
+					'label' => __( 'Link', 'molochko' ),
+					'name'  => 'link',
+					'type'  => 'link',
+				),
+				array(
+					'key'          => 'field_fb_image',
+					'label'        => __( 'Image (optional)', 'molochko' ),
+					'name'         => 'image',
+					'type'         => 'image',
+					'return_format' => 'array',
+					'preview_size' => 'medium',
+				),
+			),
+		),
+		array(
+			'key'   => 'field_molochko_about_tab',
+			'label' => __( 'About block', 'molochko' ),
+			'name'  => 'about_tab',
+			'type'  => 'tab',
+		),
+		array(
+			'key'          => 'field_about_image_bg',
+			'label'        => __( 'About: Background image (left column)', 'molochko' ),
+			'name'         => 'about_image_bg',
+			'type'         => 'image',
+			'return_format' => 'array',
+			'preview_size' => 'medium',
+		),
+		array(
+			'key'          => 'field_about_image_person',
+			'label'        => __( 'About: Person/CEO image (overlay)', 'molochko' ),
+			'name'         => 'about_image_person',
+			'type'         => 'image',
+			'return_format' => 'array',
+			'preview_size' => 'medium',
+		),
+		array(
+			'key'   => 'field_about_subtitle',
+			'label' => __( 'About: Subtitle', 'molochko' ),
+			'name'  => 'about_subtitle',
+			'type'  => 'text',
+		),
+		array(
+			'key'   => 'field_about_title',
+			'label' => __( 'About: Title (H2)', 'molochko' ),
+			'name'  => 'about_title',
+			'type'  => 'text',
+		),
+		array(
+			'key'   => 'field_about_description',
+			'label' => __( 'About: Description (main text)', 'molochko' ),
+			'name'  => 'about_description',
+			'type'  => 'wysiwyg',
+		),
+		array(
+			'key'   => 'field_about_cta_line',
+			'label' => __( 'About: CTA line (e.g. Call us 24/7...)', 'molochko' ),
+			'name'  => 'about_cta_line',
+			'type'  => 'text',
+		),
+		array(
+			'key'   => 'field_about_contact_line',
+			'label' => __( 'About: Contact line (phone + Book link, HTML allowed)', 'molochko' ),
+			'name'  => 'about_contact_line',
+			'type'  => 'wysiwyg',
+		),
+		array(
+			'key'   => 'field_about_name',
+			'label' => __( 'About: Name (e.g. Harry Oliver)', 'molochko' ),
+			'name'  => 'about_name',
+			'type'  => 'text',
+		),
+		array(
+			'key'   => 'field_about_role',
+			'label' => __( 'About: Role (e.g. CEO of Power Leagal Law Firm)', 'molochko' ),
+			'name'  => 'about_role',
+			'type'  => 'text',
+		),
+		array(
+			'key'   => 'field_molochko_practice_areas_tab',
+			'label' => __( 'Practice Areas section heading', 'molochko' ),
+			'name'  => 'practice_areas_tab',
+			'type'  => 'tab',
+		),
+		array(
+			'key'           => 'field_practice_areas_subtitle',
+			'label'         => __( 'Practice Areas: Subtitle', 'molochko' ),
+			'name'          => 'practice_areas_subtitle',
+			'type'          => 'text',
+			'default_value' => 'Наша експертиза',
+		),
+		array(
+			'key'           => 'field_practice_areas_title',
+			'label'         => __( 'Practice Areas: Title (H2)', 'molochko' ),
+			'name'          => 'practice_areas_title',
+			'type'          => 'text',
+			'default_value' => 'Напрямки юридичної практики',
+		),
+		array(
+			'key'           => 'field_practice_areas_description',
+			'label'         => __( 'Practice Areas: Description', 'molochko' ),
+			'name'          => 'practice_areas_description',
+			'type'          => 'textarea',
+			'rows'          => 3,
+			'default_value' => 'Надаємо кваліфіковану юридичну допомогу у кримінальних справах, спорах через ДТП, військових питаннях, сімейних та трудових спорах. Маємо значний досвід у цих напрямках та гарантуємо індивідуальний підхід до кожної справи.',
+		),
+		array(
+			'key'           => 'field_practice_areas_items',
+			'label'         => __( 'Practice Areas: Items (grid cards)', 'molochko' ),
+			'name'          => 'practice_areas',
+			'type'          => 'repeater',
+			'layout'        => 'block',
+			'min'           => 0,
+			'max'           => 50,
+			'button_label'  => __( 'Add practice area', 'molochko' ),
+			'instructions'  => __( 'If filled, this list is used instead of "Напрямки практики" (pxl-practice-area) posts. Editable via MCP acf_update_fields_batch.', 'molochko' ),
+			'sub_fields'    => array(
+				array(
+					'key'   => 'field_pa_item_title',
+					'label' => __( 'Title', 'molochko' ),
+					'name'  => 'title',
+					'type'  => 'text',
+				),
+				array(
+					'key'   => 'field_pa_item_description',
+					'label' => __( 'Description', 'molochko' ),
+					'name'  => 'description',
+					'type'  => 'textarea',
+					'rows'  => 2,
+				),
+				array(
+					'key'           => 'field_pa_item_icon',
+					'label'         => __( 'Icon (CSS class)', 'molochko' ),
+					'name'          => 'icon',
+					'type'          => 'text',
+					'default_value' => 'flaticon flaticon-businessman',
+					'placeholder'   => 'flaticon flaticon-businessman',
+				),
+				array(
+					'key'          => 'field_pa_item_icon_image',
+					'label'        => __( 'Icon (image, optional)', 'molochko' ),
+					'name'         => 'icon_image',
+					'type'         => 'image',
+					'return_format' => 'array',
+					'preview_size' => 'thumbnail',
+				),
+				array(
+					'key'   => 'field_pa_item_link',
+					'label' => __( 'Link', 'molochko' ),
+					'name'  => 'link',
+					'type'  => 'link',
+				),
+			),
+		),
+	),
+	'location'              => array(
+		array(
+			array(
+				'param'    => 'page_type',
+				'operator' => '==',
+				'value'    => 'front_page',
+			),
+		),
+	),
+	'menu_order'            => 0,
+	'position'              => 'normal',
+	'style'                 => 'default',
+	'label_placement'       => 'top',
+	'instruction_placement' => 'label',
+	'active'                => true,
+	'show_in_rest'          => 1,
+	'description'           => __( 'Hero and Fancy boxes for the Molochko front page. Replaces Elementor on the homepage.', 'molochko' ),
+) );
