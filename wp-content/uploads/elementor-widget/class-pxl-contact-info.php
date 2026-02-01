@@ -1,0 +1,11 @@
+<?php
+
+class PxlContactInfo_Widget extends Pxltheme_Core_Widget_Base{
+    protected $name = 'pxl_contact_info';
+    protected $title = 'PXL Contact Info';
+    protected $icon = 'eicon-mail';
+    protected $categories = array( 'pxltheme-core' );
+    protected $params = '{"sections":[{"name":"layout_section","label":"Layout","tab":"layout","controls":[{"name":"layout","label":"Templates","type":"layoutcontrol","default":"1","options":{"1":{"label":"Layout 1","image":"http:\/\/localhost\/theme_powerlegal\/wp-content\/themes\/powerlegal\/elements\/register\/img-layout\/pxl_contact_info-1.jpg"}},"prefix_class":"pxl-contact-info-layout-"}]},{"name":"content_section","label":"Content Settings","tab":"content","controls":[{"name":"ci_icon","label":"Icon","type":"icons","fa4compatibility":"icon","default":{"value":"pxli pxli-address","library":"pxli-icon"}},{"name":"heading_text","label":"Heading","type":"text","placeholder":"Enter Heading","default":"Office address","label_block":true},{"name":"desc","label":"Description","type":"textarea","placeholder":"Enter Description","default":"Digital Agency Network 20 Eastbourne Terrace London W2 6LG","label_block":true}]},{"name":"qc_style","label":"Style","tab":"style","controls":[{"name":"ci_align","label":"Alignment","type":"choose","control_type":"responsive","options":{"start":{"title":"Start","icon":"eicon-text-align-left"},"center":{"title":"Center","icon":"eicon-text-align-center"},"end":{"title":"End","icon":"eicon-text-align-right"}},"selectors":{"{{WRAPPER}} .pxl-ci-wrap":"justify-content: {{VALUE}};"}},{"name":"icon_color","label":"Icon Color","type":"color","selectors":{"{{WRAPPER}} .pxl-icon":"color: {{VALUE}};"}},{"name":"heading_text_color","label":"Heading Color","type":"color","selectors":{"{{WRAPPER}} .ci-title":"color: {{VALUE}};"}},{"name":"desc_text_color","label":"Content item Color","type":"color","selectors":{"{{WRAPPER}} .ci-desc":"color: {{VALUE}};"}},{"name":"heading_typography","label":"Heading Typography","type":"typography","control_type":"group","selector":"{{WRAPPER}} .ci-title"},{"name":"desc_typography","label":"Description Typography","type":"typography","control_type":"group","selector":"{{WRAPPER}} .ci-desc"}]}]}';
+    protected $styles = array(  );
+    protected $scripts = array(  );
+}

@@ -1,0 +1,11 @@
+<?php
+
+class PxlTestimonialSingle_Widget extends Pxltheme_Core_Widget_Base{
+    protected $name = 'pxl_testimonial_single';
+    protected $title = 'PXL Client Review';
+    protected $icon = 'eicon-editor-quote';
+    protected $categories = array( 'pxltheme-core' );
+    protected $params = '{"sections":[{"name":"layout_section","label":"Layout","tab":"layout","controls":[{"name":"layout","label":"Layout","type":"layoutcontrol","default":"1","options":{"1":{"label":"Layout 1","image":"https:\/\/lawyermolochko.ddev.site:8443\/wp-content\/themes\/powerlegal\/elements\/assets\/layout-image\/pxl_testimonial_single-1.jpg"}}}]},{"name":"review_section","label":"How To Create Review Link?","tab":"layout","controls":[{"name":"review_guide","label":"Review Link Format:","type":"layoutcontrol","description":"https:\/\/search.google.com\/local\/writereview?placeid=YOUR_PLACE_ID"},{"name":"review_placeid","label":"Get YOUR_PLACE_ID At:","type":"layoutcontrol","description":"https:\/\/developers-dot-devsite-v2-prod.appspot.com\/maps\/documentation\/javascript\/examples\/places-placeid-finder"}]},{"name":"section_clients","label":"Clients","tab":"content","controls":[{"name":"selected_icon","label":"Icon","type":"icons","default":{"library":"pxli","value":"pxli-quote"}},{"name":"icon_size","label":"Icon Size(px)","type":"slider","range":{"px":{"min":15,"max":300}},"selectors":{"{{WRAPPER}} .pxl-testimonial-icon":"font-size: {{SIZE}}{{UNIT}};","{{WRAPPER}} .pxl-testimonial-icon svg":"width: {{SIZE}}{{UNIT}};"}},{"name":"tt_content","label":"Content","type":"textarea","rows":"10","default":"Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.","placeholder":"Enter some text here."},{"name":"tt_description","label":"Description","type":"textarea","rows":"3","label_block":true,"default":"John Doe"},{"name":"rating","label":"Rating","type":"select","default":"none","options":{"none":"None","star1":"1 Star","star2":"2 Star","star3":"3 Star","star4":"4 Star","star5":"5 Star"}}]}]}';
+    protected $styles = array(  );
+    protected $scripts = array(  );
+}

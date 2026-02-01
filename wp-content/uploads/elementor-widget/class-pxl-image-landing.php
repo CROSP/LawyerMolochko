@@ -1,0 +1,11 @@
+<?php
+
+class PxlImageLanding_Widget extends Pxltheme_Core_Widget_Base{
+    protected $name = 'pxl_image_landing';
+    protected $title = 'PXL Image Landing';
+    protected $icon = 'eicon-image';
+    protected $categories = array( 'pxltheme-core' );
+    protected $params = '{"sections":[{"name":"layout_section","label":"Layout","tab":"layout","controls":[{"name":"layout","label":"Layout","type":"layoutcontrol","default":"1","options":{"1":{"label":"Layout 1","image":"https:\/\/lawyermolochko.ddev.site:8443\/wp-content\/themes\/powerlegal\/elements\/assets\/layout-image\/pxl_image_landing-1.jpg"}}}]},{"name":"content_section","label":"Content","tab":"content","controls":[{"name":"selected_image","label":"Image","type":"media"},{"name":"title_text","label":"Title Text","type":"text","default":"Homepage"},{"name":"link_type","label":"Link Type","type":"select","options":{"url":"URL","page":"Existing Page"},"default":"url"},{"name":"link","label":"Link","type":"url","placeholder":"https:\/\/your-link.com","condition":{"link_type":"url"},"default":{"url":"#"}},{"name":"page_link","label":"Existing Page","type":"select2","options":{"10366":"Home One Page","10268":"Help & Faqs","9645":"Landing Page","9557":"Our Gallery","6459":"About Me","5916":"About US V.1","5573":"About US V.2","5456":"Book Appointment","5274":"Careers","5167":"Coming Soon","5042":"History","4838":"Pricing Table","4666":"Reviews","4596":"Contact Us V.2","3893":"Our Team","3881":"Team Details","3501":"Practice Areas Style...","2960":"Practice Areas Style...","2498":"Case Study Grid","2434":"Case Study Classic","2152":"Case Study List","1830":"Contact Us V.1","1436":"Wishlist","1372":"Blog Fullwidth","1232":"Blog List","1005":"Blog Default","615":"Home Layout 7","596":"Home Layout 6","553":"Home Layout 5","467":"Shop","468":"Cart","469":"Checkout","470":"My account","426":"Home Layout 4","364":"Home Layout 3","224":"Home Layout 2","222":"Home"},"condition":{"link_type":"page"},"multiple":false,"label_block":true}]}]}';
+    protected $styles = array(  );
+    protected $scripts = array(  );
+}

@@ -1,0 +1,11 @@
+<?php
+
+class PxlProgressbar_Widget extends Pxltheme_Core_Widget_Base{
+    protected $name = 'pxl_progressbar';
+    protected $title = 'PXL Progress Bar';
+    protected $icon = 'eicon-skill-bar';
+    protected $categories = array( 'pxltheme-core' );
+    protected $params = '{"sections":[{"name":"source_section","label":"Source Settings","tab":"content","controls":[{"name":"progressbar_list","label":"Progress Bar Lists","type":"repeater","controls":[{"name":"title","label":"Title","type":"text","placeholder":"Enter your title","default":"My Skill","label_block":true},{"name":"percent","label":"Percentage","type":"slider","default":{"size":50,"unit":"%"},"label_block":true},{"name":"item_bar_color","label":"Bar Background Color","type":"color","selectors":{"{{WRAPPER}} {{CURRENT_ITEM}} .pxl-progress-bar":"background-color: {{VALUE}}"}}],"title_field":"{{title}}"}]},{"name":"section_title","label":"Style","tab":"style","controls":[{"name":"title_color","label":"Title Color","type":"color","selectors":{"{{WRAPPER}} .pxl-progressbar .progress-title":"color: {{VALUE}};"}},{"name":"typography","label":"Title Typography","type":"typography","control_type":"group","selector":"{{WRAPPER}} .pxl-progressbar .progress-title"},{"name":"percent_color","label":"Percentage Color","type":"color","selectors":{"{{WRAPPER}} .pxl-progressbar .progress-percentage":"color: {{VALUE}};"}},{"name":"percentage_typography","label":"Percentage Typography","type":"typography","control_type":"group","selector":"{{WRAPPER}} .pxl-progressbar .progress-percentage"},{"name":"bound_color","label":"Bound Background Color","type":"color","selectors":{"{{WRAPPER}} .pxl-progressbar .progress-bound":"background-color: {{VALUE}};"}},{"name":"item_animation","label":"Item Motion Effect","type":"animation","condition":[]},{"name":"item_animation_duration","label":"Item Animation Duration","type":"select","default":"normal","options":{"slow":"Slow","normal":"Normal","fast":"Fast"},"condition":{"item_animation!":""}},{"name":"item_animation_delay","label":"Item Animation Delay","type":"number","min":0,"step":100,"condition":{"item_animation!":""}}]}]}';
+    protected $styles = array(  );
+    protected $scripts = array( 'pxl-progressbar','powerlegal-progressbar' );
+}

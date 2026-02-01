@@ -1,0 +1,11 @@
+<?php
+
+class PxlButtonMore_Widget extends Pxltheme_Core_Widget_Base{
+    protected $name = 'pxl_button_more';
+    protected $title = 'PXL Button More';
+    protected $icon = 'eicon-editor-external-link';
+    protected $categories = array( 'pxltheme-core' );
+    protected $params = '{"sections":[{"name":"source_section","label":"Source Settings","tab":"content","controls":[{"name":"style","label":"Style","type":"select","default":"style-default","options":{"style-default":"Default"}},{"name":"text","label":"Button Text","type":"text","default":"Read More","placeholder":"Read More"},{"name":"button_url_type","label":"Link Type","type":"select","options":{"url":"URL","page":"Existing Page"},"default":"url"},{"name":"link","label":"Link","type":"url","placeholder":"https:\/\/your-link.com","condition":{"button_url_type":"url"},"default":{"url":"#"}},{"name":"page_link","label":"Existing Page","type":"select2","options":{"10366":"Home One Page","10268":"Help & Faqs","9645":"Landing Page","9557":"Our Gallery","6459":"About Me","5916":"About US V.1","5573":"About US V.2","5456":"Book Appointment","5274":"Careers","5167":"Coming Soon","5042":"History","4838":"Pricing Table","4666":"Reviews","4596":"Contact Us V.2","3893":"Our Team","3881":"Team Details","3501":"Practice Areas Style...","2960":"Practice Areas Style...","2498":"Case Study Grid","2434":"Case Study Classic","2152":"Case Study List","1830":"Contact Us V.1","1436":"Wishlist","1372":"Blog Fullwidth","1232":"Blog List","1005":"Blog Default","615":"Home Layout 7","596":"Home Layout 6","553":"Home Layout 5","467":"Shop","468":"Cart","469":"Checkout","470":"My account","426":"Home Layout 4","364":"Home Layout 3","224":"Home Layout 2","222":"Home"},"condition":{"button_url_type":"page"},"multiple":false,"label_block":true},{"name":"text_color","label":"Color","type":"color","selectors":{"{{WRAPPER}} .pxl-button-more .btn-more":"color: {{VALUE}};"}},{"name":"text_color_hover","label":"Color Hover","type":"color","selectors":{"{{WRAPPER}} .pxl-button-more .btn-more:hover":"color: {{VALUE}};"}}]}]}';
+    protected $styles = array(  );
+    protected $scripts = array(  );
+}

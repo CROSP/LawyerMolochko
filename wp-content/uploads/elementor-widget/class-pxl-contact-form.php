@@ -1,0 +1,11 @@
+<?php
+
+class PxlContactForm_Widget extends Pxltheme_Core_Widget_Base{
+    protected $name = 'pxl_contact_form';
+    protected $title = 'Pxl Contact Form 7';
+    protected $icon = 'eicon-form-horizontal';
+    protected $categories = array( 'pxltheme-core' );
+    protected $params = '{"sections":[{"name":"source_section","label":"Source Settings","tab":"content","controls":[{"name":"ctf7_slug","label":"Select Form","type":"select","options":{"appointment_copy":"Faqs Form","free-consulting_copy-2":"Appointment","free-consulting_copy":"For Contact Page","free-consulting":"Free Consulting","contact-form-1":"Contact form 1"},"default":"appointment_copy"}]},{"name":"section_style_button","label":"Button Style","tab":"style","controls":[{"name":"text_align","label":"Alignment","type":"choose","control_type":"responsive","options":{"left":{"title":"Left","icon":"eicon-text-align-left"},"center":{"title":"Center","icon":"eicon-text-align-center"},"right":{"title":"Right","icon":"eicon-text-align-right"}},"selectors":{"{{WRAPPER}} .pxl-contact-form7":"text-align: {{VALUE}};"}},{"name":"button_style_tabs","control_type":"tab","tabs":[{"name":"button_style_normal","label":"Normal","controls":[{"name":"button_color","label":"Text Color","type":"color","selectors":{"{{WRAPPER}} .wpcf7-form input[type=\"submit\"]":"color: {{VALUE}};"}},{"name":"button_background","type":"background","control_type":"group","types":["classic","gradient"],"selector":"{{WRAPPER}} .wpcf7-form input[type=\"submit\"]"}]},{"name":"button_style_hover","label":"Hover","controls":[{"name":"button_color_hover","label":"Text Color","type":"color","selectors":{"{{WRAPPER}} .wpcf7-form input[type=\"submit\"]:hover":"color:{{VALUE}};"}},{"name":"button_background_hover","type":"background","control_type":"group","types":["classic","gradient"],"selector":"{{WRAPPER}} .wpcf7-form input[type=\"submit\"]:hover"}]}]}]},{"name":"textarea_size","label":"Texarea Size","tab":"style","controls":[{"name":"message_height","type":"slider","label":"Message Height","size_units":["px"],"range":{"px":{"min":120,"max":350}},"default":{"unit":"px","size":""},"selectors":{"{{WRAPPER}} .wpcf7-form textarea.wpcf7-textarea":"height: {{SIZE}}{{UNIT}};"}}]}]}';
+    protected $styles = array(  );
+    protected $scripts = array(  );
+}
