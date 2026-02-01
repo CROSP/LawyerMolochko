@@ -6,6 +6,7 @@
 .ddev/mysql/*
 .ddev/.ddev-docker-compose.yaml
 .ddev/.ddev-docker-compose.base.yaml
+.ddev/custom_certs/
 
 # OS
 .DS_Store
