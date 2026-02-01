@@ -79,11 +79,15 @@ if ( ! $heading_desc ) {
 						}
 					} else {
 						foreach ( $posts as $post ) {
-							$icon_type   = get_post_meta( $post->ID, 'area_icon_type', true );
-							$area_icon   = get_post_meta( $post->ID, 'area_icon', true );
-							$area_img    = get_post_meta( $post->ID, 'area_img', true );
+							$icon_type   = function_exists( 'get_field' ) ? get_field( 'area_icon_type', $post->ID ) : get_post_meta( $post->ID, 'area_icon_type', true );
+							$area_icon   = function_exists( 'get_field' ) ? get_field( 'area_icon', $post->ID ) : get_post_meta( $post->ID, 'area_icon', true );
+							$area_img    = function_exists( 'get_field' ) ? get_field( 'area_img', $post->ID ) : get_post_meta( $post->ID, 'area_img', true );
+							if ( ! is_array( $area_img ) && is_numeric( $area_img ) ) {
+								$aid = (int) $area_img;
+								$area_img = array( 'id' => $aid, 'url' => wp_get_attachment_image_url( $aid, 'full' ), 'alt' => get_post_meta( $aid, '_wp_attachment_image_alt', true ) );
+							}
 							$area_img    = is_array( $area_img ) ? $area_img : array();
-							$area_img_alt = ! empty( $area_img['id'] ) ? get_post_meta( $area_img['id'], '_wp_attachment_image_alt', true ) : '';
+							$area_img_alt = ! empty( $area_img['id'] ) ? get_post_meta( (int) $area_img['id'], '_wp_attachment_image_alt', true ) : ( ! empty( $area_img['alt'] ) ? $area_img['alt'] : '' );
 							$permalink   = get_permalink( $post->ID );
 							$title       = get_the_title( $post->ID );
 							$excerpt     = $post->post_excerpt ? wp_trim_words( $post->post_excerpt, $num_words, null ) : wp_trim_words( strip_shortcodes( $post->post_content ), $num_words, null );

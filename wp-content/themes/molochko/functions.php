@@ -37,32 +37,74 @@ function molochko_setup() {
 }
 
 /**
- * Register pxl-practice-area post type (same slug as Powerlegal for content compatibility).
+ * Fix image URLs: replace any stored site URL with current request URL so images
+ * load on both lawyermolochko.ddev.site and lawyer-molochko.com.ua.
  */
-add_action( 'init', 'molochko_register_practice_area_cpt' );
-function molochko_register_practice_area_cpt() {
-	if ( post_type_exists( 'pxl-practice-area' ) ) {
-		return;
+add_filter( 'the_content', 'molochko_fix_content_image_urls', 20 );
+add_filter( 'post_thumbnail_url', 'molochko_fix_attachment_url', 10, 3 );
+add_filter( 'wp_get_attachment_url', 'molochko_fix_attachment_url_single', 10, 2 );
+add_filter( 'wp_calculate_image_srcset', 'molochko_fix_srcset_urls', 10, 5 );
+
+function molochko_fix_content_image_urls( $content ) {
+	if ( ! is_string( $content ) || '' === $content ) {
+		return $content;
 	}
-	register_post_type( 'pxl-practice-area', array(
-		'labels'             => array(
-			'name'               => __( 'Напрямки практики', 'molochko' ),
-			'singular_name'      => __( 'Напрямок практики', 'molochko' ),
-			'add_new'            => __( 'Додати', 'molochko' ),
-			'add_new_item'       => __( 'Додати напрямок практики', 'molochko' ),
-			'edit_item'          => __( 'Редагувати', 'molochko' ),
-			'view_item'          => __( 'Переглянути', 'molochko' ),
-			'menu_name'          => __( 'Напрямки практики', 'molochko' ),
-		),
-		'public'             => true,
-		'publicly_queryable' => true,
-		'show_ui'            => true,
-		'show_in_menu'       => true,
-		'has_archive'        => true,
-		'rewrite'            => array( 'slug' => 'practice-area' ),
-		'supports'           => array( 'title', 'thumbnail', 'editor', 'excerpt' ),
-		'menu_icon'          => 'dashicons-image-filter',
-	) );
+	$current = home_url( '/' );
+	$bases   = array(
+		'https://lawyer-molochko.com.ua:8443/',
+		'http://lawyer-molochko.com.ua:8443/',
+		'https://lawyermolochko.ddev.site:8443/',
+		'http://lawyermolochko.ddev.site:8443/',
+		'https://lawyermolochko.ddev.site:8080/',
+		'http://lawyermolochko.ddev.site:8080/',
+	);
+	foreach ( $bases as $base ) {
+		if ( $base !== $current && strpos( $content, $base ) !== false ) {
+			$content = str_replace( $base, $current, $content );
+		}
+	}
+	return $content;
+}
+
+function molochko_fix_attachment_url( $url, $post_id, $size ) {
+	return molochko_normalize_media_url( $url );
+}
+
+function molochko_fix_attachment_url_single( $url, $attachment_id ) {
+	return molochko_normalize_media_url( $url );
+}
+
+function molochko_normalize_media_url( $url ) {
+	if ( ! is_string( $url ) || '' === $url ) {
+		return $url;
+	}
+	$current = home_url( '/' );
+	$bases   = array(
+		'https://lawyer-molochko.com.ua:8443',
+		'http://lawyer-molochko.com.ua:8443',
+		'https://lawyermolochko.ddev.site:8443',
+		'http://lawyermolochko.ddev.site:8443',
+		'https://lawyermolochko.ddev.site:8080',
+		'http://lawyermolochko.ddev.site:8080',
+	);
+	foreach ( $bases as $base ) {
+		if ( strpos( $url, $base ) === 0 ) {
+			return $current . substr( $url, strlen( $base ) );
+		}
+	}
+	return $url;
+}
+
+function molochko_fix_srcset_urls( $sources, $size_array, $image_src, $image_meta, $attachment_id ) {
+	if ( ! is_array( $sources ) ) {
+		return $sources;
+	}
+	foreach ( $sources as $width => $data ) {
+		if ( ! empty( $data['url'] ) ) {
+			$sources[ $width ]['url'] = molochko_normalize_media_url( $data['url'] );
+		}
+	}
+	return $sources;
 }
 
 /**
@@ -326,48 +368,29 @@ function molochko_fancy_box_layout4( $b ) {
 }
 
 /**
- * Practice Areas section: heading + grid from ACF repeater (practice_areas) or pxl-practice-area posts.
+ * Practice Areas section: heading + grid from pxl-practice-area CPT only.
  */
 function molochko_practice_areas_section() {
-	$fid          = (int) get_option( 'page_on_front' );
-	$items        = $fid && function_exists( 'get_field' ) ? get_field( 'practice_areas', $fid ) : null;
-	if ( $fid && function_exists( 'update_field' ) && ( empty( $items ) || ! is_array( $items ) ) ) {
-		$data_file = MOLOCHKO_DIR . '/inc/practice-areas-data.php';
-		if ( file_exists( $data_file ) ) {
-			$default_items = include $data_file;
-			if ( is_array( $default_items ) && ! empty( $default_items ) ) {
-				update_field( 'practice_areas', $default_items, $fid );
-				$items = $default_items;
-			}
-		}
-	}
-	$use_repeater = ! empty( $items ) && is_array( $items );
-	$posts       = array();
+	$query = new WP_Query( array(
+		'post_type'      => 'pxl-practice-area',
+		'post_status'    => 'publish',
+		'posts_per_page' => 20,
+		'orderby'        => 'menu_order date',
+		'order'          => 'ASC',
+	) );
+	$posts       = $query->have_posts() ? $query->posts : array();
 	$button_text = __( 'Детальніше', 'molochko' );
 	$num_words   = 15;
 
-	if ( ! $use_repeater ) {
-		$query = new WP_Query( array(
-			'post_type'      => 'pxl-practice-area',
-			'post_status'    => 'publish',
-			'posts_per_page' => 6,
-			'orderby'        => 'date',
-			'order'          => 'DESC',
-		) );
-		$posts = $query->have_posts() ? $query->posts : array();
-	}
-
 	set_query_var( 'args', array(
 		'posts'         => $posts,
-		'items'         => $use_repeater ? $items : array(),
-		'use_repeater'  => $use_repeater,
+		'items'         => array(),
+		'use_repeater'  => false,
 		'button_text'   => $button_text,
 		'num_words'     => $num_words,
 	) );
 	get_template_part( 'template-parts/sections/practice-areas-section' );
-	if ( ! $use_repeater ) {
-		wp_reset_postdata();
-	}
+	wp_reset_postdata();
 }
 
 /**
@@ -424,6 +447,9 @@ function molochko_acf_front_page_fields() {
 	}
 	require_once MOLOCHKO_DIR . '/inc/acf-front-page.php';
 }
+
+// Підключення CPT «Напрямки практики» та групи полів ACF (acf/init, пріоритет 5).
+require_once MOLOCHKO_DIR . '/inc/acf-practice-area-cpt.php';
 
 /**
  * Google Fonts
