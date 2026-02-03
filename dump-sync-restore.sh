@@ -14,7 +14,7 @@ REMOTE_HOST="crosphz"
 REMOTE_BASE="~/Development"
 PROJECT_NAME="lawyermolochko"
 REMOTE_DIR="${REMOTE_BASE}/${PROJECT_NAME}"
-DUMP_FILE="db-export-$(date +%Y%m%d-%H%M%S).sql.gz"
+DUMP_FILE="db-export.sql.gz"
 
 # ---
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"

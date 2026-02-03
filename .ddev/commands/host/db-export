@@ -1,6 +1,6 @@
 #!/bin/bash
-# Export database to project root with timestamp. Usage: ddev db-export
+# Export database to project root (db-export.sql.gz). Usage: ddev db-export
 set -e
-FILENAME="db-export-$(date +%Y%m%d-%H%M%S).sql.gz"
+FILENAME="db-export.sql.gz"
 ddev export-db --file=./"$FILENAME"
 echo "Exported to $FILENAME"
