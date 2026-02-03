@@ -63,6 +63,7 @@ function molochko_fix_content_image_urls( $content ) {
 			$content = str_replace( $base, $current, $content );
 		}
 	}
+	$content = preg_replace( '#(https?://[^/]+)/+#', '$1/', $content );
 	return $content;
 }
 
@@ -89,7 +90,9 @@ function molochko_normalize_media_url( $url ) {
 	);
 	foreach ( $bases as $base ) {
 		if ( strpos( $url, $base ) === 0 ) {
-			return $current . substr( $url, strlen( $base ) );
+			$path = substr( $url, strlen( $base ) );
+			$path = '/' . ltrim( $path, '/' );
+			return rtrim( $current, '/' ) . $path;
 		}
 	}
 	return $url;

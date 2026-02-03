@@ -1076,10 +1076,20 @@ body.home .molochko-fancy-boxes {
 /* Vertical and horizontal gap between practice area cards */
 .pxl-practice-area-grid.layout-pxl-practice-area-1 .pxl-grid-inner.row {
 	--bs-gutter-y: 28px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+}
+
+.pxl-practice-area-grid.layout-pxl-practice-area-1 .grid-item {
+	display: flex;
 }
 
 .pxl-practice-area-grid.layout-pxl-practice-area-1 .grid-item-inner {
 	background-color: #fff;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
 }
 
 .pxl-practice-area-grid.layout-pxl-practice-area-1 .grid-item-inner .item-title {
@@ -1125,12 +1135,31 @@ body.home .molochko-fancy-boxes {
 	padding: 35px 35px 30px;
 	transition: all 0.3s ease;
 	display: flex;
+	flex: 1 1 auto;
+	flex-direction: column;
 	flex-wrap: wrap;
 	align-items: center;
 	text-align: center;
 	position: relative;
 	z-index: 1;
 	border: 1px solid #d8d8d8;
+}
+
+.pxl-practice-area-grid.layout-pxl-practice-area-1 .grid-item-inner .item-content .content-inner {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 auto;
+	width: 100%;
+	align-items: center;
+	text-align: center;
+}
+
+.pxl-practice-area-grid.layout-pxl-practice-area-1 .grid-item-inner .item-content .item-excerpt {
+	flex: 1 1 auto;
+}
+
+.pxl-practice-area-grid.layout-pxl-practice-area-1 .grid-item-inner .item-content .item-readmore {
+	margin-top: auto;
 }
 
 .pxl-practice-area-grid.layout-pxl-practice-area-1 .grid-item-inner .item-content > * {
@@ -1158,7 +1187,7 @@ body.home .molochko-fancy-boxes {
 }
 
 .pxl-practice-area-grid.layout-pxl-practice-area-1 .grid-item-inner .item-readmore {
-	margin-top: 25px;
+	margin-top: auto;
 }
 
 .pxl-practice-area-grid.layout-pxl-practice-area-1 .grid-item-inner:hover .item-content {
