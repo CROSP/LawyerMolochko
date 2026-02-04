@@ -440,18 +440,7 @@ function molochko_about_block( $post_id = 0 ) {
 	get_template_part( 'template-parts/sections/about-block' );
 }
 
-/**
- * ACF field groups (front page)
- */
-add_action( 'acf/init', 'molochko_acf_front_page_fields' );
-function molochko_acf_front_page_fields() {
-	if ( ! function_exists( 'acf_add_local_field_group' ) ) {
-		return;
-	}
-	require_once MOLOCHKO_DIR . '/inc/acf-front-page.php';
-}
-
-// Підключення CPT «Напрямки практики» та групи полів ACF (acf/init, пріоритет 5).
+// Підключення CPT «Напрямки практики» (ACF групи полів — тільки в БД, створюються скриптом import-acf-groups.php).
 require_once MOLOCHKO_DIR . '/inc/acf-practice-area-cpt.php';
 
 /**
