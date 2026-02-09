@@ -228,21 +228,10 @@ function molochko_customize_register( WP_Customize_Manager $wp_customize ) {
 	$wp_customize->add_setting( 'molochko_secondary_color', array( 'default' => '#1a243f', 'sanitize_callback' => 'sanitize_hex_color' ) );
 	$wp_customize->add_setting( 'molochko_heading_color', array( 'default' => '#10172c', 'sanitize_callback' => 'sanitize_hex_color' ) );
 	$wp_customize->add_setting( 'molochko_body_color', array( 'default' => '#6d6d6d', 'sanitize_callback' => 'sanitize_hex_color' ) );
-	$wp_customize->add_setting( 'molochko_phone', array( 'default' => '+38(050)-606-00-79', 'sanitize_callback' => 'sanitize_text_field' ) );
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'molochko_primary_color', array( 'label' => __( 'Primary', 'molochko' ), 'section' => 'molochko_colors' ) ) );
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'molochko_secondary_color', array( 'label' => __( 'Secondary', 'molochko' ), 'section' => 'molochko_colors' ) ) );
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'molochko_heading_color', array( 'label' => __( 'Heading', 'molochko' ), 'section' => 'molochko_colors' ) ) );
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'molochko_body_color', array( 'label' => __( 'Body', 'molochko' ), 'section' => 'molochko_colors' ) ) );
-
-	$wp_customize->add_control(
-		'molochko_phone',
-		array(
-			'label'       => __( 'Основний телефон (About блок)', 'molochko' ),
-			'section'     => 'molochko_colors',
-			'type'        => 'text',
-			'description' => __( 'Використовується в блоці \"Про бюро\" та інших місцях сайту.', 'molochko' ),
-		)
-	);
 }
 
 /**
@@ -420,7 +409,7 @@ function molochko_about_block( $post_id = 0 ) {
 
 	$bg_id     = is_array( $bg ) ? (int) ( $bg['id'] ?? 0 ) : (int) $bg;
 	$person_id = is_array( $person ) ? (int) ( $person['id'] ?? 0 ) : (int) $person;
-	$phone     = get_theme_mod( 'molochko_phone', '+38(050)-606-00-79' );
+	$phone     = molochko_get_contact_option( 'header_phone' ) ?: '+38 (050) 606-00-79';
 	$tel_href  = 'tel:' . preg_replace( '/\D+/', '', $phone );
 	$book_url  = esc_url( home_url( '/book-appointment' ) );
 
@@ -440,6 +429,8 @@ function molochko_about_block( $post_id = 0 ) {
 	get_template_part( 'template-parts/sections/about-block' );
 }
 
+// ACF Options page "Контакти" and helper molochko_get_contact_option().
+require_once MOLOCHKO_DIR . '/inc/contact-options.php';
 // Підключення CPT «Напрямки практики» (ACF групи полів — тільки в БД, створюються скриптом import-acf-groups.php).
 require_once MOLOCHKO_DIR . '/inc/acf-practice-area-cpt.php';
 

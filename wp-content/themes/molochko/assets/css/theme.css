@@ -80,6 +80,11 @@ body {
 	opacity: 1;
 }
 
+.side-panel-open body,
+body.side-panel-open {
+	overflow: hidden;
+}
+
 /* --- Main content --- */
 .pxl-main {
 	padding-top: 110px;
@@ -100,6 +105,8 @@ body {
 @media (min-width: 1200px) {
 	.d-xl-block { display: block !important; }
 	.d-xl-none { display: none !important; }
+	.d-xl-flex { display: flex !important; }
+	.d-xl-inline { display: inline !important; }
 }
 @media (max-width: 1199px) {
 	.d-xl-none { display: block !important; }
@@ -123,6 +130,180 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0 15px;
+}
+
+/* --- Header: top section (email, address, hours, consultation button) – Power Legal style --- */
+.header-top-section {
+	background: var(--secondary-color);
+	color: rgba(255, 255, 255, 0.9);
+	font-size: 14px;
+	padding: 10px 0;
+}
+.header-top-section .elementor-container {
+	max-width: 1570px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 15px;
+}
+.header-top-inner {
+	min-height: 40px;
+}
+.header-top-list {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	gap: 0 4px;
+}
+.header-top-item {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	margin: 0;
+	padding: 0 20px 0 0;
+}
+.header-top-item:last-of-type {
+	padding-right: 0;
+}
+.header-top-item a {
+	color: inherit;
+	text-decoration: none;
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+}
+.header-top-item a:hover {
+	color: #fff;
+}
+.header-top-item .elementor-icon-list-icon,
+.header-top-item .elementor-icon-list-text {
+	display: inline-flex;
+	align-items: center;
+}
+.header-top-item i,
+.header-top-item .flaticon {
+	font-size: 1em;
+	opacity: 0.9;
+}
+.header-consultation-wrap {
+	flex-shrink: 0;
+}
+.header-consultation-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	padding: 8px 18px;
+	background: var(--primary-color);
+	color: #fff !important;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+	border-radius: 2px;
+	transition: background 0.3s ease, transform 0.2s ease;
+}
+.header-consultation-btn:hover {
+	background: var(--heading-color);
+	color: #fff !important;
+	transform: translateY(-1px);
+}
+.header-consultation-btn .zmdi {
+	font-size: 18px;
+}
+
+/* --- Header main section: logo (left) | menu (centered) | phone + number (right) --- */
+.header-main-section {
+	background: #fff;
+}
+.header-main-section .header-container {
+	max-width: 1570px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 15px;
+}
+.header-main-row {
+	width: 100%;
+}
+.header-main-right {
+	min-height: 110px;
+}
+.pxl-header-logo {
+	padding-top: 14px;
+	padding-bottom: 14px;
+}
+/* Menu centered in the right column (visibility from d-none d-xl-flex on nav) */
+@media (min-width: 1200px) {
+	.header-main-right .pxl-main-navigation {
+		flex-grow: 1;
+		justify-content: center;
+		align-items: center;
+	}
+}
+.header-right {
+	gap: 15px;
+}
+.header-phone {
+	gap: 10px;
+	text-decoration: none;
+	color: inherit;
+}
+.header-phone:hover {
+	text-decoration: none;
+	color: inherit;
+}
+.header-phone:hover .header-phone-number {
+	color: var(--heading-color);
+}
+.header-phone-link {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 42px;
+	height: 42px;
+	background: rgba(var(--primary-color-rgb), 0.12);
+	color: var(--primary-color);
+	border-radius: 50%;
+	text-decoration: none;
+	transition: background 0.3s ease, color 0.3s ease;
+	flex-shrink: 0;
+}
+.header-phone:hover .header-phone-link {
+	background: var(--primary-color);
+	color: #fff;
+}
+.header-phone-link .flaticon {
+	font-size: 18px;
+}
+/* Phone number visible next to icon (like Power Legal heading-title) */
+.header-phone-number {
+	font-weight: 500;
+	color: var(--heading-color);
+	font-size: 16px;
+	margin: 0;
+}
+.header-phone-number.heading-title {
+	font-size: 16px;
+	line-height: 1.2;
+}
+@media (max-width: 1199px) {
+	.header-phone-number {
+		font-size: 15px;
+	}
+	.header-main-right,
+	.header-mobile-right {
+		min-height: auto;
+		justify-content: flex-end !important;
+	}
+	.header-mobile-right .header-right {
+		margin-left: auto !important;
+	}
+	.pxl-header-logo {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
 }
 
 /* Reduce side gap on desktop; on mobile use global gutter for consistency */
@@ -254,6 +435,10 @@ body {
 	cursor: pointer;
 	position: relative;
 	vertical-align: middle;
+	border: 0;
+	padding: 0;
+	background: none;
+	font: inherit;
 }
 
 .main-menu-mobile .btn-nav-mobile::before,
@@ -289,66 +474,78 @@ body {
 	background: var(--primary-color);
 }
 
-/* --- Side panel (mobile menu) --- */
+/* --- Side panel (mobile menu) — full screen --- */
 .pxl-hidden-template {
 	display: flex;
 	flex-direction: column;
 	position: fixed;
 	top: 0;
+	left: 0;
 	width: 100%;
+	height: 100%;
+	min-height: 100vh;
 	z-index: -1;
 	padding: 0;
-	background: #fff;
+	background: var(--secondary-color);
 	right: 0;
+	bottom: 0;
 	will-change: transform;
-	transition: transform 0.5s ease, opacity 0.3s;
+	transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s;
 	opacity: 0;
-	max-height: 100vh;
 	overflow-y: auto;
 }
 
 .pxl-hidden-template.pos-left {
-	width: 100%;
-	max-width: 460px;
+	max-width: none;
 	z-index: 604;
-	right: auto;
-	left: 0;
-	transform: translate(-100%, 0);
+	transform: translateX(-100%);
 }
 
 .pxl-hidden-template.open {
-	transform: translate(0);
+	transform: translateX(0);
 	opacity: 1;
 	z-index: 9999;
 }
 
-.pxl-panel-header .panel-header-inner {
+.pxl-mobile-panel-header .panel-header-inner {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
 	align-items: center;
-	padding: 15px 20px;
+	padding: 20px 24px;
+	min-height: 72px;
 }
 
-.pxl-panel-content {
-	padding: 10px 43px 50px 50px;
+.pxl-panel-content.pxl-mobile-panel-content {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 24px 28px 32px;
 }
 
-@media (max-width: 575px) {
-	.pxl-panel-content { padding: 5px 23px 30px 30px; }
+@media (min-width: 576px) {
+	.pxl-panel-content.pxl-mobile-panel-content { padding: 32px 40px 48px; }
 }
 
 .pxl-close {
-	background: rgba(var(--heading-color-rgb), 0.3);
+	background: rgba(255, 255, 255, 0.15);
 	border: 9px solid transparent;
+	padding: 0;
+	font: inherit;
 	color: #fff;
-	width: 36px;
-	height: 36px;
+	width: 44px;
+	height: 44px;
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
 	position: relative;
 	cursor: pointer;
-	transition: background 0.3s;
+	transition: background 0.25s, transform 0.2s;
+	border-radius: 50%;
+}
+
+.pxl-mobile-close:hover {
+	background: rgba(255, 255, 255, 0.25);
 }
 
 .pxl-close::before,
@@ -356,9 +553,9 @@ body {
 	content: "";
 	position: absolute;
 	height: 2px;
-	width: 60%;
+	width: 50%;
 	top: 50%;
-	left: 20%;
+	left: 25%;
 	margin-top: -1px;
 	background: #fff;
 	transform-origin: 50% 50%;
@@ -368,46 +565,46 @@ body {
 .pxl-close::before { transform: rotate(45deg); }
 .pxl-close::after { transform: rotate(-45deg); }
 
-.pxl-close:hover {
-	background: var(--primary-color);
-}
-
 .pxl-close:hover::before,
 .pxl-close:hover::after {
 	transform: rotate(0);
 }
 
-/* Mobile menu list */
-.pxl-mobile-menu {
+/* Mobile menu list — full screen panel (light text on dark) */
+.pxl-side-mobile .pxl-mobile-menu {
 	list-style: none;
 	padding: 0;
 	margin: 0;
 }
 
-.pxl-mobile-menu li { position: relative; }
+.pxl-side-mobile .pxl-mobile-menu li { position: relative; }
 
-.pxl-mobile-menu .menu-item > a {
+.pxl-side-mobile .pxl-mobile-menu .menu-item > a {
 	display: block;
-	padding: 12px 0;
-	color: var(--heading-color);
-	font-size: 17px;
+	padding: 14px 0;
+	color: rgba(255, 255, 255, 0.95);
+	font-size: 20px;
 	font-weight: 300;
-	transition: color 0.3s;
+	letter-spacing: 0.02em;
+	transition: color 0.2s, padding-left 0.2s;
 }
 
-.pxl-mobile-menu .menu-item > a:hover {
+.pxl-side-mobile .pxl-mobile-menu .menu-item > a:hover {
 	color: var(--primary-color);
 }
 
-.pxl-mobile-menu .sub-menu {
+.pxl-side-mobile .pxl-mobile-menu .sub-menu {
 	list-style: none;
-	padding-left: 15px;
+	padding-left: 20px;
 	margin: 0;
 	display: none;
+	border-left: 2px solid rgba(255, 255, 255, 0.2);
+	margin-left: 4px;
 }
 
-.pxl-mobile-menu .sub-menu .menu-item a {
-	font-size: 15px;
+.pxl-side-mobile .pxl-mobile-menu .sub-menu .menu-item a {
+	font-size: 16px;
+	color: rgba(255, 255, 255, 0.85);
 }
 
 .mobile-sub-toggle {
@@ -421,6 +618,10 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.pxl-side-mobile .mobile-sub-toggle::before {
+	color: rgba(255, 255, 255, 0.8);
 }
 
 .mobile-sub-toggle::before {
@@ -440,9 +641,68 @@ body {
 	transform: rotate(180deg);
 }
 
-.pxl-mobile-menu .menu-item-has-children {
+.pxl-side-mobile .pxl-mobile-menu .menu-item-has-children {
 	position: relative;
 	padding-right: 40px;
+}
+
+/* Mobile menu footer: phone + CTA */
+.pxl-mobile-menu-footer {
+	margin-top: 32px;
+	padding-top: 28px;
+	border-top: 1px solid rgba(255, 255, 255, 0.15);
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.pxl-mobile-phone {
+	display: inline-flex;
+	align-items: center;
+	gap: 14px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 22px;
+	font-weight: 400;
+	letter-spacing: 0.02em;
+	transition: color 0.2s, opacity 0.2s;
+}
+
+.pxl-mobile-phone:hover {
+	color: var(--primary-color);
+}
+
+.pxl-mobile-phone-icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 48px;
+	height: 48px;
+	background: rgba(255, 255, 255, 0.12);
+	border-radius: 50%;
+}
+
+.pxl-mobile-phone-icon .flaticon {
+	font-size: 22px;
+	color: var(--primary-color);
+}
+
+.pxl-mobile-consult-btn {
+	display: block;
+	text-align: center;
+	padding: 16px 24px;
+	background: var(--primary-color);
+	color: #fff;
+	font-size: 16px;
+	font-weight: 500;
+	text-decoration: none;
+	border-radius: 4px;
+	transition: background 0.2s, transform 0.1s;
+}
+
+.pxl-mobile-consult-btn:hover {
+	background: #c4a876;
+	color: #fff;
 }
 
 /* --- Page title (inner pages) --- */
@@ -545,6 +805,7 @@ body {
 .pxl-fancy-box.layout-4 .box-center .box-description {
 	margin-bottom: 0;
 	line-height: 1.6;
+	min-height: 4.8em;
 }
 
 .pxl-fancy-box.layout-4 .box-center .btn-more {
@@ -778,8 +1039,8 @@ body.home .molochko-fancy-boxes {
 
 /* --- About block (two columns: images | text) --- */
 .molochko-about {
-	padding-top: 80px;
-	padding-bottom: 80px;
+	padding-top: 28px;
+	padding-bottom: 28px;
 }
 
 .molochko-about-images {

@@ -20,13 +20,13 @@ return array(
 	array(
 		'title'       => 'Сімейне право',
 		'description' => 'Розірвання шлюбу, розподіл майна, аліменти, батьківські права.',
-		'icon'        => 'flaticon flaticon-idea',
+		'icon'        => 'flaticon flaticon-reliability',
 		'link'        => array( 'url' => '#', 'title' => 'Детальніше', 'target' => '_self' ),
 	),
 	array(
 		'title'       => 'Спадкові справи',
 		'description' => 'Оформлення спадщини, спадкування за законом та заповітом.',
-		'icon'        => 'flaticon flaticon-paper-plane',
+		'icon'        => 'flaticon flaticon-next',
 		'link'        => array( 'url' => '#', 'title' => 'Детальніше', 'target' => '_self' ),
 	),
 	array(
@@ -68,13 +68,13 @@ return array(
 	array(
 		'title'       => 'Адвокат з нерухомості',
 		'description' => 'Угоди купівлі-продажу, оренда, приватизація, спори.',
-		'icon'        => 'flaticon flaticon-address',
+		'icon'        => 'flaticon flaticon-eco-house',
 		'link'        => array( 'url' => '#', 'title' => 'Детальніше', 'target' => '_self' ),
 	),
 	array(
 		'title'       => 'Адвокат з житлових спорів',
 		'description' => 'Виселення, обмін, визнання права на житло.',
-		'icon'        => 'flaticon flaticon-address',
+		'icon'        => 'flaticon flaticon-eco-house',
 		'link'        => array( 'url' => '#', 'title' => 'Детальніше', 'target' => '_self' ),
 	),
 	array(
@@ -98,13 +98,13 @@ return array(
 	array(
 		'title'       => 'Адвокат по господарських справах',
 		'description' => 'Договори, стягнення боргів, банкрутство.',
-		'icon'        => 'flaticon flaticon-businessman',
+		'icon'        => 'flaticon flaticon-operation',
 		'link'        => array( 'url' => '#', 'title' => 'Детальніше', 'target' => '_self' ),
 	),
 	array(
 		'title'       => 'Допомога в отриманні ліцензії',
 		'description' => 'Підготовка документів, супровід отримання ліцензій.',
-		'icon'        => 'flaticon flaticon-calendar',
+		'icon'        => 'flaticon flaticon-check',
 		'link'        => array( 'url' => '#', 'title' => 'Детальніше', 'target' => '_self' ),
 	),
 	array(
@@ -128,7 +128,7 @@ return array(
 	array(
 		'title'       => 'Договірне право',
 		'description' => 'Складання та оскарження договорів, претензії, стягнення.',
-		'icon'        => 'flaticon flaticon-paper-plane',
+		'icon'        => 'flaticon flaticon-quote',
 		'link'        => array( 'url' => '#', 'title' => 'Детальніше', 'target' => '_self' ),
 	),
 );

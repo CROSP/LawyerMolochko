@@ -9,7 +9,7 @@
  * @var string $title     Title.
  * @var string $desc      Description (HTML).
  * @var string $cta       CTA line.
- * @var string $phone     Phone number (from theme mod).
+ * @var string $phone     Phone number (from ACF Options Контакти).
  * @var string $tel_href  tel: link.
  * @var string $book_url  URL for booking.
  * @var string $name      Signature name.
@@ -77,9 +77,11 @@ if ( ! $sub && ! $title && ! $desc ) {
 
 					<div class="molochko-about-contact pxl-text-editor">
 						<p>
-							<a href="<?php echo esc_url( $tel_href ); ?>"><?php echo esc_html( $phone ); ?></a>
-							<?php esc_html_e( 'або', 'molochko' ); ?>
-							<a href="<?php echo esc_url( $book_url ); ?>"><?php esc_html_e( 'Записатися на консультацію', 'molochko' ); ?></a>
+							<?php if ( $tel_href && $phone ) : ?>
+								<a href="<?php echo esc_url( $tel_href ); ?>"><?php echo esc_html( $phone ); ?></a>
+								<?php echo esc_html( __( 'або', 'molochko' ) ); ?>
+							<?php endif; ?>
+							<a href="<?php echo esc_url( $book_url ); ?>"><?php echo esc_html( __( 'Записатися на консультацію', 'molochko' ) ); ?></a>
 						</p>
 					</div>
 					<div class="elementor-divider molochko-about-divider"><span class="elementor-divider-separator"></span></div>

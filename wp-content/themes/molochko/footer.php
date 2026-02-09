@@ -7,14 +7,21 @@
 
 <?php get_template_part( 'template-parts/footer' ); ?>
 
-<?php /* Mobile side panel */ ?>
-<nav class="pxl-hidden-template pos-left pxl-side-mobile" aria-hidden="true">
-	<div class="pxl-panel-header">
+<?php /* Mobile full-screen menu with phone */ ?>
+<?php
+$mobile_phone   = function_exists( 'molochko_get_contact_option' ) ? molochko_get_contact_option( 'header_phone' ) : '';
+$mobile_phone   = $mobile_phone ?: '+38 (050) 606-00-79';
+$mobile_tel     = 'tel:' . preg_replace( '/\D+/', '', $mobile_phone );
+$mobile_consult = function_exists( 'molochko_get_contact_option' ) ? molochko_get_contact_option( 'header_consultation_url' ) : '';
+$mobile_consult = $mobile_consult ?: '#contact';
+?>
+<nav class="pxl-hidden-template pos-left pxl-side-mobile" role="dialog" aria-modal="true" aria-label="<?php esc_attr_e( 'Головне меню', 'molochko' ); ?>" aria-hidden="true">
+	<div class="pxl-panel-header pxl-mobile-panel-header">
 		<div class="panel-header-inner">
-			<a href="#" class="pxl-close" data-target=".pxl-side-mobile" title="<?php esc_attr_e( 'Close', 'molochko' ); ?>"></a>
+			<button type="button" class="pxl-close pxl-mobile-close" data-target=".pxl-side-mobile" aria-label="<?php esc_attr_e( 'Закрити меню', 'molochko' ); ?>"></button>
 		</div>
 	</div>
-	<div class="pxl-panel-content">
+	<div class="pxl-panel-content pxl-mobile-panel-content">
 		<div class="menu-main-container-wrap">
 			<div id="mobile-menu-container" class="menu-main-container">
 				<?php
@@ -36,6 +43,15 @@
 				}
 				?>
 			</div>
+		</div>
+		<div class="pxl-mobile-menu-footer">
+			<a href="<?php echo esc_attr( $mobile_tel ); ?>" class="pxl-mobile-phone" rel="nofollow">
+				<span class="pxl-mobile-phone-icon"><i class="flaticon flaticon-phone-call" aria-hidden="true"></i></span>
+				<span class="pxl-mobile-phone-number"><?php echo esc_html( $mobile_phone ); ?></span>
+			</a>
+			<a href="<?php echo esc_url( $mobile_consult ); ?>" class="pxl-mobile-consult-btn">
+				<?php echo esc_html( __( 'Замовити консультацію', 'molochko' ) ); ?>
+			</a>
 		</div>
 	</div>
 </nav>

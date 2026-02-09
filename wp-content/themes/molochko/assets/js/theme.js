@@ -24,9 +24,16 @@
 			e.stopPropagation();
 			var target = $(this).attr("data-target");
 			if (!target) return;
+			var $panel = $(target);
+			var isOpen = $panel.hasClass("open");
 			$(this).toggleClass("cliked");
-			$(target).toggleClass("open");
+			$panel.toggleClass("open");
 			$("body").toggleClass("side-panel-open");
+			$panel.attr("aria-hidden", isOpen);
+			$(this).attr("aria-expanded", !isOpen);
+			if (!isOpen) {
+				$panel.find(".pxl-close").focus();
+			}
 		});
 	}
 
@@ -36,8 +43,8 @@
 		if (target.hasClass("btn-nav-mobile")) return;
 		if (target.closest(".pxl-hidden-template").length) return;
 		if (!$("body").hasClass("side-panel-open")) return;
-		$(".btn-nav-mobile").removeClass("cliked");
-		$(".pxl-hidden-template").removeClass("open");
+		$(".btn-nav-mobile").removeClass("cliked").attr("aria-expanded", "false");
+		$(".pxl-hidden-template").removeClass("open").attr("aria-hidden", "true");
 		$("body").removeClass("side-panel-open");
 	}
 
@@ -45,8 +52,8 @@
 	function closePanelOnCloseClick(e) {
 		e.preventDefault();
 		e.stopPropagation();
-		$(this).closest(".pxl-hidden-template").removeClass("open");
-		$(".btn-nav-mobile").removeClass("cliked");
+		$(this).closest(".pxl-hidden-template").removeClass("open").attr("aria-hidden", "true");
+		$(".btn-nav-mobile").removeClass("cliked").attr("aria-expanded", "false");
 		$("body").removeClass("side-panel-open");
 	}
 

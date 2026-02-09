@@ -326,10 +326,87 @@ $group_practice_area = array(
 	'description'           => 'Поля для карток у секції «Напрямки юридичної практики» на головній.',
 );
 
+// --- Contact / Header options (ACF Options page: molochko-contact-options) ---
+$group_contact_options = array(
+	'key'                   => 'group_molochko_contact_options',
+	'title'                 => 'Контакти сайту (шапка та загальні)',
+	'fields'                => array(
+		array(
+			'key'   => 'field_contact_tab_header',
+			'label' => 'Шапка сайту',
+			'name'  => '',
+			'type'  => 'tab',
+		),
+		array(
+			'key'           => 'field_header_phone',
+			'label'         => 'Телефон',
+			'name'          => 'header_phone',
+			'type'          => 'text',
+			'instructions'  => 'Основний номер. Відображається в шапці та блоці «Про нас».',
+			'placeholder'   => '+38 (050) 606-00-79',
+		),
+		array(
+			'key'           => 'field_header_email',
+			'label'         => 'Email',
+			'name'          => 'header_email',
+			'type'          => 'email',
+			'instructions'  => 'Верхня смуга шапки.',
+		),
+		array(
+			'key'           => 'field_header_address',
+			'label'         => 'Адреса',
+			'name'          => 'header_address',
+			'type'          => 'text',
+			'instructions'  => 'Текст адреси у верхній смузі шапки.',
+		),
+		array(
+			'key'           => 'field_header_address_url',
+			'label'         => 'Посилання на карту (Google Maps)',
+			'name'          => 'header_address_url',
+			'type'          => 'url',
+			'instructions'  => 'Якщо заповнено, адреса стає посиланням на карту.',
+		),
+		array(
+			'key'           => 'field_header_working_hours',
+			'label'         => 'Графік роботи',
+			'name'          => 'header_working_hours',
+			'type'          => 'text',
+			'instructions'  => 'Наприклад: Пн–Пт: 9:00 – 18:00. Перекладається через Polylang.',
+			'placeholder'   => 'Пн–Пт: 9:00 – 18:00',
+		),
+		array(
+			'key'           => 'field_header_consultation_url',
+			'label'         => 'Посилання кнопки «Замовити консультацію»',
+			'name'          => 'header_consultation_url',
+			'type'          => 'url',
+			'instructions'  => 'URL або якір, наприклад #contact або /kontakty.',
+			'placeholder'   => '#contact',
+		),
+	),
+	'location'              => array(
+		array(
+			array(
+				'param'    => 'options_page',
+				'operator' => '==',
+				'value'    => 'molochko-contact-options',
+			),
+		),
+	),
+	'menu_order'            => 0,
+	'position'              => 'normal',
+	'style'                 => 'default',
+	'label_placement'       => 'top',
+	'instruction_placement' => 'label',
+	'active'                => true,
+	'show_in_rest'          => 0,
+	'description'           => 'Телефон, email, адреса, графік, кнопка консультації. Зберігаються в ACF Options (Контакти). Переклади — Polylang.',
+);
+
 // --- Import ---
 $groups = array(
-	'group_molochko_front_page'   => $group_front_page,
+	'group_molochko_front_page'    => $group_front_page,
 	'group_molochko_practice_area' => $group_practice_area,
+	'group_molochko_contact_options' => $group_contact_options,
 );
 
 _out( 'Importing ' . count( $groups ) . ' ACF field groups...' );
@@ -359,6 +436,7 @@ if ( empty( $all ) ) {
 $expected_titles = array(
 	'Головна сторінка (Molochko)',
 	'Напрямок практики (поля картки)',
+	'Контакти сайту (шапка та загальні)',
 );
 $found_titles = array();
 foreach ( $all as $post ) {
@@ -368,7 +446,7 @@ foreach ( $all as $post ) {
 }
 
 $found_expected = count( array_intersect( $expected_titles, array_unique( $found_titles ) ) );
-if ( $found_expected < 2 ) {
+if ( $found_expected < 3 ) {
 	_out( '' );
 	_out( 'WARNING: Expected groups may be missing. Check WP Admin → ACF → Field Groups.' );
 	exit( 1 );
