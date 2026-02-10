@@ -39,5 +39,7 @@ if ( empty( $hero_shortcode ) ) {
 
 <?php molochko_practice_areas_section(); ?>
 
+<?php molochko_case_studies_section(); ?>
+
 <?php
 get_footer();

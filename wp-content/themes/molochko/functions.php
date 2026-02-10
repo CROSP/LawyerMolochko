@@ -386,6 +386,24 @@ function molochko_practice_areas_section() {
 }
 
 /**
+ * Case Studies section: heading + grid from molochko-case-study CPT.
+ */
+function molochko_case_studies_section() {
+	$query = new WP_Query( array(
+		'post_type'      => 'molochko-case-study',
+		'post_status'    => 'publish',
+		'posts_per_page' => 8,
+		'orderby'        => 'date',
+		'order'          => 'DESC',
+	) );
+	$posts = $query->have_posts() ? $query->posts : array();
+
+	set_query_var( 'args', array( 'posts' => $posts ) );
+	get_template_part( 'template-parts/sections/case-studies-section' );
+	wp_reset_postdata();
+}
+
+/**
  * Render About block (two columns: images left, text right). Data from ACF.
  *
  * @param int $post_id Front page or post ID.
@@ -433,6 +451,8 @@ function molochko_about_block( $post_id = 0 ) {
 require_once MOLOCHKO_DIR . '/inc/contact-options.php';
 // Підключення CPT «Напрямки практики» (ACF групи полів — тільки в БД, створюються скриптом import-acf-groups.php).
 require_once MOLOCHKO_DIR . '/inc/acf-practice-area-cpt.php';
+// Кейси (Case Studies) — CPT + таксономія категорій.
+require_once MOLOCHKO_DIR . '/inc/acf-case-study-cpt.php';
 
 /**
  * Google Fonts
