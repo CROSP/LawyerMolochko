@@ -134,7 +134,32 @@ function molochko_scripts() {
 	);
 
 	wp_enqueue_script( 'jquery' );
-	wp_enqueue_script( 'molochko-theme', MOLOCHKO_URI . '/assets/js/theme.js', array( 'jquery' ), MOLOCHKO_VERSION, true );
+
+	// Slick carousel for Case Studies on front page
+	$theme_deps = array( 'jquery' );
+	if ( is_front_page() ) {
+		wp_enqueue_style(
+			'slick-carousel',
+			'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css',
+			array(),
+			'1.8.1'
+		);
+		wp_enqueue_style(
+			'slick-carousel-theme',
+			'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css',
+			array( 'slick-carousel' ),
+			'1.8.1'
+		);
+		wp_enqueue_script(
+			'slick-carousel',
+			'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js',
+			array( 'jquery' ),
+			'1.8.1',
+			true
+		);
+		$theme_deps[] = 'slick-carousel';
+	}
+	wp_enqueue_script( 'molochko-theme', MOLOCHKO_URI . '/assets/js/theme.js', $theme_deps, MOLOCHKO_VERSION, true );
 }
 
 /**

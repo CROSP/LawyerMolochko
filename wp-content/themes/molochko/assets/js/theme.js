@@ -8,7 +8,32 @@
 		panelMobileMenu();
 		scrollToTop();
 		submenuToggle();
+		caseStudiesCarousel();
 	});
+
+	// Case Studies: Slick carousel (only when block and Slick exist)
+	function caseStudiesCarousel() {
+		var $carousel = $(".molochko-case-studies .mcs-carousel");
+		var $track = $carousel.find(".mcs-track");
+		if (!$track.length || !$.fn.slick) return;
+		if ($track.hasClass("slick-initialized")) return;
+		$track.slick({
+			slidesToShow: 2,
+			slidesToScroll: 1,
+			infinite: true,
+			arrows: true,
+			dots: true,
+			adaptiveHeight: false,
+			appendArrows: $carousel,
+			prevArrow: '<button type="button" class="slick-prev mcs-slick-prev" aria-label="Попередній"><i class="zmdi zmdi-chevron-left"></i></button>',
+			nextArrow: '<button type="button" class="slick-next mcs-slick-next" aria-label="Наступний"><i class="zmdi zmdi-chevron-right"></i></button>',
+			responsive: [
+				{ breakpoint: 1024, settings: { slidesToShow: 2 } },
+				{ breakpoint: 768, settings: { slidesToShow: 1, dots: true } },
+				{ breakpoint: 480, settings: { slidesToShow: 1 } }
+			]
+		});
+	}
 
 	$(document).on("click", closePanelOnClick);
 	$(document).on("click", ".pxl-close", closePanelOnCloseClick);
