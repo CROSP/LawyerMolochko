@@ -2192,3 +2192,339 @@ body.single-molochko-case-study .pxl-main {
 		text-align: left;
 	}
 }
+
+/* ============================================
+   Case Study Archive – full-width hero + grid
+   ============================================ */
+body.post-type-archive-molochko-case-study .pxl-main,
+body.tax-case_study_category .pxl-main {
+	padding-top: 0;
+	padding-bottom: 72px;
+}
+
+.molochko-case-study-archive {
+	background: #f8f9fa;
+}
+
+/* Hero */
+.cs-archive-hero {
+	position: relative;
+	min-height: 380px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	overflow: hidden;
+}
+
+.cs-archive-hero-pattern {
+	position: absolute;
+	inset: 0;
+	opacity: 0.06;
+	background-image: linear-gradient(135deg, #fff 25%, transparent 25%),
+		linear-gradient(225deg, #fff 25%, transparent 25%),
+		linear-gradient(45deg, #fff 25%, transparent 25%),
+		linear-gradient(315deg, #fff 25%, transparent 25%);
+	background-size: 24px 24px;
+	background-position: 0 0, 12px 0, 12px 12px, 0 12px;
+	background-color: var(--secondary-color);
+}
+
+.cs-archive-hero-overlay {
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(
+		180deg,
+		rgba(var(--secondary-color-rgb), 0.92) 0%,
+		rgba(var(--secondary-color-rgb), 0.88) 100%
+	);
+}
+
+.cs-archive-hero-inner {
+	position: relative;
+	z-index: 2;
+	max-width: 720px;
+	padding: 64px var(--content-gutter) 56px;
+}
+
+.cs-archive-hero-subtitle {
+	margin: 0 0 12px;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: var(--primary-color);
+}
+
+.cs-archive-hero-title {
+	margin: 0 0 16px;
+	font-size: clamp(2.25rem, 5vw, 3.5rem);
+	font-weight: 700;
+	line-height: 1.15;
+	color: #fff;
+}
+
+.cs-archive-hero-desc {
+	margin: 0;
+	font-size: 1.05rem;
+	line-height: 1.6;
+	color: rgba(255, 255, 255, 0.88);
+}
+
+@media (max-width: 767px) {
+	.cs-archive-hero {
+		min-height: 320px;
+	}
+	.cs-archive-hero-inner {
+		padding: 48px var(--content-gutter) 40px;
+	}
+}
+
+/* Main content */
+.cs-archive-main {
+	padding-top: 48px;
+}
+
+.cs-archive-container {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 var(--content-gutter);
+}
+
+/* Category filters */
+.cs-archive-filters {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px 12px;
+	margin-bottom: 40px;
+	justify-content: center;
+}
+
+.cs-archive-filter-pill {
+	display: inline-block;
+	padding: 10px 20px;
+	font-size: 14px;
+	font-weight: 600;
+	text-decoration: none;
+	color: var(--heading-color);
+	background: #fff;
+	border: 2px solid #e2e4e8;
+	border-radius: 999px;
+	transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.cs-archive-filter-pill:hover,
+.cs-archive-filter-pill.active {
+	color: #fff;
+	background: var(--primary-color);
+	border-color: var(--primary-color);
+}
+
+/* Grid */
+.cs-archive-grid {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	gap: 32px 28px;
+}
+
+@media (min-width: 576px) {
+	.cs-archive-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (min-width: 992px) {
+	.cs-archive-grid {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 40px 32px;
+	}
+}
+
+/* Card */
+.cs-archive-card {
+	margin: 0;
+}
+
+.cs-archive-card-link {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+	background: #fff;
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+	transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cs-archive-card-link:hover {
+	transform: translateY(-6px);
+	box-shadow: 0 12px 36px rgba(0, 0, 0, 0.1);
+}
+
+.cs-archive-card-link:hover .cs-archive-card-image img {
+	transform: scale(1.06);
+}
+
+.cs-archive-card-image {
+	position: relative;
+	height: 240px;
+	overflow: hidden;
+	background: var(--secondary-color);
+}
+
+.cs-archive-card-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	display: block;
+	transition: transform 0.4s ease;
+}
+
+.cs-archive-card-placeholder {
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(135deg, rgba(var(--secondary-color-rgb), 0.9), rgba(var(--primary-color-rgb), 0.3));
+}
+
+.cs-archive-card-overlay {
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.4) 0%, transparent 50%);
+	pointer-events: none;
+}
+
+.cs-archive-card-body {
+	padding: 24px 24px 28px;
+}
+
+.cs-archive-card-category {
+	display: inline-block;
+	margin-bottom: 8px;
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: var(--primary-color);
+}
+
+.cs-archive-card-title {
+	margin: 0 0 10px;
+	font-size: 1.25rem;
+	font-weight: 700;
+	line-height: 1.35;
+	color: var(--heading-color);
+	transition: color 0.2s ease;
+}
+
+.cs-archive-card-link:hover .cs-archive-card-title {
+	color: var(--primary-color);
+}
+
+.cs-archive-card-excerpt {
+	margin: 0 0 16px;
+	font-size: 0.95rem;
+	line-height: 1.55;
+	color: var(--body-color);
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+.cs-archive-card-more {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	font-size: 14px;
+	font-weight: 600;
+	color: var(--primary-color);
+	transition: gap 0.2s ease;
+}
+
+.cs-archive-card-link:hover .cs-archive-card-more {
+	gap: 10px;
+}
+
+.cs-archive-card-more .zmdi {
+	font-size: 18px;
+}
+
+/* Pagination */
+.cs-archive-pagination {
+	margin-top: 56px;
+	display: flex;
+	justify-content: center;
+}
+
+.cs-archive-pagination .nav-links {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.cs-archive-pagination .page-numbers {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 44px;
+	height: 44px;
+	padding: 0 12px;
+	font-size: 15px;
+	font-weight: 600;
+	text-decoration: none;
+	color: var(--heading-color);
+	background: #fff;
+	border: 2px solid #e2e4e8;
+	border-radius: 8px;
+	transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.cs-archive-pagination .page-numbers:hover,
+.cs-archive-pagination .page-numbers.current {
+	color: #fff;
+	background: var(--primary-color);
+	border-color: var(--primary-color);
+}
+
+.cs-archive-pagination .page-numbers.dots {
+	border: none;
+	background: transparent;
+	color: var(--body-color);
+}
+
+.cs-archive-pagination .page-numbers.prev,
+.cs-archive-pagination .page-numbers.next {
+	gap: 4px;
+}
+
+/* Empty state */
+.cs-archive-empty {
+	text-align: center;
+	padding: 64px 24px;
+}
+
+.cs-archive-empty-text {
+	margin: 0 0 24px;
+	font-size: 1.15rem;
+	color: var(--body-color);
+}
+
+.cs-archive-empty-btn {
+	display: inline-block;
+	padding: 14px 28px;
+	font-size: 15px;
+	font-weight: 600;
+	text-decoration: none;
+	color: #fff;
+	background: var(--primary-color);
+	border-radius: 8px;
+	transition: background 0.2s ease;
+}
+
+.cs-archive-empty-btn:hover {
+	background: #c4a876;
+	color: #fff;
+}
