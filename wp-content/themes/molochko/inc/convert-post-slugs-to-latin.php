@@ -1,7 +1,7 @@
 <?php
 /**
  * One-time: convert post slugs (post_name) from Cyrillic to Latin.
- * Covers post types: post, page, molochko-case-study. Requires Cyr-To-Lat plugin.
+ * Covers post types: post, page, molochko-case-study, pxl-practice-area. Requires Cyr-To-Lat plugin.
  * Makes _wp_old_slug meta so WordPress can redirect old URLs. Make a DB backup before running.
  *
  * Run: ddev exec wp eval-file wp-content/themes/molochko/inc/convert-post-slugs-to-latin.php
@@ -19,7 +19,7 @@ if ( ! function_exists( 'cyr_to_lat' ) || ! is_object( cyr_to_lat() ) || ! metho
 }
 
 // Post types to convert (same idea as Cyr-To-Lat converter).
-$post_types   = array( 'post', 'page', 'molochko-case-study' );
+$post_types   = array( 'post', 'page', 'molochko-case-study', 'pxl-practice-area' );
 $post_types   = array_filter( (array) apply_filters( 'ctl_post_types', $post_types ) );
 $post_statuses = array( 'publish', 'private' );
 
