@@ -1,6 +1,6 @@
 <?php
 /**
- * Single post. No Elementor.
+ * Single post. Full-width, no sidebar.
  *
  * @package Molochko
  */
@@ -8,15 +8,15 @@ get_header();
 ?>
 <div class="container pxl-content-container">
 	<div class="row">
-		<div id="pxl-content-area" class="col-12 col-lg-8">
-			<main id="pxl-content-main" class="pxl-content-main">
+		<div id="pxl-content-area" class="col-12">
+			<main id="pxl-content-main" class="pxl-content-main molochko-blog-single">
 				<?php
 				while ( have_posts() ) {
 					the_post();
 					get_template_part( 'template-parts/content', 'single' );
 					the_post_navigation( array(
-						'prev_text' => '&larr; %title',
-						'next_text' => '%title &rarr;',
+						'prev_text' => '<i class="zmdi zmdi-chevron-left"></i> ' . __( 'Попередня', 'molochko' ),
+						'next_text' => __( 'Наступна', 'molochko' ) . ' <i class="zmdi zmdi-chevron-right"></i>',
 					) );
 					if ( comments_open() || get_comments_number() ) {
 						comments_template();
@@ -24,11 +24,6 @@ get_header();
 				}
 				?>
 			</main>
-		</div>
-		<div id="pxl-sidebar-area" class="col-12 col-lg-4">
-			<aside class="sidebar-sticky">
-				<?php get_sidebar(); ?>
-			</aside>
 		</div>
 	</div>
 </div>

@@ -41,5 +41,9 @@ if ( empty( $hero_shortcode ) ) {
 
 <?php molochko_case_studies_section(); ?>
 
+<?php molochko_blog_section(); ?>
+
+<?php molochko_law_talk_section(); ?>
+
 <?php
 get_footer();

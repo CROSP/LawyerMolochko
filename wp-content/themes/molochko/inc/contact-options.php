@@ -1,7 +1,7 @@
 <?php
 /**
  * Site contact data from ACF Options page "Site Contact Details".
- * Field names: phone_number, email, working_hours (and optionally address, consultation_url).
+ * Field names: phone_number, email, working_hours, address, instagram, telegram, tiktok.
  * Use molochko_get_contact_option() throughout the site.
  *
  * @package Molochko
@@ -22,13 +22,15 @@ define( 'MOLOCHKO_CONTACT_FIELD_MAP', serialize( array(
 	'header_address'          => 'address',
 	'header_address_url'      => 'address_url',
 	'header_consultation_url'  => 'consultation_url',
+	'instagram_url'           => 'instagram',
+	'tiktok_url'              => 'tiktok',
+	'telegram_url'            => 'telegram',
 ) ) );
 
 /**
  * Get a contact option from ACF Options page "Site Contact Details".
- * Uses your field names: phone_number, email, working_hours, etc.
  *
- * @param string $name Internal key: header_phone, header_email, header_working_hours, header_address, header_address_url, header_consultation_url.
+ * @param string $name Internal key: header_phone, header_email, header_working_hours, header_address, header_address_url, header_consultation_url, instagram_url, tiktok_url, telegram_url.
  * @return string
  */
 function molochko_get_contact_option( $name ) {

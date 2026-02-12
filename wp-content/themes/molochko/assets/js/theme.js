@@ -9,6 +9,8 @@
 		scrollToTop();
 		submenuToggle();
 		caseStudiesCarousel();
+		blogSectionCarousel();
+		lawTalkCarousel();
 	});
 
 	// Case Studies: Slick carousel (only when block and Slick exist)
@@ -27,6 +29,56 @@
 			appendArrows: $carousel,
 			prevArrow: '<button type="button" class="slick-prev mcs-slick-prev" aria-label="Попередній"><i class="zmdi zmdi-chevron-left"></i></button>',
 			nextArrow: '<button type="button" class="slick-next mcs-slick-next" aria-label="Наступний"><i class="zmdi zmdi-chevron-right"></i></button>',
+			responsive: [
+				{ breakpoint: 1024, settings: { slidesToShow: 2 } },
+				{ breakpoint: 768, settings: { slidesToShow: 1, dots: true } },
+				{ breakpoint: 480, settings: { slidesToShow: 1 } }
+			]
+		});
+	}
+
+	// Blog section: Slick carousel (front page)
+	function blogSectionCarousel() {
+		var $carousel = $(".molochko-blog-section .blog-section-carousel");
+		var $track = $carousel.find(".blog-section-track");
+		if (!$track.length || !$.fn.slick) return;
+		if ($track.hasClass("slick-initialized")) return;
+		$track.slick({
+			slidesToShow: 2,
+			slidesToScroll: 1,
+			infinite: true,
+			arrows: true,
+			dots: true,
+			adaptiveHeight: false,
+			appendArrows: $carousel,
+			prevArrow: '<button type="button" class="slick-prev blog-section-slick-prev" aria-label="Попередній"><i class="zmdi zmdi-chevron-left"></i></button>',
+			nextArrow: '<button type="button" class="slick-next blog-section-slick-next" aria-label="Наступний"><i class="zmdi zmdi-chevron-right"></i></button>',
+			responsive: [
+				{ breakpoint: 1024, settings: { slidesToShow: 2 } },
+				{ breakpoint: 768, settings: { slidesToShow: 1, dots: true } },
+				{ breakpoint: 480, settings: { slidesToShow: 1 } }
+			]
+		});
+	}
+
+	// Law Talk: Slick carousel for reels/tiktok embeds
+	function lawTalkCarousel() {
+		var $wrap = $(".molochko-law-talk .lt-carousel-wrap");
+		var $carousel = $wrap.find(".lt-carousel");
+		var $track = $carousel.find(".lt-track");
+		if (!$track.length || !$.fn.slick) return;
+		if ($track.children(".lt-slide").length < 2) return;
+		if ($track.hasClass("slick-initialized")) return;
+		$track.slick({
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			infinite: true,
+			arrows: true,
+			dots: true,
+			adaptiveHeight: true,
+			appendArrows: $carousel,
+			prevArrow: '<button type="button" class="slick-prev lt-slick-prev" aria-label="Попередній"><i class="zmdi zmdi-chevron-left"></i></button>',
+			nextArrow: '<button type="button" class="slick-next lt-slick-next" aria-label="Наступний"><i class="zmdi zmdi-chevron-right"></i></button>',
 			responsive: [
 				{ breakpoint: 1024, settings: { slidesToShow: 2 } },
 				{ breakpoint: 768, settings: { slidesToShow: 1, dots: true } },

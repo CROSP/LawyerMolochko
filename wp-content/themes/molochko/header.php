@@ -15,7 +15,7 @@
 <div id="pxl-page" class="pxl-page">
 	<div class="pxl-page-overlay"></div>
 	<?php get_template_part( 'template-parts/header' ); ?>
-	<?php if ( ! is_front_page() && ! is_singular( 'molochko-case-study' ) && ! is_singular( 'pxl-practice-area' ) && ! is_post_type_archive( 'molochko-case-study' ) && ! is_post_type_archive( 'pxl-practice-area' ) && ! is_tax( 'case_study_category' ) ) : ?>
+	<?php if ( ! is_front_page() && ! is_singular( 'molochko-case-study' ) && ! is_singular( 'pxl-practice-area' ) && ! is_singular( 'post' ) && ! is_post_type_archive( 'molochko-case-study' ) && ! is_post_type_archive( 'pxl-practice-area' ) && ! is_home() && ! is_tax( 'case_study_category' ) ) : ?>
 		<div id="pxl-pagetitle" class="pxl-pagetitle bg-image layout-df relative">
 			<div class="pxl-page-title-overlay"></div>
 			<div class="container relative">

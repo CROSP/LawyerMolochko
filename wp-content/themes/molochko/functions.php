@@ -429,6 +429,30 @@ function molochko_case_studies_section() {
 }
 
 /**
+ * Law Talk section: blog/social about law — ACF on front page + contact options (Instagram/TikTok).
+ */
+function molochko_law_talk_section() {
+	get_template_part( 'template-parts/sections/law-talk-section' );
+}
+
+/**
+ * Blog section: recent posts carousel on front page.
+ */
+function molochko_blog_section() {
+	$query = new WP_Query( array(
+		'post_type'      => 'post',
+		'post_status'    => 'publish',
+		'posts_per_page' => 8,
+		'orderby'        => 'date',
+		'order'          => 'DESC',
+	) );
+	$posts = $query->have_posts() ? $query->posts : array();
+	set_query_var( 'args', array( 'posts' => $posts ) );
+	get_template_part( 'template-parts/sections/blog-section' );
+	wp_reset_postdata();
+}
+
+/**
  * Render About block (two columns: images left, text right). Data from ACF.
  *
  * @param int $post_id Front page or post ID.
@@ -478,6 +502,8 @@ require_once MOLOCHKO_DIR . '/inc/contact-options.php';
 require_once MOLOCHKO_DIR . '/inc/acf-practice-area-cpt.php';
 // Кейси (Case Studies) — CPT + таксономія категорій.
 require_once MOLOCHKO_DIR . '/inc/acf-case-study-cpt.php';
+// Law Talk: fetch latest Instagram Reels (Graph API).
+require_once MOLOCHKO_DIR . '/inc/law-talk-instagram.php';
 
 /**
  * Google Fonts
