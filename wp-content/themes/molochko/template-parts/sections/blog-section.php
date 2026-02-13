@@ -19,14 +19,12 @@ $btn_text = __( 'Усі статті', 'molochko' );
 $blog_url = get_permalink( get_option( 'page_for_posts' ) ) ?: home_url( '/blog/' );
 ?>
 <section class="molochko-blog-section">
-	<div class="blog-section-header">
+	<div class="blog-section-header blog-section-header-centered">
 		<div class="blog-section-inner">
-			<div class="blog-section-left">
+			<div class="blog-section-heading">
 				<div class="blog-section-subtitle"><?php echo esc_html( $subtitle ); ?></div>
 				<h2 class="blog-section-title"><?php echo esc_html( $title ); ?></h2>
 				<p class="blog-section-desc"><?php echo esc_html( $desc ); ?></p>
-			</div>
-			<div class="blog-section-right">
 				<a href="<?php echo esc_url( $blog_url ); ?>" class="blog-section-view-all">
 					<span><?php echo esc_html( $btn_text ); ?></span>
 				</a>
