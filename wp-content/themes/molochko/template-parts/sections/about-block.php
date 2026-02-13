@@ -40,7 +40,7 @@ if ( ! $sub && ! $title && ! $desc ) {
 	return;
 }
 ?>
-<section class="molochko-about">
+<section id="about" class="molochko-about">
 	<div class="container">
 		<div class="row row-cols-1 row-cols-md-2 align-items-center">
 			<div class="col">

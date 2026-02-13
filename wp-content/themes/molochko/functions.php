@@ -40,10 +40,13 @@ function molochko_setup() {
  * Fix image URLs: replace any stored site URL with current request URL so images
  * load on both lawyermolochko.ddev.site and lawyer-molochko.com.ua.
  */
-add_filter( 'body_class', 'molochko_contact_page_body_class', 10, 1 );
-function molochko_contact_page_body_class( $classes ) {
+add_filter( 'body_class', 'molochko_body_classes', 10, 1 );
+function molochko_body_classes( $classes ) {
 	if ( is_page_template( 'page-contact.php' ) ) {
 		$classes[] = 'page-contact';
+	}
+	if ( is_front_page() ) {
+		$classes[] = 'front-page';
 	}
 	return $classes;
 }

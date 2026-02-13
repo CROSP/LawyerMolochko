@@ -61,12 +61,12 @@ $consultation_url = molochko_get_contact_option( 'header_consultation_url' ) ?: 
 	<section class="header-main-section elementor-section-boxed elementor-section-height-default">
 		<div class="header-container elementor-container elementor-column-gap-default">
 			<div class="header-main-row row align-items-center">
-				<div class="pxl-header-logo col-6 col-xl-5 elementor-column elementor-col-50">
+				<div class="pxl-header-logo col-3 elementor-column">
 					<a class="logo-default" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" rel="home">
 						<img class="pxl-logo" src="<?php echo esc_url( $logo_url ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" loading="lazy">
 					</a>
 				</div>
-				<div class="header-main-right col-6 col-xl-7 elementor-column elementor-col-50 d-flex align-items-center justify-content-between flex-wrap header-mobile-right">
+				<div class="header-main-right col-9 col-xl-9 elementor-column d-flex align-items-center justify-content-between flex-wrap header-mobile-right">
 					<nav class="pxl-main-navigation d-none d-xl-flex flex-grow-1 justify-content-center">
 						<?php
 						if ( has_nav_menu( 'primary' ) ) {
