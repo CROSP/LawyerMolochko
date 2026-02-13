@@ -36,6 +36,9 @@ function molochko_setup() {
 	) );
 }
 
+// Primary menu: Reviews → CPT archive, remove "Про нас".
+require_once MOLOCHKO_DIR . '/inc/nav-menu-reviews-and-about.php';
+
 /**
  * Fix image URLs: replace any stored site URL with current request URL so images
  * load on both lawyermolochko.ddev.site and lawyer-molochko.com.ua.
@@ -440,6 +443,15 @@ function molochko_case_studies_section() {
 }
 
 /**
+ * Reviews section: client testimonials carousel. Data from molochko_get_reviews().
+ */
+function molochko_reviews_section() {
+	$reviews = function_exists( 'molochko_get_reviews' ) ? molochko_get_reviews() : array();
+	set_query_var( 'args', array( 'reviews' => $reviews ) );
+	get_template_part( 'template-parts/sections/reviews-section' );
+}
+
+/**
  * Law Talk section: blog/social about law — ACF on front page + contact options (Instagram/TikTok).
  */
 function molochko_law_talk_section() {
@@ -511,10 +523,16 @@ function molochko_about_block( $post_id = 0 ) {
 require_once MOLOCHKO_DIR . '/inc/contact-options.php';
 // Contact Form 7 shortcode helper for contact page and consultation popup.
 require_once MOLOCHKO_DIR . '/inc/contact-form7-helper.php';
+// Reviews section: default thematic reviews (filter: molochko_reviews_list).
+require_once MOLOCHKO_DIR . '/inc/reviews-data.php';
 // Підключення CPT «Напрямки практики» (ACF групи полів — тільки в БД, створюються скриптом import-acf-groups.php).
 require_once MOLOCHKO_DIR . '/inc/acf-practice-area-cpt.php';
 // Кейси (Case Studies) — CPT + таксономія категорій.
 require_once MOLOCHKO_DIR . '/inc/acf-case-study-cpt.php';
+// Reviews CPT: archive at /reviews/, use case_study_category for Case Category.
+require_once MOLOCHKO_DIR . '/inc/reviews-cpt.php';
+// Reviews: ACF field "Related Case Study" – link to case study archive.
+require_once MOLOCHKO_DIR . '/inc/acf-reviews-case-study-field.php';
 // Law Talk: fetch latest Instagram Reels (Graph API).
 require_once MOLOCHKO_DIR . '/inc/law-talk-instagram.php';
 

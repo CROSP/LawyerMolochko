@@ -45,5 +45,7 @@ if ( empty( $hero_shortcode ) ) {
 
 <?php molochko_blog_section(); ?>
 
+<?php molochko_reviews_section(); ?>
+
 <?php
 get_footer();

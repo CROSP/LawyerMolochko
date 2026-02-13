@@ -10,6 +10,7 @@
 		submenuToggle();
 		caseStudiesCarousel();
 		blogSectionCarousel();
+		reviewsSectionCarousel();
 		lawTalkCarousel();
 		consultationPopup();
 	});
@@ -89,6 +90,31 @@
 			appendArrows: $carousel,
 			prevArrow: '<button type="button" class="slick-prev blog-section-slick-prev" aria-label="Попередній"><i class="zmdi zmdi-chevron-left"></i></button>',
 			nextArrow: '<button type="button" class="slick-next blog-section-slick-next" aria-label="Наступний"><i class="zmdi zmdi-chevron-right"></i></button>',
+			responsive: [
+				{ breakpoint: 1024, settings: { slidesToShow: 2 } },
+				{ breakpoint: 768, settings: { slidesToShow: 1, dots: true } },
+				{ breakpoint: 480, settings: { slidesToShow: 1 } }
+			]
+		});
+	}
+
+	// Reviews section: Slick carousel
+	function reviewsSectionCarousel() {
+		var $carousel = $(".molochko-reviews .molochko-reviews-carousel");
+		var $track = $carousel.find(".molochko-reviews-track");
+		if (!$track.length || !$.fn.slick) return;
+		if ($track.hasClass("slick-initialized")) return;
+		if ($track.children(".molochko-review-slide").length < 2) return;
+		$track.slick({
+			slidesToShow: 2,
+			slidesToScroll: 1,
+			infinite: true,
+			arrows: true,
+			dots: true,
+			adaptiveHeight: true,
+			appendArrows: $carousel,
+			prevArrow: '<button type="button" class="slick-prev molochko-reviews-prev" aria-label="Попередній"><i class="zmdi zmdi-chevron-left"></i></button>',
+			nextArrow: '<button type="button" class="slick-next molochko-reviews-next" aria-label="Наступний"><i class="zmdi zmdi-chevron-right"></i></button>',
 			responsive: [
 				{ breakpoint: 1024, settings: { slidesToShow: 2 } },
 				{ breakpoint: 768, settings: { slidesToShow: 1, dots: true } },
