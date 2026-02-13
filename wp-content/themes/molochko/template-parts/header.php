@@ -10,7 +10,7 @@ $email            = molochko_get_contact_option( 'header_email' );
 $address          = molochko_get_contact_option( 'header_address' ) ?: '';
 $address_url      = molochko_get_contact_option( 'header_address_url' );
 $working_hours    = molochko_get_contact_option( 'header_working_hours' ) ?: __( 'Пн–Пт: 9:00 – 18:00', 'molochko' );
-$consultation_url = molochko_get_contact_option( 'header_consultation_url' ) ?: '#contact';
+$consultation_url = molochko_get_contact_option( 'header_consultation_url' ) ?: '#consultation-popup';
 ?>
 <header id="pxl-header" class="pxl-header header-type-el header-layout-35">
 	<!-- Top bar: email, address, hours + consultation button (like Power Legal) -->
@@ -47,7 +47,7 @@ $consultation_url = molochko_get_contact_option( 'header_consultation_url' ) ?: 
 						</li>
 					</ul>
 					<div class="header-consultation-wrap pxl-button-wrapper">
-						<a href="<?php echo esc_url( $consultation_url ); ?>" class="header-consultation-btn btn btn-default icon-ps-left">
+						<a href="<?php echo esc_url( $consultation_url ); ?>" class="header-consultation-btn btn btn-default icon-ps-left js-consultation-popup" data-popup="consultation">
 							<span class="pxl-button-text"><?php echo esc_html( __( 'Замовити консультацію', 'molochko' ) ); ?></span>
 							<span class="pxl-button-icon pxl-icon left zmdi zmdi-comment-more" aria-hidden="true"></span>
 						</a>

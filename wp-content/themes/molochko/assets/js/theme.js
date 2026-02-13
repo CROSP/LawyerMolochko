@@ -11,7 +11,43 @@
 		caseStudiesCarousel();
 		blogSectionCarousel();
 		lawTalkCarousel();
+		consultationPopup();
 	});
+
+	// Consultation popup: open on .js-consultation-popup, close on backdrop/close btn/Escape
+	function consultationPopup() {
+		var $popup = $("#consultation-popup");
+		if (!$popup.length) return;
+
+		$(document).on("click", ".js-consultation-popup", function (e) {
+			if ($(this).attr("href") === "#consultation-popup" || $(this).data("popup") === "consultation") {
+				e.preventDefault();
+				$popup.removeClass("is-closed").attr("aria-hidden", "false");
+				$("body").addClass("consultation-popup-open");
+				$popup.find(".molochko-consultation-popup-dialog").focus();
+			}
+		});
+
+		function closeConsultationPopup() {
+			$popup.addClass("is-closed").attr("aria-hidden", "true");
+			$("body").removeClass("consultation-popup-open");
+		}
+
+		$(document).on("click", "[data-close=\"consultation\"]", function (e) {
+			e.preventDefault();
+			closeConsultationPopup();
+		});
+
+		$popup.on("click", function (e) {
+			if (e.target === this) closeConsultationPopup();
+		});
+
+		$(document).on("keydown", function (e) {
+			if (e.key === "Escape" && $popup.attr("aria-hidden") === "false") {
+				closeConsultationPopup();
+			}
+		});
+	}
 
 	// Case Studies: Slick carousel (only when block and Slick exist)
 	function caseStudiesCarousel() {

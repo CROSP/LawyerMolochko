@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 $thumb_id     = get_post_thumbnail_id();
 $archive_url  = get_post_type_archive_link( 'pxl-practice-area' );
 $consult_url  = function_exists( 'molochko_get_contact_option' ) ? molochko_get_contact_option( 'header_consultation_url' ) : '';
-$consult_url  = $consult_url ?: '#contact';
+	$consult_url  = $consult_url ?: '#consultation-popup';
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'pa-single-article' ); ?>>
 	<!-- Hero -->
@@ -60,7 +60,7 @@ $consult_url  = $consult_url ?: '#contact';
 			<div class="pa-single-cta-inner">
 				<p class="pa-single-cta-title"><?php esc_html_e( 'Потрібна консультація з цього напрямку?', 'molochko' ); ?></p>
 				<p class="pa-single-cta-desc"><?php esc_html_e( 'Отримайте кваліфіковану допомогу адвоката. Зв\'яжіться з нами зручним способом.', 'molochko' ); ?></p>
-				<a href="<?php echo esc_url( $consult_url ); ?>" class="pa-single-cta-btn">
+				<a href="<?php echo esc_url( $consult_url ); ?>" class="pa-single-cta-btn js-consultation-popup" data-popup="consultation">
 					<span><?php esc_html_e( 'Замовити консультацію', 'molochko' ); ?></span>
 					<i class="zmdi zmdi-long-arrow-right" aria-hidden="true"></i>
 				</a>

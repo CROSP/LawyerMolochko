@@ -4119,3 +4119,323 @@ body.single-post #pxl-content-area {
 		right: -12px;
 	}
 }
+
+/* ========== Contact page (Template: Contact Us) ========== */
+.page-contact .pxl-main {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.molochko-contact-hero {
+	background: linear-gradient(135deg, var(--secondary-color) 0%, #2a3548 100%);
+	color: #fff;
+	padding: 64px 24px 56px;
+	text-align: center;
+}
+
+.molochko-contact-hero-inner {
+	max-width: 640px;
+	margin: 0 auto;
+}
+
+.molochko-contact-hero-subtitle {
+	font-size: 14px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.85);
+	margin: 0 0 8px;
+}
+
+.molochko-contact-hero-title {
+	font-size: 42px;
+	font-weight: 700;
+	margin: 0 0 16px;
+	line-height: 1.2;
+}
+
+.molochko-contact-hero-desc {
+	font-size: 1.05rem;
+	line-height: 1.6;
+	color: rgba(255, 255, 255, 0.9);
+	margin: 0;
+}
+
+.molochko-contact-content {
+	padding: 56px 0 80px;
+}
+
+.molochko-contact-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 var(--content-gutter, 24px);
+}
+
+.molochko-contact-grid {
+	display: grid;
+	gap: 48px;
+}
+
+@media (min-width: 992px) {
+	.molochko-contact-grid {
+		grid-template-columns: 1fr 1.1fr;
+		align-items: start;
+		gap: 56px;
+	}
+}
+
+.molochko-contact-info-title {
+	font-size: 24px;
+	font-weight: 700;
+	color: var(--heading-color);
+	margin: 0 0 24px;
+}
+
+.molochko-contact-info-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.molochko-contact-info-item {
+	display: flex;
+	gap: 16px;
+	align-items: flex-start;
+	margin-bottom: 20px;
+}
+
+.molochko-contact-info-item:last-of-type {
+	margin-bottom: 0;
+}
+
+.molochko-contact-info-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 44px;
+	height: 44px;
+	min-width: 44px;
+	background: rgba(var(--primary-color-rgb, 196, 168, 118), 0.12);
+	color: var(--primary-color);
+	border-radius: 8px;
+	font-size: 20px;
+}
+
+.molochko-contact-info-icon .zmdi {
+	font-size: 22px;
+}
+
+.molochko-contact-info-label {
+	display: block;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	color: #888;
+	margin-bottom: 4px;
+}
+
+.molochko-contact-info-item a,
+.molochko-contact-info-item span {
+	font-size: 1rem;
+	color: var(--heading-color);
+	text-decoration: none;
+}
+
+.molochko-contact-info-item a:hover {
+	color: var(--primary-color);
+	text-decoration: underline;
+}
+
+.molochko-contact-cta {
+	margin-top: 32px;
+	padding-top: 24px;
+	border-top: 1px solid #eee;
+}
+
+.molochko-contact-cta p {
+	margin: 0;
+	font-size: 0.95rem;
+	color: #666;
+	line-height: 1.5;
+}
+
+.molochko-contact-form-wrap {
+	min-width: 0;
+}
+
+.molochko-contact-form-box {
+	background: #fff;
+	box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+	border-radius: 12px;
+	padding: 40px 32px;
+	border: 1px solid #eee;
+}
+
+.molochko-contact-form-title {
+	font-size: 24px;
+	font-weight: 700;
+	color: var(--heading-color);
+	margin: 0 0 24px;
+}
+
+.molochko-contact-form-missing {
+	color: #888;
+	font-size: 0.95rem;
+	margin: 0;
+}
+
+/* Contact page: CF7 form styling */
+.molochko-contact-form-inner .wpcf7-form-control-wrap { display: block; margin-bottom: 16px; }
+.molochko-contact-form-inner label { display: block; margin-bottom: 6px; font-weight: 500; color: var(--heading-color); }
+.molochko-contact-form-inner input[type="text"],
+.molochko-contact-form-inner input[type="email"],
+.molochko-contact-form-inner input[type="tel"],
+.molochko-contact-form-inner textarea {
+	width: 100%;
+	padding: 12px 16px;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	font-size: 1rem;
+	transition: border-color 0.2s, box-shadow 0.2s;
+}
+.molochko-contact-form-inner input:focus,
+.molochko-contact-form-inner textarea:focus {
+	outline: none;
+	border-color: var(--primary-color);
+	box-shadow: 0 0 0 3px rgba(var(--primary-color-rgb, 196, 168, 118), 0.15);
+}
+.molochko-contact-form-inner textarea { min-height: 120px; resize: vertical; }
+.molochko-contact-form-inner input[type="submit"] {
+	padding: 14px 32px;
+	background: var(--primary-color);
+	color: #fff;
+	border: none;
+	border-radius: 8px;
+	font-size: 1rem;
+	font-weight: 700;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+.molochko-contact-form-inner input[type="submit"]:hover { background: #c4a876; }
+.molochko-contact-form-inner .wpcf7-not-valid-tip { font-size: 13px; color: #c00; margin-top: 4px; }
+.molochko-contact-form-inner .wpcf7-response-output { margin: 16px 0 0; padding: 12px; border-radius: 8px; }
+
+/* ========== Consultation popup ========== */
+.molochko-consultation-popup {
+	position: fixed;
+	inset: 0;
+	z-index: 99999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 24px;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.molochko-consultation-popup:not(.is-closed) {
+	opacity: 1;
+	visibility: visible;
+}
+
+.molochko-consultation-popup.is-closed {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.molochko-consultation-popup-backdrop {
+	position: absolute;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.55);
+	cursor: pointer;
+}
+
+.molochko-consultation-popup-dialog {
+	position: relative;
+	width: 100%;
+	max-width: 520px;
+	max-height: 90vh;
+	overflow-y: auto;
+	background: #fff;
+	border-radius: 12px;
+	box-shadow: 0 24px 48px rgba(0, 0, 0, 0.2);
+	outline: none;
+}
+
+.molochko-consultation-popup-content {
+	position: relative;
+	padding: 40px 32px 36px;
+}
+
+.molochko-consultation-popup-close {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	width: 44px;
+	height: 44px;
+	padding: 0;
+	border: none;
+	background: #f5f5f5;
+	color: #333;
+	border-radius: 8px;
+	font-size: 22px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: background 0.2s, color 0.2s;
+}
+
+.molochko-consultation-popup-close:hover {
+	background: #eee;
+	color: var(--primary-color);
+}
+
+.molochko-consultation-popup-title {
+	font-size: 26px;
+	font-weight: 700;
+	color: var(--heading-color);
+	margin: 0 0 8px;
+}
+
+.molochko-consultation-popup-desc {
+	font-size: 0.95rem;
+	color: #666;
+	line-height: 1.5;
+	margin: 0 0 24px;
+}
+
+.molochko-consultation-popup-form .wpcf7-form-control-wrap { display: block; margin-bottom: 14px; }
+.molochko-consultation-popup-form label { display: block; margin-bottom: 4px; font-weight: 500; color: var(--heading-color); font-size: 14px; }
+.molochko-consultation-popup-form input[type="text"],
+.molochko-consultation-popup-form input[type="email"],
+.molochko-consultation-popup-form input[type="tel"],
+.molochko-consultation-popup-form textarea {
+	width: 100%;
+	padding: 10px 14px;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	font-size: 1rem;
+}
+.molochko-consultation-popup-form input:focus,
+.molochko-consultation-popup-form textarea:focus {
+	outline: none;
+	border-color: var(--primary-color);
+}
+.molochko-consultation-popup-form textarea { min-height: 100px; resize: vertical; }
+.molochko-consultation-popup-form input[type="submit"] {
+	padding: 12px 28px;
+	background: var(--primary-color);
+	color: #fff;
+	border: none;
+	border-radius: 8px;
+	font-size: 1rem;
+	font-weight: 700;
+	cursor: pointer;
+}
+.molochko-consultation-popup-form input[type="submit"]:hover { background: #c4a876; }
+.molochko-consultation-popup-missing { color: #888; font-size: 0.95rem; margin: 0; }
+
+body.consultation-popup-open {
+	overflow: hidden;
+}

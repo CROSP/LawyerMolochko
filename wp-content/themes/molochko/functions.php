@@ -40,6 +40,14 @@ function molochko_setup() {
  * Fix image URLs: replace any stored site URL with current request URL so images
  * load on both lawyermolochko.ddev.site and lawyer-molochko.com.ua.
  */
+add_filter( 'body_class', 'molochko_contact_page_body_class', 10, 1 );
+function molochko_contact_page_body_class( $classes ) {
+	if ( is_page_template( 'page-contact.php' ) ) {
+		$classes[] = 'page-contact';
+	}
+	return $classes;
+}
+
 add_filter( 'the_content', 'molochko_fix_content_image_urls', 20 );
 add_filter( 'post_thumbnail_url', 'molochko_fix_attachment_url', 10, 3 );
 add_filter( 'wp_get_attachment_url', 'molochko_fix_attachment_url_single', 10, 2 );
@@ -498,6 +506,8 @@ function molochko_about_block( $post_id = 0 ) {
 
 // ACF Options page "Контакти" and helper molochko_get_contact_option().
 require_once MOLOCHKO_DIR . '/inc/contact-options.php';
+// Contact Form 7 shortcode helper for contact page and consultation popup.
+require_once MOLOCHKO_DIR . '/inc/contact-form7-helper.php';
 // Підключення CPT «Напрямки практики» (ACF групи полів — тільки в БД, створюються скриптом import-acf-groups.php).
 require_once MOLOCHKO_DIR . '/inc/acf-practice-area-cpt.php';
 // Кейси (Case Studies) — CPT + таксономія категорій.

@@ -7,13 +7,16 @@
 
 <?php get_template_part( 'template-parts/footer' ); ?>
 
+<?php /* Consultation popup (Contact Form 7) */ ?>
+<?php get_template_part( 'template-parts/consultation-popup' ); ?>
+
 <?php /* Mobile full-screen menu with phone */ ?>
 <?php
 $mobile_phone   = function_exists( 'molochko_get_contact_option' ) ? molochko_get_contact_option( 'header_phone' ) : '';
 $mobile_phone   = $mobile_phone ?: '+38 (050) 606-00-79';
 $mobile_tel     = 'tel:' . preg_replace( '/\D+/', '', $mobile_phone );
 $mobile_consult = function_exists( 'molochko_get_contact_option' ) ? molochko_get_contact_option( 'header_consultation_url' ) : '';
-$mobile_consult = $mobile_consult ?: '#contact';
+$mobile_consult = $mobile_consult ?: '#consultation-popup';
 ?>
 <nav class="pxl-hidden-template pos-left pxl-side-mobile" role="dialog" aria-modal="true" aria-label="<?php esc_attr_e( 'Головне меню', 'molochko' ); ?>" aria-hidden="true">
 	<div class="pxl-panel-header pxl-mobile-panel-header">
@@ -49,7 +52,7 @@ $mobile_consult = $mobile_consult ?: '#contact';
 				<span class="pxl-mobile-phone-icon"><i class="flaticon flaticon-phone-call" aria-hidden="true"></i></span>
 				<span class="pxl-mobile-phone-number"><?php echo esc_html( $mobile_phone ); ?></span>
 			</a>
-			<a href="<?php echo esc_url( $mobile_consult ); ?>" class="pxl-mobile-consult-btn">
+			<a href="<?php echo esc_url( $mobile_consult ); ?>" class="pxl-mobile-consult-btn js-consultation-popup" data-popup="consultation">
 				<?php echo esc_html( __( 'Замовити консультацію', 'molochko' ) ); ?>
 			</a>
 		</div>

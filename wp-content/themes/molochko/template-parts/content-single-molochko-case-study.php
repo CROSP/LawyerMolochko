@@ -13,7 +13,7 @@ $terms       = get_the_terms( get_the_ID(), 'case_study_category' );
 $term        = is_array( $terms ) && ! empty( $terms ) ? $terms[0] : null;
 $archive_url = get_post_type_archive_link( 'molochko-case-study' );
 $consult_url = function_exists( 'molochko_get_contact_option' ) ? molochko_get_contact_option( 'header_consultation_url' ) : '';
-$consult_url = $consult_url ?: '#contact';
+	$consult_url = $consult_url ?: '#consultation-popup';
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'cs-single-article' ); ?>>
 	<!-- Hero -->
@@ -62,7 +62,7 @@ $consult_url = $consult_url ?: '#contact';
 			<div class="cs-single-cta-inner">
 				<p class="cs-single-cta-title"><?php esc_html_e( 'Потрібна консультація з вашого питання?', 'molochko' ); ?></p>
 				<p class="cs-single-cta-desc"><?php esc_html_e( 'Отримайте кваліфіковану допомогу адвоката.', 'molochko' ); ?></p>
-				<a href="<?php echo esc_url( $consult_url ); ?>" class="cs-single-cta-btn">
+				<a href="<?php echo esc_url( $consult_url ); ?>" class="cs-single-cta-btn js-consultation-popup" data-popup="consultation">
 					<span><?php esc_html_e( 'Замовити консультацію', 'molochko' ); ?></span>
 					<i class="zmdi zmdi-long-arrow-right" aria-hidden="true"></i>
 				</a>
