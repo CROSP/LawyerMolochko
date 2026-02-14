@@ -90,11 +90,12 @@ $consultation_url = molochko_get_contact_option( 'header_consultation_url' ) ?: 
 					<div class="header-right d-flex align-items-center ms-xl-0 ms-auto">
 						<?php if ( function_exists( 'pll_the_languages' ) ) : ?>
 							<div class="pxl-header-lang-switcher d-none d-xl-flex" aria-label="<?php esc_attr_e( 'Мова', 'molochko' ); ?>">
+								<?php echo molochko_pll_current_flag(); ?>
 								<?php
 								pll_the_languages( array(
 									'echo'                   => 1,
 									'dropdown'               => 'header',
-									'show_flags'             => 1,
+									'show_flags'             => 0,
 									'show_names'             => 1,
 									'hide_current'           => 0,
 									'hide_if_no_translation' => 0,

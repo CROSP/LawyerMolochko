@@ -50,11 +50,12 @@ $mobile_consult = $mobile_consult ?: '#consultation-popup';
 		<div class="pxl-mobile-menu-footer">
 			<?php if ( function_exists( 'pll_the_languages' ) ) : ?>
 				<div class="pxl-mobile-lang-switcher" aria-label="<?php esc_attr_e( 'Мова', 'molochko' ); ?>">
+					<?php echo molochko_pll_current_flag(); ?>
 					<?php
 					pll_the_languages( array(
 						'echo'                   => 1,
 						'dropdown'               => 'mobile',
-						'show_flags'             => 1,
+						'show_flags'             => 0,
 						'show_names'             => 1,
 						'hide_current'           => 0,
 						'hide_if_no_translation' => 0,

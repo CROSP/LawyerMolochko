@@ -37,14 +37,35 @@ function molochko_setup() {
 }
 
 /**
- * Polylang: show flag next to dropdown when show_flags is set (walker expects 'flag' key).
+ * Polylang: output current language flag for dropdown (avoids walker-dropdown.php bug when selected URL has no match).
  */
-add_filter( 'pll_the_languages_args', 'molochko_pll_dropdown_show_flag', 10, 1 );
-function molochko_pll_dropdown_show_flag( $args ) {
-	if ( ! empty( $args['dropdown'] ) && ! empty( $args['show_flags'] ) ) {
-		$args['flag'] = 1;
+function molochko_pll_current_flag() {
+	if ( ! function_exists( 'pll_the_languages' ) || ! function_exists( 'pll_current_language' ) ) {
+		return '';
 	}
-	return $args;
+	$slug = pll_current_language( 'slug' );
+	if ( ! $slug ) {
+		return '';
+	}
+	$languages = pll_the_languages( array( 'raw' => 1, 'show_flags' => 1 ) );
+	if ( empty( $languages ) || ! is_array( $languages ) ) {
+		return '';
+	}
+	foreach ( $languages as $lang ) {
+		if ( ! empty( $lang['current_lang'] ) || ( ! empty( $lang['slug'] ) && $lang['slug'] === $slug ) ) {
+			$flag = isset( $lang['flag'] ) ? $lang['flag'] : '';
+			if ( ! $flag ) {
+				return '';
+			}
+			// When raw + show_flags=0 Polylang returns URL string; ensure we output an img.
+			if ( is_string( $flag ) && ( strpos( $flag, 'http://' ) === 0 || strpos( $flag, 'https://' ) === 0 ) ) {
+				$flag = '<img src="' . esc_url( $flag ) . '" alt="" width="24" height="18" loading="lazy" />';
+			}
+			$html = '<span class="pll-select-flag">' . $flag . '</span>';
+			return function_exists( 'molochko_fix_content_image_urls' ) ? molochko_fix_content_image_urls( $html ) : $html;
+		}
+	}
+	return '';
 }
 
 /**
