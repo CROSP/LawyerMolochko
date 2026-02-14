@@ -111,6 +111,50 @@ msgstr "Domenii de practică juridică"
 msgid "Надаємо кваліфіковану юридичну допомогу у кримінальних справах, спорах через ДТП, військових питаннях, сімейних та трудових спорах. Маємо значний досвід у цих напрямках та гарантуємо індивідуальний підхід до кожної справи."
 msgstr "Oferim asistență juridică calificată în materie penală, litigii din accidente rutiere, probleme militare, dispute familiale și de muncă. Avem experiență semnificativă în aceste domenii și garantăm o abordare individuală pentru fiecare caz."
 
+# Case studies section
+msgid "Практичний досвід"
+msgstr "Experiență practică"
+
+msgid "Останні кейси"
+msgstr "Ultimele cazuri"
+
+msgid "Наша відданість справі та досвід дозволяють ефективно представляти ваші інтереси — від консультації до суду. ТЦК, ВЛК, ДТП, кримінал, сімейні та трудові спори."
+msgstr "Dedicarea și experiența noastră ne permit să vă reprezentăm eficient interesele — de la consultație până în instanță. TCC, VLC, accidente rutiere, penal, dispute familiale și de muncă."
+
+msgid "Усі кейси"
+msgstr "Toate cazurile"
+
+msgid "Кейси"
+msgstr "Cazuri"
+
+msgid "Наша відданість справі та досвід дозволяють ефективно представляти ваші інтереси — від консультації до суду."
+msgstr "Dedicarea și experiența noastră ne permit să vă reprezentăm eficient interesele — de la consultație până în instanță."
+
+msgid "Кейси за цією категорією."
+msgstr "Cazuri din această categorie."
+
+# Law Talk section
+msgid "Блог про право"
+msgstr "Blog despre drept"
+
+msgid "Law Talk"
+msgstr "Law Talk"
+
+msgid "Короткі відео про право українською: що варто знати про закони, ваші права та типові ситуації. Дивіться наші Reels в Instagram та відео в TikTok — просто та зрозуміло."
+msgstr "Videoclipuri scurte despre drept: ce merită să știți despre legi, drepturile dumneavoastră și situațiile tipice. Uitați-vă la Reels pe Instagram și la videoclipuri pe TikTok — simplu și clar."
+
+msgid "Дивіться наші відео про право в Instagram та TikTok — підписуйтесь на канали вище."
+msgstr "Vedeți videoclipurile noastre despre drept pe Instagram și TikTok — abonați-vă la canalele de mai sus."
+
+msgid "Instagram Law Talk"
+msgstr "Instagram Law Talk"
+
+msgid "TikTok Law Talk"
+msgstr "TikTok Law Talk"
+
+msgid "Дивитися відео"
+msgstr "Vizionează video"
+
 msgid "На головну"
 msgstr "Acasă"
 
@@ -168,9 +212,6 @@ msgid "Переглянути кейси"
 msgstr "Vezi cazuri"
 
 # Case studies
-msgid "Усі кейси"
-msgstr "Toate cazurile"
-
 msgid "Навігація по кейсах"
 msgstr "Navigare cazuri"
 

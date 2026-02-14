@@ -8,9 +8,9 @@
 
 get_header();
 
-$archive_title = __( 'Кейси', 'molochko' );
-$archive_subtitle = __( 'Практичний досвід', 'molochko' );
-$archive_desc = __( 'Наша відданість справі та досвід дозволяють ефективно представляти ваші інтереси — від консультації до суду.', 'molochko' );
+$archive_title    = function_exists( 'molochko_pll__' ) ? molochko_pll__( 'Кейси' ) : __( 'Кейси', 'molochko' );
+$archive_subtitle = function_exists( 'molochko_pll__' ) ? molochko_pll__( 'Практичний досвід' ) : __( 'Практичний досвід', 'molochko' );
+$archive_desc     = function_exists( 'molochko_pll__' ) ? molochko_pll__( 'Наша відданість справі та досвід дозволяють ефективно представляти ваші інтереси — від консультації до суду.' ) : __( 'Наша відданість справі та досвід дозволяють ефективно представляти ваші інтереси — від консультації до суду.', 'molochko' );
 
 $categories = get_terms( array(
 	'taxonomy'   => 'case_study_category',

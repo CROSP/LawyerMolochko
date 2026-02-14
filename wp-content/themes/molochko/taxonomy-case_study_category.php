@@ -15,9 +15,9 @@ if ( ! $term || ! isset( $term->term_id ) ) {
 	return;
 }
 
-$archive_subtitle = __( 'Практичний досвід', 'molochko' );
+$archive_subtitle = function_exists( 'molochko_pll__' ) ? molochko_pll__( 'Практичний досвід' ) : __( 'Практичний досвід', 'molochko' );
 $archive_title   = $term->name;
-$archive_desc    = $term->description ? $term->description : __( 'Кейси за цією категорією.', 'molochko' );
+$archive_desc    = $term->description ? $term->description : ( function_exists( 'molochko_pll__' ) ? molochko_pll__( 'Кейси за цією категорією.' ) : __( 'Кейси за цією категорією.', 'molochko' ) );
 
 $categories = get_terms( array(
 	'taxonomy'   => 'case_study_category',

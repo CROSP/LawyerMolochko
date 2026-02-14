@@ -19,13 +19,20 @@ function molochko_get_reviews() {
 	if ( ! post_type_exists( 'reviews' ) ) {
 		return apply_filters( 'molochko_reviews_list', array() );
 	}
-	$posts = get_posts( array(
+	$query_args = array(
 		'post_type'      => 'reviews',
 		'post_status'    => 'publish',
 		'posts_per_page' => 20,
 		'orderby'        => 'date',
 		'order'          => 'DESC',
-	) );
+	);
+	if ( function_exists( 'pll_current_language' ) ) {
+		$lang = pll_current_language( 'slug' );
+		if ( $lang ) {
+			$query_args['lang'] = $lang;
+		}
+	}
+	$posts = get_posts( $query_args );
 	$reviews = array();
 	foreach ( $posts as $post ) {
 		$name = get_field( 'person_name', $post->ID );

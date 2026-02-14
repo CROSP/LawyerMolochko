@@ -557,13 +557,20 @@ function molochko_practice_areas_section() {
  * Case Studies section: heading + grid from molochko-case-study CPT.
  */
 function molochko_case_studies_section() {
-	$query = new WP_Query( array(
+	$query_args = array(
 		'post_type'      => 'molochko-case-study',
 		'post_status'    => 'publish',
 		'posts_per_page' => 8,
 		'orderby'        => 'date',
 		'order'          => 'DESC',
-	) );
+	);
+	if ( function_exists( 'pll_current_language' ) ) {
+		$lang = pll_current_language( 'slug' );
+		if ( $lang ) {
+			$query_args['lang'] = $lang;
+		}
+	}
+	$query = new WP_Query( $query_args );
 	$posts = $query->have_posts() ? $query->posts : array();
 
 	set_query_var( 'args', array( 'posts' => $posts ) );
@@ -600,13 +607,20 @@ function molochko_front_contact_section() {
  * Blog section: recent posts carousel on front page.
  */
 function molochko_blog_section() {
-	$query = new WP_Query( array(
+	$query_args = array(
 		'post_type'      => 'post',
 		'post_status'    => 'publish',
 		'posts_per_page' => 8,
 		'orderby'        => 'date',
 		'order'          => 'DESC',
-	) );
+	);
+	if ( function_exists( 'pll_current_language' ) ) {
+		$lang = pll_current_language( 'slug' );
+		if ( $lang ) {
+			$query_args['lang'] = $lang;
+		}
+	}
+	$query = new WP_Query( $query_args );
 	$posts = $query->have_posts() ? $query->posts : array();
 	set_query_var( 'args', array( 'posts' => $posts ) );
 	get_template_part( 'template-parts/sections/blog-section' );

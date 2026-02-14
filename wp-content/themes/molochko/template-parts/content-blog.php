@@ -22,7 +22,7 @@
 				<p class="blog-archive-card-excerpt"><?php echo wp_kses_post( get_the_excerpt() ); ?></p>
 			<?php endif; ?>
 			<span class="blog-archive-card-more">
-				<?php esc_html_e( 'Читати далі', 'molochko' ); ?>
+				<?php echo esc_html( function_exists( 'molochko_pll__' ) ? molochko_pll__( 'Читати далі' ) : __( 'Читати далі', 'molochko' ) ); ?>
 				<i class="zmdi zmdi-long-arrow-right" aria-hidden="true"></i>
 			</span>
 		</div>

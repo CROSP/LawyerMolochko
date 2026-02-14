@@ -8,9 +8,9 @@
 
 get_header();
 
-$archive_title    = __( 'Відгуки клієнтів', 'molochko' );
-$archive_subtitle = __( 'Що говорять клієнти', 'molochko' );
-$archive_desc     = __( 'Реальні історії та відгуки людей, яким ми допомогли.', 'molochko' );
+$archive_title    = function_exists( 'molochko_pll__' ) ? molochko_pll__( 'Відгуки клієнтів' ) : __( 'Відгуки клієнтів', 'molochko' );
+$archive_subtitle = function_exists( 'molochko_pll__' ) ? molochko_pll__( 'Що кажуть клієнти' ) : __( 'Що говорять клієнти', 'molochko' );
+$archive_desc     = function_exists( 'molochko_pll__' ) ? molochko_pll__( 'Реальні історії та подяки від тих, хто звертався до нас за юридичною допомогою.' ) : __( 'Реальні історії та відгуки людей, яким ми допомогли.', 'molochko' );
 ?>
 <div class="molochko-reviews-archive">
 	<header class="molochko-reviews-archive-hero">
@@ -34,18 +34,21 @@ $archive_desc     = __( 'Реальні історії та відгуки лю�
 					?>
 				</div>
 				<?php
-				echo '<nav class="molochko-reviews-archive-pagination" aria-label="' . esc_attr__( 'Навігація по відгуках', 'molochko' ) . '">';
+				$nav_label = function_exists( 'molochko_pll__' ) ? molochko_pll__( 'Навігація по відгуках' ) : __( 'Навігація по відгуках', 'molochko' );
+				$prev_text = function_exists( 'molochko_pll__' ) ? molochko_pll__( 'Назад' ) : __( 'Назад', 'molochko' );
+				$next_text = function_exists( 'molochko_pll__' ) ? molochko_pll__( 'Далі' ) : __( 'Далі', 'molochko' );
+				echo '<nav class="molochko-reviews-archive-pagination" aria-label="' . esc_attr( $nav_label ) . '">';
 				the_posts_pagination( array(
 					'mid_size'  => 2,
-					'prev_text' => '<i class="zmdi zmdi-chevron-left"></i> ' . __( 'Назад', 'molochko' ),
-					'next_text' => __( 'Далі', 'molochko' ) . ' <i class="zmdi zmdi-chevron-right"></i>',
+					'prev_text' => '<i class="zmdi zmdi-chevron-left"></i> ' . $prev_text,
+					'next_text' => $next_text . ' <i class="zmdi zmdi-chevron-right"></i>',
 				) );
 				echo '</nav>';
 				?>
 			<?php else : ?>
 				<div class="molochko-reviews-archive-empty">
-					<p class="molochko-reviews-archive-empty-text"><?php esc_html_e( 'Відгуків поки немає.', 'molochko' ); ?></p>
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="molochko-reviews-archive-empty-btn"><?php esc_html_e( 'На головну', 'molochko' ); ?></a>
+					<p class="molochko-reviews-archive-empty-text"><?php echo esc_html( function_exists( 'molochko_pll__' ) ? molochko_pll__( 'Відгуків поки немає.' ) : __( 'Відгуків поки немає.', 'molochko' ) ); ?></p>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="molochko-reviews-archive-empty-btn"><?php echo esc_html( function_exists( 'molochko_pll__' ) ? molochko_pll__( 'На головну' ) : __( 'На головну', 'molochko' ) ); ?></a>
 				</div>
 			<?php endif; ?>
 		</div>

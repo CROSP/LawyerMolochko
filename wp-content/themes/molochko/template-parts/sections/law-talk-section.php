@@ -11,6 +11,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 $fid = (int) get_option( 'page_on_front' );
+if ( $fid && function_exists( 'pll_get_post' ) && function_exists( 'pll_current_language' ) ) {
+	$lang = pll_current_language( 'slug' );
+	if ( $lang ) {
+		$tr_id = pll_get_post( $fid, $lang );
+		if ( $tr_id ) {
+			$fid = (int) $tr_id;
+		}
+	}
+}
 
 $subtitle = $fid && function_exists( 'get_field' ) ? get_field( 'law_talk_subtitle', $fid ) : '';
 $title    = $fid && function_exists( 'get_field' ) ? get_field( 'law_talk_title', $fid ) : '';

@@ -13,10 +13,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 $args  = get_query_var( 'args', array() );
 $posts = isset( $args['posts'] ) && is_array( $args['posts'] ) ? $args['posts'] : array();
 
-$subtitle = 'Практичний досвід';
-$title    = 'Останні кейси';
-$desc     = 'Наша відданість справі та досвід дозволяють ефективно представляти ваші інтереси — від консультації до суду. ТЦК, ВЛК, ДТП, кримінал, сімейні та трудові спори.';
-$btn_text = 'Усі кейси';
+$subtitle = function_exists( 'molochko_pll__' ) ? molochko_pll__( 'Практичний досвід' ) : __( 'Практичний досвід', 'molochko' );
+$title    = function_exists( 'molochko_pll__' ) ? molochko_pll__( 'Останні кейси' ) : __( 'Останні кейси', 'molochko' );
+$desc     = function_exists( 'molochko_pll__' ) ? molochko_pll__( 'Наша відданість справі та досвід дозволяють ефективно представляти ваші інтереси — від консультації до суду. ТЦК, ВЛК, ДТП, кримінал, сімейні та трудові спори.' ) : __( 'Наша відданість справі та досвід дозволяють ефективно представляти ваші інтереси — від консультації до суду. ТЦК, ВЛК, ДТП, кримінал, сімейні та трудові спори.', 'molochko' );
+$btn_text = function_exists( 'molochko_pll__' ) ? molochko_pll__( 'Усі кейси' ) : __( 'Усі кейси', 'molochko' );
 $btn_url  = get_post_type_archive_link( 'molochko-case-study' ) ?: '#';
 ?>
 <section class="molochko-case-studies">
