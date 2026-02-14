@@ -524,13 +524,20 @@ function molochko_fancy_box_layout4( $b ) {
  * Practice Areas section: heading + grid from pxl-practice-area CPT only.
  */
 function molochko_practice_areas_section() {
-	$query = new WP_Query( array(
+	$query_args = array(
 		'post_type'      => 'pxl-practice-area',
 		'post_status'    => 'publish',
 		'posts_per_page' => 20,
 		'orderby'        => 'menu_order date',
 		'order'          => 'ASC',
-	) );
+	);
+	if ( function_exists( 'pll_current_language' ) ) {
+		$lang = pll_current_language( 'slug' );
+		if ( $lang ) {
+			$query_args['lang'] = $lang;
+		}
+	}
+	$query = new WP_Query( $query_args );
 	$posts       = $query->have_posts() ? $query->posts : array();
 	$button_text = molochko_pll__( 'Детальніше' );
 	$num_words   = 15;

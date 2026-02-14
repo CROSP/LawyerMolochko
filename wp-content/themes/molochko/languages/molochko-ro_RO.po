@@ -101,6 +101,16 @@ msgstr "Descrieți situația în câteva cuvinte — vă sunăm în timpul zilei
 msgid "Детальніше"
 msgstr "Detalii"
 
+# Practice areas section (fallback when ACF empty)
+msgid "Наша експертиза"
+msgstr "Expertiza noastră"
+
+msgid "Напрямки юридичної практики"
+msgstr "Domenii de practică juridică"
+
+msgid "Надаємо кваліфіковану юридичну допомогу у кримінальних справах, спорах через ДТП, військових питаннях, сімейних та трудових спорах. Маємо значний досвід у цих напрямках та гарантуємо індивідуальний підхід до кожної справи."
+msgstr "Oferim asistență juridică calificată în materie penală, litigii din accidente rutiere, probleme militare, dispute familiale și de muncă. Avem experiență semnificativă în aceste domenii și garantăm o abordare individuală pentru fiecare caz."
+
 msgid "На головну"
 msgstr "Acasă"
 

@@ -24,6 +24,15 @@ $num_words     = isset( $args['num_words'] ) ? (int) $args['num_words'] : 15;
 $grid_items    = $use_repeater ? $items : $posts;
 
 $fid = (int) get_option( 'page_on_front' );
+if ( $fid && function_exists( 'pll_get_post' ) && function_exists( 'pll_current_language' ) ) {
+	$lang = pll_current_language( 'slug' );
+	if ( $lang ) {
+		$tr_id = pll_get_post( $fid, $lang );
+		if ( $tr_id ) {
+			$fid = (int) $tr_id;
+		}
+	}
+}
 $heading_subtitle = $fid && function_exists( 'get_field' ) ? get_field( 'practice_areas_subtitle', $fid ) : '';
 $heading_title    = $fid && function_exists( 'get_field' ) ? get_field( 'practice_areas_title', $fid ) : '';
 $heading_desc     = $fid && function_exists( 'get_field' ) ? get_field( 'practice_areas_description', $fid ) : '';
@@ -88,6 +97,23 @@ if ( ! $heading_desc ) {
 							}
 							$area_img    = is_array( $area_img ) ? $area_img : array();
 							$area_img_alt = ! empty( $area_img['id'] ) ? get_post_meta( (int) $area_img['id'], '_wp_attachment_image_alt', true ) : ( ! empty( $area_img['alt'] ) ? $area_img['alt'] : '' );
+							// Fallback: use default-language (UA) post icon when RO post has none (media shared).
+							$has_icon = ( ! empty( $area_icon ) ) || ( ! empty( $area_img['url'] ) );
+							if ( ! $has_icon && function_exists( 'pll_get_post' ) && function_exists( 'pll_default_language' ) ) {
+								$default_slug = pll_default_language( 'slug' );
+								$default_id   = $default_slug ? (int) pll_get_post( $post->ID, $default_slug ) : 0;
+								if ( $default_id && $default_id !== $post->ID ) {
+									$icon_type   = function_exists( 'get_field' ) ? get_field( 'area_icon_type', $default_id ) : get_post_meta( $default_id, 'area_icon_type', true );
+									$area_icon   = function_exists( 'get_field' ) ? get_field( 'area_icon', $default_id ) : get_post_meta( $default_id, 'area_icon', true );
+									$area_img    = function_exists( 'get_field' ) ? get_field( 'area_img', $default_id ) : get_post_meta( $default_id, 'area_img', true );
+									if ( ! is_array( $area_img ) && is_numeric( $area_img ) ) {
+										$aid = (int) $area_img;
+										$area_img = array( 'id' => $aid, 'url' => wp_get_attachment_image_url( $aid, 'full' ), 'alt' => get_post_meta( $aid, '_wp_attachment_image_alt', true ) );
+									}
+									$area_img    = is_array( $area_img ) ? $area_img : array();
+									$area_img_alt = ! empty( $area_img['id'] ) ? get_post_meta( (int) $area_img['id'], '_wp_attachment_image_alt', true ) : ( ! empty( $area_img['alt'] ) ? $area_img['alt'] : '' );
+								}
+							}
 							$permalink   = get_permalink( $post->ID );
 							$title       = get_the_title( $post->ID );
 							$excerpt     = $post->post_excerpt ? wp_trim_words( $post->post_excerpt, $num_words, null ) : wp_trim_words( strip_shortcodes( $post->post_content ), $num_words, null );

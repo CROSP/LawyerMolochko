@@ -165,6 +165,11 @@ function molochko_polylang_strings_ro_map() {
 		'Напрямки практики' => 'Domenii de practică',
 		'Напрямок практики' => 'Domeniu de practică',
 		'Категорії' => 'Categorii',
+		// Practice areas section (fallback when ACF empty)
+		'Наша експертиза' => 'Expertiza noastră',
+		'Напрямки юридичної практики' => 'Domenii de practică juridică',
+		'Надаємо кваліфіковану юридичну допомогу у кримінальних справах, спорах через ДТП, військових питаннях, сімейних та трудових спорах. Маємо значний досвід у цих напрямках та гарантуємо індивідуальний підхід до кожної справи.' => 'Oferim asistență juridică calificată în materie penală, litigii din accidente rutiere, probleme militare, dispute familiale și de muncă. Avem experiență semnificativă în aceste domenii și garantăm o abordare individuală pentru fiecare caz.',
+		'Детальніше' => 'Detalii',
 		// Contact Form 7 – Multilingual CF7 with Polylang (filter "Contact Form 7" in String translations)
 		'Ваше ім\'я *' => 'Numele tău *',
 		'Телефон *' => 'Telefon *',
