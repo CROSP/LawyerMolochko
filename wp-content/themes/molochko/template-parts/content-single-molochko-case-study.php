@@ -13,7 +13,7 @@ $terms       = get_the_terms( get_the_ID(), 'case_study_category' );
 $term        = is_array( $terms ) && ! empty( $terms ) ? $terms[0] : null;
 $archive_url = get_post_type_archive_link( 'molochko-case-study' );
 $consult_url = function_exists( 'molochko_get_contact_option' ) ? molochko_get_contact_option( 'header_consultation_url' ) : '';
-	$consult_url = $consult_url ?: '#consultation-popup';
+$consult_url = $consult_url ?: '#consultation-popup';
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'cs-single-article' ); ?>>
 	<!-- Hero -->

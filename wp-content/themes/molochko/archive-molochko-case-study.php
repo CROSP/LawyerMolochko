@@ -40,8 +40,7 @@ $current_cat = isset( $_GET['cat'] ) ? sanitize_text_field( wp_unslash( $_GET['c
 				</a>
 				<?php foreach ( $categories as $term ) : ?>
 					<a href="<?php echo esc_url( get_term_link( $term ) ); ?>" class="cs-archive-filter-pill">
-						<?php echo esc_html( $term->name ); ?>
-					</a>
+						<?php echo esc_html( $term->name ); ?></a>
 				<?php endforeach; ?>
 			</nav>
 			<?php endif; ?>

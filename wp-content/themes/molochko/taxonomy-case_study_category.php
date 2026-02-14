@@ -10,7 +10,6 @@ get_header();
 
 $term = get_queried_object();
 if ( ! $term || ! isset( $term->term_id ) ) {
-	// Fallback: load default archive behaviour
 	get_template_part( 'archive', 'molochko-case-study' );
 	return;
 }
@@ -26,7 +25,6 @@ $categories = get_terms( array(
 $current_term_id = $term->term_id;
 ?>
 <div class="molochko-case-study-archive">
-	<!-- Hero -->
 	<header class="cs-archive-hero">
 		<div class="cs-archive-hero-pattern" aria-hidden="true"></div>
 		<div class="cs-archive-hero-overlay"></div>
@@ -39,7 +37,6 @@ $current_term_id = $term->term_id;
 		</div>
 	</header>
 
-	<!-- Content -->
 	<div class="cs-archive-main">
 		<div class="cs-archive-container">
 			<?php if ( ! is_wp_error( $categories ) && ! empty( $categories ) ) : ?>

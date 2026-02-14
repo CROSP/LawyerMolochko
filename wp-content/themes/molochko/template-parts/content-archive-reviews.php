@@ -11,11 +11,7 @@ if ( $name === null || $name === false || $name === '' ) {
 	$name = get_the_title();
 }
 $text      = get_the_content();
-$case_type = '';
-$terms     = get_the_terms( $review_id, 'case_study_category' );
-if ( ! is_wp_error( $terms ) && ! empty( $terms ) ) {
-	$case_type = $terms[0]->name;
-}
+$case_type = function_exists( 'molochko_review_case_type_label' ) ? molochko_review_case_type_label( $review_id ) : '';
 $case_study_archive_url = get_post_type_archive_link( 'molochko-case-study' );
 if ( empty( $text ) ) {
 	return;

@@ -1,13 +1,49 @@
 <?php
 /**
- * Reviews section: data from Reviews CPT (person_name, post_content, case_study_category).
- * Filter: molochko_reviews_list.
+ * Reviews section: data from Reviews CPT (person_name, post_content, ACF Case Category).
+ * Filter: molochko_reviews_list. Case category comes from ACF field only, not taxonomy.
  *
  * @package Molochko
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
+}
+
+/**
+ * Get case type label for a review from ACF field (Case Category / Categorie caz).
+ * Expects ACF field name "case_category" — text/select (label) or legacy term ID if taxonomy exists.
+ *
+ * @param int $post_id Review post ID.
+ * @return string Category name in current language.
+ */
+function molochko_review_case_type_label( $post_id ) {
+	$val = get_field( 'case_category', $post_id );
+	if ( $val === null || $val === false || $val === '' ) {
+		return '';
+	}
+	// If taxonomy was removed, ACF may store a string (label) or old term ID — return string only.
+	if ( ! taxonomy_exists( 'case_study_category' ) ) {
+		return is_string( $val ) ? $val : '';
+	}
+	if ( is_object( $val ) && isset( $val->term_id ) ) {
+		$val = $val->term_id;
+	}
+	$term_id = (int) $val;
+	if ( ! $term_id ) {
+		return '';
+	}
+	if ( function_exists( 'pll_current_language' ) && function_exists( 'pll_get_term' ) ) {
+		$lang = pll_current_language( 'slug' );
+		if ( $lang ) {
+			$translated = (int) pll_get_term( $term_id, $lang );
+			if ( $translated ) {
+				$term_id = $translated;
+			}
+		}
+	}
+	$term = get_term( $term_id, 'case_study_category' );
+	return ( $term && ! is_wp_error( $term ) ) ? $term->name : '';
 }
 
 /**
@@ -43,11 +79,7 @@ function molochko_get_reviews() {
 		if ( $text === '' ) {
 			continue;
 		}
-		$case_type = '';
-		$terms     = get_the_terms( $post->ID, 'case_study_category' );
-		if ( ! is_wp_error( $terms ) && ! empty( $terms ) ) {
-			$case_type = $terms[0]->name;
-		}
+		$case_type = function_exists( 'molochko_review_case_type_label' ) ? molochko_review_case_type_label( $post->ID ) : '';
 		$case_study_archive_url = get_post_type_archive_link( 'molochko-case-study' );
 		$reviews[] = array(
 			'name'                   => is_string( $name ) ? $name : '',

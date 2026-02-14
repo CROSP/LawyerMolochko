@@ -1,7 +1,8 @@
 <?php
 /**
- * Reviews CPT: ensure archive at /reviews/ and register Case Category taxonomy.
- * CPT "reviews" is created in ACF; we only set has_archive and register taxonomy.
+ * Reviews CPT: ensure archive at /reviews/.
+ * CPT "reviews" is created in ACF. Case category is stored via ACF field (Case Category),
+ * not via taxonomy — do not register case_study_category for reviews.
  *
  * @package Molochko
  */
@@ -23,13 +24,13 @@ function molochko_reviews_cpt_archive_args( $args, $post_type ) {
 }
 
 /**
- * Assign Case Category taxonomy (case_study_category) to Reviews CPT.
- * ACF field "case_category" uses case_study_category.
+ * Case study category archive: show only case studies, never reviews.
  */
-add_action( 'init', 'molochko_reviews_use_case_category_taxonomy', 8 );
-function molochko_reviews_use_case_category_taxonomy() {
-	if ( ! post_type_exists( 'reviews' ) || ! taxonomy_exists( 'case_study_category' ) ) {
+add_action( 'pre_get_posts', 'molochko_case_study_category_archive_only_case_studies' );
+function molochko_case_study_category_archive_only_case_studies( $query ) {
+	if ( ! $query->is_main_query() || ! $query->is_tax( 'case_study_category' ) ) {
 		return;
 	}
-	register_taxonomy_for_object_type( 'case_study_category', 'reviews' );
+	$query->set( 'post_type', 'molochko-case-study' );
 }
+

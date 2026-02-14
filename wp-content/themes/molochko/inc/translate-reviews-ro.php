@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	require_once __DIR__ . '/../../../../wp-load.php';
 }
 
-if ( ! function_exists( 'pll_get_post' ) || ! function_exists( 'pll_get_term' ) ) {
+if ( ! function_exists( 'pll_get_post' ) ) {
 	echo "Polylang is required.\n";
 	exit( 1 );
 }
@@ -70,21 +70,7 @@ foreach ( $ua_posts as $post ) {
 		continue;
 	}
 	$ro = $ro_reviews[ $content_ua ];
-	$ro_title = $ro['name'] . ' – ';
-	$terms = get_the_terms( $post->ID, 'case_study_category' );
-	if ( ! is_wp_error( $terms ) && ! empty( $terms ) ) {
-		$term_id_ua = (int) $terms[0]->term_id;
-		$term_id_ro = (int) pll_get_term( $term_id_ua, 'ro' );
-		if ( $term_id_ro ) {
-			$ro_term = get_term( $term_id_ro, 'case_study_category' );
-			if ( $ro_term && ! is_wp_error( $ro_term ) ) {
-				$ro_title .= $ro_term->name;
-			}
-		}
-	}
-	if ( substr( $ro_title, -3 ) === ' – ' ) {
-		$ro_title = rtrim( $ro_title, ' – ' );
-	}
+	$ro_title = $ro['name'];
 
 	wp_update_post( array(
 		'ID'           => $ro_post_id,
@@ -92,14 +78,7 @@ foreach ( $ua_posts as $post ) {
 		'post_content' => $ro['text'],
 	) );
 	update_post_meta( $ro_post_id, 'person_name', $ro['name'] );
-
-	// Assign RO term if available
-	if ( ! is_wp_error( $terms ) && ! empty( $terms ) ) {
-		$term_id_ro = (int) pll_get_term( (int) $terms[0]->term_id, 'ro' );
-		if ( $term_id_ro ) {
-			wp_set_object_terms( $ro_post_id, array( $term_id_ro ), 'case_study_category' );
-		}
-	}
+	// Case category is set via ACF field "case_category" only (Polylang may copy from UA).
 
 	$updated++;
 	echo "Translated RO review: {$ro['name']} (ID: {$ro_post_id}).\n";

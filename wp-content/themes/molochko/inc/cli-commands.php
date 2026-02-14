@@ -723,8 +723,8 @@ switch ( $command ) {
 				continue;
 			}
 			update_post_meta( $post_id, 'person_name', $r['name'] );
-			if ( $term_id ) {
-				wp_set_object_terms( $post_id, array( $term_id ), 'case_study_category' );
+			if ( $term_id && function_exists( 'update_field' ) ) {
+				update_field( 'case_category', $term_id, $post_id );
 			}
 			$created++;
 		}

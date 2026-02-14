@@ -681,7 +681,7 @@ require_once MOLOCHKO_DIR . '/inc/reviews-data.php';
 require_once MOLOCHKO_DIR . '/inc/acf-practice-area-cpt.php';
 // Кейси (Case Studies) — CPT + таксономія категорій.
 require_once MOLOCHKO_DIR . '/inc/acf-case-study-cpt.php';
-// Reviews CPT: archive at /reviews/, use case_study_category for Case Category.
+// Reviews CPT: archive at /reviews/. Case category via ACF field only.
 require_once MOLOCHKO_DIR . '/inc/reviews-cpt.php';
 // Reviews: ACF field "Related Case Study" – link to case study archive.
 require_once MOLOCHKO_DIR . '/inc/acf-reviews-case-study-field.php';

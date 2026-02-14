@@ -32,7 +32,7 @@ if ( $delete_existing ) {
 	if ( class_exists( 'WP_CLI' ) && ! empty( $existing ) ) {
 		WP_CLI::log( 'Deleted ' . count( $existing ) . ' existing case study post(s).' );
 	}
-	// Remove orphaned case_study_category terms (e.g. old English: Car Accident, Health Care Law, Family Law).
+	// Remove orphaned case_study_category terms.
 	if ( taxonomy_exists( 'case_study_category' ) ) {
 		$terms = get_terms( array( 'taxonomy' => 'case_study_category', 'hide_empty' => false ) );
 		if ( ! is_wp_error( $terms ) && ! empty( $terms ) ) {
@@ -149,7 +149,6 @@ foreach ( $items as $item ) {
 
 	$term = term_exists( $cat, 'case_study_category' );
 	if ( 0 === $term || null === $term ) {
-		// Use Latin slug for URLs (Cyr-To-Lat plugin or fallback to name-based slug).
 		$slug = null;
 		if ( function_exists( 'cyr_to_lat' ) && is_object( cyr_to_lat() ) && method_exists( cyr_to_lat(), 'transliterate' ) ) {
 			$slug = sanitize_title( cyr_to_lat()->transliterate( $cat ) );
