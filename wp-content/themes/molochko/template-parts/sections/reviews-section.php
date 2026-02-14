@@ -12,9 +12,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 $reviews = get_query_var( 'args', array() );
 $reviews = isset( $reviews['reviews'] ) && is_array( $reviews['reviews'] ) ? $reviews['reviews'] : array();
 
-$subtitle = __( 'Що кажуть клієнти', 'molochko' );
-$title    = __( 'Відгуки клієнтів', 'molochko' );
-$desc     = __( 'Реальні історії та подяки від тих, хто звертався до нас за юридичною допомогою.', 'molochko' );
+$subtitle = molochko_pll__( 'Що кажуть клієнти' );
+$title    = molochko_pll__( 'Відгуки клієнтів' );
+$desc     = molochko_pll__( 'Реальні історії та подяки від тих, хто звертався до нас за юридичною допомогою.' );
 ?>
 <section id="reviews" class="molochko-reviews">
 	<div class="molochko-reviews-bg" aria-hidden="true"></div>

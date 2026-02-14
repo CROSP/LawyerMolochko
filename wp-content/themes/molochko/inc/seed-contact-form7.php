@@ -29,26 +29,28 @@ $form = WPCF7_ContactForm::get_template( array(
 	'title' => $target_title,
 ) );
 
+// Translatable strings use {Text} for Multilingual Contact Form 7 with Polylang.
+// Translate in WP Admin: Languages → String translations, filter "Contact Form 7".
 $form->set_properties( array(
 	'form' => '
-<label> Ваше ім\'я *
-    [text* your-name autocomplete:name placeholder "Ім\'я"] </label>
+<label> {Ваше ім\'я *}
+    [text* your-name autocomplete:name placeholder "{Ім\'я}"] </label>
 
-<label> Телефон *
-    [text* your-phone placeholder "Номер телефону"] </label>
+<label> {Телефон *}
+    [text* your-phone placeholder "{Номер телефону}"] </label>
 
-<label> Тема (необов\'язково)
-    [text your-subject placeholder "Коротко про ваше питання"] </label>
+<label> {Тема (необов\'язково)}
+    [text your-subject placeholder "{Коротко про ваше питання}"] </label>
 
-<label> Повідомлення *
-    [textarea* your-message placeholder "Опишіть ситуацію або питання"] </label>
+<label> {Повідомлення *}
+    [textarea* your-message placeholder "{Опишіть ситуацію або питання}"] </label>
 
-[submit "Надіслати заявку"]',
+[submit "{Надіслати заявку}"]',
 	'mail' => array(
 		'active' => true,
-		'subject' => '[Молочко] Нова заявка на консультацію: [your-subject]',
+		'subject' => '[Молочко] {Нова заявка на консультацію}: [your-subject]',
 		'sender' => '[your-name] <wordpress@' . ( isset( $_SERVER['HTTP_HOST'] ) ? preg_replace( '/[^a-z0-9.-]/', '', $_SERVER['HTTP_HOST'] ) : 'localhost' ) . '>',
-		'body' => "Ім'я: [your-name]\nТелефон: [your-phone]\nТема: [your-subject]\n\nПовідомлення:\n[your-message]",
+		'body' => "{Ім'я}: [your-name]\n{Телефон}: [your-phone]\n{Тема}: [your-subject]\n\n{Повідомлення}:\n[your-message]",
 		'recipient' => get_option( 'admin_email' ),
 		'additional_headers' => '',
 		'attachments' => '',

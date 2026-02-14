@@ -79,9 +79,9 @@ if ( ! $sub && ! $title && ! $desc ) {
 						<p>
 							<?php if ( $tel_href && $phone ) : ?>
 								<a href="<?php echo esc_url( $tel_href ); ?>"><?php echo esc_html( $phone ); ?></a>
-								<?php echo esc_html( __( 'або', 'molochko' ) ); ?>
+								<?php echo molochko_pll_esc_html__( 'або' ); ?>
 							<?php endif; ?>
-							<a href="<?php echo esc_url( $book_url ); ?>"><?php echo esc_html( __( 'Записатися на консультацію', 'molochko' ) ); ?></a>
+							<a href="<?php echo esc_url( $book_url ); ?>"><?php echo molochko_pll_esc_html__( 'Записатися на консультацію' ); ?></a>
 						</p>
 					</div>
 					<div class="elementor-divider molochko-about-divider"><span class="elementor-divider-separator"></span></div>

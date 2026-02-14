@@ -19,7 +19,7 @@ if ( ! is_array( $args ) ) {
 $posts         = $args['posts'] ?? array();
 $items         = $args['items'] ?? array();
 $use_repeater  = ! empty( $args['use_repeater'] );
-$button_text   = $args['button_text'] ?? __( 'Детальніше', 'molochko' );
+$button_text   = $args['button_text'] ?? molochko_pll__( 'Детальніше' );
 $num_words     = isset( $args['num_words'] ) ? (int) $args['num_words'] : 15;
 $grid_items    = $use_repeater ? $items : $posts;
 
@@ -28,13 +28,13 @@ $heading_subtitle = $fid && function_exists( 'get_field' ) ? get_field( 'practic
 $heading_title    = $fid && function_exists( 'get_field' ) ? get_field( 'practice_areas_title', $fid ) : '';
 $heading_desc     = $fid && function_exists( 'get_field' ) ? get_field( 'practice_areas_description', $fid ) : '';
 if ( ! $heading_subtitle ) {
-	$heading_subtitle = __( 'Наша експертиза', 'molochko' );
+	$heading_subtitle = molochko_pll__( 'Наша експертиза' );
 }
 if ( ! $heading_title ) {
-	$heading_title = __( 'Напрямки юридичної практики', 'molochko' );
+	$heading_title = molochko_pll__( 'Напрямки юридичної практики' );
 }
 if ( ! $heading_desc ) {
-	$heading_desc = __( 'Надаємо кваліфіковану юридичну допомогу у кримінальних справах, спорах через ДТП, військових питаннях, сімейних та трудових спорах. Маємо значний досвід у цих напрямках та гарантуємо індивідуальний підхід до кожної справи.', 'molochko' );
+	$heading_desc = molochko_pll__( 'Надаємо кваліфіковану юридичну допомогу у кримінальних справах, спорах через ДТП, військових питаннях, сімейних та трудових спорах. Маємо значний досвід у цих напрямках та гарантуємо індивідуальний підхід до кожної справи.' );
 }
 ?>
 <section class="molochko-practice-areas elementor-section elementor-section-boxed elementor-section-height-default">

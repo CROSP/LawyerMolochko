@@ -12,10 +12,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 $args  = get_query_var( 'args', array() );
 $posts = isset( $args['posts'] ) && is_array( $args['posts'] ) ? $args['posts'] : array();
 
-$subtitle = __( 'Корисні статті', 'molochko' );
-$title    = __( 'Останні публікації', 'molochko' );
-$desc     = __( 'Про право, ваші права та типові юридичні ситуації — коротко та зрозуміло.', 'molochko' );
-$btn_text = __( 'Усі статті', 'molochko' );
+$subtitle = molochko_pll__( 'Корисні статті' );
+$title    = molochko_pll__( 'Останні публікації' );
+$desc     = molochko_pll__( 'Про право, ваші права та типові юридичні ситуації — коротко та зрозуміло.' );
+$btn_text = molochko_pll__( 'Усі статті' );
 $blog_url = get_permalink( get_option( 'page_for_posts' ) ) ?: home_url( '/blog/' );
 ?>
 <section class="molochko-blog-section">

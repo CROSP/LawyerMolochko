@@ -18,10 +18,10 @@ $mobile_tel     = 'tel:' . preg_replace( '/\D+/', '', $mobile_phone );
 $mobile_consult = function_exists( 'molochko_get_contact_option' ) ? molochko_get_contact_option( 'header_consultation_url' ) : '';
 $mobile_consult = $mobile_consult ?: '#consultation-popup';
 ?>
-<nav class="pxl-hidden-template pos-left pxl-side-mobile" role="dialog" aria-modal="true" aria-label="<?php esc_attr_e( 'Головне меню', 'molochko' ); ?>" aria-hidden="true">
+<nav class="pxl-hidden-template pos-left pxl-side-mobile" role="dialog" aria-modal="true" aria-label="<?php echo molochko_pll_esc_attr__( 'Головне меню' ); ?>" aria-hidden="true">
 	<div class="pxl-panel-header pxl-mobile-panel-header">
 		<div class="panel-header-inner">
-			<button type="button" class="pxl-close pxl-mobile-close" data-target=".pxl-side-mobile" aria-label="<?php esc_attr_e( 'Закрити меню', 'molochko' ); ?>"></button>
+			<button type="button" class="pxl-close pxl-mobile-close" data-target=".pxl-side-mobile" aria-label="<?php echo molochko_pll_esc_attr__( 'Закрити меню' ); ?>"></button>
 		</div>
 	</div>
 	<div class="pxl-panel-content pxl-mobile-panel-content">
@@ -49,7 +49,7 @@ $mobile_consult = $mobile_consult ?: '#consultation-popup';
 		</div>
 		<div class="pxl-mobile-menu-footer">
 			<?php if ( function_exists( 'pll_the_languages' ) ) : ?>
-				<div class="pxl-mobile-lang-switcher" aria-label="<?php esc_attr_e( 'Мова', 'molochko' ); ?>">
+				<div class="pxl-mobile-lang-switcher" aria-label="<?php echo molochko_pll_esc_attr__( 'Мова' ); ?>">
 					<?php echo molochko_pll_current_flag(); ?>
 					<?php
 					pll_the_languages( array(
@@ -68,14 +68,14 @@ $mobile_consult = $mobile_consult ?: '#consultation-popup';
 				<span class="pxl-mobile-phone-number"><?php echo esc_html( $mobile_phone ); ?></span>
 			</a>
 			<a href="<?php echo esc_url( $mobile_consult ); ?>" class="pxl-mobile-consult-btn js-consultation-popup" data-popup="consultation">
-				<?php echo esc_html( __( 'Замовити консультацію', 'molochko' ) ); ?>
+				<?php echo molochko_pll_esc_html__( 'Замовити консультацію' ); ?>
 			</a>
 		</div>
 	</div>
 </nav>
 
 <?php /* Back to top */ ?>
-<a href="#pxl-page" class="pxl-scroll-top" aria-label="<?php esc_attr_e( 'Back to top', 'molochko' ); ?>"><i class="zmdi zmdi-long-arrow-up"></i></a>
+<a href="#pxl-page" class="pxl-scroll-top" aria-label="<?php echo molochko_pll_esc_attr__( 'Back to top' ); ?>"><i class="zmdi zmdi-long-arrow-up"></i></a>
 
 </div><!-- #pxl-page -->
 <?php wp_footer(); ?>

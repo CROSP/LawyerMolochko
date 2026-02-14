@@ -11,7 +11,7 @@ $phone        = function_exists( 'molochko_get_contact_option' ) ? molochko_get_
 $email        = function_exists( 'molochko_get_contact_option' ) ? molochko_get_contact_option( 'header_email' ) : '';
 $address      = function_exists( 'molochko_get_contact_option' ) ? molochko_get_contact_option( 'header_address' ) : '';
 $address_url  = function_exists( 'molochko_get_contact_option' ) ? molochko_get_contact_option( 'header_address_url' ) : '';
-$working_hours = function_exists( 'molochko_get_contact_option' ) ? molochko_get_contact_option( 'header_working_hours' ) : __( 'Пн–Пт: 9:00 – 18:00', 'molochko' );
+$working_hours = function_exists( 'molochko_get_contact_option' ) ? molochko_get_contact_option( 'header_working_hours' ) : molochko_pll__( 'Пн–Пт: 9:00 – 18:00' );
 $cf7_shortcode = function_exists( 'molochko_get_contact_form_shortcode' ) ? molochko_get_contact_form_shortcode() : '';
 $tel_href     = $phone ? 'tel:' . preg_replace( '/\D+/', '', $phone ) : '';
 $map_address  = $address ? rawurlencode( $address ) : rawurlencode( 'Holovna St, 246 П, Chernivtsi, Chernivtsi Oblast, 58000' );
@@ -21,9 +21,9 @@ $map_embed   = 'https://www.google.com/maps?q=' . $map_address . '&output=embed'
 	<!-- Hero -->
 	<section class="molochko-contact-hero">
 		<div class="molochko-contact-hero-inner">
-			<p class="molochko-contact-hero-subtitle"><?php esc_html_e( 'Зв’яжіться з нами', 'molochko' ); ?></p>
-			<h1 class="molochko-contact-hero-title"><?php esc_html_e( 'Контакти', 'molochko' ); ?></h1>
-			<p class="molochko-contact-hero-desc"><?php esc_html_e( 'Маєте питання або потрібна консультація? Напишіть нам або зателефонуйте — ми відповімо якомога швидше.', 'molochko' ); ?></p>
+			<p class="molochko-contact-hero-subtitle"><?php molochko_pll_esc_html_e( 'Зв’яжіться з нами' ); ?></p>
+			<h1 class="molochko-contact-hero-title"><?php molochko_pll_esc_html_e( 'Контакти' ); ?></h1>
+			<p class="molochko-contact-hero-desc"><?php molochko_pll_esc_html_e( 'Маєте питання або потрібна консультація? Напишіть нам або зателефонуйте — ми відповімо якомога швидше.' ); ?></p>
 		</div>
 	</section>
 
@@ -33,13 +33,13 @@ $map_embed   = 'https://www.google.com/maps?q=' . $map_address . '&output=embed'
 			<div class="molochko-contact-grid">
 				<!-- Left: contact info -->
 				<div class="molochko-contact-info">
-					<h2 class="molochko-contact-info-title"><?php esc_html_e( 'Контактна інформація', 'molochko' ); ?></h2>
+					<h2 class="molochko-contact-info-title"><?php molochko_pll_esc_html_e( 'Контактна інформація' ); ?></h2>
 					<ul class="molochko-contact-info-list">
 						<?php if ( $phone ) : ?>
 							<li class="molochko-contact-info-item">
 								<span class="molochko-contact-info-icon" aria-hidden="true"><i class="zmdi zmdi-phone"></i></span>
 								<div>
-									<span class="molochko-contact-info-label"><?php esc_html_e( 'Телефон', 'molochko' ); ?></span>
+									<span class="molochko-contact-info-label"><?php molochko_pll_esc_html_e( 'Телефон' ); ?></span>
 									<a href="<?php echo esc_attr( $tel_href ); ?>" rel="nofollow"><?php echo esc_html( $phone ); ?></a>
 								</div>
 							</li>
@@ -48,7 +48,7 @@ $map_embed   = 'https://www.google.com/maps?q=' . $map_address . '&output=embed'
 							<li class="molochko-contact-info-item">
 								<span class="molochko-contact-info-icon" aria-hidden="true"><i class="zmdi zmdi-email"></i></span>
 								<div>
-									<span class="molochko-contact-info-label"><?php esc_html_e( 'Email', 'molochko' ); ?></span>
+									<span class="molochko-contact-info-label"><?php molochko_pll_esc_html_e( 'Email' ); ?></span>
 									<a href="mailto:<?php echo esc_attr( $email ); ?>"><?php echo esc_html( $email ); ?></a>
 								</div>
 							</li>
@@ -57,7 +57,7 @@ $map_embed   = 'https://www.google.com/maps?q=' . $map_address . '&output=embed'
 							<li class="molochko-contact-info-item">
 								<span class="molochko-contact-info-icon" aria-hidden="true"><i class="zmdi zmdi-pin"></i></span>
 								<div>
-									<span class="molochko-contact-info-label"><?php esc_html_e( 'Адреса', 'molochko' ); ?></span>
+									<span class="molochko-contact-info-label"><?php molochko_pll_esc_html_e( 'Адреса' ); ?></span>
 									<?php if ( $address_url ) : ?>
 										<a href="<?php echo esc_url( $address_url ); ?>" target="_blank" rel="noopener noreferrer"><?php echo esc_html( $address ); ?></a>
 									<?php else : ?>
@@ -70,28 +70,28 @@ $map_embed   = 'https://www.google.com/maps?q=' . $map_address . '&output=embed'
 							<li class="molochko-contact-info-item">
 								<span class="molochko-contact-info-icon" aria-hidden="true"><i class="zmdi zmdi-time"></i></span>
 								<div>
-									<span class="molochko-contact-info-label"><?php esc_html_e( 'Графік роботи', 'molochko' ); ?></span>
+									<span class="molochko-contact-info-label"><?php molochko_pll_esc_html_e( 'Графік роботи' ); ?></span>
 									<span><?php echo esc_html( $working_hours ); ?></span>
 								</div>
 							</li>
 						<?php endif; ?>
 					</ul>
 					<div class="molochko-contact-cta">
-						<p><?php esc_html_e( 'Або натисніть кнопку «Замовити консультацію» у шапці сайту — відкриється форма для швидкого запиту.', 'molochko' ); ?></p>
+						<p><?php molochko_pll_esc_html_e( 'Або натисніть кнопку «Замовити консультацію» у шапці сайту — відкриється форма для швидкого запиту.' ); ?></p>
 					</div>
 				</div>
 
 				<!-- Right: form -->
 				<div class="molochko-contact-form-wrap">
 					<div class="molochko-contact-form-box">
-						<h2 class="molochko-contact-form-title"><?php esc_html_e( 'Напишіть нам', 'molochko' ); ?></h2>
+						<h2 class="molochko-contact-form-title"><?php molochko_pll_esc_html_e( 'Напишіть нам' ); ?></h2>
 						<?php if ( $cf7_shortcode ) : ?>
 							<div class="molochko-contact-form-inner">
 								<?php echo do_shortcode( $cf7_shortcode ); ?>
 							</div>
 						<?php else : ?>
 							<p class="molochko-contact-form-missing">
-								<?php esc_html_e( 'Створіть форму в Контакт → Контактні форми (Contact Form 7) і переконайтесь, що хоча б одна форма опублікована.', 'molochko' ); ?>
+								<?php molochko_pll_esc_html_e( 'Створіть форму в Контакт → Контактні форми (Contact Form 7) і переконайтесь, що хоча б одна форма опублікована.' ); ?>
 							</p>
 						<?php endif; ?>
 					</div>
@@ -101,10 +101,10 @@ $map_embed   = 'https://www.google.com/maps?q=' . $map_address . '&output=embed'
 	</section>
 
 	<!-- Map -->
-	<section class="molochko-contact-map" aria-label="<?php esc_attr_e( 'Карта', 'molochko' ); ?>">
+	<section class="molochko-contact-map" aria-label="<?php echo molochko_pll_esc_attr__( 'Карта' ); ?>">
 		<div class="molochko-contact-map-inner">
 			<iframe
-				title="<?php esc_attr_e( 'Наше розташування на карті', 'molochko' ); ?>"
+				title="<?php echo molochko_pll_esc_attr__( 'Наше розташування на карті' ); ?>"
 				src="<?php echo esc_url( $map_embed ); ?>"
 				width="100%"
 				height="400"

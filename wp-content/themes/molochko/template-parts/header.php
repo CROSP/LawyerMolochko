@@ -9,7 +9,7 @@ $tel_href         = 'tel:' . preg_replace( '/\D+/', '', $phone );
 $email            = molochko_get_contact_option( 'header_email' );
 $address          = molochko_get_contact_option( 'header_address' ) ?: '';
 $address_url      = molochko_get_contact_option( 'header_address_url' );
-$working_hours    = molochko_get_contact_option( 'header_working_hours' ) ?: __( 'Пн–Пт: 9:00 – 18:00', 'molochko' );
+$working_hours    = molochko_get_contact_option( 'header_working_hours' ) ?: molochko_pll__( 'Пн–Пт: 9:00 – 18:00' );
 $consultation_url = molochko_get_contact_option( 'header_consultation_url' ) ?: '#consultation-popup';
 ?>
 <header id="pxl-header" class="pxl-header header-type-el header-layout-35">
@@ -34,11 +34,11 @@ $consultation_url = molochko_get_contact_option( 'header_consultation_url' ) ?: 
 							<?php if ( $address_url ) : ?>
 								<a href="<?php echo esc_url( $address_url ); ?>" target="_blank" rel="nofollow">
 									<span class="elementor-icon-list-icon"><i class="flaticon flaticon-address" aria-hidden="true"></i></span>
-									<span class="elementor-icon-list-text"><?php echo esc_html( $address ?: __( 'Адреса офісу', 'molochko' ) ); ?></span>
+									<span class="elementor-icon-list-text"><?php echo esc_html( $address ?: molochko_pll__( 'Адреса офісу' ) ); ?></span>
 								</a>
 							<?php else : ?>
 								<span class="elementor-icon-list-icon"><i class="flaticon flaticon-address" aria-hidden="true"></i></span>
-								<span class="elementor-icon-list-text"><?php echo esc_html( $address ?: __( 'Адреса офісу', 'molochko' ) ); ?></span>
+								<span class="elementor-icon-list-text"><?php echo esc_html( $address ?: molochko_pll__( 'Адреса офісу' ) ); ?></span>
 							<?php endif; ?>
 						</li>
 						<li class="header-top-item header-top-hours elementor-icon-list-item elementor-inline-item">
@@ -48,7 +48,7 @@ $consultation_url = molochko_get_contact_option( 'header_consultation_url' ) ?: 
 					</ul>
 					<div class="header-consultation-wrap pxl-button-wrapper">
 						<a href="<?php echo esc_url( $consultation_url ); ?>" class="header-consultation-btn btn btn-default icon-ps-left js-consultation-popup" data-popup="consultation">
-							<span class="pxl-button-text"><?php echo esc_html( __( 'Замовити консультацію', 'molochko' ) ); ?></span>
+							<span class="pxl-button-text"><?php echo molochko_pll_esc_html__( 'Замовити консультацію' ); ?></span>
 							<span class="pxl-button-icon pxl-icon left zmdi zmdi-comment-more" aria-hidden="true"></span>
 						</a>
 					</div>
@@ -89,7 +89,7 @@ $consultation_url = molochko_get_contact_option( 'header_consultation_url' ) ?: 
 					</nav>
 					<div class="header-right d-flex align-items-center ms-xl-0 ms-auto">
 						<?php if ( function_exists( 'pll_the_languages' ) ) : ?>
-							<div class="pxl-header-lang-switcher d-none d-xl-flex" aria-label="<?php esc_attr_e( 'Мова', 'molochko' ); ?>">
+							<div class="pxl-header-lang-switcher d-none d-xl-flex" aria-label="<?php echo molochko_pll_esc_attr__( 'Мова' ); ?>">
 								<?php echo molochko_pll_current_flag(); ?>
 								<?php
 								pll_the_languages( array(
@@ -103,14 +103,14 @@ $consultation_url = molochko_get_contact_option( 'header_consultation_url' ) ?: 
 								?>
 							</div>
 						<?php endif; ?>
-						<a class="header-phone d-none d-xl-flex align-items-center" href="<?php echo esc_attr( $tel_href ); ?>" rel="nofollow" aria-label="<?php echo esc_attr( __( 'Зателефонувати', 'molochko' ) ); ?>">
+						<a class="header-phone d-none d-xl-flex align-items-center" href="<?php echo esc_attr( $tel_href ); ?>" rel="nofollow" aria-label="<?php echo molochko_pll_esc_attr__( 'Зателефонувати' ); ?>">
 							<span class="header-phone-link elementor-icon">
 								<i class="flaticon flaticon-phone-call" aria-hidden="true"></i>
 							</span>
 							<span class="header-phone-number heading-title"><?php echo esc_html( $phone ); ?></span>
 						</a>
 						<div class="main-menu-mobile d-xl-none">
-							<button type="button" class="btn-nav-mobile open-menu" data-target=".pxl-side-mobile" aria-label="<?php echo esc_attr( __( 'Відкрити меню', 'molochko' ) ); ?>" aria-expanded="false" aria-controls="mobile-menu-container">
+							<button type="button" class="btn-nav-mobile open-menu" data-target=".pxl-side-mobile" aria-label="<?php echo molochko_pll_esc_attr__( 'Відкрити меню' ); ?>" aria-expanded="false" aria-controls="mobile-menu-container">
 								<span></span><span></span><span></span>
 							</button>
 						</div>

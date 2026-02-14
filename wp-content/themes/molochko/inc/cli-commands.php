@@ -11,6 +11,8 @@
  *   menu-romanian          — Create Romanian primary menu (Acasă, Servicii, Știri, Recenzii, Cazuri, Contacte) and assign to RO
  *   page-slug-home         — Rename front page slug from home-layout-1 to home
  *   polylang-strings-ro    — Translate all Polylang registered strings to Romanian (run after DB backup)
+ *   seed-hero-features     — Seed hero_features ACF repeater on default + Romanian front pages
+ *   seed-about-ro          — Seed About block ACF on Romanian front page with Romanian text
  *   blog-image-obshuk      — Set featured image for "Обшук у помешканні" post (Pexels 7821937, documents)
  *   blog-images-three      — Set featured images for 3 posts by title (TCC, Обшук, Police)
  *   blog-images-five       — Set featured images for 5 legal posts by title (debt, obshuk, criminal, police, TCC)
@@ -26,7 +28,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 global $args;
 
-$valid_commands = array( 'menu-primary-reviews', 'blog-page-and-menu', 'menu-order', 'menu-romanian', 'page-slug-home', 'polylang-strings-ro', 'blog-image-obshuk', 'blog-images-three', 'blog-images-five', 'migrate-reviews' );
+$valid_commands = array( 'menu-primary-reviews', 'blog-page-and-menu', 'menu-order', 'menu-romanian', 'page-slug-home', 'polylang-strings-ro', 'seed-hero-features', 'seed-about-ro', 'blog-image-obshuk', 'blog-images-three', 'blog-images-five', 'migrate-reviews' );
 $command = 'list';
 if ( ! empty( $args[0] ) ) {
 	$command = trim( $args[0] );
@@ -49,6 +51,8 @@ $commands_help = array(
 	'menu-romanian'        => 'Create Romanian primary menu and assign to RO',
 	'page-slug-home'       => 'Rename front page slug home-layout-1 → home',
 	'polylang-strings-ro'  => 'Translate all Polylang strings to Romanian',
+	'seed-hero-features'   => 'Seed hero_features ACF repeater on default + Romanian front pages',
+	'seed-about-ro'       => 'Seed About block ACF on Romanian front page with Romanian text',
 	'blog-image-obshuk'    => 'Set featured image for Обшук у помешканні post',
 	'blog-images-three'    => 'Set images for 3 posts (TCC, Обшук, Police) by title',
 	'blog-images-five'     => 'Set images for 5 legal posts by title',
@@ -359,6 +363,140 @@ switch ( $command ) {
 		break;
 	}
 
+	case 'seed-hero-features': {
+		if ( ! function_exists( 'update_field' ) || ! function_exists( 'get_field' ) ) {
+			echo "ACF is required. Activate Advanced Custom Fields and run again.\n";
+			exit( 1 );
+		}
+		$default_fid = (int) get_option( 'page_on_front' );
+		if ( ! $default_fid || ! get_post( $default_fid ) ) {
+			echo "No front page set (Settings → Reading). Set a front page first.\n";
+			exit( 1 );
+		}
+		$ro_fid = 0;
+		if ( function_exists( 'pll_get_post' ) ) {
+			$ro_fid = (int) pll_get_post( $default_fid, 'ro' );
+		}
+		$home_ua = home_url();
+		$home_ro = function_exists( 'pll_home_url' ) ? pll_home_url( 'ro' ) : ( $home_ua . '/ro/' );
+
+		// Try to copy icon_image and image from old fancy_boxes so we don't lose media.
+		$old_fancy = get_field( 'fancy_boxes', $default_fid );
+		$old_ro_fancy = $ro_fid ? get_field( 'fancy_boxes', $ro_fid ) : null;
+		$get_media = function( $rows, $index ) {
+			if ( empty( $rows ) || ! is_array( $rows ) || ! isset( $rows[ $index ] ) ) {
+				return array( 'icon' => 0, 'image' => 0 );
+			}
+			$r = $rows[ $index ];
+			$icon = 0;
+			$img  = 0;
+			if ( ! empty( $r['icon_image'] ) ) {
+				$icon = is_array( $r['icon_image'] ) ? ( (int) ( $r['icon_image']['id'] ?? $r['icon_image'] ) ) : (int) $r['icon_image'];
+			}
+			if ( ! empty( $r['image'] ) ) {
+				$img = is_array( $r['image'] ) ? ( (int) ( $r['image']['id'] ?? $r['image'] ) ) : (int) $r['image'];
+			}
+			return array( 'icon' => $icon ?: 0, 'image' => $img ?: 0 );
+		};
+
+		$m0 = $get_media( $old_fancy, 0 );
+		$m1 = $get_media( $old_fancy, 1 );
+		$m2 = $get_media( $old_fancy, 2 );
+		$ua_boxes = array(
+			array(
+				'title'       => 'Безкоштовна консультація',
+				'icon'        => $m0['icon'],
+				'description' => 'Якщо вам потрібна допомога юриста, ми надамо безкоштовну консультацію незалежно від складності справи. Досвід, прозорість, результат.',
+				'image'       => $m0['image'],
+				'link'        => array( 'url' => $home_ua . '/#contact', 'title' => "Зв'язатися", 'target' => '_self' ),
+			),
+			array(
+				'title'       => '20 років досвіду',
+				'icon'        => $m1['icon'],
+				'description' => 'Найкращі юристи з багаторічним досвідом. Поєднуємо експертизу з індивідуальним підходом до кожної справи. Гарантуємо якість та результат.',
+				'image'       => $m1['image'],
+				'link'        => array( 'url' => $home_ua . '/#about', 'title' => 'Детальніше', 'target' => '_self' ),
+			),
+			array(
+				'title'       => 'Нагороди та сертифікати',
+				'icon'        => $m2['icon'],
+				'description' => 'Ми отримали визнання та довіру клієнтів. Прозорість, чесність та ефективність — наші принципи роботи в кожній справі.',
+				'image'       => $m2['image'],
+				'link'        => array( 'url' => $home_ua . '/#about', 'title' => 'Детальніше', 'target' => '_self' ),
+			),
+		);
+		$rm0 = $get_media( $old_ro_fancy, 0 );
+		$rm1 = $get_media( $old_ro_fancy, 1 );
+		$rm2 = $get_media( $old_ro_fancy, 2 );
+		// Romanian: use RO old media if any, else same as UA so images are shared.
+		$ro_boxes = array(
+			array(
+				'title'       => 'Consultație gratuită',
+				'icon'        => $rm0['icon'] ?: $m0['icon'],
+				'description' => 'Dacă aveți nevoie de ajutor juridic, vă oferim o consultație gratuită indiferent de complexitatea cauzei. Experiență, transparență, rezultat.',
+				'image'       => $rm0['image'] ?: $m0['image'],
+				'link'        => array( 'url' => $home_ro . '#contact', 'title' => 'Contactați-ne', 'target' => '_self' ),
+			),
+			array(
+				'title'       => '20 de ani experiență',
+				'icon'        => $rm1['icon'] ?: $m1['icon'],
+				'description' => 'Cei mai buni avocați cu experiență de ani. Combinăm expertiza cu o abordare individuală pentru fiecare cauză. Garanție de calitate și rezultat.',
+				'image'       => $rm1['image'] ?: $m1['image'],
+				'link'        => array( 'url' => $home_ro . '#about', 'title' => 'Detalii', 'target' => '_self' ),
+			),
+			array(
+				'title'       => 'Premii și certificate',
+				'icon'        => $rm2['icon'] ?: $m2['icon'],
+				'description' => 'Am câștigat recunoașterea și încrederea clienților. Transparență, onestitate și eficiență — principiile noastre în fiecare cauză.',
+				'image'       => $rm2['image'] ?: $m2['image'],
+				'link'        => array( 'url' => $home_ro . '#about', 'title' => 'Detalii', 'target' => '_self' ),
+			),
+		);
+		update_field( 'hero_features', $ua_boxes, $default_fid );
+		echo "Seeded hero_features on default front page (ID {$default_fid}).\n";
+		if ( $ro_fid && get_post( $ro_fid ) ) {
+			update_field( 'hero_features', $ro_boxes, $ro_fid );
+			echo "Seeded hero_features on Romanian front page (ID {$ro_fid}).\n";
+		} else {
+			echo "Romanian front page not found; only default page was updated.\n";
+		}
+		break;
+	}
+
+	case 'seed-about-ro': {
+		if ( ! function_exists( 'update_field' ) || ! function_exists( 'get_field' ) ) {
+			echo "ACF is required. Activate Advanced Custom Fields and run again.\n";
+			exit( 1 );
+		}
+		$default_fid = (int) get_option( 'page_on_front' );
+		if ( ! $default_fid || ! get_post( $default_fid ) ) {
+			echo "No front page set (Settings → Reading). Set a front page first.\n";
+			exit( 1 );
+		}
+		$ro_fid = 0;
+		if ( function_exists( 'pll_get_post' ) ) {
+			$ro_fid = (int) pll_get_post( $default_fid, 'ro' );
+		}
+		if ( ! $ro_fid || ! get_post( $ro_fid ) ) {
+			echo "Romanian front page not found. Add Romanian in Polylang and set the front page translation.\n";
+			exit( 1 );
+		}
+		$bg_id    = get_field( 'about_image_bg', $default_fid );
+		$person   = get_field( 'about_image_person', $default_fid );
+		$bg_id    = is_array( $bg_id ) ? (int) ( $bg_id['id'] ?? $bg_id ) : (int) $bg_id;
+		$person_id = is_array( $person ) ? (int) ( $person['id'] ?? $person ) : (int) $person;
+		update_field( 'about_image_bg', $bg_id ?: null, $ro_fid );
+		update_field( 'about_image_person', $person_id ?: null, $ro_fid );
+		update_field( 'about_subtitle', 'Despre birou', $ro_fid );
+		update_field( 'about_title', 'Pasiune pentru dreptate. Experiență pentru victorie.', $ro_fid );
+		update_field( 'about_description', 'În Biroul de Avocatură am creat o echipă de juriști care combină cunoștințe profunde, experiență practică și dorința sinceră de a-i ajuta pe clienți în situații juridice dificile.<br><br>Cultura noastră se bazează pe încredere, transparență și responsabilitate. Lucrăm zilnic pentru ca clientul să se simtă sprijinit în fiecare etapă — de la prima consultație până la încheierea cauzei.', $ro_fid );
+		update_field( 'about_cta_line', 'Sună-ne 24/7. Să luptăm împreună.', $ro_fid );
+		update_field( 'about_name', 'Molochko Taras Viktorovici', $ro_fid );
+		update_field( 'about_role', 'președinte', $ro_fid );
+		echo "Seeded About block on Romanian front page (ID {$ro_fid}).\n";
+		break;
+	}
+
 	case 'polylang-strings-ro': {
 		if ( ! function_exists( 'pll_current_language' ) || ! PLL() || ! PLL()->model ) {
 			echo "Polylang is required. Activate Polylang and run again.\n";
@@ -398,12 +536,14 @@ switch ( $command ) {
 			}
 			$sources = array_keys( $all_sources );
 		}
+		require_once __DIR__ . '/polylang-strings-ro.php';
+		$map = molochko_polylang_strings_ro_map();
+		// Include all map keys so CF7 and other theme strings get RO translations even if not yet registered.
+		$sources = array_values( array_unique( array_merge( $sources, array_keys( $map ) ) ) );
 		if ( empty( $sources ) ) {
 			echo "No Polylang strings found in DB. Open Languages → String translations, click Save once, then run this command again.\n";
 			exit( 1 );
 		}
-		require_once __DIR__ . '/polylang-strings-ro.php';
-		$map = molochko_polylang_strings_ro_map();
 		$ro_strings = array();
 		$mapped = 0;
 		foreach ( $sources as $src ) {

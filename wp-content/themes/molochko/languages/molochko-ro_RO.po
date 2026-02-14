@@ -90,6 +90,13 @@ msgstr "Locația noastră pe hartă"
 msgid "Залиште заявку — ми передзвонимо або напишемо вам найближчим часом."
 msgstr "Lăsați o solicitare — vă sunăm sau vă scriem în cel mai scurt timp."
 
+# Front page contact (conversion-focused)
+msgid "Отримайте безкоштовну консультацію"
+msgstr "Obțineți o consultație gratuită"
+
+msgid "Опишіть ситуацію в кількох словах — передзвонимо протягом робочого дня та оцінимо перспективи справи. Конфіденційно, без зобов'язань."
+msgstr "Descrieți situația în câteva cuvinte — vă sunăm în timpul zilei de lucru și evaluăm perspectivele cauzei. Confidențial, fără obligații."
+
 # Common
 msgid "Детальніше"
 msgstr "Detalii"
@@ -224,6 +231,28 @@ msgstr "Toate articolele"
 
 msgid "Читати далі"
 msgstr "Citește mai mult"
+
+# Fancy boxes (front page default)
+msgid "Безкоштовна консультація"
+msgstr "Consultație gratuită"
+
+msgid "Якщо вам потрібна допомога юриста, ми надамо безкоштовну консультацію незалежно від складності справи. Досвід, прозорість, результат."
+msgstr "Dacă aveți nevoie de ajutor juridic, vă oferim o consultație gratuită indiferent de complexitatea cauzei. Experiență, transparență, rezultat."
+
+msgid "Зв'язатися"
+msgstr "Contactați-ne"
+
+msgid "20 років досвіду"
+msgstr "20 de ani experiență"
+
+msgid "Найкращі юристи з багаторічним досвідом. Поєднуємо експертизу з індивідуальним підходом до кожної справи. Гарантуємо якість та результат."
+msgstr "Cei mai buni avocați cu experiență de ani. Combinăm expertiza cu o abordare individuală pentru fiecare cauză. Garanție de calitate și rezultat."
+
+msgid "Нагороди та сертифікати"
+msgstr "Premii și certificate"
+
+msgid "Ми отримали визнання та довіру клієнтів. Прозорість, чесність та ефективність — наші принципи роботи в кожній справі."
+msgstr "Am câștigat recunoașterea și încrederea clienților. Transparență, onestitate și eficiență — principiile noastre în fiecare cauză."
 
 # About / CTA
 msgid "або"

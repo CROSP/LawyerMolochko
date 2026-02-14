@@ -36,7 +36,7 @@ $case_study_archive_url  = isset( $review['case_study_archive_url'] ) ? $review[
 		</footer>
 		<?php if ( $case_study_archive_url ) : ?>
 			<a href="<?php echo esc_url( $case_study_archive_url ); ?>" class="molochko-review-card-archive-link">
-				<?php esc_html_e( 'Переглянути кейси', 'molochko' ); ?>
+				<?php molochko_pll_esc_html_e( 'Переглянути кейси' ); ?>
 				<i class="zmdi zmdi-long-arrow-right" aria-hidden="true"></i>
 			</a>
 		<?php endif; ?>

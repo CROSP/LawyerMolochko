@@ -165,5 +165,19 @@ function molochko_polylang_strings_ro_map() {
 		'Напрямки практики' => 'Domenii de practică',
 		'Напрямок практики' => 'Domeniu de practică',
 		'Категорії' => 'Categorii',
+		// Contact Form 7 – Multilingual CF7 with Polylang (filter "Contact Form 7" in String translations)
+		'Ваше ім\'я *' => 'Numele tău *',
+		'Телефон *' => 'Telefon *',
+		'Тема (необов\'язково)' => 'Subiect (opțional)',
+		'Повідомлення *' => 'Mesaj *',
+		'Ім\'я' => 'Nume',
+		'Номер телефону' => 'Număr de telefon',
+		'Коротко про ваше питання' => 'Pe scurt despre problema ta',
+		'Опишіть ситуацію або питання' => 'Descrieți situația sau întrebarea',
+		'Надіслати заявку' => 'Trimite cererea',
+		'Нова заявка на консультацію' => 'Cerere nouă de consultanță',
+		'Телефон' => 'Telefon',
+		'Тема' => 'Subiect',
+		'Повідомлення' => 'Mesaj',
 	);
 }

@@ -39,6 +39,44 @@ function molochko_setup() {
 }
 
 /**
+ * Use Polylang for translations when active; otherwise theme text domain.
+ * When PLL returns the source (no translation), fall back to theme .po so RO strings
+ * like "або" / "Записатися на консультацію" show in Romanian via molochko-ro_RO.mo.
+ * Use these everywhere instead of __( '...', 'molochko' ) / esc_html_e( '...', 'molochko' ).
+ */
+function molochko_pll__( $string ) {
+	if ( ! function_exists( 'pll__' ) ) {
+		return __( $string, 'molochko' );
+	}
+	$translated = pll__( $string );
+	// PLL returns source when string is not in String translations; use theme .po.
+	if ( $translated === $string || $translated === '' ) {
+		$translated = __( $string, 'molochko' );
+	}
+	return $translated;
+}
+
+function molochko_pll_e( $string ) {
+	if ( function_exists( 'pll_e' ) ) {
+		pll_e( $string );
+	} else {
+		_e( $string, 'molochko' );
+	}
+}
+
+function molochko_pll_esc_html__( $string ) {
+	return esc_html( molochko_pll__( $string ) );
+}
+
+function molochko_pll_esc_html_e( $string ) {
+	echo molochko_pll_esc_html__( $string );
+}
+
+function molochko_pll_esc_attr__( $string ) {
+	return esc_attr( molochko_pll__( $string ) );
+}
+
+/**
  * Force-load theme Romanian .mo when current language is Romanian.
  * Ensures strings like "Замовити консультацію" translate to "Comandă consultanță" on /ro/ pages.
  *
@@ -152,11 +190,24 @@ function molochko_fix_attachment_url_single( $url, $attachment_id ) {
 	return molochko_normalize_media_url( $url );
 }
 
+/**
+ * Root site URL for media (wp-content/uploads). Uses current request host (including port)
+ * so images load when the site is accessed via a non-default port (e.g. :8443).
+ * Avoids language path (e.g. /ro/home/) so media always points to root.
+ */
+function molochko_get_media_root_url() {
+	if ( ! empty( $_SERVER['HTTP_HOST'] ) && is_string( $_SERVER['HTTP_HOST'] ) ) {
+		$scheme = is_ssl() ? 'https' : 'http';
+		return $scheme . '://' . $_SERVER['HTTP_HOST'] . '/';
+	}
+	return untrailingslashit( get_option( 'siteurl' ) ) . '/';
+}
+
 function molochko_normalize_media_url( $url ) {
 	if ( ! is_string( $url ) || '' === $url ) {
 		return $url;
 	}
-	$current = home_url( '/' );
+	$current = molochko_get_media_root_url();
 	$bases   = array(
 		'https://lawyer-molochko.com.ua:8443',
 		'http://lawyer-molochko.com.ua:8443',
@@ -164,11 +215,19 @@ function molochko_normalize_media_url( $url ) {
 		'http://lawyermolochko.ddev.site:8443',
 		'https://lawyermolochko.ddev.site:8080',
 		'http://lawyermolochko.ddev.site:8080',
+		// No-port variants (e.g. WordPress srcset can emit these; must match siteurl so images load on :8443).
+		'https://lawyermolochko.ddev.site',
+		'http://lawyermolochko.ddev.site',
 	);
 	foreach ( $bases as $base ) {
 		if ( strpos( $url, $base ) === 0 ) {
 			$path = substr( $url, strlen( $base ) );
 			$path = '/' . ltrim( $path, '/' );
+			// Media lives at root: strip any language path (e.g. /ro/home/) so URL is .../wp-content/uploads/...
+			$wp_content = strpos( $path, '/wp-content/' );
+			if ( $wp_content !== false ) {
+				$path = substr( $path, $wp_content );
+			}
 			return rtrim( $current, '/' ) . $path;
 		}
 	}
@@ -473,7 +532,7 @@ function molochko_practice_areas_section() {
 		'order'          => 'ASC',
 	) );
 	$posts       = $query->have_posts() ? $query->posts : array();
-	$button_text = __( 'Детальніше', 'molochko' );
+	$button_text = molochko_pll__( 'Детальніше' );
 	$num_words   = 15;
 
 	set_query_var( 'args', array(
@@ -519,6 +578,15 @@ function molochko_reviews_section() {
  */
 function molochko_law_talk_section() {
 	get_template_part( 'template-parts/sections/law-talk-section' );
+}
+
+/**
+ * Front page contact form section (id="contact"). Dark CTA strip + light form card.
+ */
+function molochko_front_contact_section() {
+	$cf7_shortcode = function_exists( 'molochko_get_contact_form_shortcode' ) ? molochko_get_contact_form_shortcode() : '';
+	set_query_var( 'args', array( 'cf7_shortcode' => $cf7_shortcode ) );
+	get_template_part( 'template-parts/sections/front-contact-section' );
 }
 
 /**

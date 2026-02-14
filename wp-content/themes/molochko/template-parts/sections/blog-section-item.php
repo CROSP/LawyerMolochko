@@ -37,7 +37,7 @@ $excerpt   = has_excerpt( $post->ID ) ? get_the_excerpt( $post->ID ) : wp_trim_w
 			<?php if ( $excerpt ) : ?>
 				<p class="blog-section-card-excerpt"><?php echo esc_html( $excerpt ); ?></p>
 			<?php endif; ?>
-			<a href="<?php echo esc_url( $permalink ); ?>" class="blog-section-card-link"><?php esc_html_e( 'Читати далі', 'molochko' ); ?></a>
+			<a href="<?php echo esc_url( $permalink ); ?>" class="blog-section-card-link"><?php molochko_pll_esc_html_e( 'Читати далі' ); ?></a>
 		</div>
 	</article>
 </div>
