@@ -21,12 +21,15 @@ if ( $default_fid && function_exists( 'pll_get_post' ) && function_exists( 'pll_
 $hero_shortcode = $fid ? get_field( 'hero_slider_shortcode', $fid ) : '';
 $hero_features  = $fid ? get_field( 'hero_features', $fid ) : array();
 
-// For translated front page (e.g. Romanian), fall back to default language's icon/image when current has none (media is shared).
-$default_hero_features = ( $default_fid && $fid !== $default_fid ) ? get_field( 'hero_features', $default_fid ) : array();
-
-if ( empty( $hero_shortcode ) ) {
+// Romanian front page: use RO slider alias (slider-1-1). UA uses slider-1 or ACF value.
+if ( function_exists( 'pll_current_language' ) && pll_current_language( 'slug' ) === 'ro' ) {
+	$hero_shortcode = '[rev_slider alias="slider-1-1"][/rev_slider]';
+} elseif ( empty( $hero_shortcode ) ) {
 	$hero_shortcode = '[rev_slider alias="slider-1"]';
 }
+
+// For translated front page (e.g. Romanian), fall back to default language's icon/image when current has none (media is shared).
+$default_hero_features = ( $default_fid && $fid !== $default_fid ) ? get_field( 'hero_features', $default_fid ) : array();
 
 // Default flaticon classes per row when no icon image is set (calling, reliability, medal — theme only has these for layout-4).
 $default_icon_classes = array( 'flaticon flaticon-calling', 'flaticon flaticon-reliability', 'flaticon flaticon-medal' );
@@ -75,7 +78,7 @@ if ( ! empty( $hero_features ) && is_array( $hero_features ) ) {
 }
 ?>
 
-<!-- Hero: Rev Slider or custom shortcode -->
+<!-- Hero: Rev Slider or custom shortcode (RO = slider-1-1, UA = slider-1 or ACF) -->
 <section class="molochko-hero section-full">
 	<?php echo molochko_fix_content_image_urls( do_shortcode( $hero_shortcode ) ); ?>
 </section>

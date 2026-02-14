@@ -111,6 +111,13 @@ msgstr "Domenii de practică juridică"
 msgid "Надаємо кваліфіковану юридичну допомогу у кримінальних справах, спорах через ДТП, військових питаннях, сімейних та трудових спорах. Маємо значний досвід у цих напрямках та гарантуємо індивідуальний підхід до кожної справи."
 msgstr "Oferim asistență juridică calificată în materie penală, litigii din accidente rutiere, probleme militare, dispute familiale și de muncă. Avem experiență semnificativă în aceste domenii și garantăm o abordare individuală pentru fiecare caz."
 
+# Practice areas archive (hero title/description)
+msgid "Напрямки практики"
+msgstr "Domenii de practică"
+
+msgid "Надаємо кваліфіковану юридичну допомогу у різних галузях права. Кримінальні справи, ДТП, військові питання, сімейні та трудові спори, бізнес — індивідуальний підхід до кожної справи."
+msgstr "Oferim asistență juridică calificată în diverse domenii ale dreptului. Materie penală, accidente rutiere, probleme militare, dispute familiale și de muncă, business — abordare individuală pentru fiecare caz."
+
 # Case studies section
 msgid "Практичний досвід"
 msgstr "Experiență practică"

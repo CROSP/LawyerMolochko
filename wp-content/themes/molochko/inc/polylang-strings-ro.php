@@ -131,6 +131,8 @@ function molochko_polylang_strings_ro_map() {
 		'#contact' => '#contact',
 		'Телефон, email, адреса, графік, кнопка консультації. Зберігаються в ACF Options (Контакти). Переклади — Polylang.' => 'Telefon, email, adresă, program, buton consultanță. Stocate în ACF Options (Contacte). Traduceri — Polylang.',
 		'Контакти' => 'Contacte',
+		'Зв\'яжіться з нами' => 'Contactați-ne',
+		"Зв\xE2\x80\x99яжіться з нами" => 'Contactați-ne', // U+2019 apostrophe (as in template)
 		'Замовити консультацію' => 'Comandă consultanță',
 		'Адреса офісу' => 'Adresa biroului',
 		// URL slugs
@@ -220,5 +222,11 @@ function molochko_polylang_strings_ro_map() {
 		'Телефон' => 'Telefon',
 		'Тема' => 'Subiect',
 		'Повідомлення' => 'Mesaj',
+		// Hero / slider (front page)
+		'ПРОФЕСІЙНА ЮРИДИЧНА ДОПОМОГА' => 'ASISTENȚĂ JURIDICĂ PROFESIONALĂ',
+		'Ми не зупиняємося' => 'Nu ne oprim',
+		'Досвід, прозорість, результат. Наша команда професійних юристів захищає інтереси фізичних осіб та бізнесу, надаючи комплексну юридичну підтримку від консультації до представництва в суді.' => 'Experiență, transparență, rezultat. Echipa noastră de avocați vă apără interesele persoanelor fizice și ale companiilor, oferind asistență juridică de la consultație până la reprezentare în instanță.',
+		'НАПРЯМКИ РОБОТИ' => 'DOMENII DE ACTIVITATE',
+		'ПРО БЮРО' => 'DESPRE BIROU',
 	);
 }

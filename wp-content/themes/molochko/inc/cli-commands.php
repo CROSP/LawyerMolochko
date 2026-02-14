@@ -9,6 +9,7 @@
  *   blog-page-and-menu     — Rename blog page slug to "blog", add Новини to menu
  *   menu-order             — Set Primary menu order: Головна, Послуги, Новини, Відгуки, Кейси, Контакти
  *   menu-romanian          — Create Romanian primary menu (Acasă, Servicii, Știri, Recenzii, Cazuri, Contacte) and assign to RO
+ *   menu-romanian-fix-links — Fix Romanian menu item URLs to proper RO pages/archives
  *   page-slug-home         — Rename front page slug from home-layout-1 to home
  *   polylang-strings-ro    — Translate all Polylang registered strings to Romanian (run after DB backup)
  *   seed-hero-features     — Seed hero_features ACF repeater on default + Romanian front pages
@@ -28,7 +29,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 global $args;
 
-$valid_commands = array( 'menu-primary-reviews', 'blog-page-and-menu', 'menu-order', 'menu-romanian', 'page-slug-home', 'polylang-strings-ro', 'seed-hero-features', 'seed-about-ro', 'blog-image-obshuk', 'blog-images-three', 'blog-images-five', 'migrate-reviews' );
+$valid_commands = array( 'menu-primary-reviews', 'blog-page-and-menu', 'menu-order', 'menu-romanian', 'menu-romanian-fix-links', 'page-slug-home', 'polylang-strings-ro', 'seed-hero-features', 'seed-about-ro', 'blog-image-obshuk', 'blog-images-three', 'blog-images-five', 'migrate-reviews' );
 $command = 'list';
 if ( ! empty( $args[0] ) ) {
 	$command = trim( $args[0] );
@@ -49,6 +50,7 @@ $commands_help = array(
 	'blog-page-and-menu'   => 'Rename blog page to slug "blog", add Новини to menu',
 	'menu-order'           => 'Primary menu order: Головна, Послуги, Новини, Відгуки, Кейси, Контакти',
 	'menu-romanian'        => 'Create Romanian primary menu and assign to RO',
+	'menu-romanian-fix-links' => 'Fix Romanian menu item URLs to proper RO links',
 	'page-slug-home'       => 'Rename front page slug home-layout-1 → home',
 	'polylang-strings-ro'  => 'Translate all Polylang strings to Romanian',
 	'seed-hero-features'   => 'Seed hero_features ACF repeater on default + Romanian front pages',
@@ -65,6 +67,64 @@ function molochko_cli_require_media() {
 		require_once ABSPATH . 'wp-admin/includes/file.php';
 		require_once ABSPATH . 'wp-admin/includes/image.php';
 	}
+}
+
+/**
+ * Resolve correct Romanian URL for a UA menu item (custom or post type).
+ * Used for RO menu so links point to RO pages/archives, not UA paths with /ro/ prefix.
+ *
+ * @param object $item Nav menu item (from wp_get_nav_menu_items).
+ * @return string RO URL.
+ */
+function molochko_cli_ro_url_for_uk_menu_item( $item ) {
+	if ( ! function_exists( 'pll_home_url' ) || ! function_exists( 'pll_get_post' ) ) {
+		return $item->url;
+	}
+	$ro_home = pll_home_url( 'ro' );
+	// RO language root (e.g. /ro/) for archive links; pll_home_url('ro') may be /ro/home/.
+	$ro_path = trim( (string) wp_parse_url( $ro_home, PHP_URL_PATH ), '/' );
+	$ro_lang_root = $ro_path ? trailingslashit( home_url( explode( '/', $ro_path )[0] ) ) : $ro_home;
+	if ( $item->type === 'post_type' && ! empty( $item->object_id ) ) {
+		$ro_id = pll_get_post( (int) $item->object_id, 'ro' );
+		return $ro_id ? get_permalink( $ro_id ) : $ro_home;
+	}
+	$url = $item->url;
+	$home = home_url( '/' );
+	if ( $url === $home || $url === rtrim( $home, '/' ) ) {
+		return $ro_home;
+	}
+	$path = trim( (string) wp_parse_url( $url, PHP_URL_PATH ), '/' );
+	// Archive URLs: use RO language root + slug (e.g. /ro/reviews/, /ro/case-study/, /ro/practice-area/).
+	if ( $path === 'reviews' ) {
+		return trailingslashit( $ro_lang_root . 'reviews' );
+	}
+	if ( $path === 'case-study' ) {
+		return trailingslashit( $ro_lang_root . 'case-study' );
+	}
+	if ( $path === 'practice-area' ) {
+		return trailingslashit( $ro_lang_root . 'practice-area' );
+	}
+	// Blog: RO posts page permalink.
+	if ( $path === 'blog' ) {
+		$blog_id = (int) get_option( 'page_for_posts' );
+		if ( $blog_id ) {
+			$ro_id = pll_get_post( $blog_id, 'ro' );
+			if ( $ro_id ) {
+				return get_permalink( $ro_id );
+			}
+		}
+		return trailingslashit( $ro_lang_root . 'blog' );
+	}
+	// Page links: resolve UA page -> RO translation permalink.
+	$post_id = url_to_postid( $url );
+	if ( $post_id ) {
+		$ro_id = pll_get_post( $post_id, 'ro' );
+		if ( $ro_id ) {
+			return get_permalink( $ro_id );
+		}
+	}
+	// Fallback: RO home + path (e.g. /ro/posluhy/ if no RO page found).
+	return $path ? trailingslashit( $ro_home . $path ) : $ro_home;
 }
 
 switch ( $command ) {
@@ -216,19 +276,7 @@ switch ( $command ) {
 					if ( $title === 'Головна' ) {
 						continue;
 					}
-					if ( $item->type === 'post_type' && ! empty( $item->object_id ) ) {
-						$tr_id = pll_get_post( (int) $item->object_id, 'ro' );
-						$ro_urls[ $title ] = $tr_id ? get_permalink( $tr_id ) : pll_home_url( 'ro' );
-					} else {
-						$home = home_url( '/' );
-						$ro_home = pll_home_url( 'ro' );
-						$url = $item->url;
-						if ( $url === $home || $url === rtrim( $home, '/' ) ) {
-							$ro_urls[ $title ] = $ro_home;
-						} else {
-							$ro_urls[ $title ] = $ro_home . wp_parse_url( $url, PHP_URL_PATH ) ?: '';
-						}
-					}
+					$ro_urls[ $title ] = molochko_cli_ro_url_for_uk_menu_item( $item );
 				}
 			}
 		}
@@ -282,6 +330,85 @@ switch ( $command ) {
 		$nav_menus[ $theme ]['primary']['ro'] = (int) $menu_term_id;
 		PLL()->options->set( 'nav_menus', $nav_menus );
 		echo "Romanian primary menu created and assigned to location 'primary' for language 'ro'.\n";
+		break;
+	}
+
+	case 'menu-romanian-fix-links': {
+		if ( ! function_exists( 'pll_home_url' ) || ! function_exists( 'pll_get_post' ) || ! PLL() || ! PLL()->options ) {
+			echo "Polylang is required.\n";
+			exit( 1 );
+		}
+		$theme = get_option( 'stylesheet' );
+		$nav_menus = PLL()->options->get( 'nav_menus' );
+		$ro_menu_id = isset( $nav_menus[ $theme ]['primary']['ro'] ) ? (int) $nav_menus[ $theme ]['primary']['ro'] : 0;
+		if ( ! $ro_menu_id ) {
+			echo "Romanian primary menu not assigned. Run menu-romanian first.\n";
+			exit( 1 );
+		}
+		$ro_titles = array(
+			'Головна'   => 'Acasă',
+			'Послуги'   => 'Servicii',
+			'Новини'    => 'Știri',
+			'Відгуки'   => 'Recenzii',
+			'Кейси'     => 'Cazuri',
+			'Контакти'  => 'Contacte',
+		);
+		$uk_menu_id = 53;
+		$uk_items = wp_get_nav_menu_items( $uk_menu_id );
+		$ro_url_by_ro_title = array(
+			'Acasă'     => pll_home_url( 'ro' ),
+			'Servicii'  => pll_home_url( 'ro' ),
+			'Știri'     => pll_home_url( 'ro' ),
+			'Recenzii'  => pll_home_url( 'ro' ),
+			'Cazuri'    => pll_home_url( 'ro' ),
+			'Contacte'  => pll_home_url( 'ro' ),
+		);
+		foreach ( $ro_titles as $uk_title => $ro_title ) {
+			if ( $uk_title === 'Головна' ) {
+				$ro_url_by_ro_title[ $ro_title ] = pll_home_url( 'ro' );
+				continue;
+			}
+			if ( $uk_items ) {
+				foreach ( $uk_items as $item ) {
+					if ( $item->menu_item_parent != 0 ) {
+						continue;
+					}
+					if ( trim( $item->title ) === $uk_title ) {
+						$ro_url_by_ro_title[ $ro_title ] = molochko_cli_ro_url_for_uk_menu_item( $item );
+						break;
+					}
+				}
+			}
+		}
+		$ro_items = wp_get_nav_menu_items( $ro_menu_id );
+		if ( ! $ro_items ) {
+			echo "No items in Romanian menu.\n";
+			break;
+		}
+		$updated = 0;
+		foreach ( $ro_items as $it ) {
+			$title = trim( $it->title );
+			$expected_url = isset( $ro_url_by_ro_title[ $title ] ) ? $ro_url_by_ro_title[ $title ] : null;
+			if ( $expected_url === null ) {
+				continue;
+			}
+			$current = rtrim( $it->url, '/' );
+			$expected = rtrim( $expected_url, '/' );
+			if ( $current !== $expected ) {
+				wp_update_nav_menu_item( $ro_menu_id, (int) $it->db_id, array(
+					'menu-item-db-id'       => (int) $it->db_id,
+					'menu-item-type'        => $it->type,
+					'menu-item-url'         => $expected_url,
+					'menu-item-title'       => $it->title,
+					'menu-item-position'    => (int) $it->menu_order,
+					'menu-item-parent-id'   => (int) $it->menu_item_parent,
+					'menu-item-status'      => 'publish',
+				) );
+				$updated++;
+				echo "  {$title}: {$it->url} → {$expected_url}\n";
+			}
+		}
+		echo $updated ? "Updated {$updated} Romanian menu link(s).\n" : "Romanian menu links already correct.\n";
 		break;
 	}
 
