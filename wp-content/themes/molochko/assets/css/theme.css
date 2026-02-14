@@ -255,6 +255,69 @@ body.front-page .pxl-main {
 .header-right {
 	gap: 15px;
 }
+
+/* Desktop header: language switcher dropdown with flag (Polylang) */
+.pxl-header-lang-switcher {
+	display: flex;
+	align-items: stretch;
+	background: #fff;
+	border: 1px solid #e5e5e5;
+	border-radius: 10px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+	transition: border-color 0.2s, box-shadow 0.2s;
+	overflow: hidden;
+}
+
+.pxl-header-lang-switcher:hover {
+	border-color: rgba(var(--primary-color-rgb), 0.4);
+	box-shadow: 0 2px 8px rgba(var(--primary-color-rgb), 0.12);
+}
+
+.pxl-header-lang-switcher .pll-select-flag {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 12px;
+	background: rgba(var(--primary-color-rgb), 0.06);
+	border-right: 1px solid #eee;
+}
+
+.pxl-header-lang-switcher .pll-select-flag img {
+	width: 22px;
+	height: 16px;
+	object-fit: cover;
+	border-radius: 2px;
+	display: block;
+}
+
+.pxl-header-lang-switcher .pll-switcher-select {
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	flex: 1;
+	min-width: 0;
+	padding: 10px 36px 10px 14px;
+	font-size: 14px;
+	font-weight: 500;
+	font-family: var(--body-font-family);
+	color: var(--heading-color);
+	background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 12 12'%3E%3Cpath fill='%236d6d6d' d='M6 7.5L1.5 3h9L6 7.5z'/%3E%3C/svg%3E") no-repeat right 12px center;
+	border: none;
+	cursor: pointer;
+	transition: color 0.2s;
+}
+
+.pxl-header-lang-switcher .pll-switcher-select:hover,
+.pxl-header-lang-switcher .pll-switcher-select:focus {
+	color: var(--primary-color);
+	outline: none;
+}
+
+.pxl-header-lang-switcher:focus-within {
+	border-color: var(--primary-color);
+	box-shadow: 0 0 0 3px rgba(var(--primary-color-rgb), 0.15);
+}
+
 .header-phone {
 	gap: 10px;
 	text-decoration: none;
@@ -486,6 +549,7 @@ body.front-page .pxl-main {
 }
 
 /* --- Side panel (mobile menu) — full screen --- */
+/* Use left (not transform) so native select dropdown positions correctly on mobile */
 .pxl-hidden-template {
 	display: flex;
 	flex-direction: column;
@@ -500,8 +564,7 @@ body.front-page .pxl-main {
 	background: var(--secondary-color);
 	right: 0;
 	bottom: 0;
-	will-change: transform;
-	transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s;
+	transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s;
 	opacity: 0;
 	overflow-y: auto;
 }
@@ -509,11 +572,11 @@ body.front-page .pxl-main {
 .pxl-hidden-template.pos-left {
 	max-width: none;
 	z-index: 604;
-	transform: translateX(-100%);
+	left: -100%;
 }
 
 .pxl-hidden-template.open {
-	transform: translateX(0);
+	left: 0;
 	opacity: 1;
 	z-index: 9999;
 }
@@ -532,11 +595,13 @@ body.front-page .pxl-main {
 	flex-direction: column;
 	justify-content: space-between;
 	padding: 24px 28px 32px;
+	min-height: 0;
 }
 
 @media (min-width: 576px) {
 	.pxl-panel-content.pxl-mobile-panel-content { padding: 32px 40px 48px; }
 }
+
 
 .pxl-close {
 	background: rgba(255, 255, 255, 0.15);
@@ -657,42 +722,7 @@ body.front-page .pxl-main {
 	padding-right: 40px;
 }
 
-/* Mobile menu: language switcher (Polylang) */
-.pxl-side-mobile .pxl-mobile-lang-switcher {
-	margin-top: 24px;
-	padding-top: 20px;
-	border-top: 1px solid rgba(255, 255, 255, 0.15);
-}
-
-.pxl-side-mobile .pxl-mobile-lang-switcher ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	display: flex;
-	flex-wrap: wrap;
-	gap: 8px 20px;
-}
-
-.pxl-side-mobile .pxl-mobile-lang-switcher li {
-	margin: 0;
-}
-
-.pxl-side-mobile .pxl-mobile-lang-switcher a {
-	display: inline-block;
-	color: rgba(255, 255, 255, 0.85);
-	font-size: 16px;
-	font-weight: 300;
-	letter-spacing: 0.02em;
-	text-decoration: none;
-	transition: color 0.2s;
-}
-
-.pxl-side-mobile .pxl-mobile-lang-switcher a:hover,
-.pxl-side-mobile .pxl-mobile-lang-switcher a[aria-current="true"] {
-	color: var(--primary-color);
-}
-
-/* Mobile menu footer: phone + CTA */
+/* Mobile menu footer: language switcher + phone + CTA */
 .pxl-mobile-menu-footer {
 	margin-top: 32px;
 	padding-top: 28px;
@@ -700,6 +730,77 @@ body.front-page .pxl-main {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
+}
+
+.pxl-side-mobile .pxl-mobile-menu-footer .pxl-mobile-lang-switcher {
+	display: flex;
+	align-items: stretch;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.08);
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	border-radius: 10px;
+	overflow: hidden;
+	transition: border-color 0.2s, background-color 0.2s, box-shadow 0.2s;
+}
+
+.pxl-side-mobile .pxl-mobile-menu-footer .pxl-mobile-lang-switcher:hover {
+	background: rgba(255, 255, 255, 0.12);
+	border-color: rgba(255, 255, 255, 0.25);
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+.pxl-side-mobile .pxl-mobile-menu-footer .pxl-mobile-lang-switcher .pll-select-flag {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	padding: 0 16px;
+	background: rgba(255, 255, 255, 0.1);
+	border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.pxl-side-mobile .pxl-mobile-menu-footer .pxl-mobile-lang-switcher .pll-select-flag img {
+	width: 24px;
+	height: 18px;
+	object-fit: cover;
+	border-radius: 2px;
+	display: block;
+	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+.pxl-side-mobile .pxl-mobile-menu-footer .pxl-mobile-lang-switcher .pll-switcher-select {
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	flex: 1;
+	min-width: 0;
+	width: 100%;
+	padding: 14px 44px 14px 16px;
+	font-size: 16px;
+	font-weight: 500;
+	font-family: var(--body-font-family);
+	color: #fff;
+	background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 12 12'%3E%3Cpath fill='rgba(255,255,255,0.85)' d='M6 7.5L1.5 3h9L6 7.5z'/%3E%3C/svg%3E") no-repeat right 16px center;
+	border: none;
+	cursor: pointer;
+	transition: color 0.2s;
+}
+
+.pxl-side-mobile .pxl-mobile-menu-footer .pxl-mobile-lang-switcher .pll-switcher-select:hover,
+.pxl-side-mobile .pxl-mobile-menu-footer .pxl-mobile-lang-switcher .pll-switcher-select:focus {
+	color: var(--primary-color);
+	outline: none;
+}
+
+.pxl-side-mobile .pxl-mobile-menu-footer .pxl-mobile-lang-switcher:focus-within {
+	border-color: var(--primary-color);
+	background: rgba(255, 255, 255, 0.14);
+	box-shadow: 0 0 0 2px rgba(var(--primary-color-rgb), 0.3);
+}
+
+.pxl-side-mobile .pxl-mobile-menu-footer .pxl-mobile-lang-switcher .pll-switcher-select option {
+	background: var(--secondary-color);
+	color: #fff;
 }
 
 .pxl-mobile-phone {

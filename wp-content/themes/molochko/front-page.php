@@ -17,7 +17,7 @@ if ( empty( $hero_shortcode ) ) {
 
 <!-- Hero: Rev Slider or custom shortcode -->
 <section class="molochko-hero section-full">
-	<?php echo do_shortcode( $hero_shortcode ); ?>
+	<?php echo molochko_fix_content_image_urls( do_shortcode( $hero_shortcode ) ); ?>
 </section>
 
 <!-- Fancy boxes (layout 4): overlaps hero, 3 cols -->

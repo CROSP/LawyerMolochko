@@ -47,20 +47,21 @@ $mobile_consult = $mobile_consult ?: '#consultation-popup';
 				?>
 			</div>
 		</div>
-		<?php if ( function_exists( 'pll_the_languages' ) ) : ?>
-			<div class="pxl-mobile-lang-switcher" aria-label="<?php esc_attr_e( 'Мова', 'molochko' ); ?>">
-				<?php
-				pll_the_languages( array(
-					'echo'                   => 1,
-					'show_flags'             => 0,
-					'show_names'             => 1,
-					'hide_current'           => 0,
-					'hide_if_no_translation' => 0,
-				) );
-				?>
-			</div>
-		<?php endif; ?>
 		<div class="pxl-mobile-menu-footer">
+			<?php if ( function_exists( 'pll_the_languages' ) ) : ?>
+				<div class="pxl-mobile-lang-switcher" aria-label="<?php esc_attr_e( 'Мова', 'molochko' ); ?>">
+					<?php
+					pll_the_languages( array(
+						'echo'                   => 1,
+						'dropdown'               => 'mobile',
+						'show_flags'             => 1,
+						'show_names'             => 1,
+						'hide_current'           => 0,
+						'hide_if_no_translation' => 0,
+					) );
+					?>
+				</div>
+			<?php endif; ?>
 			<a href="<?php echo esc_attr( $mobile_tel ); ?>" class="pxl-mobile-phone" rel="nofollow">
 				<span class="pxl-mobile-phone-icon"><i class="flaticon flaticon-phone-call" aria-hidden="true"></i></span>
 				<span class="pxl-mobile-phone-number"><?php echo esc_html( $mobile_phone ); ?></span>

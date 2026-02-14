@@ -45,6 +45,7 @@ If ACF is not filled, the theme falls back to 3 default cards (Безкошто�
 - **Colors**: Appearance → Customize → Molochko Colors.
 - **Logo**: Customize → Site Identity, or `themes/molochko/assets/images/logo.png`.
 - **Menus**: Appearance → Menus → Primary Menu.
+- **Language switcher (Polylang)**: Add it from the menu screen — open **Primary Menu**, in the **Language switcher** meta box add it to the menu. It will show in both desktop nav and mobile panel. Choose “Displays as a dropdown” and “Displays flags” in the menu item options if you want dropdown + flags.
 
 ## Files
 

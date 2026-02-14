@@ -88,6 +88,20 @@ $consultation_url = molochko_get_contact_option( 'header_consultation_url' ) ?: 
 						?>
 					</nav>
 					<div class="header-right d-flex align-items-center ms-xl-0 ms-auto">
+						<?php if ( function_exists( 'pll_the_languages' ) ) : ?>
+							<div class="pxl-header-lang-switcher d-none d-xl-flex" aria-label="<?php esc_attr_e( 'Мова', 'molochko' ); ?>">
+								<?php
+								pll_the_languages( array(
+									'echo'                   => 1,
+									'dropdown'               => 'header',
+									'show_flags'             => 1,
+									'show_names'             => 1,
+									'hide_current'           => 0,
+									'hide_if_no_translation' => 0,
+								) );
+								?>
+							</div>
+						<?php endif; ?>
 						<a class="header-phone d-none d-xl-flex align-items-center" href="<?php echo esc_attr( $tel_href ); ?>" rel="nofollow" aria-label="<?php echo esc_attr( __( 'Зателефонувати', 'molochko' ) ); ?>">
 							<span class="header-phone-link elementor-icon">
 								<i class="flaticon flaticon-phone-call" aria-hidden="true"></i>

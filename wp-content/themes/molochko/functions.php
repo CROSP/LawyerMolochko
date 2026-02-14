@@ -37,6 +37,17 @@ function molochko_setup() {
 }
 
 /**
+ * Polylang: show flag next to dropdown when show_flags is set (walker expects 'flag' key).
+ */
+add_filter( 'pll_the_languages_args', 'molochko_pll_dropdown_show_flag', 10, 1 );
+function molochko_pll_dropdown_show_flag( $args ) {
+	if ( ! empty( $args['dropdown'] ) && ! empty( $args['show_flags'] ) ) {
+		$args['flag'] = 1;
+	}
+	return $args;
+}
+
+/**
  * Disable comments for all posts and pages (front-end and admin).
  */
 add_filter( 'comments_open', '__return_false', 20, 2 );
