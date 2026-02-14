@@ -39,4 +39,15 @@ function molochko_register_practice_area_cpt_acf() {
 	) );
 }
 
+/**
+ * Practice area archive: show all items, no pagination.
+ */
+add_action( 'pre_get_posts', 'molochko_practice_area_archive_no_pagination' );
+function molochko_practice_area_archive_no_pagination( $query ) {
+	if ( ! $query->is_main_query() || ! $query->is_post_type_archive( 'pxl-practice-area' ) ) {
+		return;
+	}
+	$query->set( 'posts_per_page', -1 );
+}
+
 // ACF field group for pxl-practice-area lives in DB only. Create via: php import-acf-groups.php

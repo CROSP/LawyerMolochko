@@ -88,7 +88,7 @@ body.side-panel-open {
 /* --- Main content --- */
 .pxl-main {
 	padding-top: 24px;
-	padding-bottom: 48px;
+	padding-bottom: 0;
 }
 
 /* Front page / home: no gap between header and hero */
@@ -100,7 +100,7 @@ body.front-page .pxl-main {
 @media (max-width: 1199px) {
 	.pxl-main {
 		padding-top: 20px;
-		padding-bottom: 40px;
+		padding-bottom: 0;
 	}
 	.home .pxl-main,
 	body.front-page .pxl-main {
@@ -2602,7 +2602,8 @@ body.single-molochko-case-study .pxl-main {
 /* Hero */
 .cs-single-hero {
 	position: relative;
-	min-height: 420px;
+	min-height: 320px;
+	max-height: 520px;
 	display: flex;
 	align-items: flex-end;
 	overflow: hidden;
@@ -2614,6 +2615,7 @@ body.single-molochko-case-study .pxl-main {
 .cs-single-hero-bg img {
 	width: 100%;
 	height: 100%;
+	max-height: 520px;
 	object-fit: cover;
 	object-position: center;
 	display: block;
@@ -2885,7 +2887,8 @@ body.single-pxl-practice-area .pxl-main {
 /* Hero */
 .pa-single-hero {
 	position: relative;
-	min-height: 380px;
+	min-height: 320px;
+	max-height: 520px;
 	display: flex;
 	align-items: center;
 	overflow: hidden;
@@ -2899,6 +2902,7 @@ body.single-pxl-practice-area .pxl-main {
 .pa-single-hero-bg img {
 	width: 100%;
 	height: 100%;
+	max-height: 520px;
 	object-fit: cover;
 	object-position: center;
 	display: block;
@@ -4139,9 +4143,15 @@ body.single-post #pxl-content-area {
 	background: var(--secondary-color);
 }
 
+.molochko-blog-single .post-thumbnail {
+	max-height: 420px;
+}
 .molochko-blog-single .post-thumbnail img {
 	width: 100%;
 	height: auto;
+	max-height: 420px;
+	object-fit: cover;
+	object-position: center;
 	display: block;
 }
 
@@ -4494,6 +4504,7 @@ body.single-post #pxl-content-area {
 	font-weight: 700;
 	margin: 0 0 16px;
 	line-height: 1.2;
+	color: #fff;
 }
 
 .molochko-contact-hero-desc {
@@ -4624,6 +4635,22 @@ body.single-post #pxl-content-area {
 	color: #888;
 	font-size: 0.95rem;
 	margin: 0;
+}
+
+.molochko-contact-map {
+	background: #f0f0f0;
+}
+.molochko-contact-map-inner {
+	width: 100%;
+	overflow: hidden;
+}
+.molochko-contact-map-inner iframe {
+	vertical-align: middle;
+}
+@media (min-width: 768px) {
+	.molochko-contact-map-inner iframe {
+		height: 450px;
+	}
 }
 
 /* Contact page: CF7 form styling */

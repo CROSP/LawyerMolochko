@@ -36,9 +36,6 @@ function molochko_setup() {
 	) );
 }
 
-// Primary menu: Reviews → CPT archive, remove "Про нас".
-require_once MOLOCHKO_DIR . '/inc/nav-menu-reviews-and-about.php';
-
 /**
  * Fix image URLs: replace any stored site URL with current request URL so images
  * load on both lawyermolochko.ddev.site and lawyer-molochko.com.ua.

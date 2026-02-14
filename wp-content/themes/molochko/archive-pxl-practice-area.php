@@ -36,15 +36,6 @@ $archive_desc     = __( 'Надаємо кваліфіковану юридич�
 					}
 					?>
 				</div>
-				<?php
-				echo '<nav class="pa-archive-pagination" aria-label="' . esc_attr__( 'Навігація по напрямках', 'molochko' ) . '">';
-				the_posts_pagination( array(
-					'mid_size'  => 2,
-					'prev_text' => '<i class="zmdi zmdi-chevron-left"></i> ' . __( 'Назад', 'molochko' ),
-					'next_text' => __( 'Далі', 'molochko' ) . ' <i class="zmdi zmdi-chevron-right"></i>',
-				) );
-				echo '</nav>';
-				?>
 			<?php else : ?>
 				<div class="pa-archive-empty">
 					<p class="pa-archive-empty-text"><?php esc_html_e( 'Напрямків поки немає.', 'molochko' ); ?></p>

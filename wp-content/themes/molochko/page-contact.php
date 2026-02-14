@@ -14,6 +14,8 @@ $address_url  = function_exists( 'molochko_get_contact_option' ) ? molochko_get_
 $working_hours = function_exists( 'molochko_get_contact_option' ) ? molochko_get_contact_option( 'header_working_hours' ) : __( 'Пн–Пт: 9:00 – 18:00', 'molochko' );
 $cf7_shortcode = function_exists( 'molochko_get_contact_form_shortcode' ) ? molochko_get_contact_form_shortcode() : '';
 $tel_href     = $phone ? 'tel:' . preg_replace( '/\D+/', '', $phone ) : '';
+$map_address  = $address ? rawurlencode( $address ) : rawurlencode( 'Holovna St, 246 П, Chernivtsi, Chernivtsi Oblast, 58000' );
+$map_embed   = 'https://www.google.com/maps?q=' . $map_address . '&output=embed';
 ?>
 <div class="molochko-contact-page">
 	<!-- Hero -->
@@ -95,6 +97,22 @@ $tel_href     = $phone ? 'tel:' . preg_replace( '/\D+/', '', $phone ) : '';
 					</div>
 				</div>
 			</div>
+		</div>
+	</section>
+
+	<!-- Map -->
+	<section class="molochko-contact-map" aria-label="<?php esc_attr_e( 'Карта', 'molochko' ); ?>">
+		<div class="molochko-contact-map-inner">
+			<iframe
+				title="<?php esc_attr_e( 'Наше розташування на карті', 'molochko' ); ?>"
+				src="<?php echo esc_url( $map_embed ); ?>"
+				width="100%"
+				height="400"
+				style="border:0; display:block;"
+				allowfullscreen=""
+				loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade"
+			></iframe>
 		</div>
 	</section>
 </div>
