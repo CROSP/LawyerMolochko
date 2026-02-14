@@ -20,6 +20,8 @@ add_action( 'after_setup_theme', 'molochko_setup' );
 function molochko_setup() {
 	$GLOBALS['content_width'] = 1200;
 	load_theme_textdomain( 'molochko', MOLOCHKO_DIR . '/languages' );
+	// Force-load theme Romanian .mo when Polylang language is Romanian (locale may be ro or ro_RO).
+	add_filter( 'load_textdomain_mofile', 'molochko_load_romanian_mo', 10, 2 );
 	add_theme_support( 'title-tag' );
 	add_theme_support( 'post-thumbnails' );
 	set_post_thumbnail_size( 1170, 560, true );
@@ -34,6 +36,27 @@ function molochko_setup() {
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'molochko' ),
 	) );
+}
+
+/**
+ * Force-load theme Romanian .mo when current language is Romanian.
+ * Ensures strings like "Замовити консультацію" translate to "Comandă consultanță" on /ro/ pages.
+ *
+ * @param string $mofile Path to the .mo file.
+ * @param string $domain Text domain.
+ * @return string
+ */
+function molochko_load_romanian_mo( $mofile, $domain ) {
+	if ( $domain !== 'molochko' ) {
+		return $mofile;
+	}
+	if ( function_exists( 'pll_current_language' ) && pll_current_language( 'slug' ) === 'ro' ) {
+		$ro_file = MOLOCHKO_DIR . '/languages/molochko-ro_RO.mo';
+		if ( file_exists( $ro_file ) ) {
+			return $ro_file;
+		}
+	}
+	return $mofile;
 }
 
 /**

@@ -1,0 +1,243 @@
+# Romanian translations for Molochko theme.
+# Copyright (C) 2026
+# This file is distributed under the same license as the Molochko theme.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Molochko 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-14 12:00+0000\n"
+"PO-Revision-Date: 2026-02-14 12:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Romanian\n"
+"Language: ro_RO\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2);\n"
+"X-Generator: Manual\n"
+
+# Header & navigation
+msgid "Primary Menu"
+msgstr "Meniu principal"
+
+msgid "Мова"
+msgstr "Limbă"
+
+msgid "Замовити консультацію"
+msgstr "Comandă consultanță"
+
+msgid "Пн–Пт: 9:00 – 18:00"
+msgstr "Lun–Vineri: 9:00 – 18:00"
+
+msgid "Адреса офісу"
+msgstr "Adresa biroului"
+
+msgid "Зателефонувати"
+msgstr "Sună"
+
+msgid "Відкрити меню"
+msgstr "Deschide meniul"
+
+# Footer & mobile menu
+msgid "Головне меню"
+msgstr "Meniu principal"
+
+msgid "Закрити меню"
+msgstr "Închide meniul"
+
+msgid "Create New Menu"
+msgstr "Creează meniu nou"
+
+msgid "Back to top"
+msgstr "Înapoi sus"
+
+# Contact page
+msgid "Контакти"
+msgstr "Contacte"
+
+msgid "Зв'яжіться з нами"
+msgstr "Contactați-ne"
+
+msgid "Маєте питання або потрібна консультація? Напишіть нам або зателефонуйте — ми відповімо якомога швидше."
+msgstr "Aveți întrebări sau aveți nevoie de consultanță? Scrieți-ne sau sunați — vă răspundem cât mai curând."
+
+msgid "Контактна інформація"
+msgstr "Informații de contact"
+
+msgid "Телефон"
+msgstr "Telefon"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Адреса"
+msgstr "Adresă"
+
+msgid "Графік роботи"
+msgstr "Program"
+
+msgid "Напишіть нам"
+msgstr "Scrieți-ne"
+
+msgid "Карта"
+msgstr "Hartă"
+
+msgid "Наше розташування на карті"
+msgstr "Locația noastră pe hartă"
+
+# Consultation popup
+msgid "Залиште заявку — ми передзвонимо або напишемо вам найближчим часом."
+msgstr "Lăsați o solicitare — vă sunăm sau vă scriem în cel mai scurt timp."
+
+# Common
+msgid "Детальніше"
+msgstr "Detalii"
+
+msgid "На головну"
+msgstr "Acasă"
+
+msgid "Закрити"
+msgstr "Închide"
+
+msgid "Read more"
+msgstr "Citește mai mult"
+
+msgid "Попередня"
+msgstr "Anterior"
+
+msgid "Наступна"
+msgstr "Următorul"
+
+msgid "Назад"
+msgstr "Înapoi"
+
+msgid "Далі"
+msgstr "Mai departe"
+
+msgid "Сторінки:"
+msgstr "Pagini:"
+
+msgid "Pages:"
+msgstr "Pagini:"
+
+# 404 & search
+msgid "404"
+msgstr "404"
+
+msgid "Search results"
+msgstr "Rezultate căutare"
+
+msgid "Blog"
+msgstr "Blog"
+
+# Reviews
+msgid "Відгуки клієнтів"
+msgstr "Recenzii clienți"
+
+msgid "Що говорять клієнти"
+msgstr "Ce spun clienții"
+
+msgid "Реальні історії та подяки від тих, хто звертався до нас за юридичною допомогою."
+msgstr "Povești reale și mulțumiri de la cei care au apelat la noi pentru ajutor juridic."
+
+msgid "Навігація по відгуках"
+msgstr "Navigare recenzii"
+
+msgid "Відгуків поки немає."
+msgstr "Nu există încă recenzii."
+
+msgid "Переглянути кейси"
+msgstr "Vezi cazuri"
+
+# Case studies
+msgid "Усі кейси"
+msgstr "Toate cazurile"
+
+msgid "Навігація по кейсах"
+msgstr "Navigare cazuri"
+
+msgid "Попередній кейс"
+msgstr "Caz anterior"
+
+msgid "Наступний кейс"
+msgstr "Caz următor"
+
+msgid "Потрібна консультація з вашого питання?"
+msgstr "Aveți nevoie de consultanță pentru problema dvs.?"
+
+msgid "Отримайте кваліфіковану допомогу адвоката."
+msgstr "Obțineți ajutor calificat de avocat."
+
+msgid "Фільтр за категоріями"
+msgstr "Filtru pe categorii"
+
+msgid "Усі"
+msgstr "Toate"
+
+# Practice areas
+msgid "Усі напрямки практики"
+msgstr "Toate domeniile de practică"
+
+msgid "Навігація по напрямках"
+msgstr "Navigare domenii"
+
+msgid "Попередній напрямок"
+msgstr "Domeniu anterior"
+
+msgid "Наступний напрямок"
+msgstr "Domeniu următor"
+
+msgid "Потрібна консультація з цього напрямку?"
+msgstr "Aveți nevoie de consultanță în acest domeniu?"
+
+msgid "Отримайте кваліфіковану допомогу адвоката. Зв'яжіться з нами зручним способом."
+msgstr "Obțineți ajutor calificat de avocat. Contactați-ne în mod convenabil."
+
+# Blog
+msgid "Блог"
+msgstr "Blog"
+
+msgid "Про право та практику"
+msgstr "Despre drept și practică"
+
+msgid "Корисні статті про законодавство, ваші права та типові юридичні ситуації."
+msgstr "Articole utile despre legislație, drepturile dvs. și situații juridice tipice."
+
+msgid "Навігація по сторінках"
+msgstr "Navigare pagini"
+
+msgid "Статей поки немає."
+msgstr "Nu există încă articole."
+
+msgid "Корисні статті"
+msgstr "Articole utile"
+
+msgid "Останні публікації"
+msgstr "Ultimele publicații"
+
+msgid "Про право, ваші права та типові юридичні ситуації — коротко та зрозуміло."
+msgstr "Despre drept, drepturile dvs. și situații juridice tipice — pe scurt și clar."
+
+msgid "Усі статті"
+msgstr "Toate articolele"
+
+msgid "Читати далі"
+msgstr "Citește mai mult"
+
+# About / CTA
+msgid "або"
+msgstr "sau"
+
+msgid "Записатися на консультацію"
+msgstr "Programează-te la consultanță"
+
+# Form / missing
+msgid "Створіть форму в Контакт → Контактні форми (Contact Form 7)."
+msgstr "Creați un formular în Contact → Formulare de contact (Contact Form 7)."
+
+msgid "Створіть форму в Контакт → Контактні форми (Contact Form 7) і переконайтесь, що хоча б одна форма опублікована."
+msgstr "Creați un formular în Contact → Formulare de contact (Contact Form 7) și asigurați-vă că cel puțin un formular este publicat."
+
+msgid "Або натисніть кнопку «Замовити консультацію» у шапці сайту — відкриється форма для швидкого запиту."
+msgstr "Sau apăsați butonul «Comandă consultanță» în antetul site-ului — se va deschide un formular pentru solicitare rapidă."

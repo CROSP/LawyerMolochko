@@ -8,6 +8,9 @@
  *   menu-primary-reviews   — Point Відгуки → /reviews/, remove Про нас from Primary menu
  *   blog-page-and-menu     — Rename blog page slug to "blog", add Новини to menu
  *   menu-order             — Set Primary menu order: Головна, Послуги, Новини, Відгуки, Кейси, Контакти
+ *   menu-romanian          — Create Romanian primary menu (Acasă, Servicii, Știri, Recenzii, Cazuri, Contacte) and assign to RO
+ *   page-slug-home         — Rename front page slug from home-layout-1 to home
+ *   polylang-strings-ro    — Translate all Polylang registered strings to Romanian (run after DB backup)
  *   blog-image-obshuk      — Set featured image for "Обшук у помешканні" post (Pexels 7821937, documents)
  *   blog-images-three      — Set featured images for 3 posts by title (TCC, Обшук, Police)
  *   blog-images-five       — Set featured images for 5 legal posts by title (debt, obshuk, criminal, police, TCC)
@@ -23,7 +26,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 global $args;
 
-$valid_commands = array( 'menu-primary-reviews', 'blog-page-and-menu', 'menu-order', 'blog-image-obshuk', 'blog-images-three', 'blog-images-five', 'migrate-reviews' );
+$valid_commands = array( 'menu-primary-reviews', 'blog-page-and-menu', 'menu-order', 'menu-romanian', 'page-slug-home', 'polylang-strings-ro', 'blog-image-obshuk', 'blog-images-three', 'blog-images-five', 'migrate-reviews' );
 $command = 'list';
 if ( ! empty( $args[0] ) ) {
 	$command = trim( $args[0] );
@@ -43,6 +46,9 @@ $commands_help = array(
 	'menu-primary-reviews' => 'Point Відгуки → /reviews/, remove Про нас',
 	'blog-page-and-menu'   => 'Rename blog page to slug "blog", add Новини to menu',
 	'menu-order'           => 'Primary menu order: Головна, Послуги, Новини, Відгуки, Кейси, Контакти',
+	'menu-romanian'        => 'Create Romanian primary menu and assign to RO',
+	'page-slug-home'       => 'Rename front page slug home-layout-1 → home',
+	'polylang-strings-ro'  => 'Translate all Polylang strings to Romanian',
 	'blog-image-obshuk'    => 'Set featured image for Обшук у помешканні post',
 	'blog-images-three'    => 'Set images for 3 posts (TCC, Обшук, Police) by title',
 	'blog-images-five'     => 'Set images for 5 legal posts by title',
@@ -164,6 +170,271 @@ switch ( $command ) {
 			}
 		}
 		echo "Menu order updated.\n";
+		break;
+	}
+
+	case 'menu-romanian': {
+		if ( ! function_exists( 'pll_current_language' ) || ! function_exists( 'pll_home_url' ) || ! function_exists( 'pll_set_term_language' ) || ! function_exists( 'pll_get_post' ) ) {
+			echo "Polylang is required. Activate Polylang and run again.\n";
+			exit( 1 );
+		}
+		$langs = array();
+		if ( function_exists( 'pll_languages_list' ) ) {
+			$langs = pll_languages_list();
+		} elseif ( ! empty( PLL()->model ) && method_exists( PLL()->model, 'get_languages_list' ) ) {
+			$list = PLL()->model->get_languages_list();
+			$langs = wp_list_pluck( $list, 'slug' );
+		}
+		if ( ! in_array( 'ro', $langs, true ) ) {
+			echo "Romanian (ro) is not configured in Polylang. Add Romanian in Languages first.\n";
+			exit( 1 );
+		}
+		$theme = get_option( 'stylesheet' );
+		$uk_menu_id = 53;
+		$uk_items = wp_get_nav_menu_items( $uk_menu_id );
+		$ro_titles = array(
+			'Головна'   => 'Acasă',
+			'Послуги'   => 'Servicii',
+			'Новини'    => 'Știri',
+			'Відгуки'   => 'Recenzii',
+			'Кейси'     => 'Cazuri',
+			'Контакти'  => 'Contacte',
+		);
+		$ro_urls = array();
+		$ro_urls['Головна'] = pll_home_url( 'ro' );
+		if ( $uk_items ) {
+			foreach ( $uk_items as $item ) {
+				if ( $item->menu_item_parent != 0 ) {
+					continue;
+				}
+				$title = trim( $item->title );
+				if ( isset( $ro_titles[ $title ] ) ) {
+					if ( $title === 'Головна' ) {
+						continue;
+					}
+					if ( $item->type === 'post_type' && ! empty( $item->object_id ) ) {
+						$tr_id = pll_get_post( (int) $item->object_id, 'ro' );
+						$ro_urls[ $title ] = $tr_id ? get_permalink( $tr_id ) : pll_home_url( 'ro' );
+					} else {
+						$home = home_url( '/' );
+						$ro_home = pll_home_url( 'ro' );
+						$url = $item->url;
+						if ( $url === $home || $url === rtrim( $home, '/' ) ) {
+							$ro_urls[ $title ] = $ro_home;
+						} else {
+							$ro_urls[ $title ] = $ro_home . wp_parse_url( $url, PHP_URL_PATH ) ?: '';
+						}
+					}
+				}
+			}
+		}
+		foreach ( array_keys( $ro_titles ) as $uk_title ) {
+			if ( ! isset( $ro_urls[ $uk_title ] ) ) {
+				$ro_urls[ $uk_title ] = pll_home_url( 'ro' );
+			}
+		}
+		$menu_name = 'Meniu principal (RO)';
+		$existing = wp_get_nav_menu_object( $menu_name );
+		if ( $existing ) {
+			$menu_term_id = (int) $existing->term_id;
+			$items_old = wp_get_nav_menu_items( $menu_term_id );
+			if ( $items_old ) {
+				foreach ( $items_old as $it ) {
+					wp_delete_post( (int) $it->db_id, true );
+				}
+			}
+			echo "Using existing menu: {$menu_name} (ID {$menu_term_id}).\n";
+		} else {
+			$menu_term_id = wp_create_nav_menu( $menu_name );
+			if ( is_wp_error( $menu_term_id ) ) {
+				echo $menu_term_id->get_error_message() . "\n";
+				exit( 1 );
+			}
+			echo "Created menu: {$menu_name} (ID {$menu_term_id}).\n";
+		}
+		pll_set_term_language( $menu_term_id, 'ro' );
+		$position = 1;
+		foreach ( $ro_titles as $uk_title => $ro_title ) {
+			$url = isset( $ro_urls[ $uk_title ] ) ? $ro_urls[ $uk_title ] : pll_home_url( 'ro' );
+			wp_update_nav_menu_item( $menu_term_id, 0, array(
+				'menu-item-type'   => 'custom',
+				'menu-item-url'    => $url,
+				'menu-item-title'  => $ro_title,
+				'menu-item-position' => $position++,
+				'menu-item-parent-id' => 0,
+				'menu-item-status' => 'publish',
+			) );
+		}
+		$nav_menus = PLL()->options->get( 'nav_menus' );
+		if ( ! is_array( $nav_menus ) ) {
+			$nav_menus = array();
+		}
+		if ( ! isset( $nav_menus[ $theme ] ) ) {
+			$nav_menus[ $theme ] = array();
+		}
+		if ( ! isset( $nav_menus[ $theme ]['primary'] ) ) {
+			$nav_menus[ $theme ]['primary'] = array();
+		}
+		$nav_menus[ $theme ]['primary']['ro'] = (int) $menu_term_id;
+		PLL()->options->set( 'nav_menus', $nav_menus );
+		echo "Romanian primary menu created and assigned to location 'primary' for language 'ro'.\n";
+		break;
+	}
+
+	case 'page-slug-home': {
+		$front_page_id = (int) get_option( 'page_on_front' );
+		if ( ! $front_page_id ) {
+			$pages = get_posts( array( 'post_type' => 'page', 'post_name' => 'home-layout-1', 'post_status' => 'any', 'posts_per_page' => 1 ) );
+			$page = ! empty( $pages ) ? $pages[0] : null;
+		} else {
+			$page = get_post( $front_page_id );
+		}
+		if ( ! $page || $page->post_type !== 'page' ) {
+			echo "Front page or page with slug 'home-layout-1' not found.\n";
+			exit( 1 );
+		}
+		$flushed = false;
+		if ( $page->post_name !== 'home' ) {
+			$updated = wp_update_post( array(
+				'ID'        => $page->ID,
+				'post_name' => 'home',
+			), true );
+			if ( is_wp_error( $updated ) ) {
+				echo $updated->get_error_message() . "\n";
+				exit( 1 );
+			}
+			echo "Renamed default front page slug → home (ID {$page->ID}).\n";
+			$flushed = true;
+		}
+		if ( function_exists( 'pll_get_post' ) ) {
+			$ro_page_id = pll_get_post( $page->ID, 'ro' );
+			if ( $ro_page_id ) {
+				$ro_page = get_post( $ro_page_id );
+				if ( $ro_page && $ro_page->post_type === 'page' && $ro_page->post_name !== 'home' ) {
+					$updated_ro = wp_update_post( array(
+						'ID'        => $ro_page->ID,
+						'post_name' => 'home',
+					), true );
+					if ( ! is_wp_error( $updated_ro ) ) {
+						echo "Renamed Romanian front page slug → home (ID {$ro_page->ID}).\n";
+						$flushed = true;
+					}
+				}
+			}
+		}
+		if ( $flushed ) {
+			flush_rewrite_rules();
+			echo "Flushed rewrite rules.\n";
+		} else {
+			echo "Front page slug(s) already 'home'. Nothing to do.\n";
+		}
+		if ( function_exists( 'pll_home_url' ) && PLL() && PLL()->options ) {
+			$theme = get_option( 'stylesheet' );
+			$nav_menus = PLL()->options->get( 'nav_menus' );
+			$ro_menu_id = isset( $nav_menus[ $theme ]['primary']['ro'] ) ? (int) $nav_menus[ $theme ]['primary']['ro'] : 0;
+			if ( $ro_menu_id ) {
+				$ro_items = wp_get_nav_menu_items( $ro_menu_id );
+				$ro_home = pll_home_url( 'ro' );
+				$updated = 0;
+				foreach ( (array) $ro_items as $it ) {
+					if ( strpos( $it->url, 'home-layout-1' ) !== false ) {
+						$new_url = str_replace( 'home-layout-1', 'home', $it->url );
+						wp_update_nav_menu_item( $ro_menu_id, (int) $it->db_id, array(
+							'menu-item-db-id'       => (int) $it->db_id,
+							'menu-item-type'        => $it->type,
+							'menu-item-url'         => $new_url,
+							'menu-item-title'       => $it->title,
+							'menu-item-position'    => (int) $it->menu_order,
+							'menu-item-parent-id'   => (int) $it->menu_item_parent,
+							'menu-item-status'      => 'publish',
+						) );
+						$updated++;
+					}
+				}
+				if ( $updated ) {
+					echo "Updated {$updated} Romanian menu item(s) URL: home-layout-1 → home.\n";
+				}
+			}
+		}
+		break;
+	}
+
+	case 'polylang-strings-ro': {
+		if ( ! function_exists( 'pll_current_language' ) || ! PLL() || ! PLL()->model ) {
+			echo "Polylang is required. Activate Polylang and run again.\n";
+			exit( 1 );
+		}
+		$languages = PLL()->model->get_languages_list();
+		$ro_lang = null;
+		foreach ( $languages as $lang ) {
+			if ( $lang->slug === 'ro' ) {
+				$ro_lang = $lang;
+				break;
+			}
+		}
+		if ( ! $ro_lang ) {
+			echo "Romanian (ro) is not configured in Polylang. Add Romanian in Languages first.\n";
+			exit( 1 );
+		}
+		$sources = array();
+		if ( PLL() instanceof PLL_Admin_Base && class_exists( 'PLL_Admin_Strings' ) ) {
+			$registered = PLL_Admin_Strings::get_strings();
+			if ( ! empty( $registered ) ) {
+				$sources = array_values( array_unique( wp_list_pluck( $registered, 'string' ) ) );
+			}
+		}
+		if ( empty( $sources ) ) {
+			$all_sources = array();
+			foreach ( $languages as $lang ) {
+				$meta = get_term_meta( $lang->term_id, '_pll_strings_translations', true );
+				if ( ! is_array( $meta ) ) {
+					continue;
+				}
+				foreach ( $meta as $pair ) {
+					if ( isset( $pair[0] ) && $pair[0] !== '' ) {
+						$all_sources[ $pair[0] ] = true;
+					}
+				}
+			}
+			$sources = array_keys( $all_sources );
+		}
+		if ( empty( $sources ) ) {
+			echo "No Polylang strings found in DB. Open Languages → String translations, click Save once, then run this command again.\n";
+			exit( 1 );
+		}
+		require_once __DIR__ . '/polylang-strings-ro.php';
+		$map = molochko_polylang_strings_ro_map();
+		$ro_strings = array();
+		$mapped = 0;
+		foreach ( $sources as $src ) {
+			$translation = isset( $map[ $src ] ) ? $map[ $src ] : $src;
+			if ( $translation !== $src ) {
+				$mapped++;
+			}
+			$ro_strings[] = wp_slash( array( $src, $translation ) );
+		}
+		update_term_meta( $ro_lang->term_id, '_pll_strings_translations', $ro_strings );
+		foreach ( $languages as $lang ) {
+			if ( $lang->slug === 'ro' ) {
+				continue;
+			}
+			$existing_meta = get_term_meta( $lang->term_id, '_pll_strings_translations', true );
+			$existing = array();
+			if ( is_array( $existing_meta ) ) {
+				foreach ( $existing_meta as $pair ) {
+					if ( isset( $pair[0] ) && isset( $pair[1] ) && $pair[0] !== '' ) {
+						$existing[ $pair[0] ] = $pair[1];
+					}
+				}
+			}
+			$lang_strings = array();
+			foreach ( $sources as $src ) {
+				$translation = isset( $existing[ $src ] ) ? $existing[ $src ] : $src;
+				$lang_strings[] = wp_slash( array( $src, $translation ) );
+			}
+			update_term_meta( $lang->term_id, '_pll_strings_translations', $lang_strings );
+		}
+		echo "Updated Romanian Polylang strings: " . count( $ro_strings ) . " entries (" . $mapped . " translated from map). Seeded all languages.\n";
 		break;
 	}
 
