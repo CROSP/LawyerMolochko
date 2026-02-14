@@ -13,7 +13,6 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		<div class="entry-meta">
 			<span class="posted-on"><?php echo get_the_date(); ?></span>
-			<span class="byline"> <?php the_author(); ?></span>
 		</div>
 	</header>
 	<div class="pxl-entry-content clearfix">

@@ -18,9 +18,6 @@ get_header();
 						'prev_text' => '<i class="zmdi zmdi-chevron-left"></i> ' . __( 'Попередня', 'molochko' ),
 						'next_text' => __( 'Наступна', 'molochko' ) . ' <i class="zmdi zmdi-chevron-right"></i>',
 					) );
-					if ( comments_open() || get_comments_number() ) {
-						comments_template();
-					}
 				}
 				?>
 			</main>

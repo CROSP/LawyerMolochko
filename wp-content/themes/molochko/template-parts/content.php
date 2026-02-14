@@ -15,7 +15,6 @@
 		<?php the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '">', '</a></h2>' ); ?>
 		<div class="entry-meta">
 			<span class="posted-on"><?php echo get_the_date(); ?></span>
-			<span class="byline"> <?php the_author(); ?></span>
 		</div>
 	</header>
 	<div class="entry-summary">

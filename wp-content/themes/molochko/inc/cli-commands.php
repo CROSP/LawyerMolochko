@@ -8,7 +8,7 @@
  *   menu-primary-reviews   — Point Відгуки → /reviews/, remove Про нас from Primary menu
  *   blog-page-and-menu     — Rename blog page slug to "blog", add Новини to menu
  *   menu-order             — Set Primary menu order: Головна, Послуги, Новини, Відгуки, Кейси, Контакти
- *   blog-image-obshuk      — Set featured image for "Обшук у помешканні" post (Pexels 7715258)
+ *   blog-image-obshuk      — Set featured image for "Обшук у помешканні" post (Pexels 7821937, documents)
  *   blog-images-three      — Set featured images for 3 posts by title (TCC, Обшук, Police)
  *   blog-images-five       — Set featured images for 5 legal posts by title (debt, obshuk, criminal, police, TCC)
  *   migrate-reviews        — Create 6 review CPT posts, change Reviews page slug to reviews-legacy, flush rules
@@ -21,7 +21,23 @@ if ( ! defined( 'ABSPATH' ) ) {
 	require_once __DIR__ . '/../../../../wp-load.php';
 }
 
-$command = isset( $argv[1] ) ? trim( $argv[1] ) : 'list';
+global $args;
+
+$valid_commands = array( 'menu-primary-reviews', 'blog-page-and-menu', 'menu-order', 'blog-image-obshuk', 'blog-images-three', 'blog-images-five', 'migrate-reviews' );
+$command = 'list';
+if ( ! empty( $args[0] ) ) {
+	$command = trim( $args[0] );
+} else {
+	foreach ( array( 3, 2, 1 ) as $i ) {
+		if ( ! empty( $argv[ $i ] ) && in_array( trim( $argv[ $i ] ), $valid_commands, true ) ) {
+			$command = trim( $argv[ $i ] );
+			break;
+		}
+	}
+	if ( $command === 'list' && ( $env_cmd = getenv( 'MOLOCHKO_CLI_CMD' ) ) && in_array( $env_cmd, $valid_commands, true ) ) {
+		$command = $env_cmd;
+	}
+}
 
 $commands_help = array(
 	'menu-primary-reviews' => 'Point Відгуки → /reviews/, remove Про нас',
@@ -168,7 +184,7 @@ switch ( $command ) {
 			echo "Post not found.\n";
 			exit( 1 );
 		}
-		$img_url = 'https://images.pexels.com/photos/7715258/pexels-photo-7715258.jpeg?auto=compress&w=1200';
+		$img_url = 'https://images.pexels.com/photos/7821937/pexels-photo-7821937.jpeg?auto=compress&w=1200';
 		$aid = media_sideload_image( $img_url, $post->ID, $post->post_title, 'id' );
 		if ( is_wp_error( $aid ) ) {
 			echo $aid->get_error_message() . "\n";
@@ -183,7 +199,7 @@ switch ( $command ) {
 		molochko_cli_require_media();
 		$by_title = array(
 			'Адвокатський запит до ТЦК' => 'https://images.pexels.com/photos/5393593/pexels-photo-5393593.jpeg?auto=compress&w=1200',
-			'Обшук у помешканні'       => 'https://images.pexels.com/photos/7714849/pexels-photo-7714849.jpeg?auto=compress&w=1200',
+			'Обшук у помешканні'       => 'https://images.pexels.com/photos/7821937/pexels-photo-7821937.jpeg?auto=compress&w=1200',
 			'Як вести себе з поліцією' => 'https://images.pexels.com/photos/4827720/pexels-photo-4827720.jpeg?auto=compress&w=1200',
 		);
 		$posts = get_posts( array( 'post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => -1 ) );
@@ -217,7 +233,7 @@ switch ( $command ) {
 		molochko_cli_require_media();
 		$image_map = array(
 			'styagnennya-borgu-cherez-sud-pretenziya-pozov-vikonannya' => 'https://images.pexels.com/photos/6077326/pexels-photo-6077326.jpeg?auto=compress&w=1200',
-			'obshuk-u-pomeshkanni-prava-ta-poryadok-provedennya'       => 'https://images.pexels.com/photos/5669619/pexels-photo-5669619.jpeg?auto=compress&w=1200',
+			'obshuk-u-pomeshkanni-prava-ta-poryadok-provedennya'       => 'https://images.pexels.com/photos/7821937/pexels-photo-7821937.jpeg?auto=compress&w=1200',
 			'kriminalna-sprava-etapi-vid-pidozri-do-viroku'            => 'https://images.pexels.com/photos/5669619/pexels-photo-5669619.jpeg?auto=compress&w=1200',
 			'yak-vesti-sebe-z-policzi'                                 => 'https://images.pexels.com/photos/8760946/pexels-photo-8760946.jpeg?auto=compress&w=1200',
 			'advokatskij-zapit-do-tczk'                                => 'https://images.pexels.com/photos/7687557/pexels-photo-7687557.jpeg?auto=compress&w=1200',

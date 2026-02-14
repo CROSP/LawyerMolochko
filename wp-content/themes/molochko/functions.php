@@ -37,6 +37,17 @@ function molochko_setup() {
 }
 
 /**
+ * Disable comments for all posts and pages (front-end and admin).
+ */
+add_filter( 'comments_open', '__return_false', 20, 2 );
+add_filter( 'pings_open', '__return_false', 20, 2 );
+add_action( 'admin_init', 'molochko_disable_comments_support' );
+function molochko_disable_comments_support() {
+	remove_post_type_support( 'post', 'comments' );
+	remove_post_type_support( 'page', 'comments' );
+}
+
+/**
  * Fix image URLs: replace any stored site URL with current request URL so images
  * load on both lawyermolochko.ddev.site and lawyer-molochko.com.ua.
  */
