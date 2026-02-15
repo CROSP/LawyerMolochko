@@ -24,6 +24,9 @@ Thumbs.db
 *.swo
 *~
 
+# Environment (never commit real DB passwords)
+.env
+
 # Logs                                                                                                      
 *.log
 
