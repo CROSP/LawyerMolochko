@@ -415,6 +415,9 @@ body.front-page .pxl-main {
 
 @media (max-width: 1199px) {
 	.pxl-header-logo { padding-top: 10px; padding-bottom: 10px; }
+	.pxl-header-logo img {
+		max-height: 115px;
+	}
 }
 
 /* --- Primary menu (desktop) --- */
@@ -501,7 +504,7 @@ body.front-page .pxl-main {
 	}
 }
 
-/* --- Mobile hamburger --- */
+/* --- Mobile hamburger (smaller on mobile) --- */
 .main-menu-mobile .btn-nav-mobile {
 	display: inline-block;
 	height: 21px;
@@ -513,6 +516,17 @@ body.front-page .pxl-main {
 	padding: 0;
 	background: none;
 	font: inherit;
+}
+
+@media (max-width: 1199px) {
+	.main-menu-mobile .btn-nav-mobile {
+		height: 16px;
+		width: 17px;
+	}
+	.main-menu-mobile .btn-nav-mobile span {
+		margin: 3px 0;
+		margin-top: -1.5px;
+	}
 }
 
 .main-menu-mobile .btn-nav-mobile::before,
@@ -550,6 +564,7 @@ body.front-page .pxl-main {
 
 /* --- Side panel (mobile menu) — full screen --- */
 /* Use left (not transform) so native select dropdown positions correctly on mobile */
+/* min-height: 100dvh for iPhone; padding-bottom for safe-area so contact button is visible */
 .pxl-hidden-template {
 	display: flex;
 	flex-direction: column;
@@ -559,6 +574,7 @@ body.front-page .pxl-main {
 	width: 100%;
 	height: 100%;
 	min-height: 100vh;
+	min-height: 100dvh;
 	z-index: -1;
 	padding: 0;
 	background: var(--secondary-color);
@@ -567,6 +583,7 @@ body.front-page .pxl-main {
 	transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s;
 	opacity: 0;
 	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
 }
 
 .pxl-hidden-template.pos-left {
@@ -595,11 +612,12 @@ body.front-page .pxl-main {
 	flex-direction: column;
 	justify-content: space-between;
 	padding: 24px 28px 32px;
+	padding-bottom: calc(32px + env(safe-area-inset-bottom, 0px));
 	min-height: 0;
 }
 
 @media (min-width: 576px) {
-	.pxl-panel-content.pxl-mobile-panel-content { padding: 32px 40px 48px; }
+	.pxl-panel-content.pxl-mobile-panel-content { padding: 32px 40px 48px; padding-bottom: calc(48px + env(safe-area-inset-bottom, 0px)); }
 }
 
 
@@ -722,14 +740,16 @@ body.front-page .pxl-main {
 	padding-right: 40px;
 }
 
-/* Mobile menu footer: language switcher + phone + CTA */
+/* Mobile menu footer: language switcher + phone + CTA (keep visible on iPhone, above safe-area) */
 .pxl-mobile-menu-footer {
 	margin-top: 32px;
 	padding-top: 28px;
+	padding-bottom: env(safe-area-inset-bottom, 0px);
 	border-top: 1px solid rgba(255, 255, 255, 0.15);
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
+	flex-shrink: 0;
 }
 
 .pxl-side-mobile .pxl-mobile-menu-footer .pxl-mobile-lang-switcher {

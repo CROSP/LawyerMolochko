@@ -695,3 +695,29 @@ add_action( 'wp_enqueue_scripts', 'molochko_google_fonts', 5 );
 function molochko_google_fonts() {
 	wp_enqueue_style( 'molochko-google-fonts', 'https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap', array(), null );
 }
+
+/**
+ * Replace old dev/local URLs in output (RevSlider images, serialized content, etc.).
+ * Runs on final HTML so all sources (shortcodes, DB, plugins) get the current site URL.
+ */
+add_action( 'template_redirect', 'molochko_buffer_replace_old_urls', 0 );
+function molochko_buffer_replace_old_urls() {
+	if ( is_admin() || ( defined( 'REST_REQUEST' ) && REST_REQUEST ) ) {
+		return;
+	}
+	ob_start( function( $html ) {
+		$home = home_url( '/' );
+		$old_urls = array(
+			'https://lawyermolochko.ddev.site:8443',
+			'http://lawyermolochko.ddev.site:8443',
+			'https://lawyer-molochko.com.ua:8443',
+			'http://lawyer-molochko.com.ua:8443',
+			'https://lawyermolochko.ddev.site',
+			'http://lawyermolochko.ddev.site',
+		);
+		foreach ( $old_urls as $old ) {
+			$html = str_replace( $old, rtrim( $home, '/' ), $html );
+		}
+		return $html;
+	} );
+}
