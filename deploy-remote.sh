@@ -116,7 +116,7 @@ cd "$PROJECT_DIR"
 # On macOS, don't put extended attributes in tar so Linux extraction is clean
 [[ "$OSTYPE" == "darwin"* ]] && export COPYFILE_DISABLE=1
 
-TAR_FILES="docker-compose.yml wp-config.docker.php .env.example wp-content"
+TAR_FILES="docker-compose.yml wp-config.docker.php .env.example wp-content config"
 [ -d "$PROJECT_DIR/dumps" ] && [ -n "$(ls -A "$PROJECT_DIR/dumps" 2>/dev/null)" ] && TAR_FILES="$TAR_FILES dumps"
 [ -f "$PROJECT_DIR/nginx-proxy-lawyer-molochko.conf" ] && TAR_FILES="$TAR_FILES nginx-proxy-lawyer-molochko.conf"
 
@@ -165,6 +165,8 @@ echo 'Starting Docker (DB will import from dumps/ on first start)...' && \
 (docker compose up -d || docker-compose up -d) && \
 echo 'Waiting for DB to be ready...' && \
 for i in \$(seq 1 30); do (docker compose exec -T db mariadb -u wordpress -p\"\$(grep '^MYSQL_PASSWORD=' .env | cut -d= -f2-)\" wordpress -e 'SELECT 1' 2>/dev/null) && break; sleep 3; done || true && \
+echo 'Making wp-content writable by WordPress (plugin install, upgrade)...' && \
+(docker compose exec -T wordpress chown -R www-data:www-data /var/www/html/wp-content 2>/dev/null && echo '✓ wp-content ownership set.') || true && \
 echo 'Setting WordPress URLs to production...' && \
 (docker compose exec -T db mariadb -u wordpress -p\"\$(grep '^MYSQL_PASSWORD=' .env | cut -d= -f2-)\" wordpress -e \"UPDATE wp_options SET option_value='$PRODUCTION_URL' WHERE option_name IN ('home','siteurl');\" 2>/dev/null && echo '✓ WordPress siteurl/home set to $PRODUCTION_URL' || echo '⚠ DB URL update skipped (empty DB or still importing)') && \
 echo 'Replacing any dev URLs in database (WP-CLI search-replace)...' && \

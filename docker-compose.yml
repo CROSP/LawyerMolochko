@@ -15,6 +15,8 @@ services:
       - ./wp-content:/var/www/html/wp-content
       # Docker-specific wp-config (DB from env, URLs from .env)
       - ./wp-config.docker.php:/var/www/html/wp-config.php
+      # Raise PHP upload limit (default 2M is too small for images)
+      - ./config/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
     environment:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_USER: wordpress

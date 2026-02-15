@@ -55,6 +55,7 @@ Then point DNS for **lawyer-molochko.com.ua** and **www.lawyer-molochko.com.ua**
 |----------------------------|------------------------|
 | `./wp-content`             | `/var/www/html/wp-content` |
 | `./wp-config.docker.php`   | `/var/www/html/wp-config.php` |
+| `./config/uploads.ini`     | PHP upload limit (64M; default is 2M) |
 | `./mysql-data`             | DB data (MariaDB)      |
 | `./dumps`                  | Initial DB import (`.sql` run on first DB start) |
 
@@ -86,6 +87,18 @@ docker compose ps
 docker compose logs -f
 docker compose exec wordpress wp --info
 ```
+
+### Plugin install fails: "Could not create directory … wp-content/upgrade"
+
+WordPress in the container runs as **www-data** (UID 33). If `wp-content` on the host is owned by another user, the container cannot create `upgrade/` or new plugin dirs. **One-time fix on remote:**
+
+```bash
+ssh crosphz
+cd /home/docker/lawyermolochko
+docker compose exec wordpress chown -R www-data:www-data /var/www/html/wp-content
+```
+
+Future deploys run this automatically so plugin install/update keeps working.
 
 ## Database
 
