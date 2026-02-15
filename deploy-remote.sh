@@ -3,6 +3,9 @@
 # Deploy lawyermolochko to remote Docker host (ssh crosphz).
 # Domain: lawyer-molochko.com.ua. Exports DB from DDEV, replaces URLs, deploys with DB on first run.
 #
+# Usage: ./deploy-remote.sh [--fresh-db]
+#   --fresh-db   Clear remote DB and re-import from dumps/init.sql (overwrites production DB).
+#
 set -e
 
 RED='\033[0;31m'
@@ -15,7 +18,18 @@ REMOTE_DIR="/home/docker/lawyermolochko"
 PROJECT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PRODUCTION_URL="https://lawyer-molochko.com.ua"
 
+OVERWRITE_DB=false
+for arg in "$@"; do
+    if [ "$arg" = "--fresh-db" ] || [ "$arg" = "--overwrite-db" ]; then
+        OVERWRITE_DB=true
+        break
+    fi
+done
+
 echo -e "${GREEN}=== Remote Docker deployment → lawyer-molochko.com.ua ===${NC}\n"
+if [ "$OVERWRITE_DB" = true ]; then
+    echo -e "${YELLOW}Option: --fresh-db → remote DB will be cleared and re-imported from dump.${NC}\n"
+fi
 
 # Pre-flight: theme must exist
 if [ ! -d "$PROJECT_DIR/wp-content/themes/molochko" ]; then
@@ -116,6 +130,11 @@ rm -f "$TEMP_ARCHIVE"
 echo -e "${GREEN}✓ Uploaded${NC}"
 
 # Extract and start on remote
+if [ "$OVERWRITE_DB" = true ]; then
+    FRESH_DB_CMD="sudo rm -rf mysql-data/* && echo 'Cleared mysql-data for fresh import.' && "
+else
+    FRESH_DB_CMD=""
+fi
 echo -e "\n${YELLOW}[6/7] Extracting and starting containers on remote...${NC}"
 ssh "$SSH_HOST" "cd $REMOTE_DIR && \
 set -e && \
@@ -129,6 +148,7 @@ if [ ! -f .env ]; then cp .env.example .env; fi && \
 (grep -q '^WORDPRESS_URL=' .env && sed -i 's|^WORDPRESS_URL=.*|WORDPRESS_URL=$PRODUCTION_URL|' .env || echo \"WORDPRESS_URL=$PRODUCTION_URL\" >> .env) && \
 (grep -q '^WORDPRESS_SITEURL=' .env && sed -i 's|^WORDPRESS_SITEURL=.*|WORDPRESS_SITEURL=$PRODUCTION_URL|' .env || echo \"WORDPRESS_SITEURL=$PRODUCTION_URL\" >> .env) && \
 (docker compose down 2>/dev/null || docker-compose down 2>/dev/null || true) && \
+$FRESH_DB_CMD \
 [ -f dumps/init.sql ] && ( file dumps/init.sql | grep -qi gzip ) && mv dumps/init.sql dumps/init.sql.gz || true && \
 echo 'Starting Docker (DB will import from dumps/ on first start)...' && \
 (docker compose up -d || docker-compose up -d) && \
@@ -143,6 +163,8 @@ echo 'Replacing any dev URLs in database (WP-CLI search-replace)...' && \
 (docker compose exec -T wordpress sh -c 'cd /var/www/html && php /tmp/wp-cli.phar search-replace \"https://lawyermolochko.ddev.site\" \"'$PRODUCTION_URL'\" --all-tables --allow-root' 2>/dev/null || true) && \
 (docker compose exec -T wordpress sh -c 'cd /var/www/html && php /tmp/wp-cli.phar search-replace \"http://lawyermolochko.ddev.site\" \"'$PRODUCTION_URL'\" --all-tables --allow-root' 2>/dev/null || true) && \
 (docker compose exec -T wordpress sh -c 'cd /var/www/html && php /tmp/wp-cli.phar search-replace \"https://lawyer-molochko.com.ua:8443\" \"'$PRODUCTION_URL'\" --all-tables --allow-root' 2>/dev/null || true) && \
+echo 'Clearing RevSlider cache (transients)...' && \
+(docker compose exec -T db mariadb -u wordpress -p"$(grep '^MYSQL_PASSWORD=' .env 2>/dev/null | cut -d= -f2-)" wordpress -e "DELETE FROM wp_options WHERE option_name LIKE '_transient_revslider_slider_%' OR option_name LIKE '_transient_timeout_revslider_slider_%';" 2>/dev/null && echo 'RevSlider cache cleared.') || true && \
 echo '✓ Deployment complete.' && \
 echo '  docker compose ps' && \
 echo '  docker compose logs -f' && \

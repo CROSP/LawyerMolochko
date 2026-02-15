@@ -416,7 +416,7 @@ body.front-page .pxl-main {
 @media (max-width: 1199px) {
 	.pxl-header-logo { padding-top: 10px; padding-bottom: 10px; }
 	.pxl-header-logo img {
-		max-height: 115px;
+		max-height: 155px;
 	}
 }
 
@@ -525,7 +525,7 @@ body.front-page .pxl-main {
 	}
 	.main-menu-mobile .btn-nav-mobile span {
 		margin: 3px 0;
-		margin-top: -1.5px;
+		margin-top: -1px;
 	}
 }
 
@@ -535,7 +535,7 @@ body.front-page .pxl-main {
 	content: "";
 	background: var(--heading-color);
 	display: block;
-	height: 3px;
+	height: 2px;
 	left: 0;
 	right: 0;
 	position: absolute;
@@ -543,9 +543,9 @@ body.front-page .pxl-main {
 }
 
 .main-menu-mobile .btn-nav-mobile span {
-	margin: 6px 0;
+	margin: 5px 0;
 	top: 50%;
-	margin-top: -1.5px;
+	margin-top: -1px;
 }
 
 .main-menu-mobile .btn-nav-mobile::before {
@@ -560,6 +560,25 @@ body.front-page .pxl-main {
 .main-menu-mobile .btn-nav-mobile:hover::after,
 .main-menu-mobile .btn-nav-mobile:hover span {
 	background: var(--primary-color);
+}
+
+/* When menu is open: show X (cross) instead of hamburger */
+.main-menu-mobile .btn-nav-mobile.cliked::before,
+.main-menu-mobile .btn-nav-mobile.cliked::after {
+	top: 50%;
+	left: 0;
+	right: 0;
+	margin-top: -1px;
+}
+.main-menu-mobile .btn-nav-mobile.cliked::before {
+	transform: rotate(45deg);
+}
+.main-menu-mobile .btn-nav-mobile.cliked::after {
+	transform: rotate(-45deg);
+}
+.main-menu-mobile .btn-nav-mobile.cliked span {
+	opacity: 0;
+	visibility: hidden;
 }
 
 /* --- Side panel (mobile menu) — full screen --- */
@@ -1073,6 +1092,53 @@ body.front-page .pxl-main {
 	overflow: hidden;
 }
 
+/* Custom hero slider (ACF hero_slides) – no RevSlider */
+.molochko-hero-custom {
+	width: 100%;
+	position: relative;
+}
+.molochko-hero-custom .molochko-hero-slides {
+	width: 100%;
+}
+.molochko-hero-custom .molochko-hero-slide {
+	position: relative;
+	outline: none;
+}
+.molochko-hero-custom .molochko-hero-slide img {
+	width: 100%;
+	height: auto;
+	display: block;
+	object-fit: cover;
+	max-height: 85vh;
+}
+.molochko-hero-custom .molochko-hero-slide-link {
+	display: block;
+}
+.molochko-hero-custom .molochko-hero-slide-caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 1.5rem 2rem;
+	background: linear-gradient(transparent, rgba(0,0,0,0.6));
+	color: #fff;
+}
+.molochko-hero-custom .molochko-hero-slide-title {
+	margin: 0 0 0.25rem;
+	font-size: 1.5rem;
+}
+.molochko-hero-custom .molochko-hero-slide-text {
+	margin: 0;
+	font-size: 0.95rem;
+	opacity: 0.95;
+}
+.molochko-hero-custom .slick-arrow {
+	z-index: 2;
+}
+.molochko-hero-custom .slick-dots {
+	bottom: 1rem;
+}
+
 .molochko-hero .rev_slider,
 .molochko-hero .rev_slider_wrapper {
 	width: 100% !important;
@@ -1225,6 +1291,10 @@ body.home .molochko-fancy-boxes {
 	overflow: hidden;
 }
 
+.molochko-reviews-inner {
+	overflow: visible;
+}
+
 .molochko-reviews-bg {
 	position: absolute;
 	inset: 0;
@@ -1283,6 +1353,7 @@ body.home .molochko-fancy-boxes {
 .molochko-reviews-carousel {
 	position: relative;
 	margin-top: 0;
+	overflow: visible;
 }
 
 .molochko-reviews-carousel .molochko-reviews-track:not(.slick-initialized) {
@@ -1428,47 +1499,79 @@ body.home .molochko-fancy-boxes {
 	background: var(--primary-color);
 }
 
-.molochko-reviews-prev,
-.molochko-reviews-next {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	z-index: 10;
-	width: 48px;
-	height: 48px;
-	padding: 0;
-	border: none;
-	border-radius: 50%;
-	background: rgba(255, 255, 255, 0.15);
-	color: #fff;
-	font-size: 22px;
-	cursor: pointer;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	transition: background 0.2s ease, color 0.2s ease;
+/* Reviews Slick arrows: override Slick defaults, force visible, match Case Studies style */
+.molochko-reviews-carousel .slick-prev,
+.molochko-reviews-carousel .slick-next,
+.molochko-reviews .molochko-reviews-prev,
+.molochko-reviews .molochko-reviews-next {
+	position: absolute !important;
+	top: 50% !important;
+	transform: translateY(-50%) !important;
+	z-index: 20 !important;
+	width: 52px !important;
+	height: 52px !important;
+	min-width: 52px !important;
+	min-height: 52px !important;
+	padding: 0 !important;
+	border: none !important;
+	border-radius: 50% !important;
+	background: var(--primary-color) !important;
+	color: #fff !important;
+	font-size: 24px !important;
+	cursor: pointer !important;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	transition: background 0.2s ease, color 0.2s ease !important;
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.35) !important;
+	visibility: visible !important;
+	opacity: 1 !important;
 }
 
-.molochko-reviews-prev:hover,
-.molochko-reviews-next:hover {
-	background: var(--primary-color);
-	color: #fff;
+.molochko-reviews .molochko-reviews-prev::before,
+.molochko-reviews .molochko-reviews-next::before {
+	content: none !important;
+	display: none !important;
 }
 
+.molochko-reviews-carousel .slick-prev:hover,
+.molochko-reviews-carousel .slick-next:hover,
+.molochko-reviews .molochko-reviews-prev:hover,
+.molochko-reviews .molochko-reviews-next:hover {
+	background: #c4a876 !important;
+	color: #fff !important;
+}
+
+.molochko-reviews-carousel .slick-prev .zmdi,
+.molochko-reviews-carousel .slick-next .zmdi,
+.molochko-reviews-prev .zmdi,
+.molochko-reviews-next .zmdi {
+	font-size: 28px !important;
+	line-height: 1 !important;
+	display: block !important;
+	color: inherit !important;
+}
+
+.molochko-reviews-carousel .slick-prev,
 .molochko-reviews-prev {
-	left: 0;
+	left: 20px !important;
+	right: auto !important;
 }
 
+.molochko-reviews-carousel .slick-next,
 .molochko-reviews-next {
-	right: 0;
+	right: 20px !important;
+	left: auto !important;
 }
 
 @media (min-width: 900px) {
+	.molochko-reviews-carousel .slick-prev,
 	.molochko-reviews-prev {
-		left: -8px;
+		left: 12px !important;
 	}
+	.molochko-reviews-carousel .slick-next,
 	.molochko-reviews-next {
-		right: -8px;
+		right: 12px !important;
 	}
 }
 
@@ -5142,6 +5245,14 @@ body.single-post #pxl-content-area {
 	border-color: var(--primary-color);
 }
 .molochko-consultation-popup-form textarea { min-height: 100px; resize: vertical; }
+
+/* Mobile: smaller message area so form + submit fit on screen */
+@media (max-width: 767px) {
+	.molochko-consultation-popup { padding: 12px; align-items: flex-start; padding-top: max(12px, env(safe-area-inset-top)); }
+	.molochko-consultation-popup-dialog { max-height: min(90vh, 90dvh); }
+	.molochko-consultation-popup-content { padding: 28px 20px max(24px, env(safe-area-inset-bottom)); }
+	.molochko-consultation-popup-form textarea { min-height: 72px; max-height: 120px; }
+}
 .molochko-consultation-popup-form input[type="submit"] {
 	padding: 12px 28px;
 	background: var(--primary-color);

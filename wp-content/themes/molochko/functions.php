@@ -123,7 +123,7 @@ function molochko_pll_current_flag() {
 				$flag = '<img src="' . esc_url( $flag ) . '" alt="" width="24" height="18" loading="lazy" />';
 			}
 			$html = '<span class="pll-select-flag">' . $flag . '</span>';
-			return function_exists( 'molochko_fix_content_image_urls' ) ? molochko_fix_content_image_urls( $html ) : $html;
+			return $html;
 		}
 	}
 	return '';
@@ -140,10 +140,6 @@ function molochko_disable_comments_support() {
 	remove_post_type_support( 'page', 'comments' );
 }
 
-/**
- * Fix image URLs: replace any stored site URL with current request URL so images
- * load on both lawyermolochko.ddev.site and lawyer-molochko.com.ua.
- */
 add_filter( 'body_class', 'molochko_body_classes', 10, 1 );
 function molochko_body_classes( $classes ) {
 	if ( is_page_template( 'page-contact.php' ) ) {
@@ -153,97 +149,6 @@ function molochko_body_classes( $classes ) {
 		$classes[] = 'front-page';
 	}
 	return $classes;
-}
-
-add_filter( 'the_content', 'molochko_fix_content_image_urls', 20 );
-add_filter( 'post_thumbnail_url', 'molochko_fix_attachment_url', 10, 3 );
-add_filter( 'wp_get_attachment_url', 'molochko_fix_attachment_url_single', 10, 2 );
-add_filter( 'wp_calculate_image_srcset', 'molochko_fix_srcset_urls', 10, 5 );
-
-function molochko_fix_content_image_urls( $content ) {
-	if ( ! is_string( $content ) || '' === $content ) {
-		return $content;
-	}
-	$current = home_url( '/' );
-	$bases   = array(
-		'https://lawyer-molochko.com.ua:8443/',
-		'http://lawyer-molochko.com.ua:8443/',
-		'https://lawyermolochko.ddev.site:8443/',
-		'http://lawyermolochko.ddev.site:8443/',
-		'https://lawyermolochko.ddev.site:8080/',
-		'http://lawyermolochko.ddev.site:8080/',
-	);
-	foreach ( $bases as $base ) {
-		if ( $base !== $current && strpos( $content, $base ) !== false ) {
-			$content = str_replace( $base, $current, $content );
-		}
-	}
-	$content = preg_replace( '#(https?://[^/]+)/+#', '$1/', $content );
-	return $content;
-}
-
-function molochko_fix_attachment_url( $url, $post_id, $size ) {
-	return molochko_normalize_media_url( $url );
-}
-
-function molochko_fix_attachment_url_single( $url, $attachment_id ) {
-	return molochko_normalize_media_url( $url );
-}
-
-/**
- * Root site URL for media (wp-content/uploads). Uses current request host (including port)
- * so images load when the site is accessed via a non-default port (e.g. :8443).
- * Avoids language path (e.g. /ro/home/) so media always points to root.
- */
-function molochko_get_media_root_url() {
-	if ( ! empty( $_SERVER['HTTP_HOST'] ) && is_string( $_SERVER['HTTP_HOST'] ) ) {
-		$scheme = is_ssl() ? 'https' : 'http';
-		return $scheme . '://' . $_SERVER['HTTP_HOST'] . '/';
-	}
-	return untrailingslashit( get_option( 'siteurl' ) ) . '/';
-}
-
-function molochko_normalize_media_url( $url ) {
-	if ( ! is_string( $url ) || '' === $url ) {
-		return $url;
-	}
-	$current = molochko_get_media_root_url();
-	$bases   = array(
-		'https://lawyer-molochko.com.ua:8443',
-		'http://lawyer-molochko.com.ua:8443',
-		'https://lawyermolochko.ddev.site:8443',
-		'http://lawyermolochko.ddev.site:8443',
-		'https://lawyermolochko.ddev.site:8080',
-		'http://lawyermolochko.ddev.site:8080',
-		// No-port variants (e.g. WordPress srcset can emit these; must match siteurl so images load on :8443).
-		'https://lawyermolochko.ddev.site',
-		'http://lawyermolochko.ddev.site',
-	);
-	foreach ( $bases as $base ) {
-		if ( strpos( $url, $base ) === 0 ) {
-			$path = substr( $url, strlen( $base ) );
-			$path = '/' . ltrim( $path, '/' );
-			// Media lives at root: strip any language path (e.g. /ro/home/) so URL is .../wp-content/uploads/...
-			$wp_content = strpos( $path, '/wp-content/' );
-			if ( $wp_content !== false ) {
-				$path = substr( $path, $wp_content );
-			}
-			return rtrim( $current, '/' ) . $path;
-		}
-	}
-	return $url;
-}
-
-function molochko_fix_srcset_urls( $sources, $size_array, $image_src, $image_meta, $attachment_id ) {
-	if ( ! is_array( $sources ) ) {
-		return $sources;
-	}
-	foreach ( $sources as $width => $data ) {
-		if ( ! empty( $data['url'] ) ) {
-			$sources[ $width ]['url'] = molochko_normalize_media_url( $data['url'] );
-		}
-	}
-	return $sources;
 }
 
 /**
@@ -653,7 +558,7 @@ function molochko_about_block( $post_id = 0 ) {
 	$person_id = is_array( $person ) ? (int) ( $person['id'] ?? 0 ) : (int) $person;
 	$phone     = molochko_get_contact_option( 'header_phone' ) ?: '+38 (050) 606-00-79';
 	$tel_href  = 'tel:' . preg_replace( '/\D+/', '', $phone );
-	$book_url  = esc_url( home_url( '/book-appointment' ) );
+	$book_url  = '#consultation-popup';
 
 	set_query_var( 'args', array(
 		'bg_id'     => $bg_id,
@@ -685,6 +590,8 @@ require_once MOLOCHKO_DIR . '/inc/acf-case-study-cpt.php';
 require_once MOLOCHKO_DIR . '/inc/reviews-cpt.php';
 // Reviews: ACF field "Related Case Study" – link to case study archive.
 require_once MOLOCHKO_DIR . '/inc/acf-reviews-case-study-field.php';
+// Front page: optional custom hero slider (ACF hero_slides) instead of RevSlider.
+require_once MOLOCHKO_DIR . '/inc/acf-hero-slider-field.php';
 // Law Talk: fetch latest Instagram Reels (Graph API).
 require_once MOLOCHKO_DIR . '/inc/law-talk-instagram.php';
 
@@ -694,30 +601,4 @@ require_once MOLOCHKO_DIR . '/inc/law-talk-instagram.php';
 add_action( 'wp_enqueue_scripts', 'molochko_google_fonts', 5 );
 function molochko_google_fonts() {
 	wp_enqueue_style( 'molochko-google-fonts', 'https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap', array(), null );
-}
-
-/**
- * Replace old dev/local URLs in output (RevSlider images, serialized content, etc.).
- * Runs on final HTML so all sources (shortcodes, DB, plugins) get the current site URL.
- */
-add_action( 'template_redirect', 'molochko_buffer_replace_old_urls', 0 );
-function molochko_buffer_replace_old_urls() {
-	if ( is_admin() || ( defined( 'REST_REQUEST' ) && REST_REQUEST ) ) {
-		return;
-	}
-	ob_start( function( $html ) {
-		$home = home_url( '/' );
-		$old_urls = array(
-			'https://lawyermolochko.ddev.site:8443',
-			'http://lawyermolochko.ddev.site:8443',
-			'https://lawyer-molochko.com.ua:8443',
-			'http://lawyer-molochko.com.ua:8443',
-			'https://lawyermolochko.ddev.site',
-			'http://lawyermolochko.ddev.site',
-		);
-		foreach ( $old_urls as $old ) {
-			$html = str_replace( $old, rtrim( $home, '/' ), $html );
-		}
-		return $html;
-	} );
 }

@@ -17,6 +17,14 @@ From project root:
 ./deploy-remote.sh
 ```
 
+**Overwrite remote DB** (clear and re-import from current DDEV dump):
+
+```bash
+./deploy-remote.sh --fresh-db
+```
+
+(Also accepts `--overwrite-db`. Use when you want production to get a full copy of your local DB; all existing remote DB data is removed.)
+
 The script will:
 
 1. **Export DB** from DDEV to `dumps/init.sql` and replace all dev URLs with `https://lawyer-molochko.com.ua`.

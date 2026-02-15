@@ -20,12 +20,41 @@ if ( $default_fid && function_exists( 'pll_get_post' ) && function_exists( 'pll_
 
 $hero_shortcode = $fid ? get_field( 'hero_slider_shortcode', $fid ) : '';
 $hero_features  = $fid ? get_field( 'hero_features', $fid ) : array();
+$use_custom_hero = $fid && get_field( 'use_custom_hero_slider', $fid );
+$hero_slides    = ( $fid && $use_custom_hero ) ? get_field( 'hero_slides', $fid ) : array();
+if ( ! is_array( $hero_slides ) ) {
+	$hero_slides = array();
+}
+// Normalize slides: need at least image (ID or array with id).
+$custom_slides = array();
+foreach ( $hero_slides as $row ) {
+	$img = isset( $row['image'] ) ? $row['image'] : null;
+	$url = null;
+	if ( is_array( $img ) && ! empty( $img['id'] ) ) {
+		$url = wp_get_attachment_image_url( (int) $img['id'], 'full' );
+	} elseif ( is_array( $img ) && ! empty( $img['url'] ) ) {
+		$url = $img['url'];
+	} elseif ( (int) $img > 0 ) {
+		$url = wp_get_attachment_image_url( (int) $img, 'full' );
+	}
+	if ( $url ) {
+		$custom_slides[] = array(
+			'image_url' => $url,
+			'title'     => isset( $row['title'] ) ? $row['title'] : '',
+			'caption'   => isset( $row['caption'] ) ? $row['caption'] : '',
+			'link'      => isset( $row['link'] ) ? $row['link'] : '',
+		);
+	}
+}
+$use_custom_hero = $use_custom_hero && ! empty( $custom_slides );
 
 // Romanian front page: use RO slider alias (slider-1-1). UA uses slider-1 or ACF value.
-if ( function_exists( 'pll_current_language' ) && pll_current_language( 'slug' ) === 'ro' ) {
-	$hero_shortcode = '[rev_slider alias="slider-1-1"][/rev_slider]';
-} elseif ( empty( $hero_shortcode ) ) {
-	$hero_shortcode = '[rev_slider alias="slider-1"]';
+if ( ! $use_custom_hero ) {
+	if ( function_exists( 'pll_current_language' ) && pll_current_language( 'slug' ) === 'ro' ) {
+		$hero_shortcode = '[rev_slider alias="slider-1-1"][/rev_slider]';
+	} elseif ( empty( $hero_shortcode ) ) {
+		$hero_shortcode = '[rev_slider alias="slider-1"]';
+	}
 }
 
 // For translated front page (e.g. Romanian), fall back to default language's icon/image when current has none (media is shared).
@@ -78,9 +107,31 @@ if ( ! empty( $hero_features ) && is_array( $hero_features ) ) {
 }
 ?>
 
-<!-- Hero: Rev Slider or custom shortcode (RO = slider-1-1, UA = slider-1 or ACF) -->
+<!-- Hero: custom ACF slider (hero_slides) or Rev Slider shortcode -->
 <section class="molochko-hero section-full">
-	<?php echo molochko_fix_content_image_urls( do_shortcode( $hero_shortcode ) ); ?>
+	<?php if ( $use_custom_hero ) : ?>
+		<div class="molochko-hero-custom">
+			<div class="molochko-hero-slides">
+				<?php foreach ( $custom_slides as $slide ) : ?>
+					<div class="molochko-hero-slide">
+						<?php if ( ! empty( $slide['link'] ) ) : ?>
+							<a href="<?php echo esc_url( is_array( $slide['link'] ) ? ( $slide['link']['url'] ?? '#' ) : $slide['link'] ); ?>" class="molochko-hero-slide-link">
+						<?php endif; ?>
+						<img src="<?php echo esc_url( $slide['image_url'] ); ?>" alt="<?php echo esc_attr( $slide['title'] ); ?>" loading="lazy" />
+						<?php if ( $slide['title'] || $slide['caption'] ) : ?>
+							<div class="molochko-hero-slide-caption">
+								<?php if ( $slide['title'] ) : ?><h2 class="molochko-hero-slide-title"><?php echo esc_html( $slide['title'] ); ?></h2><?php endif; ?>
+								<?php if ( $slide['caption'] ) : ?><p class="molochko-hero-slide-text"><?php echo esc_html( $slide['caption'] ); ?></p><?php endif; ?>
+							</div>
+						<?php endif; ?>
+						<?php if ( ! empty( $slide['link'] ) ) : ?></a><?php endif; ?>
+					</div>
+				<?php endforeach; ?>
+			</div>
+		</div>
+	<?php else : ?>
+		<?php echo do_shortcode( $hero_shortcode ); ?>
+	<?php endif; ?>
 </section>
 
 <!-- Hero features (ACF hero_features): overlaps hero, 3 cols -->

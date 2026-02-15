@@ -8,6 +8,7 @@
 		panelMobileMenu();
 		scrollToTop();
 		submenuToggle();
+		heroCustomSlider();
 		caseStudiesCarousel();
 		blogSectionCarousel();
 		reviewsSectionCarousel();
@@ -47,6 +48,26 @@
 			if (e.key === "Escape" && $popup.attr("aria-hidden") === "false") {
 				closeConsultationPopup();
 			}
+		});
+	}
+
+	// Custom hero slider (ACF hero_slides): Slick full-width
+	function heroCustomSlider() {
+		var $slides = $(".molochko-hero-slides");
+		if (!$slides.length || !$.fn.slick) return;
+		if ($slides.hasClass("slick-initialized")) return;
+		$slides.slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 5000,
+			infinite: true,
+			arrows: true,
+			dots: true,
+			fade: true,
+			adaptiveHeight: false,
+			prevArrow: '<button type="button" class="slick-prev" aria-label="Попередній"><i class="zmdi zmdi-chevron-left"></i></button>',
+			nextArrow: '<button type="button" class="slick-next" aria-label="Наступний"><i class="zmdi zmdi-chevron-right"></i></button>'
 		});
 	}
 
