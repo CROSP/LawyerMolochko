@@ -37,6 +37,7 @@ $btn_url  = get_post_type_archive_link( 'molochko-case-study' ) ?: '#';
 
 	<?php if ( ! empty( $posts ) ) : ?>
 	<div class="mcs-carousel">
+		<div class="mcs-carousel-nav" aria-hidden="true"></div>
 		<div class="mcs-track">
 			<?php
 			foreach ( $posts as $post ) {

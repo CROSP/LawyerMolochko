@@ -34,6 +34,7 @@ $blog_url = get_permalink( get_option( 'page_for_posts' ) ) ?: home_url( '/blog/
 
 	<?php if ( ! empty( $posts ) ) : ?>
 	<div class="blog-section-carousel">
+		<div class="blog-section-carousel-nav" aria-hidden="true"></div>
 		<div class="blog-section-track">
 			<?php
 			foreach ( $posts as $post ) {

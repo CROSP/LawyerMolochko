@@ -27,6 +27,7 @@ $desc     = molochko_pll__( 'Реальні історії та подяки в�
 
 		<?php if ( ! empty( $reviews ) ) : ?>
 		<div class="molochko-reviews-carousel">
+			<div class="molochko-reviews-carousel-nav" aria-hidden="true"></div>
 			<div class="molochko-reviews-track">
 				<?php
 				foreach ( $reviews as $review ) {

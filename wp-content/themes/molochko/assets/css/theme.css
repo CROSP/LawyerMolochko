@@ -1350,10 +1350,38 @@ body.home .molochko-fancy-boxes {
 	margin-right: auto;
 }
 
+/* Carousel nav row: arrows above the cards (all sections) */
+.mcs-carousel-nav,
+.molochko-reviews-carousel-nav,
+.blog-section-carousel-nav,
+.lt-carousel-nav {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 12px;
+	margin-bottom: 20px;
+	min-height: 52px;
+}
+.mcs-carousel-nav .slick-prev,
+.mcs-carousel-nav .slick-next,
+.molochko-reviews-carousel-nav .slick-prev,
+.molochko-reviews-carousel-nav .slick-next,
+.blog-section-carousel-nav .slick-prev,
+.blog-section-carousel-nav .slick-next,
+.lt-carousel-nav .slick-prev,
+.lt-carousel-nav .slick-next {
+	position: static !important;
+	transform: none !important;
+	left: auto !important;
+	right: auto !important;
+	top: auto !important;
+}
+
 .molochko-reviews-carousel {
 	position: relative;
 	margin-top: 0;
 	overflow: visible;
+	padding: 0;
 }
 
 .molochko-reviews-carousel .molochko-reviews-track:not(.slick-initialized) {
@@ -1499,14 +1527,11 @@ body.home .molochko-fancy-boxes {
 	background: var(--primary-color);
 }
 
-/* Reviews Slick arrows: override Slick defaults, force visible, match Case Studies style */
+/* Reviews Slick arrows: in nav row above cards */
 .molochko-reviews-carousel .slick-prev,
 .molochko-reviews-carousel .slick-next,
 .molochko-reviews .molochko-reviews-prev,
 .molochko-reviews .molochko-reviews-next {
-	position: absolute !important;
-	top: 50% !important;
-	transform: translateY(-50%) !important;
 	z-index: 20 !important;
 	width: 52px !important;
 	height: 52px !important;
@@ -1552,28 +1577,7 @@ body.home .molochko-fancy-boxes {
 	color: inherit !important;
 }
 
-.molochko-reviews-carousel .slick-prev,
-.molochko-reviews-prev {
-	left: 20px !important;
-	right: auto !important;
-}
-
-.molochko-reviews-carousel .slick-next,
-.molochko-reviews-next {
-	right: 20px !important;
-	left: auto !important;
-}
-
-@media (min-width: 900px) {
-	.molochko-reviews-carousel .slick-prev,
-	.molochko-reviews-prev {
-		left: 12px !important;
-	}
-	.molochko-reviews-carousel .slick-next,
-	.molochko-reviews-next {
-		right: 12px !important;
-	}
-}
+/* Reviews arrows: no side positioning (they sit in nav row above) */
 
 /* --- Reviews archive (/reviews/) --- */
 .molochko-reviews-archive {
@@ -2443,9 +2447,6 @@ body.home .molochko-fancy-boxes {
 
 .molochko-case-studies .mcs-slick-prev,
 .molochko-case-studies .mcs-slick-next {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
 	z-index: 10;
 	width: 52px;
 	height: 52px;
@@ -2467,23 +2468,6 @@ body.home .molochko-fancy-boxes {
 .molochko-case-studies .mcs-slick-next:hover {
 	background: #c4a876;
 	color: #fff;
-}
-
-.molochko-case-studies .mcs-slick-prev {
-	left: 8px;
-}
-
-.molochko-case-studies .mcs-slick-next {
-	right: 8px;
-}
-
-@media (min-width: 900px) {
-	.molochko-case-studies .mcs-slick-prev {
-		left: -12px;
-	}
-	.molochko-case-studies .mcs-slick-next {
-		right: -12px;
-	}
 }
 
 .molochko-case-studies .mcs-carousel .slick-dots {
@@ -2663,7 +2647,7 @@ body.home .molochko-fancy-boxes {
 	position: relative;
 	max-width: 1100px;
 	margin: 0 auto;
-	padding: 0 50px;
+	padding: 0;
 }
 
 .lt-carousel .lt-track:not(.slick-initialized) {
@@ -2758,9 +2742,6 @@ body.home .molochko-fancy-boxes {
 
 .molochko-law-talk .lt-slick-prev,
 .molochko-law-talk .lt-slick-next {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
 	z-index: 10;
 	width: 48px;
 	height: 48px;
@@ -2782,14 +2763,6 @@ body.home .molochko-fancy-boxes {
 .molochko-law-talk .lt-slick-next:hover {
 	background: var(--primary-color);
 	color: #fff;
-}
-
-.molochko-law-talk .lt-slick-prev {
-	left: 0;
-}
-
-.molochko-law-talk .lt-slick-next {
-	right: 0;
 }
 
 .molochko-law-talk .lt-carousel .slick-dots {
@@ -2836,7 +2809,7 @@ body.home .molochko-fancy-boxes {
 		margin-bottom: 36px;
 	}
 	.lt-carousel {
-		padding: 0 44px;
+		padding: 0;
 	}
 	.lt-embed-responsive {
 		max-height: 420px;
@@ -4750,9 +4723,6 @@ body.single-post #pxl-content-area {
 
 .molochko-blog-section .blog-section-slick-prev,
 .molochko-blog-section .blog-section-slick-next {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
 	z-index: 10;
 	width: 52px;
 	height: 52px;
@@ -4773,23 +4743,6 @@ body.single-post #pxl-content-area {
 .molochko-blog-section .blog-section-slick-next:hover {
 	background: #c4a876;
 	color: #fff;
-}
-
-.molochko-blog-section .blog-section-slick-prev {
-	left: 8px;
-}
-
-.molochko-blog-section .blog-section-slick-next {
-	right: 8px;
-}
-
-@media (min-width: 900px) {
-	.molochko-blog-section .blog-section-slick-prev {
-		left: -12px;
-	}
-	.molochko-blog-section .blog-section-slick-next {
-		right: -12px;
-	}
 }
 
 /* ========== Contact page (Template: Contact Us) ========== */

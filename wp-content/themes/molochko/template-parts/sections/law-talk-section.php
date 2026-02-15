@@ -83,6 +83,7 @@ if ( empty( $embed_items ) && ! empty( $embeds ) && is_array( $embeds ) ) {
 		<?php if ( ! empty( $embed_items ) ) : ?>
 		<div class="lt-carousel-wrap">
 			<div class="lt-carousel">
+				<div class="lt-carousel-nav" aria-hidden="true"></div>
 				<div class="lt-track">
 					<?php
 					foreach ( $embed_items as $embed_url ) {

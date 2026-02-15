@@ -84,7 +84,7 @@
 			arrows: true,
 			dots: true,
 			adaptiveHeight: false,
-			appendArrows: $carousel,
+			appendArrows: $carousel.find(".mcs-carousel-nav"),
 			prevArrow: '<button type="button" class="slick-prev mcs-slick-prev" aria-label="Попередній"><i class="zmdi zmdi-chevron-left"></i></button>',
 			nextArrow: '<button type="button" class="slick-next mcs-slick-next" aria-label="Наступний"><i class="zmdi zmdi-chevron-right"></i></button>',
 			responsive: [
@@ -108,7 +108,7 @@
 			arrows: true,
 			dots: true,
 			adaptiveHeight: false,
-			appendArrows: $carousel,
+			appendArrows: $carousel.find(".blog-section-carousel-nav"),
 			prevArrow: '<button type="button" class="slick-prev blog-section-slick-prev" aria-label="Попередній"><i class="zmdi zmdi-chevron-left"></i></button>',
 			nextArrow: '<button type="button" class="slick-next blog-section-slick-next" aria-label="Наступний"><i class="zmdi zmdi-chevron-right"></i></button>',
 			responsive: [
@@ -133,7 +133,7 @@
 			arrows: true,
 			dots: true,
 			adaptiveHeight: true,
-			appendArrows: $carousel,
+			appendArrows: $carousel.find(".molochko-reviews-carousel-nav"),
 			prevArrow: '<button type="button" class="slick-prev molochko-reviews-prev" aria-label="Попередній"><i class="zmdi zmdi-chevron-left"></i></button>',
 			nextArrow: '<button type="button" class="slick-next molochko-reviews-next" aria-label="Наступний"><i class="zmdi zmdi-chevron-right"></i></button>',
 			responsive: [
@@ -159,7 +159,7 @@
 			arrows: true,
 			dots: true,
 			adaptiveHeight: true,
-			appendArrows: $carousel,
+			appendArrows: $carousel.find(".lt-carousel-nav"),
 			prevArrow: '<button type="button" class="slick-prev lt-slick-prev" aria-label="Попередній"><i class="zmdi zmdi-chevron-left"></i></button>',
 			nextArrow: '<button type="button" class="slick-next lt-slick-next" aria-label="Наступний"><i class="zmdi zmdi-chevron-right"></i></button>',
 			responsive: [
