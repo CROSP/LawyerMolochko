@@ -1,5 +1,6 @@
 <?php
 
+
 /**
  * Class MC4WP_Ninja_Forms_Action
  */

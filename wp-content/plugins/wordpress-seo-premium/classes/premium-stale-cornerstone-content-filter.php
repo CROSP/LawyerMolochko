@@ -1,4 +1,5 @@
 <?php
+
 /**
  * WPSEO plugin file.
  *

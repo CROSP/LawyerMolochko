@@ -695,3 +695,5 @@ add_action( 'wp_enqueue_scripts', 'molochko_google_fonts', 5 );
 function molochko_google_fonts() {
 	wp_enqueue_style( 'molochko-google-fonts', 'https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap', array(), null );
 }
+
+

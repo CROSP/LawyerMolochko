@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-11-07 22:32:12+0000\n"
+"PO-Revision-Date: 2025-11-26 00:47:17+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,11 @@ msgstr ""
 "X-Generator: GlotPress/4.0.3\n"
 "Language: uk_UA\n"
 "Project-Id-Version: Plugins - WooCommerce - Stable (latest release)\n"
+
+#: assets/client/blocks/add-to-cart-with-options-variation-description/block.json
+msgctxt "block description"
+msgid "Displays the description of the selected variation."
+msgstr "Відображення опису вибраної варіації."
 
 #: assets/client/blocks/add-to-cart-with-options-variation-description/block.json
 msgctxt "block title"
@@ -4617,7 +4622,7 @@ msgstr "У вас закінчився термін дії <strong>%1$s підп
 #. product price string
 #: src/Admin/PluginsHelper.php:995
 msgid "One of your subscriptions for <strong>%1$s</strong> has expired. <a href=\"%3$s\">%4$s</a> to continue receiving updates and streamlined support."
-msgstr "Термін дії однієї з ваших підписок на <strong>%1$s</strong> закінчився. <a href=\"%3$s\">%4$s.</a>, щоб продовжити отримувати оновлення та оптимізовану підтримку."
+msgstr "Термін дії однієї з ваших підписок на <strong>%1$s</strong> закінчився. <a href=\"%3$s\">%4$s</a>, щоб продовжити отримувати оновлення та оптимізовану підтримку."
 
 #. translators: 1) product name 3) URL to My Subscriptions page 4) Renew
 #. product price string
@@ -4968,7 +4973,7 @@ msgstr "Нотатка після покупки"
 #. guide link closing tag.
 #: src/Internal/Features/ProductBlockEditor/ProductTemplates/SimpleProductTemplate.php:658
 msgid "Custom fields can be used in a variety of ways, such as sharing more detailed product information, showing more input fields, or for internal inventory organization. %1$sRead more about custom fields%2$s"
-msgstr "Користувацькі поля можна використовувати різними способами, наприклад, для надання докладнішої інформації про товар, відображення більшої кількості полів введення або організації внутрішніх запасів. %1$sЧитати далі про користувацькі поля%2$s"
+msgstr "Спеціальні поля можна використовувати різними способами, наприклад, надавати більш детальну інформацію про товар, показувати більше полів для введення або для внутрішної організації запасів. %1$sДізнайтеся більше про спеціальні поля%2$s."
 
 #: src/Internal/Features/ProductBlockEditor/ProductTemplates/SimpleProductTemplate.php:655
 msgid "Custom fields"
@@ -5905,7 +5910,7 @@ msgstr "Перелік додаткових полів"
 #: assets/client/blocks/order-confirmation-additional-fields-wrapper/block.json
 msgctxt "block description"
 msgid "Display additional checkout fields from the 'contact' and 'order' locations."
-msgstr "Відображення додаткових полів оформлення замовлення з контактів і додаткових місць розташування."
+msgstr "Відображати додаткові поля для оформлення замовлення з розділів \"контакти\" та \"замовлення\"."
 
 #: assets/client/blocks/order-confirmation-additional-fields-wrapper/block.json
 msgctxt "block title"
@@ -6016,7 +6021,7 @@ msgstr "Порада: Пропозиція товарів - це товари, �
 #. %2$s: "Learn more about linked products" link closing tag.
 #: src/Internal/Features/ProductBlockEditor/ProductTemplates/SimpleProductTemplate.php:1141
 msgid "Upsells are typically products that are extra profitable or better quality or more expensive. Experiment with combinations to boost sales. %1$sLearn more about linked products%2$s"
-msgstr "Пропозиція товарів - це, як правило, найбільш прибуткові, якісні або дорогі товари. Пробуйте різні комбінації, щоб збільшити продажі. %1$sДетальніше про супутні товари.%2$s"
+msgstr "Пропозиція товарів - це, як правило, найбільш прибуткові, якісні або дорогі товари. Пробуйте різні комбінації, щоб збільшити продажі. %1$sДетальніше про супутні товари%2$s"
 
 #: src/Internal/Features/ProductBlockEditor/ProductTemplates/DownloadableProductTrait.php:44
 msgid "Include downloads"
@@ -7461,7 +7466,7 @@ msgstr "⚠️ Застарілий WooCommerce REST API було видален
 
 #: includes/admin/class-wc-admin-notices.php:171
 msgid "WooCommerce webhooks that use the Legacy REST API are unsupported"
-msgstr "Вебхуки WooCommerce, які використовують застарілий REST API, незабаром перестануть підтримуватися"
+msgstr "Вебхуки WooCommerce, які використовують старий REST API, не підтримуються"
 
 #: assets/client/blocks/product-gallery-large-image-next-previous/block.json
 msgctxt "block description"
@@ -7933,8 +7938,8 @@ msgid "This order cannot be paid for."
 msgstr "Це замовлення неможливо оплатити."
 
 #. translators: %s: product number.
-#: src/Blocks/BlockTypes/ProductButton.php:194
-#: src/Blocks/BlockTypes/ProductButton.php:371
+#: src/Blocks/BlockTypes/ProductButton.php:195
+#: src/Blocks/BlockTypes/ProductButton.php:372
 msgid "%s in cart"
 msgstr "%s в кошику"
 
@@ -8057,7 +8062,7 @@ msgstr "Високопродуктивне сховище замовлень"
 #. translators: %s: number of pending orders.
 #: src/Internal/DataStores/Orders/CustomOrdersTableController.php:695
 msgid "Currently syncing orders... %s pending"
-msgstr "В даний момент синхронізуються замовлення... %d в очікуванні"
+msgstr "В даний момент синхронізуються замовлення... %s в очікуванні"
 
 #: src/Admin/Features/OnboardingTasks/Tasks/WooCommercePayments.php:43
 #: src/Internal/Admin/RemoteFreeExtensions/DefaultFreeExtensions.php:492
@@ -8120,7 +8125,7 @@ msgstr "Номер замовлення, який використовуєтьс
 msgid "Collection from <strong>%s</strong>:"
 msgstr "Колекція від <strong>%s</strong>:"
 
-#: src/Blocks/BlockTypes/ClassicTemplate.php:221
+#: src/Blocks/BlockTypes/ClassicTemplate.php:229
 msgid "Order confirmation"
 msgstr "Підтвердження замовлення"
 
@@ -9633,7 +9638,7 @@ msgstr "%1$s %2$s"
 
 #: includes/admin/meta-boxes/views/html-product-data-attributes.php:23
 msgid "Add descriptive pieces of information that customers can use to search for this product on your store, such as “Material” or “Size”."
-msgstr "Додайте описову інформацію, за якою покупці зможуть шукати цей товар у вашому магазині, наприклад \"Матеріал\" або \"Бренд\"."
+msgstr "Додайте описову інформацію, за якою покупці зможуть шукати цей товар у вашому магазині, наприклад \"Матеріал\" або \"Розмір\"."
 
 #: assets/client/blocks/customer-account/block.json
 msgctxt "block description"
@@ -9658,7 +9663,7 @@ msgstr "Виберіть між доставкою та самовивозом."
 #: assets/client/blocks/inner-blocks/checkout-pickup-options-block/block.json
 msgctxt "block description"
 msgid "Shows local pickup locations."
-msgstr "Показує варіанти самовивозу."
+msgstr "Показує місцезнаходження самовивозу."
 
 #: assets/client/blocks/inner-blocks/checkout-pickup-options-block/block.json
 msgctxt "block title"
@@ -10283,7 +10288,7 @@ msgstr "Короткий вміст"
 
 #: src/Internal/Features/ProductBlockEditor/ProductTemplates/SimpleProductTemplate.php:557
 msgid "Search or create categories…"
-msgstr "Пошук або створення категорії…"
+msgstr "Пошук або створення категорій…"
 
 #: src/Internal/Admin/Notes/PaymentsMoreInfoNeeded.php:75
 msgid "Learn more here"
@@ -11679,7 +11684,7 @@ msgstr[2] "Потрібно синхронізувати %1$d замовлень
 msgid "Custom order table usage is not enabled. If you are testing, you can enable it by following the testing instructions in %s"
 msgstr "Використання власної таблиці замовлень не увімкнено. Якщо потрібне тестування, можна ввімкнути цю опцію, дотримуючись інструкцій на сторінці %s"
 
-#: src/Admin/Features/OnboardingTasks/TaskLists.php:444
+#: src/Admin/Features/OnboardingTasks/TaskLists.php:436
 msgctxt "Admin menu name"
 msgid "Home"
 msgstr "Головна"
@@ -13542,11 +13547,11 @@ msgstr "Розширення Eway для WooCommerce дозволяє здійс
 msgid "Eway"
 msgstr "Eway"
 
-#: src/Admin/Features/OnboardingTasks/TaskLists.php:274
+#: src/Admin/Features/OnboardingTasks/TaskLists.php:266
 msgid "Task list ID does not exist"
 msgstr "ID переліку завдань не існує"
 
-#: src/Admin/Features/OnboardingTasks/TaskLists.php:254
+#: src/Admin/Features/OnboardingTasks/TaskLists.php:246
 msgid "Task list ID already exists"
 msgstr "ID переліку завдань вже існує"
 
@@ -13921,7 +13926,7 @@ msgstr "Змінити статус на \"Скасовано\""
 msgid "Download %d ID"
 msgstr "ID завантаження %d"
 
-#: src/Admin/Features/OnboardingTasks/TaskLists.php:153
+#: src/Admin/Features/OnboardingTasks/TaskLists.php:145
 #: assets/client/admin/app/index.js:2 assets/client/admin/embed/index.js:2
 msgid "Things to do next"
 msgstr "Що робити далі"
@@ -14150,7 +14155,7 @@ msgstr "Увімкніть ексклюзивний плагін PayU для Woo
 msgid "PayU for WooCommerce"
 msgstr "PayU для WooCommerce"
 
-#: src/Admin/Features/OnboardingTasks/TaskLists.php:139
+#: src/Admin/Features/OnboardingTasks/TaskLists.php:131
 msgid "Get ready to start selling"
 msgstr "Будьте готові почати продавати"
 
@@ -17899,7 +17904,7 @@ msgid "Coupons discounts"
 msgstr "Купони знижки"
 
 #. translators: %s: URL of WooCommerce.com subscriptions tab.
-#: includes/admin/helper/class-wc-helper-updater.php:837
+#: includes/admin/helper/class-wc-helper-updater.php:864
 msgid "Please visit the <a href=\"%s\" target=\"_blank\">subscriptions page</a> and renew to continue receiving updates."
 msgstr "Будь ласка, перейдіть на <a href=\"%s\" target=\"_blank\">сторінку підписки</a> та продліть її, щоб продовжити отримувати оновлення."
 
@@ -17990,7 +17995,7 @@ msgstr "Розпочати"
 
 #: src/Internal/Traits/OrderAttributionMeta.php:306
 msgid "Mobile app"
-msgstr "Мобільний застосунок"
+msgstr "Мобільний додаток"
 
 #: src/Internal/Admin/RemoteFreeExtensions/DefaultFreeExtensions.php:209
 msgid "Send targeted campaigns, recover abandoned carts and much more with Mailchimp."
@@ -28051,8 +28056,8 @@ msgstr "Ви не можете додати ще \"%s\" до кошика."
 #: includes/class-wc-cart.php:1222 includes/class-wc-cart.php:1292
 #: includes/class-wc-frontend-scripts.php:712
 #: includes/wc-cart-functions.php:133 includes/wc-template-functions.php:2446
-#: src/Blocks/BlockTypes/ProductButton.php:396
 #: src/Blocks/BlockTypes/ProductButton.php:397
+#: src/Blocks/BlockTypes/ProductButton.php:398
 msgid "View cart"
 msgstr "Переглянути кошик"
 
@@ -29959,7 +29964,7 @@ msgstr "Примусовий SSL (HTTPS) на сторінках оплати (<
 #: includes/admin/class-wc-admin.php:235
 #: src/Internal/Admin/EmailPreview/EmailPreviewRestController.php:246
 msgid "Invalid email type."
-msgstr "Неправильний тип зображення."
+msgstr "Невірний тип email."
 
 #. Plugin URI of the plugin
 #: woocommerce.php
@@ -35309,7 +35314,7 @@ msgstr "Обліковий запис з цим логіном вже зареє
 
 #: includes/wc-user-functions.php:79
 msgid "Please provide a valid account username."
-msgstr "Будь ласка, введіть вірний логін облікового запису."
+msgstr "Будь ласка, вкажіть дійсне ім'я користувача облікового запису."
 
 #: includes/wc-term-functions.php:236
 #: includes/widgets/class-wc-widget-product-categories.php:266
@@ -37493,7 +37498,7 @@ msgstr "%s було видалено з кошика, бо більше не м�
 #. translators: %d: Page number.
 #. translators: %d is the page number (1, 2, 3...).
 #: includes/class-wc-breadcrumb.php:377
-#: includes/class-wc-template-loader.php:516
+#: includes/class-wc-template-loader.php:521
 #: assets/client/blocks/all-products-frontend.js:2
 #: assets/client/blocks/all-products-frontend.js:3
 #: assets/client/blocks/all-products-frontend.js:4
@@ -42129,7 +42134,7 @@ msgstr "Доставка в"
 msgid "Purchase"
 msgstr "Купити"
 
-#: includes/abstracts/abstract-wc-order.php:2512
+#: includes/abstracts/abstract-wc-order.php:2517
 #: includes/admin/class-wc-admin-dashboard.php:496
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:123
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:214
@@ -43689,7 +43694,7 @@ msgstr "Читати далі"
 #: includes/abstracts/abstract-wc-product.php:2094
 #: includes/class-wc-product-simple.php:62
 #: packages/email-editor/src/Integrations/WooCommerce/Renderer/Blocks/class-product-button.php:72
-#: src/Blocks/BlockTypes/ProductButton.php:142
+#: src/Blocks/BlockTypes/ProductButton.php:143
 #: assets/client/blocks/add-to-cart-form.js:1
 #: assets/client/blocks/add-to-cart-with-options.js:1
 #: assets/client/blocks/all-products.js:1

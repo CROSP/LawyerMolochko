@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Contact Form 7 - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-06-26 17:41:08+0000\n"
+"PO-Revision-Date: 2025-11-17 22:10:22+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -11,9 +11,80 @@ msgstr ""
 "Language: uk_UA\n"
 "Project-Id-Version: Plugins - Contact Form 7 - Stable (latest release)\n"
 
+#. translators: 1: URL to support page about Cloudflare Turnstile, 2: Stripe
+#: admin/includes/welcome-panel.php:139
+msgid "With help from cloud-based machine learning, anti-spam services will protect your forms (<a href=\"%1$s\">Cloudflare Turnstile</a>). Even payment services are natively supported (<a href=\"%2$s\">Stripe</a>)."
+msgstr "За допомогою хмарного машинного навчання антиспам-сервіси захистять ваші форми (<a href=\"%1$s\">Cloudflare Turnstile</a>). Навіть платіжні сервіси підтримуються на рівні системи (<a href=\"%2$s\">Stripe</a>)."
+
+#. translators: 1: URL to support page about Akismet, 2: Cloudflare Turnstile,
+#. 3: Disallowed list
+#: admin/includes/welcome-panel.php:64
+msgid "Contact Form 7 supports spam-filtering with <a href=\"%1$s\">Akismet</a>. <a href=\"%2$s\">Cloudflare Turnstile</a> blocks annoying spambots. Plus, using <a href=\"%3$s\">disallowed list</a>, you can block messages containing specified keywords or those sent from specified IP addresses."
+msgstr "Contact Form 7 підтримує фільтрування спаму за допомогою <a href=\"%1$s\">Akismet</a>. <a href=\"%2$s\">Cloudflare Turnstile</a> блокує набридливі спам-боти. Крім того, за допомогою <a href=\"%3$s\">списку блокування</a>, ви можете блокувати повідомлення, що містять певні ключові слова або надіслані з певних IP-адрес."
+
+#. translators: %s: URL to support page about the additional settings editor
+#: admin/includes/editor.php:520
+msgid "You can add customization code snippets here. For details, see <a href=\"%s\">Additional settings</a>."
+msgstr "Тут можна додати фрагменти коду для налаштування. Детальніше дивіться в розділі <a href=\"%s\">Додаткові налаштування</a>."
+
+#. translators: %s: URL to support page about the messages editor
+#: admin/includes/editor.php:459
+msgid "You can edit messages used in various situations here. For details, see <a href=\"%s\">Editing messages</a>."
+msgstr "Тут ви можете редагувати повідомлення, що використовуються в різних ситуаціях. Детальніше дивіться в розділі <a href=\"%s\">Редагування повідомлень</a>."
+
+#. translators: %s: URL to support page about the email template
+#: admin/includes/editor.php:207
+msgid "You can edit the email template here. For details, see <a href=\"%s\">Setting up mail</a>."
+msgstr "Ви можете редагувати шаблон електронного листа тут. Детальніше дивіться в розділі <a href=\"%s\">Налаштування пошти</a>."
+
+#. translators: %s: URL to support page about the form template
+#: admin/includes/editor.php:86
+msgid "You can edit the form template here. For details, see <a href=\"%s\">Editing form template</a>."
+msgstr "Ви можете редагувати шаблон форми тут. Детальніше дивіться в розділі <a href=\"%s\">Редагування шаблону форми</a>."
+
+#: admin/includes/editor.php:37
+msgid "Contact form editor tabs"
+msgstr "Вкладки редактора контактної форми"
+
+#. Author URI of the plugin
+#: wp-contact-form-7.php
+msgid "https://github.com/rocklobster-in/"
+msgstr "https://github.com/rocklobster-in/"
+
+#. Author of the plugin
+#: wp-contact-form-7.php
+msgid "Rock Lobster Inc."
+msgstr "Rock Lobster Inc."
+
+#. translators: %s: Search query.
+#: admin/admin.php:467
+msgid "Search results for: <strong>%s</strong>"
+msgstr "Результати пошуку для: <strong>%s</strong>"
+
+#: modules/turnstile/turnstile.php:179
+msgid "Turnstile validation failed."
+msgstr "Перевірка Turnstile не вдалася."
+
+#: modules/turnstile/turnstile.php:174
+msgid "Turnstile token is empty."
+msgstr "Токен Turnstile порожній."
+
+#: modules/turnstile/service.php:292
+msgid "Turnstile is active on this site."
+msgstr "Turnstile активний на цьому сайті."
+
 #: modules/turnstile/service.php:280
 msgid "Cloudflare Turnstile integration"
 msgstr "Інтеграція Cloudflare Turnstile"
+
+#: modules/turnstile/service.php:269
+msgid "Turnstile is Cloudflare&#8217;s smart CAPTCHA alternative, which confirms web visitors are real and blocks unwanted bots without slowing down web experiences for real users."
+msgstr "Turnstile — це інтелектуальна альтернатива CAPTCHA від Cloudflare, яка підтверджує, що відвідувачі веб-сайту є реальними, і блокує небажаних ботів, не сповільнюючи роботу веб-сайту для реальних користувачів."
+
+#: modules/recaptcha/service.php:262 modules/stripe/service.php:146
+#: modules/turnstile/service.php:239
+msgid "<strong>Error:</strong> Invalid key values."
+msgstr "<strong>Помилка:</strong> Невірні значення ключів."
 
 #: modules/turnstile/service.php:40
 msgid "Turnstile"
@@ -50,6 +121,14 @@ msgstr "Не вдалося надіслати повідомлення"
 msgid "https://contactform7.com/turnstile-integration/"
 msgstr "https://contactform7.com/turnstile-integration/"
 
+#: admin/admin.php:758
+msgid "<strong>Attention reCAPTCHA users:</strong> Google attempts to make all reCAPTCHA users migrate to reCAPTCHA Enterprise, meaning Google charges you for API calls exceeding the free tier. Contact Form 7 supports <a href=\"https://contactform7.com/turnstile-integration/\">Cloudflare Turnstile</a>, and we recommend it unless you have reasons to use reCAPTCHA."
+msgstr "<strong>До уваги користувачів reCAPTCHA:</strong> Google намагається перевести всіх користувачів reCAPTCHA на reCAPTCHA Enterprise, що означає, що Google стягуватиме плату за виклики API, які перевищують безкоштовний ліміт. Contact Form 7 підтримує <a href=\"https://contactform7.com/turnstile-integration/\">Cloudflare Turnstile</a>, і ми рекомендуємо його, якщо у вас немає причин використовувати reCAPTCHA."
+
+#: admin/admin.php:744
+msgid "Contact Form 7 has completed the <a href=\"https://contactform7.com/2025/01/08/complete-removal-of-constant-contact-integration/\">removal of the Constant Contact integration</a>. We recommend <a href=\"https://contactform7.com/sendinblue-integration/\">Brevo</a> as an alternative."
+msgstr "Contact Form 7 завершив <a href=\"https://contactform7.com/2025/01/08/complete-removal-of-constant-contact-integration/\">видалення інтеграції Constant Contact</a>. Як альтернативу ми рекомендуємо <a href=\"https://contactform7.com/sendinblue-integration/\">Brevo</a>."
+
 #: admin/admin.php:51 admin/admin.php:52 admin/admin.php:453
 #: admin/edit-contact-form.php:41 admin/edit-contact-form.php:54
 msgid "Add Contact Form"
@@ -62,6 +141,11 @@ msgstr "Виявлено недійсний ідентифікатор Stripe Pa
 #: admin/includes/welcome-panel.php:90
 msgid "https://contactform7.com/contributing/"
 msgstr "https://contactform7.com/contributing/"
+
+#. translators: %s: URL to support page about ways to contribute
+#: admin/includes/welcome-panel.php:89
+msgid "There are several ways for you to <a href=\"%s\">contribute to the project</a>: testing, coding, translating it into your local languages, helping other users, financial donations, etc, etc. We equally welcome you regardless of the way you contribute."
+msgstr "Є кілька способів для вас <a href=\"%s\">зробити внесок у проєкт</a>: тестування, програмування, переклад на вашу рідну мову, допомога іншим користувачам, фінансова підтримка тощо. Ми однаково раді будь-якій вашій участі, незалежно від форми внеску."
 
 #: admin/includes/welcome-panel.php:86
 msgid "It is hard to continue to maintain this plugin without support from users like you."
@@ -569,6 +653,10 @@ msgstr "Stripe активований на цьому сайті."
 msgid "Stripe integration"
 msgstr "Інтеграція Stripe"
 
+#: modules/stripe/service.php:173
+msgid "Stripe is a simple and powerful way to accept payments online. Stripe has no setup fees, no monthly fees, and no hidden costs. Millions of businesses rely on Stripe&#8217;s software tools to accept payments securely and expand globally."
+msgstr "Stripe - це простий і потужний спосіб прийому платежів в Інтернеті. У Stripe немає плати за установку, немає щомісячних платежів і немає прихованих витрат. Мільйони підприємств покладаються на програмні інструменти Stripe для безпечного прийому платежів і глобального розширення."
+
 #. translators: 1: first name, 2: last name
 #: modules/sendinblue/sendinblue.php:114
 msgctxt "personal name"
@@ -598,6 +686,11 @@ msgstr "Stripe"
 #: admin/includes/welcome-panel.php:141 modules/stripe/service.php:183
 msgid "https://contactform7.com/stripe-integration/"
 msgstr "https://contactform7.com/stripe-integration/"
+
+#. translators: %s: URL to support page about the Brevo integration
+#: admin/includes/welcome-panel.php:134
+msgid "Your contact forms will become more powerful and versatile by integrating them with external APIs. With CRM and email marketing services, you can build your own contact lists (<a href=\"%s\">Brevo</a>)."
+msgstr "Ваші контактні форми стануть потужнішими та більш універсальними, інтегруючи їх зовнішніми API. За допомогою CRM та сервісів електронної розсилки, ви можете створити свої власні переліки контактів (<a href=\"%s\">Brevo</a>)."
 
 #: admin/includes/welcome-panel.php:127
 msgid "You have strong allies to back you up."
@@ -992,6 +1085,11 @@ msgstr "Помилка при збереженні контактної форм
 #: includes/functions.php:525
 msgid "Hook %1$s is <strong>deprecated</strong> since Contact Form 7 version %2$s! Use %3$s instead."
 msgstr "Хук %1$s <strong>не підтримується</strong> починаючи з Contact Form 7 версії %2$s! Натомість використовуйте %3$s."
+
+#. translators: %s: URL to support page about the Flamingo plugin
+#: admin/includes/welcome-panel.php:112
+msgid "Install a message storage plugin before this happens to you. <a href=\"%s\">Flamingo</a> saves all messages through contact forms into the database. Flamingo is a free WordPress plugin created by the same author as Contact Form 7."
+msgstr "Встановіть плагін зберігання повідомлень, перш ніж це трапиться з вами. <a href=\"%s\">Flamingo</a> зберігає всі повідомлення в базу даних, що проходять через контактні форми. Flamingo - це безкоштовний плагін для WordPress, створений тим же автором, що і Contact Form 7."
 
 #: admin/includes/welcome-panel.php:109
 msgid "Contact Form 7 does not store submitted messages anywhere. Therefore, you may lose important messages forever if your mail server has issues or you make a mistake in mail configuration."

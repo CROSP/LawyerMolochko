@@ -48,12 +48,13 @@ foreach ( $hero_slides as $row ) {
 }
 $use_custom_hero = $use_custom_hero && ! empty( $custom_slides );
 
-// Romanian front page: use RO slider alias (slider-1-1). UA uses slider-1 or ACF value.
+// Hero: ACF custom slider takes priority; otherwise fall back to Molochko Slider (mu-plugin).
+// Was Revolution Slider before — replaced 2026-05-17 after revslider plugin removal.
 if ( ! $use_custom_hero ) {
 	if ( function_exists( 'pll_current_language' ) && pll_current_language( 'slug' ) === 'ro' ) {
-		$hero_shortcode = '[rev_slider alias="slider-1-1"][/rev_slider]';
+		$hero_shortcode = '[molochko_slider id="7"]';
 	} elseif ( empty( $hero_shortcode ) ) {
-		$hero_shortcode = '[rev_slider alias="slider-1"]';
+		$hero_shortcode = '[molochko_slider id="1"]';
 	}
 }
 

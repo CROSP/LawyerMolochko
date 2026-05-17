@@ -1,0 +1,8 @@
+# Block PHP execution in wp-content except for explicit plugin/theme entrypoints handled by WP routing
+<FilesMatch "\.(php|phtml|phar|php3|php4|php5|php7|pht)$">
+    Require all denied
+</FilesMatch>
+# Block hidden files (.val, .entry, .pointer, etc.)
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>

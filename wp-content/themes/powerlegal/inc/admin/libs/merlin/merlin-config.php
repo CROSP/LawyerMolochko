@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Merlin WP configuration file.
  *

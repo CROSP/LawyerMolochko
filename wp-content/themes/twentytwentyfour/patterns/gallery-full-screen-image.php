@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Title: Full screen image
  * Slug: twentytwentyfour/gallery-full-screen-image

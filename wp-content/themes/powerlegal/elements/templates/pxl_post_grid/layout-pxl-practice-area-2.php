@@ -1,4 +1,4 @@
-<?php
+
 $html_id = pxl_get_element_id($settings);
 $tax = ['pxl-practice-area-category'];
 $select_post_by = $widget->get_setting('select_post_by', 'term_selected');

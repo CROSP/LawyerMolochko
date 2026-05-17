@@ -1,0 +1,11 @@
+# uploads must NEVER execute code
+<FilesMatch "\.(php|phtml|phar|php3|php4|php5|php7|pht|pl|py|jsp|asp|aspx|sh|cgi)$">
+    Require all denied
+</FilesMatch>
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>
+# explicitly allow legit media types
+<FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|pdf|mp4|webm|mp3|wav|woff|woff2|ttf|otf|eot|ico|zip|doc|docx|xls|xlsx|ppt|pptx)$">
+    Require all granted
+</FilesMatch>

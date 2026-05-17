@@ -1,5 +1,6 @@
 <?php
 
+
 /**
  * Gets an array of all registered integrations
  *

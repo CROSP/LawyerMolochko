@@ -1,4 +1,4 @@
-<?php
+
 // Register Accordion Widget
 $templates = powerlegal_get_templates_option('default', []) ;
 pxl_add_custom_widget(
