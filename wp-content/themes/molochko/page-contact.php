@@ -27,6 +27,23 @@ $map_embed   = 'https://www.google.com/maps?q=' . $map_address . '&output=embed'
 		</div>
 	</section>
 
+	<!-- Lawyer profile -->
+	<?php $lawyer_photo_url = wp_upload_dir()['baseurl'] . '/2026/05/taras-molochko-standing.jpg'; ?>
+	<section class="molochko-contact-lawyer">
+		<div class="molochko-contact-container">
+			<div class="molochko-contact-lawyer-inner">
+				<div class="molochko-contact-lawyer-photo">
+					<img src="<?php echo esc_url( $lawyer_photo_url ); ?>" alt="<?php echo molochko_pll_esc_attr__( 'Тарас Молочко — адвокат' ); ?>" loading="lazy" />
+				</div>
+				<div class="molochko-contact-lawyer-text">
+					<p class="molochko-contact-lawyer-role"><?php molochko_pll_esc_html_e( 'Адвокат' ); ?></p>
+					<h2 class="molochko-contact-lawyer-name"><?php molochko_pll_esc_html_e( 'Тарас Молочко' ); ?></h2>
+					<p class="molochko-contact-lawyer-desc"><?php molochko_pll_esc_html_e( 'Маєте питання або потрібна юридична консультація? Зв\'яжіться зі мною — я особисто відповідаю на кожен запит і пропоную індивідуальний підхід до вирішення вашої правової ситуації.' ); ?></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<!-- Contact content: info + form -->
 	<section class="molochko-contact-content">
 		<div class="molochko-contact-container">

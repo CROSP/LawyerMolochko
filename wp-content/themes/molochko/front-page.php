@@ -53,7 +53,7 @@ $use_custom_hero = $use_custom_hero && ! empty( $custom_slides );
 if ( ! $use_custom_hero ) {
 	if ( function_exists( 'pll_current_language' ) && pll_current_language( 'slug' ) === 'ro' ) {
 		$hero_shortcode = '[molochko_slider id="7"]';
-	} elseif ( empty( $hero_shortcode ) ) {
+	} elseif ( empty( $hero_shortcode ) || ( strpos( (string) $hero_shortcode, 'rev_slider' ) !== false && ! shortcode_exists( 'rev_slider' ) ) ) {
 		$hero_shortcode = '[molochko_slider id="1"]';
 	}
 }
